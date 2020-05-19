@@ -15,7 +15,9 @@
 
 <body>
 
-    <h1> Faremr's Inventory </h1>
+    <h1> Farmer's Inventory </h1>
+
+    <label for="inputs"> Enter how many types of food you want to inventory. E.g if you will be addings rice and beans enter 2 </label> 
 
     <select id="inputs" style="width:60px;">
         <option>1</option>
@@ -29,11 +31,6 @@
         <option>9</option>
         <option>10</option>
     </select>
-
-    <button onclick="window.location.href = 'customer.php';">view as a customer </button>
-    <button onclick="window.location.href = 'farmer.php';">access as a farmer</button>
-    
-
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
