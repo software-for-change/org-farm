@@ -40,13 +40,13 @@
         if ($result->num_rows > 0) {
             echo "<form>";
             echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
-            echo "<p>did we get here</p>";
+            
             // output data of each row
             while($row = mysqli_fetch_array($result)) {
                
                 echo "<tr style='height: 40px'>
                     <td>" .$row["food_type"]. "</td>
-                    // <td> <input type='text'></td>
+                    <td> <input type='text'></td>
                     
                 </tr>";
             }
