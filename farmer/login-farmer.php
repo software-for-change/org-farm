@@ -4,10 +4,8 @@ include_once "access-db.php";
 if (count($_POST) > 0) {
     $result = mysqli_query($conn, "SELECT * FROM farm_produce WHERE email='" . $_POST["email"] . "' and paswd = '" . $_POST["paswd"] . "'");
     $count  = mysqli_num_rows($result);
-    echo "did we atleast get here";
-    echo $count;
+    echo $result;
     if ($count == 0) {
-        echo "did we get here and failed";
         $message = "Invalid email or password!";
     } else {
         // $row = mysqli_fetch_array($result);
