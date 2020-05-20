@@ -1,17 +1,17 @@
 <?php
-$message="";
+$message = "";
 include_once "access-db.php";
-if(count($_POST)>0) {
-	$result = mysqli_query($conn,"SELECT * FROM farm_produce WHERE email='" . $_POST["email"] . "' and paswd = '". $_POST["paswd"]."'"); 
+if (count($_POST) > 0) {
+    $result = mysqli_query($conn, "SELECT * FROM farm_produce WHERE email='" . $_POST["email"] . "' and paswd = '" . $_POST["paswd"] . "'");
     $count  = mysqli_num_rows($result);
-	if($count==0) {
-		$message = "Invalid email or password!";
-	} else {
+    if ($count == 0) {
+        $message = "Invalid email or password!";
+    } else {
         // $row = mysqli_fetch_array($result);
         $message = "You are successfully authenticated!";
         // $var1=$row['id'];
         // header('Location: ./farmer.php?id=' .$var1);
-	}
+    }
 }
 ?>
 
@@ -25,12 +25,8 @@ if(count($_POST)>0) {
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap" rel="stylesheet">
     <title>Simply Organic </title>
 </head>
 
@@ -48,6 +44,9 @@ if(count($_POST)>0) {
 
                 <div class="message">
 
+                    <?php if ($message != "") {
+                        echo $message;
+                    } ?>
                 </div>
 
                 <div class="modal-input">
