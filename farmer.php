@@ -31,7 +31,7 @@
     </label>
     <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
     <br><br>
-    <?php
+    <!-- <?php
     echo "<select name='id' multiple=''>";
 
     while ($row = $result->fetch_assoc()) {
@@ -46,7 +46,7 @@
     echo "<br>";
     echo "<input type='submit'>";
     
-    ?>
+    ?> -->
 
 
     <h1>enter the quantity for the foods you wish to add</h1>
