@@ -44,6 +44,7 @@
     }
 
     echo "</select>";
+    echo "<br>";
     echo "<input type='submit'>";
     
     ?>
