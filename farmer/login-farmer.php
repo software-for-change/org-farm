@@ -7,10 +7,10 @@ if(count($_POST)>0) {
 	if($count==0) {
 		$message = "Invalid email or password!";
 	} else {
-        $row = mysqli_fetch_array($result);
+        // $row = mysqli_fetch_array($result);
         $message = "You are successfully authenticated!";
-        $var1=$row['id'];
-        header('Location: ./farmer.php?id=' .$var1);
+        // $var1=$row['id'];
+        // header('Location: ./farmer.php?id=' .$var1);
 	}
 }
 ?>
