@@ -13,7 +13,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Simply Organic</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet">
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link
@@ -34,7 +33,7 @@
 
     <br><br>
     <?php
-    echo "<select name='id'>";
+    echo "<select name='id' multiple=''>";
 
     while ($row = $result->fetch_assoc()) {
 
@@ -45,50 +44,14 @@
     }
 
     echo "</select>";
+    echo "<input type='submit'>";
     
     ?>
 
 
 
 
-<div class="stackblitz-container material">
-<div class="control-section col-lg-9">
-    <div class="control-wrapper">
-        <h4>CheckBox</h4>
-        <input type="text" id="checkbox">
-    </div>
-</div>
-<div class="col-lg-3 property-section">
-    <div id="property" title="Properties">
-        <table id="property" title="Properties">
-            <tbody>
-                <tr>
-                    <td style="width: 50%;">
-                        <div>
-                            <input id="selectall" type="checkbox" checked="true">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 50%;">
-                        <div>
-                            <input id="dropicon" type="checkbox" checked="true">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 50%;">
-                        <div>
-                            <input id="reorder" type="checkbox" checked="true">
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
 
-   
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
