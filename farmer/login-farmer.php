@@ -2,8 +2,7 @@
 $message="";
 include_once "access-db.php";
 if(count($_POST)>0) {
-	$result = mysqli_query($conn,"SELECT * FROM farm_produce WHERE email='" . $_POST["email"] . "' and paswd = '". $_POST["paswd"]."'");
-    
+	$result = mysqli_query($conn,"SELECT * FROM farm_produce WHERE email='" . $_POST["email"] . "' and paswd = '". $_POST["paswd"]."'"); 
     $count  = mysqli_num_rows($result);
 	if($count==0) {
 		$message = "Invalid email or password!";
@@ -27,7 +26,7 @@ if(count($_POST)>0) {
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap" rel="stylesheet">
-    <title>Simply Organic/title>
+    <title>Simply Organic </title>
 </head>
 
 <body>
