@@ -30,7 +30,7 @@
 
     <label for="inputs"> Enter how many types of food you want to inventory.
     </label>
-
+    <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
     <br><br>
     <?php
     echo "<select name='id' multiple=''>";
