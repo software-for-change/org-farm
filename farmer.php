@@ -55,7 +55,7 @@
 
         if ($result->num_rows > 0) {
             echo "<Form>";
-            echo "<table class='tutortable'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
+            echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
             // output data of each row
             while($row = mysqli_fetch_array($result)) {
                 echo "<tr style='height: 40px'>
