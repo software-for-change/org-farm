@@ -12,6 +12,8 @@ if (count($_POST) > 0) {
     } else {
         // $row = mysqli_fetch_array($result);
         $message = "You are successfully authenticated!";
+        header("farmer.php"); /* Redirect browser */
+        exit();
         // $var1=$row['id'];
         // header('Location: ./farmer.php?id=' .$var1);
     }
