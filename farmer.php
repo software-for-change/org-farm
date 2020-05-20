@@ -57,7 +57,7 @@
             echo "<form>";
             echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
             // output data of each row
-            while($row = mysqli_fetch_array($result)) {
+            while($row = $result->fetch_assoc()) {
                 echo "<p>did we get here</p>";
                 echo "<tr style='height: 40px'>
                     <td>" .$row["food_type"]. "</td>
