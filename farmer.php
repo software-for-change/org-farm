@@ -61,7 +61,7 @@
                
                 echo "<tr style='height: 40px'>
                     <td>" .$row["food_type"]. "</td>
-                    <td> <input type='text'></td>
+                    // <td> <input type='text'></td>
                     
                 </tr>";
             }
