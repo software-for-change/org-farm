@@ -28,10 +28,10 @@
 
     <h1> Farmer's Inventory </h1>
 
-    <label for="inputs"> Enter how many types of food you want to inventory. E.g if you will be addings rice and beans
-        enter 2 </label>
+    <label for="inputs"> Enter how many types of food you want to inventory.
+    </label>
 
-
+    <br><br>
     <?php
     echo "<select name='id'>";
 
@@ -46,18 +46,7 @@
     echo "</select>";
     
     ?>
-    <select id="inputs" style="width:60px;">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-    </select>
+   
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
