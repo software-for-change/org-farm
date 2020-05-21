@@ -30,7 +30,7 @@
                 <input type="text" id="email" name="email" placeholder="email" autofocus>
 
                 <label for="password">Password</label>
-                <input type="password" id="paswd" name="paswd" placeholder="password">
+                <input type="text" id="paswd" name="paswd" placeholder="password">
 
                 <input id="btn" type="submit" value="Login" name="btn-login">
                 <br>
