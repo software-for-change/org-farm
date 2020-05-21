@@ -12,6 +12,8 @@ if(isset($_POST['btn-login'])){
     }
     else {
         $query = "SELECT * FROM farm_farmers WHERE email='$email'";
+
+        echo 'this is the password entered', $paswd;
         $result = mysqli_query($conn, $query);
 
         if($row=mysqli_fetch_assoc($result)){
