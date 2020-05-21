@@ -25,7 +25,7 @@ if(isset($_POST['btn-login'])){
             }
         }
         else {
-            echo 'please check your query';
+            echo 'the user does not exist';
         }
     }
 }
