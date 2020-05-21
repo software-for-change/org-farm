@@ -5,6 +5,14 @@
    $result = $conn->query($sql);
 
    $data = "UPDATE farm_produce SET quantity='".$_POST['quantity']."' WHERE id=6";
+
+   if ($conn->query($sql) === TRUE) {
+    echo "Record updated successfully";
+  } else {
+    echo "Error updating record: " . $conn->error;
+  }
+  
+  $conn->close();
     
 ?>
 <!DOCTYPE html>
