@@ -6,13 +6,10 @@
 
    $data = "UPDATE farm_produce SET quantity='".$_POST['quantity']."' WHERE id=6";
 
-   if ($conn->query($sql) === TRUE) {
-    echo "Record updated successfully";
-  } else {
-    echo "Error updating record: " . $conn->error;
-  }
-  
-  $conn->close();
+   if(count($_POST)>0) {
+    mysqli_query($conn,"UPDATE farm_produce set quantity='" . $_POST['quantity'] . "' WHERE id=7");
+    $message = "Record Modified Successfully";
+    }
     
 ?>
 <!DOCTYPE html>
@@ -41,7 +38,7 @@
     <?php
 
         if ($result->num_rows > 0) {
-            echo "<form method='post'>";
+            echo "<form method='post' action=''>";
             echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
             
             // output data of each row
