@@ -4,10 +4,10 @@
    $sql = "SELECT food_name FROM farm_food";
    $result = $conn->query($sql);
 
-//    if(count($_POST)>0) {
-//     mysqli_query($conn,"UPDATE farm_farmers set quantity='" . $_POST['quantity'] . "' WHERE user_id=7");
-//     $message = "Record Modified Successfully";
-//     }
+   if(count($_POST)>0) {
+    mysqli_query($conn,"UPDATE farm_farmers set quantity='" . $_POST['quantity'] . "' WHERE user_id=7");
+    $message = "Record Modified Successfully";
+    }
     
 ?>
 <!DOCTYPE html>
