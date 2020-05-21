@@ -3,6 +3,8 @@
 
    $sql = "SELECT food_type, shelf_life FROM farm_produce";
    $result = $conn->query($sql);
+
+   $data = "UPDATE farm_produce SET quantity='".$_POST['quantity']."' WHERE id=6";
     
 ?>
 <!DOCTYPE html>
@@ -31,7 +33,7 @@
     <?php
 
         if ($result->num_rows > 0) {
-            echo "<form>";
+            echo "<form method='post'>";
             echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
             
             // output data of each row
@@ -39,7 +41,7 @@
                
                 echo "<tr style='height: 40px'>
                     <td>" .$row["food_type"]. "</td>
-                    <td> <input type='text'></td>
+                    <td> <input name='quantity' type='text'></td>
                     
                 </tr>";
             }
