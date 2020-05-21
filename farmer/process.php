@@ -1,5 +1,5 @@
 <?php
-include_once "access-db.php";
+include_once "../access-db.php";
 
 if(isset($_POST['btn-login'])){
 
@@ -11,7 +11,7 @@ if(isset($_POST['btn-login'])){
         echo 'fill in the blanks';
     }
     else {
-        $query = "SELECT * FROM farmproduce WHERE email='$email'";
+        $query = "SELECT * FROM farm_produce WHERE email='$email'";
         $result = mysqli_query($conn, $query);
 
         if($row=mysqli_fetch_assoc($result)){
