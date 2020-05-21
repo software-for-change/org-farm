@@ -17,7 +17,7 @@ if(isset($_POST['btn-login'])){
         if($row=mysqli_fetch_assoc($result)){
             $db_password = $row['paswd'];
 
-            if(md5($paswd) == $db_password){
+            if($paswd == $db_password){
                 header("location:farmer.php");
             }
             else {
