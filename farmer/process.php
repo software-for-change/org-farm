@@ -19,6 +19,9 @@ if(isset($_POST['btn-login'])){
         if($row=mysqli_fetch_assoc($result)){
             $db_password = $row['paswd'];
 
+            echo '';
+            echo 'this is the pasword from the db ', $db_password;
+
             if(md5($paswd) == $db_password){
                 header("location:farmer.php");
             }
