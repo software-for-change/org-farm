@@ -1,7 +1,7 @@
 <?php
    include_once "../access-db.php";
 
-   $sql = "SELECT food_type, shelf_life FROM farm_farmers";
+   $sql = "SELECT food_name FROM farm_food";
    $result = $conn->query($sql);
 
 //    if(count($_POST)>0) {
