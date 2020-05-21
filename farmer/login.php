@@ -32,7 +32,7 @@
                 <label for="password">Password</label>
                 <input type="password" id="paswd" name="paswd" placeholder="password">
 
-                <input id="btn" type="submit" value="Login">
+                <input id="btn" type="submit" value="Login" name="btn-login">
                 <br>
                 <br>
                 <br>
