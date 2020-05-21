@@ -23,7 +23,7 @@
         <br><br>
 
         <div id="frm">
-            <form method='POST' action="process.php">
+            <form method='POST' action="farmer-login-auth.php">
 
 
                 <label for="email">User Email</label>
