@@ -1,7 +1,7 @@
 <?php
    include_once "../access-db.php";
 
-   $sql = "SELECT food_type, shelf_life FROM farmproduce";
+   $sql = "SELECT food_type, shelf_life FROM farm_produce";
    $result = $conn->query($sql);
     
 ?>
