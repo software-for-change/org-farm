@@ -5,7 +5,7 @@
    $result = $conn->query($sql);
 
    $data = "UPDATE farm_produce SET quantity='".$_POST['quantity']."' WHERE id=6";
-
+    echo 'did we get here';
    if(count($_POST)>0) {
     mysqli_query($conn,"UPDATE farm_produce set quantity='" . $_POST['quantity'] . "' WHERE id=7");
     $message = "Record Modified Successfully";
