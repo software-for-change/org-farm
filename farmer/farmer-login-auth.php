@@ -18,7 +18,8 @@ if(isset($_POST['btn-login'])){
             $db_password = $row['paswd'];
 
             if($paswd == $db_password){
-                header("location:farmer.php");
+                $idnum=$row['user_id'];
+                header("location:farmer.php?user_id=" .$idnum);
             }
             else {
                 echo 'incorrect password';
