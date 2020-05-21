@@ -43,7 +43,7 @@
             while($row = mysqli_fetch_array($result)) {
                
                 echo "<tr style='height: 40px'>
-                    <td>" .$row["food_type"]. "</td>
+                    <td>" .$row["food_name"]. "</td>
                     <td> <input name='quantity' type='text'></td>
                     <td> <input type='submit' value='submit'></td>
                 </tr>";
