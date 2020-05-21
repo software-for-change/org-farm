@@ -1,15 +1,13 @@
 <?php
    include_once "../access-db.php";
 
-   $sql = "SELECT food_type, shelf_life FROM farm_produce";
+   $sql = "SELECT food_type, shelf_life FROM farm_farmers";
    $result = $conn->query($sql);
 
-   $data = "UPDATE farm_produce SET quantity='".$_POST['quantity']."' WHERE id=6";
-    echo 'did we get here';
-   if(count($_POST)>0) {
-    mysqli_query($conn,"UPDATE farm_produce set quantity='" . $_POST['quantity'] . "' WHERE id=7");
-    $message = "Record Modified Successfully";
-    }
+//    if(count($_POST)>0) {
+//     mysqli_query($conn,"UPDATE farm_farmers set quantity='" . $_POST['quantity'] . "' WHERE user_id=7");
+//     $message = "Record Modified Successfully";
+//     }
     
 ?>
 <!DOCTYPE html>
@@ -47,11 +45,11 @@
                 echo "<tr style='height: 40px'>
                     <td>" .$row["food_type"]. "</td>
                     <td> <input name='quantity' type='text'></td>
-                    
+                    <td> <input type='submit' value='submit'></td>
                 </tr>";
             }
             echo "</table>";
-            echo "<input type='submit' vale='submit'>";
+           
             echo "</form>";
 
         } else {
