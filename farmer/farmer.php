@@ -1,4 +1,10 @@
+<?php
+   include_once "../access-db.php";
 
+   $sql = "SELECT food_type, shelf_life FROM farm_produce";
+   $result = $conn->query($sql);
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +35,30 @@
 
 
     <h1>enter the quantity for the foods you wish to add</h1>
-   
+    <?php
+
+        if ($result->num_rows > 0) {
+            echo "<form>";
+            echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
+            
+            // output data of each row
+            while($row = mysqli_fetch_array($result)) {
+               
+                echo "<tr style='height: 40px'>
+                    <td>" .$row["food_type"]. "</td>
+                    <td> <input type='text'></td>
+                    
+                </tr>";
+            }
+            echo "</table>";
+            echo "<input type='submit' vale='submit'>";
+            echo "</form>";
+
+        } else {
+            echo "0 results";
+        }
+    ?>
+
 
 
 
