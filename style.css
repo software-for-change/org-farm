@@ -5,6 +5,13 @@ root {
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+}
+
+.prodcue-table
+ {
+    /* border: 1px solid black; */
+    font-size: 16px;
+    width: 70%;
 }
