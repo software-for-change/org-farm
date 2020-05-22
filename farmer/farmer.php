@@ -5,8 +5,20 @@
    $result = $conn->query($sql);
 
    if(count($_POST)>0) {
-    mysqli_query($conn,"UPDATE farm_farmers set quantity='" . $_POST['quantity'] . "' WHERE user_id=7");
-    $message = "Record Modified Successfully";
+       //get the user id 
+       $user_id = $_GET['user_id'];
+
+       echo 'this is the user id ', $user_id;
+       //get the food name 
+       //get the food quantity
+       //use the food name to get the food id from the food table
+       //store the food id in the food id col for the stock table  in the row for the userid
+       //store the user id in the userid col for the stock table
+       //store the quantity in the stock table for based on the user id 
+       
+       //note: you don't need another id in the farmers table since you use the farmer_id to store the food in the stock table.
+        mysqli_query($conn,"UPDATE farm_farmers set quantity='" . $_POST['quantity'] . "' WHERE user_id=7");
+        $message = "Record Modified Successfully";
     }
     
 ?>
