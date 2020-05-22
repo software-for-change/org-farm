@@ -8,10 +8,13 @@
        //get the user id 
        $user_id = $_GET['user_id'];
 
+       //get the food name
        $food = $_POST['food_name'];
-       echo 'this is the food name ', $food;
-
+       
        //get the food quantity
+       $quantity = $_POST['quantity'];
+       echo 'this is the food quantity ', $quantity;
+
        //use the food name to get the food id from the food table
        //store the food id in the food id col for the stock table  in the row for the userid
        //store the user id in the userid col for the stock table
@@ -56,8 +59,6 @@
             while($row = mysqli_fetch_array($result)) {
 
                 $food_name = $row["food_name"];
-                
-               
                 echo "<tr style='height: 40px'>
                     <td>" .$food_name. "</td>
                     <td> <input name='quantity' type='text'></td>
