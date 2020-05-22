@@ -8,8 +8,11 @@
        //get the user id 
        $user_id = $_GET['user_id'];
 
-       echo 'this is the user id ', $user_id;
        //get the food name 
+       $food_name = $row["food_name"];
+
+       echo 'this is the food name ', $food_name;
+
        //get the food quantity
        //use the food name to get the food id from the food table
        //store the food id in the food id col for the stock table  in the row for the userid
