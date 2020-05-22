@@ -8,10 +8,8 @@
        //get the user id 
        $user_id = $_GET['user_id'];
 
-       //get the food name 
-       $food_name = $row["food_name"];
-
-       echo 'this is the food name ', $food_name;
+       $food = $_POST['food_name'];
+       echo 'this is the food name ', $food;
 
        //get the food quantity
        //use the food name to get the food id from the food table
@@ -56,10 +54,14 @@
             
             // output data of each row
             while($row = mysqli_fetch_array($result)) {
+
+                $food_name = $row["food_name"];
+                
                
                 echo "<tr style='height: 40px'>
-                    <td>" .$row["food_name"]. "</td>
+                    <td>" .$food_name. "</td>
                     <td> <input name='quantity' type='text'></td>
+                    <input name='food_name'  type='hidden' value='$food_name' >
                     <td> <input type='submit' value='submit'></td>
                 </tr>";
             }
