@@ -1,30 +1,39 @@
 <?php
-   include_once "../access-db.php";
+include_once "../access-db.php";
 
-   $sql = "SELECT * food_name FROM farm_food";
-   $result = $conn->query($sql);
+$sql = "SELECT food_name FROM farm_food";
+$result = $conn->query($sql);
 
-   if(count($_POST)>0) {
-       //get the user id 
-       $user_id = $_GET['user_id'];
+if (count($_POST) > 0) {
+    //get the user id
+    $user_id = $_GET['user_id'];
 
-       //get the food name
-       $food = $_POST['food_name'];
-       
-       //get the food quantity
-       $quantity = $_POST['quantity'];
-       echo 'this is the food quantity ', $quantity;
+    //get the food name
+    $food = $_POST['food_name'];
 
-       //use the food name to get the food id from the food table
-       //store the food id in the food id col for the stock table  in the row for the userid
-       //store the user id in the userid col for the stock table
-       //store the quantity in the stock table for based on the user id 
-       
-       //note: you don't need another id in the farmers table since you use the farmer_id to store the food in the stock table.
-        mysqli_query($conn,"UPDATE farm_farmers set quantity='" . $_POST['quantity'] . "' WHERE user_id=7");
-        $message = "Record Modified Successfully";
+    //get the food quantity
+    $quantity = $_POST['quantity'];
+    echo 'this is the food quantity ', $quantity;
+
+    //use the food name to get the food id from the food table
+    $query = "SELECT food_id FROM farm_food WHERE food_name='$food'";
+    $id_result = mysqli_query($conn, $query);
+
+
+    //update the stock table with the values of the food id, the stock qnautity and the userid of the farmer
+    if ($row = mysqli_fetch_assoc($id_result)) {
+        $food_id = $row['food_id'];
+
+        //store the user id in the userid col for the stock table
+        mysqli_query($conn, "INSERT INTO farm_user_stock (user_id, food_id, stock_quantity) VALUES ('$user_id', '$food_id', '$quantity')");
+
     }
-    
+
+    //note: you don't need another id in the farmers table since you use the farmer_id to store the food in the stock table.
+    //mysqli_query($conn, "UPDATE farm_farmers set quantity='" . $_POST['quantity'] . "' WHERE user_id=7");
+    //$message = "Record Modified Successfully";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,29 +60,29 @@
     <h1>enter the quantity for the foods you wish to add</h1>
     <?php
 
-        if ($result->num_rows > 0) {
-            echo "<form method='post' action=''>";
-            echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
-            
-            // output data of each row
-            while($row = mysqli_fetch_array($result)) {
+if ($result->num_rows > 0) {
+    echo "<form method='post' action=''>";
+    echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
 
-                $food_name = $row["food_name"];
-                echo "<tr style='height: 40px'>
-                    <td>" .$food_name. "</td>
+    // output data of each row
+    while ($row = mysqli_fetch_array($result)) {
+
+        $food_name = $row["food_name"];
+        echo "<tr style='height: 40px'>
+                    <td>" . $food_name . "</td>
                     <td> <input name='quantity' type='text'></td>
                     <input name='food_name'  type='hidden' value='$food_name' >
                     <td> <input type='submit' value='submit'></td>
                 </tr>";
-            }
-            echo "</table>";
-           
-            echo "</form>";
+    }
+    echo "</table>";
 
-        } else {
-            echo "0 results";
-        }
-    ?>
+    echo "</form>";
+
+} else {
+    echo "0 results";
+}
+?>
 
 
 
