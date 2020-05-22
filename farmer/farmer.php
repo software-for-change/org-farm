@@ -25,8 +25,15 @@ if (count($_POST) > 0) {
         $food_id = $row['food_id'];
 
         //store the user id in the userid col for the stock table
-        mysqli_query($conn, "INSERT INTO farm_user_stock (user_id, food_id, stock_quantity) VALUES ('$user_id', '$food_id', '$quantity')");
+        if(mysqli_query($conn, "INSERT INTO farm_user_stock (user_id, food_id, stock_quantity) VALUES ('$user_id', '$food_id', '$quantity')")){
+            echo 'your stock has been added to the inventory';
+             
+        }
+        else {
+            echo 'there was an error, your stock has not been added';
+        }
 
+        
     }
 
     //note: you don't need another id in the farmers table since you use the farmer_id to store the food in the stock table.
