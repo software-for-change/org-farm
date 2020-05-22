@@ -1,9 +1,46 @@
 <?php
-   include_once "../access-db.php";
+include_once "../access-db.php";
 
-   $sql = "SELECT food_type, shelf_life FROM farm_produce";
-   $result = $conn->query($sql);
-    
+$sql = "SELECT food_name FROM farm_food";
+$result = $conn->query($sql);
+
+if (count($_POST) > 0) {
+    //get the user id
+    $user_id = $_GET['user_id'];
+
+    //get the food name
+    $food = $_POST['food_name'];
+
+    //get the food quantity
+    $quantity = $_POST['quantity'];
+    echo 'this is the food quantity ', $quantity;
+
+    //use the food name to get the food id from the food table
+    $query = "SELECT food_id FROM farm_food WHERE food_name='$food'";
+    $id_result = mysqli_query($conn, $query);
+
+
+    //update the stock table with the values of the food id, the stock qnautity and the userid of the farmer
+    if ($row = mysqli_fetch_assoc($id_result)) {
+        $food_id = $row['food_id'];
+
+        //store the user id in the userid col for the stock table
+        if(mysqli_query($conn, "INSERT INTO farm_user_stock (user_id, food_id, stock_quantity) VALUES ('$user_id', '$food_id', '$quantity')")){
+            echo 'your stock has been added to the inventory';
+             
+        }
+        else {
+            echo 'there was an error, your stock has not been added';
+        }
+
+        
+    }
+
+    //note: you don't need another id in the farmers table since you use the farmer_id to store the food in the stock table.
+    //mysqli_query($conn, "UPDATE farm_farmers set quantity='" . $_POST['quantity'] . "' WHERE user_id=7");
+    //$message = "Record Modified Successfully";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,27 +67,29 @@
     <h1>enter the quantity for the foods you wish to add</h1>
     <?php
 
-        if ($result->num_rows > 0) {
-            echo "<form>";
-            echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
-            
-            // output data of each row
-            while($row = mysqli_fetch_array($result)) {
-               
-                echo "<tr style='height: 40px'>
-                    <td>" .$row["food_type"]. "</td>
-                    <td> <input type='text'></td>
-                    
-                </tr>";
-            }
-            echo "</table>";
-            echo "<input type='submit' vale='submit'>";
-            echo "</form>";
+if ($result->num_rows > 0) {
+    echo "<form method='post' action=''>";
+    echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
 
-        } else {
-            echo "0 results";
-        }
-    ?>
+    // output data of each row
+    while ($row = mysqli_fetch_array($result)) {
+
+        $food_name = $row["food_name"];
+        echo "<tr style='height: 40px'>
+                    <td>" . $food_name . "</td>
+                    <td> <input name='quantity' type='text'></td>
+                    <input name='food_name'  type='hidden' value='$food_name' >
+                    <td> <input type='submit' value='submit'></td>
+                </tr>";
+    }
+    echo "</table>";
+
+    echo "</form>";
+
+} else {
+    echo "0 results";
+}
+?>
 
 
 

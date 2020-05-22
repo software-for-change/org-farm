@@ -23,14 +23,14 @@
         <br><br>
 
         <div id="frm">
-            <form method='POST' action="process.php">
+            <form method='POST' action="farmer-login-auth.php">
 
 
                 <label for="email">User Email</label>
                 <input type="text" id="email" name="email" placeholder="email" autofocus>
 
                 <label for="password">Password</label>
-                <input type="password" id="paswd" name="paswd" placeholder="password">
+                <input type="text" id="paswd" name="paswd" placeholder="password">
 
                 <input id="btn" type="submit" value="Login" name="btn-login">
                 <br>
