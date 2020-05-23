@@ -9,15 +9,42 @@ body {
     color: black;
 }
 
+
+/* styling for the nav bar */
 .header {
     padding-left: 10px;
 }
 
-/* styling for the welcome page */
 .menu_navbar {
     font-family: 'Roboto', sans-serif;
     float: right;
 }
+
+.logo a {
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: var(--teal);
+}
+
+ul li {
+    display: inline;
+    padding: 10px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
 
 /* styling for the farmer page */
 .prodcue-table
