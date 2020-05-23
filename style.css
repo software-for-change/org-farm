@@ -5,7 +5,7 @@ root {
 }
 
 body {
-    background-color: var(--sitebackgroundColor);
+    background-color: blue;
     color: var(--sitefontColor);
 }
 
