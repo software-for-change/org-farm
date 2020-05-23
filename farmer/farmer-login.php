@@ -35,32 +35,36 @@
     <br>
     <br>
     <br>
-    <div class="modal">
-        <h1 class="">Farmer Log In</h1>
-        <br><br>
 
-        <div id="frm">
-            <form method='POST' action="farmer-login-auth.php">
+    <div class="page-content"> 
+        <div class="modal">
+            <h1 class="">Farmer Log In</h1>
+            <br><br>
+
+            <div id="frm">
+                <form method='POST' action="farmer-login-auth.php">
 
 
-                <label for="email">User Email</label>
-                <input type="text" id="email" name="email" placeholder="email" autofocus>
+                    <label for="email">User Email</label>
+                    <input type="text" id="email" name="email" placeholder="email" autofocus>
 
-                <label for="password">Password</label>
-                <input type="text" id="paswd" name="paswd" placeholder="password">
+                    <label for="password">Password</label>
+                    <input type="text" id="paswd" name="paswd" placeholder="password">
 
-                <input id="btn" type="submit" value="Login" name="btn-login">
-                <br>
-                <br>
-                <br>
-                <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
-                <br>
-                <br>
+                    <input id="btn" type="submit" value="Login" name="btn-login">
+                    <br>
+                    <br>
+                    <br>
+                    <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
+                    <br>
+                    <br>
 
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
 
+
+    </div>
     <br><br>
     <script src="../index.js"></script>
 

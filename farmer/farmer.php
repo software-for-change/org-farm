@@ -76,6 +76,8 @@ if (count($_POST) > 0) {
         </div>
     </div>
 
+    <div class="page-content"> 
+
     <h1> Farmer's Inventory </h1>
 
     <h1>enter the quantity for the foods you wish to add</h1>
@@ -105,7 +107,7 @@ if (count($_POST) > 0) {
     }
     ?>
 
-
+    </div>
 
 
 

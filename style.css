@@ -9,6 +9,10 @@ body {
     color: var(--sitefontColor);
 }
 
+.page-content {
+    text-align: center;
+}
+
 
 /* styling for the nav bar */
 .header {
