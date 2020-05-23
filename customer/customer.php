@@ -1,5 +1,5 @@
 <?php
-include_once "../access-db.php";
+include_once "access-db.php";
 
 $sql = "SELECT food_name, price, food_image, FROM farm_food";
 $result = $conn->query($sql);
