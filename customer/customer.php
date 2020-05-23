@@ -58,7 +58,7 @@ $result = $conn->query($sql);
         while ($row = mysqli_fetch_array($result)) {
 
             $food_name = $row["food_name"];
-            $food_image = $row["food_image"];
+            $food_image = base64_encode($row["food_image"]);
             $price = $row["price"];
 
             echo "<div class='col-md-4'";
