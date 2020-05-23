@@ -68,13 +68,14 @@ $result = $conn->query($sql);
                             <p> " . $food_name . " </p>
                             <p> " . $price . " </p>
                             <img> " . $food_image . " </img>
-                            <img src='data:image/jpg;base64,'. base64_encode($food_image).''/>
                             
                             </div>
                             
                         </td>
                     </tr>";
             echo "</div>";
+
+            echo '<img src="data:image/jpg;base64,' . base64_encode( $row['food_image'] ) . '" />';
         }
         echo "</table>";
 
