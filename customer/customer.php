@@ -68,7 +68,7 @@ $result = $conn->query($sql);
                             <p> " . $food_name . " </p>
                             <p> " . $price . " </p>
                             <img> " . $food_image . " </img>
-                            <img src='data:image/jpg;base64,'. $food_image.''/>
+                            <img src='data:image/jpg;base64,'. base64_encode($food_image).''/>
                             
                             </div>
                             
