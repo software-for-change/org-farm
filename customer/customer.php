@@ -58,12 +58,17 @@ if (count($_POST) > 0) {
         while ($row = mysqli_fetch_array($result)) {
 
             $food_name = $row["food_name"];
+            $food_image = $row["food_image"];
+            $price = $row["price"];
+
             echo "<div class='col-md-4'";
             echo "<tr>
                         <td>
                             <div class='food-post'>
+                            <p> " . $food_name . " </p>
+                            <p> " . $price . " </p>
+                            <img> " . $food_image . " </img>
                             
-                            " . $food_name . "
                             </div>
                             
                         </td>
