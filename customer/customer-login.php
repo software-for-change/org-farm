@@ -36,7 +36,7 @@
     <br>
     <br>
     <div class="modal">
-        <h1 class="">Farmer Log In</h1>
+        <h1 class="">Customer Log In</h1>
         <br><br>
 
         <div id="frm">
