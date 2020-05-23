@@ -19,16 +19,16 @@ if(isset($_POST['btn-login'])){
 
             if($paswd == $db_password){
                 $idnum=$row['user_id'];
-                header("location:farmer.php?user_id=" .$idnum);
+                header("location:customer.php?user_id=" .$idnum);
             }
             else {
                 echo 'incorrect password';
-                header("location:farmer-login.php");
+                header("location:customer-login.php");
             }
         }
         else {
             echo 'the user does not exist';
-            header("location:farmer-login.php");
+            header("location:customer-login.php");
         }
     }
 }

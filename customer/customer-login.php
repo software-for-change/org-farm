@@ -1,20 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Simply Organic</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap" rel="stylesheet">
-    <title>Simply Organic Farming</title>
+    <title>Simply Organic </title>
 </head>
 
 <body>
+
     <div class="header">
         <div class="menu_navbar">
             <ul>
@@ -35,24 +35,34 @@
     <br>
     <br>
     <br>
+    <div class="modal">
+        <h1 class="">Customer Log In</h1>
+        <br><br>
 
-    <div class="page-content"> 
+        <div id="frm">
+            <form method='POST' action="farmer-login-auth.php">
 
-        <h1> Simply Orgnaic </h1>
 
-        <button onclick="window.location.href = './customer/customer.php';">view as a customer </button>
-        <button onclick="window.location.href = './farmer/farmer-login.php';">access as a farmer</button>
-        
+                <label for="email">User Email</label>
+                <input type="text" id="email" name="email" placeholder="email" autofocus>
+
+                <label for="password">Password</label>
+                <input type="text" id="paswd" name="paswd" placeholder="password">
+
+                <input id="btn" type="submit" value="Login" name="btn-login">
+                <br>
+                <br>
+                <br>
+                <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
+                <br>
+                <br>
+
+            </form>
+        </div>
     </div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="index.js"></script>
-    <script>
-        $(document).ready(function() {
 
-
-        });
-    </script>
+    <br><br>
+    <script src="../index.js"></script>
 
 </body>
 
