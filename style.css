@@ -1,12 +1,12 @@
 root {
-    /* --teal: #5CDB95;
-    --yellow: #EDF5E1;
-    --blue: #05386B; */
+    --teal: #5CDB95;
+    --sitefontColor: white;
+    --sitebackgroundColor: #05386B;
 }
 
 body {
-    background-color: white;
-    color: black;
+    background-color: var(--sitebackgroundColor);
+    color: var(--sitefontColor);
 }
 
 
