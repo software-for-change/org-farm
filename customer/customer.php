@@ -66,16 +66,17 @@ $result = $conn->query($sql);
                         <td>
                             <div class='food-post'>
                             <p> " . $food_name . " </p>
-                            <p> " . $price . " </p>
-                            <img> " . $food_image . " </img>
+                            <p> " . $price . " </p>";
+                        
+                            echo '<img src="data:image/jpg;base64,' . base64_encode( $row['food_image'] ) . '" />';
                             
-                            </div>
+                            echo" </div>";
                             
-                        </td>
-                    </tr>";
+                        echo "</td>";
+                    echo "</tr>";
             echo "</div>";
 
-            echo '<img src="data:image/jpg;base64,' . base64_encode( $row['food_image'] ) . '" />';
+           
         }
         echo "</table>";
 
