@@ -5,7 +5,7 @@ $sql = "SELECT food_name, price, food_image FROM farm_food";
 $result = $conn->query($sql);
 
 // if (count($_POST) > 0) {
-   
+
 // }
 
 ?>
@@ -37,7 +37,7 @@ $result = $conn->query($sql);
                 <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li>
                 <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
                 <li><a class="navlink" href="../index.html">logout</a> </li>
-                
+
             </ul>
         </div>
 
@@ -48,42 +48,45 @@ $result = $conn->query($sql);
 
     <h1> Food for sale </h1>
 
+    <button id="minus">−</button>
+    <input type="number" value="0" id="input" />
+    <button id="plus">+</button>
+
     <?php
 
-    if ($result->num_rows > 0) {
-        
-        echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
+if ($result->num_rows > 0) {
 
-        // output data of each row
-        while ($row = mysqli_fetch_array($result)) {
+    echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
 
-            $food_name = $row["food_name"];
-            $food_image = $row["food_image"];
-            $price = $row["price"];
+    // output data of each row
+    while ($row = mysqli_fetch_array($result)) {
 
-            echo "<div class='col-md-4'";
-            echo "<tr>
+        $food_name = $row["food_name"];
+        $food_image = $row["food_image"];
+        $price = $row["price"];
+
+        echo "<div class='col-md-4'";
+        echo "<tr>
                         <td>
                             <div class='food-post'>
                             <p> " . $food_name . " </p>
                             <p> " . $price . " </p>";
-                        
-                            echo '<img src="data:image/jpg;base64,' . base64_encode( $row['food_image'] ) . '" />';
-                            
-                            echo" </div>";
-                            
-                        echo "</td>";
-                    echo "</tr>";
-            echo "</div>";
 
-           
-        }
-        echo "</table>";
+        echo '<img src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
 
-    } else {
-        echo "0 results";
+        echo " </div>";
+
+        echo "</td>";
+        echo "</tr>";
+        echo "</div>";
+
     }
-    ?>
+    echo "</table>";
+
+} else {
+    echo "0 results";
+}
+?>
 
 
 
