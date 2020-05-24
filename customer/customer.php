@@ -74,6 +74,10 @@ if ($result->num_rows > 0) {
 
         echo '<img src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
 
+        echo "<button id='minus'>−</button>
+        <input type='number' value='0' id='input' />
+        <button id='plus'>+</button>";
+        
         echo " </div>";
 
         echo "</td>";
