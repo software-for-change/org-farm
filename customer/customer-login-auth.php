@@ -11,7 +11,7 @@ if(isset($_POST['btn-login'])){
         echo 'fill in the blanks';
     }
     else {
-        $query = "SELECT * FROM farm_clients WHERE email='$email'";
+        $query = "SELECT * FROM farm_clients WHERE customer_email='$email'";
         $result = mysqli_query($conn, $query);
 
         if($row=mysqli_fetch_assoc($result)){
