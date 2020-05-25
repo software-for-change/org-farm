@@ -40,7 +40,7 @@
         <br><br>
 
         <div id="frm">
-            <form method='POST' action="farmer-login-auth.php">
+            <form method='POST' action="customer-login-auth.php">
 
 
                 <label for="email">User Email</label>
