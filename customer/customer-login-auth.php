@@ -11,23 +11,23 @@ if(isset($_POST['btn-login'])){
         echo 'fill in the blanks';
     }
     else {
-        $query = "SELECT * FROM farm_farmers WHERE email='$email'";
+        $query = "SELECT * FROM farm_clients WHERE email='$email'";
         $result = mysqli_query($conn, $query);
 
         if($row=mysqli_fetch_assoc($result)){
-            $db_password = $row['paswd'];
+            $db_password = $row['customer_password'];
 
             if($paswd == $db_password){
-                $idnum=$row['user_id'];
+                $idnum=$row['customer_id'];
                 header("location:customer.php?user_id=" .$idnum);
             }
             else {
-                echo 'incorrect password';
+                echo '<p>incorrect password</p>';
                 header("location:customer-login.php");
             }
         }
         else {
-            echo 'the user does not exist';
+            echo '<p>the user does not exist</p>';
             header("location:customer-login.php");
         }
     }
