@@ -36,11 +36,11 @@
     <br>
     <br>
     <div class="modal">
-        <h1 class="">Farmer Log In</h1>
+        <h1 class="">Admin Log In</h1>
         <br><br>
 
         <div id="frm">
-            <form method='POST' action="farmer-login-auth.php">
+            <form method='POST' action="admin-login-auth.php">
 
 
                 <label for="email">User Email</label>
