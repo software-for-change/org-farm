@@ -22,13 +22,13 @@ if(isset($_POST['btn-login'])){
                 header("location:customer.php?user_id=" .$idnum);
             }
             else {
-                echo '<p>incorrect password</p>';
-                header("location:customer-login.php");
+                echo 'incorrect password';
+               // header("location:customer-login.php");
             }
         }
         else {
             echo '<p>the user does not exist</p>';
-            header("location:customer-login.php");
+           // header("location:customer-login.php");
         }
     }
 }
