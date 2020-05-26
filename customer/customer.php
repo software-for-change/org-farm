@@ -46,6 +46,10 @@ $result = $conn->query($sql);
         </div>
     </div>
 
+    <div class="banner">
+    <p>this is the place holder for the banner</p>
+    </div>
+
     <h1> Food for sale </h1>
 
     <button id="minus">−</button>
@@ -91,6 +95,8 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 ?>
+
+<a href="https://www.freepik.com/free-photos-vectors/frame">Frame photo created by freepik - www.freepik.com</a>
 
 
 

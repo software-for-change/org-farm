@@ -49,6 +49,15 @@ ul li a:hover {
     text-decoration: underline;
 }
 
+/* styling for the banner  */
+.banner {
+    height: 40px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient( rgba(20, 20, 20, .9), rgba(20, 20, 20, .9)), url(fruits-image.jpg);
+    background-size: cover;
+}
+
 
 /* styling for the farmer page */
 .prodcue-table
