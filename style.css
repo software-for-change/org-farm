@@ -62,6 +62,12 @@ ul li a:hover {
     background-size: cover;
 }
 
+/* styling for the customer page */
+#thegrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+  }
+
 
 /* styling for the farmer page */
 .prodcue-table
