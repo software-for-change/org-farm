@@ -57,9 +57,9 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
 
-    echo "<div id='thegrid'";
-    echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
     
+    echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
+    echo "<div id='thegrid'";
     // output data of each row
     while ($row = mysqli_fetch_array($result)) {
 
@@ -89,8 +89,9 @@ if ($result->num_rows > 0) {
         echo "</div>";
 
     }
-    echo "</table>";
     echo "</div>";
+    echo "</table>";
+    
 
 } else {
     echo "0 results";
