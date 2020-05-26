@@ -55,7 +55,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
 
-    echo "<div id='thegrid'";
+    echo "<div class='thegrid'";
     echo "<table class='prodcue-table'>";
     
     // output data of each row
@@ -65,7 +65,7 @@ if ($result->num_rows > 0) {
         $food_image = $row["food_image"];
         $price = $row["price"];
 
-        echo "<div id='fooditem'";
+        echo "<div class='food-item'";
         
         echo "<tr>
                     <td>";

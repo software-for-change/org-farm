@@ -63,14 +63,13 @@ ul li a:hover {
 }
 
 /* styling for the customer page */
-#thegrid {
+.thegrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr)
   }
 
-#fooditem {
+.food-item {
     text-align: center;
-    color: green;
 }
 
 
