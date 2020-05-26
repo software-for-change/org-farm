@@ -69,7 +69,7 @@ if ($result->num_rows > 0) {
         
         echo "<tr>
                     <td>";
-                    echo '<img src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+                    echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
                     echo "
                         <div class='food-post'>
                         <p> " . $food_name . " </p>
