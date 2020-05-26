@@ -68,13 +68,13 @@ if ($result->num_rows > 0) {
 
         echo "<div class='col-md-4'";
         
-        echo "<tr>";
-        echo '<img src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-        echo "
-                        <td>
-                            <div class='food-post'>
-                            <p> " . $food_name . " </p>
-                            <p> $" . $price . " </p>";
+        echo "<tr>
+                    <td>";
+                    echo '<img src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+                    echo "
+                        <div class='food-post'>
+                        <p> " . $food_name . " </p>
+                        <p> $" . $price . " </p>";
 
         echo "<br> <br>";
         echo "<button id='minus'>−</button>
