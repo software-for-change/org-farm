@@ -67,9 +67,10 @@ if ($result->num_rows > 0) {
         $price = $row["price"];
 
         echo "<div class='col-md-4'";
+        
+        echo "<tr>";
         echo '<img src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-
-        echo "<tr>
+        echo "
                         <td>
                             <div class='food-post'>
                             <p> " . $food_name . " </p>
