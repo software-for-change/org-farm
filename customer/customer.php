@@ -48,14 +48,10 @@ $result = $conn->query($sql);
     </div>
 
     <div class="banner">
-    <p>this is the place holder for the banner</p>
+    <p>Simply Organic</p>
     </div>
 
     <h1> Food for sale </h1>
-
-    <button id="minus">−</button>
-    <input type="number" value="0" id="input" />
-    <button id="plus">+</button>
 
     <?php
 
@@ -71,14 +67,15 @@ if ($result->num_rows > 0) {
         $price = $row["price"];
 
         echo "<div class='col-md-4'";
+        echo '<img src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+
         echo "<tr>
                         <td>
                             <div class='food-post'>
                             <p> " . $food_name . " </p>
-                            <p> " . $price . " </p>";
+                            <p> $" . $price . " </p>";
 
-        echo '<img src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-
+        echo "<br> <br>";
         echo "<button id='minus'>−</button>
         <input type='number' value='0' id='input' />
         <button id='plus'>+</button>";
