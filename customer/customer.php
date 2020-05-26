@@ -65,7 +65,7 @@ if ($result->num_rows > 0) {
         $food_image = $row["food_image"];
         $price = $row["price"];
 
-        echo "<div class='food-item'";
+        echo "<div id='fooditem'";
         
         echo "<tr>
                     <td>";

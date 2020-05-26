@@ -68,7 +68,7 @@ ul li a:hover {
     grid-template-columns: repeat(4, 1fr)
   }
 
-.food-item {
+#food-item {
     text-align: center;
 }
 
