@@ -51,8 +51,6 @@ $result = $conn->query($sql);
     <p>Simply Organic</p>
     </div>
 
-    <h1> Food for sale </h1>
-
     <?php
 
 if ($result->num_rows > 0) {
@@ -67,7 +65,7 @@ if ($result->num_rows > 0) {
         $food_image = $row["food_image"];
         $price = $row["price"];
 
-        echo "<div class='col-md-4'";
+        echo "<div class='food-item'";
         
         echo "<tr>
                     <td>";

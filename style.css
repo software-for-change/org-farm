@@ -68,6 +68,10 @@ ul li a:hover {
     grid-template-columns: repeat(4, 1fr)
   }
 
+.food-item {
+    text-align: center;
+}
+
 
 /* styling for the farmer page */
 .prodcue-table
