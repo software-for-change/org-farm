@@ -54,6 +54,8 @@ ul li a:hover {
     height: 350px;
     width: 100%;
     font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 30px;
     background-repeat: no-repeat;
     background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .9)), url(./customer/fruits-image.jpg);
     background-size: cover;
