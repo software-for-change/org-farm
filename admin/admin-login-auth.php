@@ -11,24 +11,24 @@ if(isset($_POST['btn-login'])){
         echo 'fill in the blanks';
     }
     else {
-        $query = "SELECT * FROM farm_farmers WHERE email='$email'";
+        $query = "SELECT * FROM farm_admin WHERE admin_email='$email'";
         $result = mysqli_query($conn, $query);
 
         if($row=mysqli_fetch_assoc($result)){
-            $db_password = $row['paswd'];
+            $db_password = $row['admin_password'];
 
             if($paswd == $db_password){
-                $idnum=$row['user_id'];
-                header("location:farmer.php?user_id=" .$idnum);
+                $idnum=$row['admin_id'];
+                header("location:admin.php?user_id=" .$idnum);
             }
             else {
                 echo 'incorrect password';
-                header("location:farmer-login.php");
+                header("location:admin-login.php");
             }
         }
         else {
             echo 'the user does not exist';
-            header("location:farmer-login.php");
+            header("location:admin-login.php");
         }
     }
 }
