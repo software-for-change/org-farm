@@ -54,7 +54,7 @@ ul li a:hover {
     height: 40px;
     width: 100%;
     background-repeat: no-repeat;
-    background: linear-gradient( rgba(20, 20, 20, .9), rgba(20, 20, 20, .9)), url(fruits-image.jpg);
+    background: linear-gradient( rgba(20, 20, 20, .9), rgba(20, 20, 20, .9)), url(/customer/fruits-image.jpg);
     background-size: cover;
 }
 
