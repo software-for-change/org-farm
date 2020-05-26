@@ -53,6 +53,7 @@ ul li a:hover {
 .banner {
     height: 350px;
     width: 100%;
+    font-family: 'Abril Fatface', cursive;
     background-repeat: no-repeat;
     background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .9)), url(./customer/fruits-image.jpg);
     background-size: cover;
