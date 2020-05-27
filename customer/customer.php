@@ -51,6 +51,8 @@ $result = $conn->query($sql);
     <p>Simply Organic</p>
     </div>
 
+    <br> <br>
+
     <?php
 
 if ($result->num_rows > 0) {
