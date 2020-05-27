@@ -78,9 +78,7 @@ $result = $conn->query($sql);
                                     <p> $" . $price . " </p>";
 
                 echo "<br>";
-                echo "<button id='minus'>−</button>
-                    <input type='number' value='0' id='input' />
-                    <button id='plus'>+</button>";
+                echo "<div class='cart-action'><input type='text' class='product-quantity' name='quantity' value='1' size='2' /><input type='submit' value='Add to Cart' class='btnAddAction' /></div>";
 
                 echo " </div>";
 
