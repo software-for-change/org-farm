@@ -67,7 +67,7 @@ if (count($_POST) > 0) {
     <h1>Welcome to the admin page</h1>
 
     <div id="frm">
-        <form method='POST' action="admin-login-auth.php">
+        <form method='POST' action="">
 
             <label for="email">Food name</label>
             <input type="text" id="food_name" name="food_name" placeholder="Food name" autofocus>
