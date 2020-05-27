@@ -39,7 +39,7 @@ $result = $conn->query($sql);
         </div>
 
         <div class="logo">
-            <h2 class="logo"> <a href="../index.html">Farm Organic</a> </h2>
+            <h2 class="logo"> <a href="../index.php">Farm Organic</a> </h2>
         </div>
     </div>
 
