@@ -1,7 +1,7 @@
 :root {
     --teal: #5CDB95;
     --sitefontColor: white;
-    --sitebackgroundColor: #05386B;
+    --sitebackgroundColor: #303133;
 }
 
 body {
@@ -47,6 +47,29 @@ ul li a {
 
 ul li a:hover {
     text-decoration: underline;
+}
+
+/* styling for the banner  */
+.banner {
+    height: 350px;
+    width: 100%;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30px;
+    background-repeat: no-repeat;
+    background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .9)), url(customer/fruits-image.jpg);
+    background-size: cover;
+}
+
+/* styling for the customer page */
+.thegrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+  }
+
+.food-item {
+    text-align: center;
 }
 
 

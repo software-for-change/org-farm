@@ -28,7 +28,7 @@
         </div>
 
         <div class="logo">
-            <h2 class="logo"> <a href="index.html">Farm Organic</a> </h2>
+            <h2 class="logo"> <a href="index.php">Farm Organic</a> </h2>
         </div>
     </div>
 
@@ -36,11 +36,11 @@
     <br>
     <br>
     <div class="modal">
-        <h1 class="">Farmer Log In</h1>
+        <h1 class="">Admin Log In</h1>
         <br><br>
 
         <div id="frm">
-            <form method='POST' action="farmer-login-auth.php">
+            <form method='POST' action="admin-login-auth.php">
 
 
                 <label for="email">User Email</label>

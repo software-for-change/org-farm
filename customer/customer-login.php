@@ -18,17 +18,17 @@
     <div class="header">
         <div class="menu_navbar">
             <ul>
-                <li><a class="navlink" href="about.html">about</a> </li>
-                <li><a class="navlink" href="./admin/admin-login.php">admin login</a> </li>
-                <li><a class="navlink" href="./farmer/farmer-login.php">farmer login</a> </li>
-                <li><a class="navlink" href="./customer/customer-login.php">customer login </a> </li>
-                <li><a class="navlink" href="index.html">logout</a> </li>
+                <li><a class="navlink" href="../about.html">about</a> </li>
+                <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li>
+                <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li>
+                <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
+                <li><a class="navlink" href="../index.html">logout</a> </li>
                 
             </ul>
         </div>
 
         <div class="logo">
-            <h2 class="logo"> <a href="index.html">Farm Organic</a> </h2>
+            <h2 class="logo"> <a href="../index.php">Farm Organic</a> </h2>
         </div>
     </div>
 
@@ -40,7 +40,7 @@
         <br><br>
 
         <div id="frm">
-            <form method='POST' action="farmer-login-auth.php">
+            <form method='POST' action="customer-login-auth.php">
 
 
                 <label for="email">User Email</label>
