@@ -1,9 +1,28 @@
 <?php
 include_once "../access-db.php";
 
-$sql = "SELECT food_name FROM farm_food";
-$result = $conn->query($sql);
+if (count($_POST) > 0) {
 
+    //get the food name
+    $food = $_POST['food_name'];
+
+    //get the shelf life
+    $shelf_life = $_POST['shelf_life'];
+
+    //get the food name
+    $price = $_POST['food_price'];
+
+    //get the food quantity
+    $image = $_POST['food_image'];
+
+    //store the user id in the userid col for the stock table
+    if (mysqli_query($conn, "INSERT INTO farm_food (food_name, food_image, food_shelfLife, price) VALUES ('$food', '$image', '$shelf_life', '$price')")) {
+        echo 'your stock has been added to the inventory';
+
+    } else {
+        echo 'there was an error, your stock has not been added';
+    }
+}
 
 ?>
 <!DOCTYPE html>
@@ -34,7 +53,7 @@ $result = $conn->query($sql);
                 <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li>
                 <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
                 <li><a class="navlink" href="../index.html">logout</a> </li>
-                
+
             </ul>
         </div>
 
@@ -46,7 +65,33 @@ $result = $conn->query($sql);
     <h1> Admin Page </h1>
 
     <h1>Welcome to the admin page</h1>
-    
+
+    <div id="frm">
+        <form method='POST' action="admin-login-auth.php">
+
+            <label for="email">Food name</label>
+            <input type="text" id="food_name" name="food_name" placeholder="Food name" autofocus>
+            <br>
+            <label for="password">Shelf life</label>
+            <input type="number" id="shelf" name="shelf_life" min="2" max="100">
+            <br>
+
+            <label for="email">Price</label>
+            <input type="number" id="price" name="food_price" placeholder="email" autofocus>
+            <br>
+            <label for="password">Food image</label>
+            <input type="file" id="img" name="food_image" accept="image/*">
+            <br>
+
+            <input id="btn" type="submit" value="submit" name="submit">
+            <br>
+            <br>
+
+        </form>
+    </div>
+
+
+
 
 
 
