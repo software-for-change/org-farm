@@ -77,7 +77,7 @@ if (count($_POST) > 0) {
             <br>
 
             <label for="email">Price</label>
-            <input type="number" id="price" name="food_price" placeholder="email" autofocus>
+            <input type="number" id="price" name="food_price" placeholder="food price" autofocus>
             <br>
             <label for="password">Food image</label>
             <input type="file" id="img" name="food_image" accept="image/*">
