@@ -4,7 +4,7 @@ include_once "access-db.php";
 $sql = "SELECT food_name, price, food_image FROM farm_food";
 $result = $conn->query($sql);
 
-if(isset( $_SESSION['customer_id'] ))
+if(isset( $_SESSION['user_id'] ))
 {
  echo 'Users is already logged in';
 }
