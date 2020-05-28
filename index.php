@@ -38,7 +38,7 @@ if (isset($_SESSION['user_id'])) {
 
     <div class="header">
         <div class="menu_navbar">
-            <ul>
+            <ul class="menu-links">
                 <li><a class="navlink" href="about.html">about</a> </li>
                 <li><a class="navlink" href="admin/admin-login.php">admin login</a> </li>
                 <li><a class="navlink" href="farmer/farmer-login.php">farmer login</a> </li>

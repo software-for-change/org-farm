@@ -39,7 +39,7 @@ ul li {
     padding: 10px;
 }
 
-ul li a {
+.menu-links li a {
     color: white;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
