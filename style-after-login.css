@@ -1,0 +1,10 @@
+:root {
+    --teal: #5CDB95;
+    --sitefontColor: #303133;
+    --sitebackgroundColor: white;
+}
+
+body {
+    background-color: var(--sitebackgroundColor);
+    color: var(--sitefontColor);
+}

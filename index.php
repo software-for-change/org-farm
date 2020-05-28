@@ -6,7 +6,7 @@ $sql = "SELECT food_name, price, food_image FROM farm_food";
 $result = $conn->query($sql);
 
 if (isset($_SESSION['user_id'])) {
-    echo "<link rel='stylesheet' type='text/css' media='screen' href='style.php'>";
+    echo "<link rel='stylesheet' type='text/css' media='screen' href='style-after-login.css'>";
 } else {
    // echo '<body style="background-color:#303133; ">';
 }
