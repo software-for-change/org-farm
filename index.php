@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "access-db.php";
 
 $sql = "SELECT food_name, price, food_image FROM farm_food";
