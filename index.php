@@ -5,12 +5,11 @@ include_once "access-db.php";
 $sql = "SELECT food_name, price, food_image FROM farm_food";
 $result = $conn->query($sql);
 
-if(isset( $_SESSION['user_id'] ))
-{
- echo '<body style="background-color:white; color:black; h1:white">';
- 
-}
-else{
+if (isset($_SESSION['user_id'])) {
+    echo "<link rel='stylesheet' type='text/css' media='screen' href='style.php'>";
+    echo '<body style="background-color:white; color:black; h1:white">';
+
+} else {
     echo '<body style="background-color:#303133; ">';
 }
 
@@ -61,47 +60,47 @@ else{
 
     <?php
 
-        if ($result->num_rows > 0) {
+if ($result->num_rows > 0) {
 
-            echo "<div class='thegrid'";
-            echo "<table class='prodcue-table'>";
+    echo "<div class='thegrid'";
+    echo "<table class='prodcue-table'>";
 
-            // output data of each row
-            while ($row = mysqli_fetch_array($result)) {
+    // output data of each row
+    while ($row = mysqli_fetch_array($result)) {
 
-                $food_name = $row["food_name"];
-                $food_image = $row["food_image"];
-                $price = $row["price"];
+        $food_name = $row["food_name"];
+        $food_image = $row["food_image"];
+        $price = $row["price"];
 
-                echo "<div class='food-item'";
+        echo "<div class='food-item'";
 
-                echo "<tr>
+        echo "<tr>
                                 <td>";
-                echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-                echo "
+        echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+        echo "
                                     <div class='food-post'>
                                     <p> " . $food_name . " </p>
                                     <p> $" . $price . " </p>";
 
-                echo "<br>";
-                echo "<button id='minus'>−</button>
+        echo "<br>";
+        echo "<button id='minus'>−</button>
                     <input type='number' value='0' id='input' />
                     <button id='plus'>+</button>";
 
-                echo " </div>";
+        echo " </div>";
 
-                echo "</td>";
-                echo "</tr>";
-                echo "</div>";
+        echo "</td>";
+        echo "</tr>";
+        echo "</div>";
 
-            }
-            echo "</table>";
-            echo "</div>";
+    }
+    echo "</table>";
+    echo "</div>";
 
-        } else {
-            echo "0 results";
-        }
-    ?>
+} else {
+    echo "0 results";
+}
+?>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
