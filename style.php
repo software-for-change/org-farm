@@ -11,6 +11,6 @@ body {
 h1, h2, h3, h4 {
  color:<?=$dkgreen?>;
 }
-blockquote {
+ul li a {
  color:<?=$dkgreen?>;
 }
