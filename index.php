@@ -8,8 +8,8 @@ $result = $conn->query($sql);
 if(isset( $_SESSION['user_id'] ))
 {
  echo "Users is already logged in";
- echo '<body style="background-color:white">';
- echo '<body style="color:black">';
+ echo '<body style="background-color:white; color:black">';
+ 
 }
 else{
     echo "the session has been destroyed";
