@@ -9,7 +9,7 @@ if (isset($_SESSION['user_id'])) {
     //echo "<link rel='stylesheet' type='text/css' media='screen' href='style.php'>";
     // echo '<body style="background-color:white; color:black ">';
     // echo '<a style="color:black">';
-    echo '<h1 style="color:white">';
+    // echo '<h1 style="color:white">';
 } else {
    // echo '<body style="background-color:#303133; ">';
 }
