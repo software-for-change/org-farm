@@ -7,12 +7,8 @@ $result = $conn->query($sql);
 
 if(isset( $_SESSION['user_id'] ))
 {
- echo 'Users is already logged in';
+ echo "Users is already logged in";
 }
-
-// if (count($_POST) > 0) {
-
-// }
 
 ?>
 <!DOCTYPE html>
