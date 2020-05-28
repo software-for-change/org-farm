@@ -7,10 +7,8 @@ $result = $conn->query($sql);
 
 if (isset($_SESSION['user_id'])) {
     echo "<link rel='stylesheet' type='text/css' media='screen' href='style.php'>";
-    echo '<body style="background-color:white; color:black; h1:white">';
-
 } else {
-    echo '<body style="background-color:#303133; ">';
+   // echo '<body style="background-color:#303133; ">';
 }
 
 ?>
