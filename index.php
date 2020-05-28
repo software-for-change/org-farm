@@ -8,6 +8,7 @@ $result = $conn->query($sql);
 if(isset( $_SESSION['user_id'] ))
 {
  echo "Users is already logged in";
+ echo '<body style="background-color:white">';
 }
 
 ?>
