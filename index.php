@@ -10,6 +10,10 @@ if(isset( $_SESSION['user_id'] ))
  echo "Users is already logged in";
  echo '<body style="background-color:white">';
 }
+else{
+    echo "the session has been destroyed";
+    echo '<body style="background-color:#303133">';
+}
 
 ?>
 <!DOCTYPE html>
@@ -40,7 +44,7 @@ if(isset( $_SESSION['user_id'] ))
                 <li><a class="navlink" href="admin/admin-login.php">admin login</a> </li>
                 <li><a class="navlink" href="farmer/farmer-login.php">farmer login</a> </li>
                 <li><a class="navlink" href="customer/customer-login.php">customer login </a> </li>
-                <li><a class="navlink" href="index.html">logout</a> </li>
+                <li><a class="navlink" href="logout.php">logout</a> </li>
 
             </ul>
         </div>
