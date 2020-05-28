@@ -7,13 +7,11 @@ $result = $conn->query($sql);
 
 if(isset( $_SESSION['user_id'] ))
 {
- echo "Users is already logged in";
- echo '<body style="background-color:white; color:black">';
+ echo '<body style="background-color:white; color:black; h1:white">';
  
 }
 else{
-    echo "the session has been destroyed";
-    echo '<body style="background-color:#303133">';
+    echo '<body style="background-color:#303133; ">';
 }
 
 ?>
@@ -56,7 +54,7 @@ else{
     </div>
 
     <div class="banner">
-        <p>Simply Organic</p>
+        <h1 class="pageTitle">Simply Organic</h1>
     </div>
 
     <br> <br>
