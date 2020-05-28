@@ -19,6 +19,7 @@ if(isset($_POST['btn-login'])){
 
             if($paswd == $db_password){
                 $idnum=$row['customer_id'];
+                echo '<body style="background-color:white">';
                 header("location:customer.php?user_id=" .$idnum);
             }
             else {
