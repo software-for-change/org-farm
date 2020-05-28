@@ -5,11 +5,11 @@ $dkgray = '#333';
 $dkgreen = '#008400';
 ?>
 body {
- background-color:<?=$white?>;
+ background:<?=$white?>;
  color:<?=$dkgray?>;
 }
 h1, h2, h3, h4 {
- color:<?=$white?>;
+ color:<?=$dkgreen?>;
 }
 blockquote {
  color:<?=$dkgreen?>;
