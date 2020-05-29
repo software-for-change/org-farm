@@ -4,7 +4,57 @@ include_once "../access-db.php";
 
 echo "the user id", $_SESSION['user_id'];
 
-if (count($_POST) > 0) {
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Simply Organic</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap"
+        rel="stylesheet">
+    <title>Farmer Inventory</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="menu_navbar">
+            <ul>             
+                <li><a class="navlink" href="admin.php">home</a> </li>
+                <li><a class="navlink" href="inventory-list.php">inventory</a> </li>              
+                <li><a class="navlink" href="../logout.php">logout</a> </li>
+
+            </ul>
+        </div>
+
+        <div class="logo">
+            <h2 class="logo"> <a href="admin.php">Farm Organic</a> </h2>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="page-content">
+
+    <h1> Inventory items </h1>
+
+    <form method="post" action="">
+        <label for="confirm_id">Enter your confirmation ID</label>
+        <input type="text" id="confirm_id" name="confirm_id" placeholder="confirmation ID">
+        <input id="btn" type="submit" value="submit" name="submit">
+    </form>
+<?php
+    if (count($_POST) > 0) {
     //get the confirmation id
     $confirm_id = $_POST['confirm_id'];
 
@@ -59,54 +109,6 @@ else {
 }
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Simply Organic</title>
-    <link rel="stylesheet" type="text/css" href="../style.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap"
-        rel="stylesheet">
-    <title>Farmer Inventory</title>
-</head>
-
-<body>
-
-    <div class="header">
-        <div class="menu_navbar">
-            <ul>             
-                <li><a class="navlink" href="admin.php">home</a> </li>
-                <li><a class="navlink" href="inventory-list.php">inventory</a> </li>              
-                <li><a class="navlink" href="../logout.php">logout</a> </li>
-
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="admin.php">Farm Organic</a> </h2>
-        </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-    <div class="page-content">
-
-    <h1> Inventory items </h1>
-
-    <form method="post" action="">
-        <label for="confirm_id">Enter your confirmation ID</label>
-        <input type="text" id="confirm_id" name="confirm_id" placeholder="confirmation ID">
-        <input id="btn" type="submit" value="submit" name="submit">
-    </form>
 
     <br><br>
     <form action="">
