@@ -101,7 +101,7 @@ else {
 
     <h1> Inventory items </h1>
 
-    <form action="">
+    <form method="post" action="">
         <label for="confirm_id">Enter your confirmation ID</label>
         <input type="text" id="confirm_id" name="confirm_id" placeholder="confirmation ID">
         <input id="btn" type="submit" value="submit" name="submit">
