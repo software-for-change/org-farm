@@ -5,6 +5,8 @@ if (count($_POST) > 0) {
     //get the confirmation id
     $confirm_id = $_GET['confirm_id'];
 
+    echo "the confrimation id ", $confirm_id; 
+
     //use the confirm id to get the items with that id in the stock table
     $query = "SELECT * FROM farm_user_stock WHERE confirmation_id='$confirm_id'";
     $items = mysqli_query($conn, $query);
