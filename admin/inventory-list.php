@@ -1,5 +1,8 @@
 <?php
+session_start();
 include_once "../access-db.php";
+
+echo "the user id", $_SESSION['user_id'];
 
 if (count($_POST) > 0) {
     //get the confirmation id

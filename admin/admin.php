@@ -1,5 +1,8 @@
 <?php
+session_start();
 include_once "../access-db.php";
+
+echo "the user id", $_SESSION['user_id'];
 
 if (count($_POST) > 0) {
 
@@ -65,6 +68,8 @@ if (count($_POST) > 0) {
     <h1> Admin Page </h1>
 
     <h1>Welcome to the admin page</h1>
+
+    <a href="inventory-list.php">access the inventory list</a>
 
     <div id="frm">
         <form method='POST' action="">
