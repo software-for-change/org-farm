@@ -2,6 +2,10 @@
 session_start();
 include_once "../access-db.php";
 
+if(!isset($_SESSION["user_id"])){ //if login in session is not set
+    header("location:customer-login.php");
+}
+
 $sql = "SELECT food_name, price, food_image FROM farm_food";
 $result = $conn->query($sql);
 

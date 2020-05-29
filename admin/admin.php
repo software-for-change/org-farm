@@ -2,6 +2,10 @@
 session_start();
 include_once "../access-db.php";
 
+if(!isset($_SESSION["user_id"])){ //if login in session is not set
+    header("location:admin-login.php");
+}
+
 echo "the user id", $_SESSION['user_id'];
 
 if (count($_POST) > 0) {
