@@ -1,18 +1,9 @@
 <?php
 session_start();
-include_once "access-db.php";
+include_once "../access-db.php";
 
 $sql = "SELECT food_name, price, food_image FROM farm_food";
 $result = $conn->query($sql);
-
-if (isset($_SESSION['user_id'])) {
-     echo "<link rel='stylesheet' type='text/css' media='screen' href='style.php'>";
-     echo '<body style="background-color:white; color:black ">';
-    // echo '<a style="color:black">';
-    //echo '<h1 style="color:white">';
-} else {
-   // echo '<body style="background-color:#303133; ">';
-}
 
 ?>
 <!DOCTYPE html>
@@ -22,7 +13,7 @@ if (isset($_SESSION['user_id'])) {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Simply Organic</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap"
@@ -34,22 +25,20 @@ if (isset($_SESSION['user_id'])) {
     <title>Customer</title>
 </head>
 
-<body>
+<body class="customer-loggedin">
 
     <div class="header">
         <div class="menu_navbar">
-            <ul>
-                <li><a class="navlink" href="about.html">about</a> </li>
-                <li><a class="navlink" href="admin/admin-login.php">admin login</a> </li>
-                <li><a class="navlink" href="farmer/farmer-login.php">farmer login</a> </li>
-                <li><a class="navlink" href="customer/customer-login.php">customer login </a> </li>
-                
+            <ul class="customer-loggedin-menu-links">
+                <li><a class="navlink" href="shopping-cart">shopping cart</a> </li>
+                <!-- <li><a class="navlink" href="admin/admin-login.php">past orders</a> </li> -->
+                <li><a class="navlink" href="../logout.php">logout</a> </li>
 
             </ul>
         </div>
 
         <div class="logo">
-            <h2 class="logo"> <a href="index.php">Farm Organic</a> </h2>
+            <h2 class="logo"> <a href="customer-logged-in.php">Farm Organic</a> </h2>
         </div>
     </div>
 

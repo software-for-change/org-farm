@@ -22,8 +22,7 @@ if(isset($_POST['btn-login'])){
                 $idnum=$row['customer_id'];
                 $_SESSION["user_id"] = $idnum;
                 
-                header("location:../index.php?user_id=" .$idnum);
-                echo '<body style="background-color:white">';
+                header("location:customer-logged-in.php?user_id=" .$idnum);
             }
             else {
                 echo 'incorrect password';

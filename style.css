@@ -39,7 +39,7 @@ ul li {
     padding: 10px;
 }
 
-.menu-links li a {
+ul li a {
     color: var(--sitefontColor);
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -81,4 +81,14 @@ ul li a:hover {
     width: 70%;
 }
 
+/* styling for the customer logged in page */
+
+.customer-loggedin {
+    background-color: var(--sitefontColor);
+    color: var(--sitebackgroundColor);
+}
+
+.customer-loggedin-menu-links{
+    color: var(--sitebackgroundColor);
+}
 
