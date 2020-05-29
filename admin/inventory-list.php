@@ -6,7 +6,7 @@ echo "the user id", $_SESSION['user_id'];
 
 if (count($_POST) > 0) {
     //get the confirmation id
-    $confirm_id = $_GET['confirm_id'];
+    $confirm_id = $_POST['confirm_id'];
 
     echo "the confrimation id ", $confirm_id; 
 
