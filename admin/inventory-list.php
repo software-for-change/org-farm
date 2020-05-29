@@ -51,6 +51,9 @@ if (count($_POST) > 0) {
 
     
 }
+else {
+    echo "nothing to see here";
+}
 
 ?>
 <!DOCTYPE html>
