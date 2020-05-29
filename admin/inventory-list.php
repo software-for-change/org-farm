@@ -5,8 +5,6 @@ if (count($_POST) > 0) {
     //get the confirmation id
     $confirm_id = $_GET['confirm_id'];
 
-    echo "hello, just got here";
-
     //use the confirm id to get the items with that id in the stock table
     $query = "SELECT * FROM farm_user_stock WHERE confirmation_id='$confirm_id'";
     $items = mysqli_query($conn, $query);
@@ -14,7 +12,9 @@ if (count($_POST) > 0) {
     //use the food id from items to get the food item details in stock.
     if ($row = mysqli_fetch_assoc($items)) {
         $food_id = $row['food_id'];
+        echo "the food id ", $food_id;
         $quantity = $row['stock_quantity'];
+        echo "the quantity ", $quantity;
 
         //use the food id to get the name and shelf life
         $query = "SELECT food_name, food_shelfLife FROM farm_food WHERE food_id='$food_id'";
@@ -45,14 +45,12 @@ if (count($_POST) > 0) {
 
         }
 
-       
-
     }
 
     
 }
 else {
-    echo "nothing to see here";
+    echo "Sorry, the form is not submitted due to system failure";
 }
 
 ?>
