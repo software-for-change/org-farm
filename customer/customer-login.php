@@ -22,7 +22,7 @@
                 <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li>
                 <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li>
                 <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
-                <li><a class="navlink" href="../index.html">logout</a> </li>
+                <li><a class="navlink" href="../logout.php">logout</a> </li>
                 
             </ul>
         </div>

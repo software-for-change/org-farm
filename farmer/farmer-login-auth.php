@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "../access-db.php";
 
 if(isset($_POST['btn-login'])){
@@ -19,6 +20,7 @@ if(isset($_POST['btn-login'])){
 
             if($paswd == $db_password){
                 $idnum=$row['user_id'];
+                $_SESSION["user_id"] = $idnum;
                 header("location:farmer.php?user_id=" .$idnum);
             }
             else {
