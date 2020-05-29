@@ -51,10 +51,8 @@ if (count($_POST) > 0) {
     <div class="header">
         <div class="menu_navbar">
             <ul>
-                <li><a class="navlink" href="../about.html">about</a> </li>
-                <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li>
-                <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li>
-                <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
+                <li><a class="navlink" href="admin.php">update food</a> </li>
+                <li><a class="navlink" href="inventory-list.php">inventory</a> </li> 
                 <li><a class="navlink" href="../logout.php">logout</a> </li>
 
             </ul>
