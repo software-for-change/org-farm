@@ -6,7 +6,7 @@ $sql = "SELECT food_name, price, food_image FROM farm_food";
 $result = $conn->query($sql);
 
 if (isset($_SESSION['user_id'])) {
-    //echo "<link rel='stylesheet' type='text/css' media='screen' href='style.php'>";
+     echo "<link rel='stylesheet' type='text/css' media='screen' href='style.php'>";
      echo '<body style="background-color:white; color:black ">';
     // echo '<a style="color:black">';
     //echo '<h1 style="color:white">';
@@ -38,7 +38,7 @@ if (isset($_SESSION['user_id'])) {
 
     <div class="header">
         <div class="menu_navbar">
-            <ul>
+            <ul class="menu-links">
                 <li><a class="navlink" href="about.html">about</a> </li>
                 <li><a class="navlink" href="admin/admin-login.php">admin login</a> </li>
                 <li><a class="navlink" href="farmer/farmer-login.php">farmer login</a> </li>
