@@ -101,7 +101,7 @@ if (count($_POST) > 0) {
     <form action="">
         <label for="confirm_id">Enter your confirmation ID</label>
         <input type="text" id="confirm_id" name="confirm_id" placeholder="confirmation ID">
-        <input type='submit' value='submit'>
+        <input id="btn" type="submit" value="submit" name="submit">
     </form>
 
     <br><br>
