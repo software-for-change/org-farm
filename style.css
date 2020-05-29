@@ -88,7 +88,7 @@ ul li a:hover {
     color: var(--sitebackgroundColor);
 }
 
-.customer-loggedin-menu-links{
+.customer-loggedin-menu-links li a{
     color: var(--sitebackgroundColor);
 }
 
