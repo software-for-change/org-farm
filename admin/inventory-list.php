@@ -82,7 +82,7 @@ else {
     <div class="header">
         <div class="menu_navbar">
             <ul>             
-                <li><a class="navlink" href="admin.php">update food</a> </li>
+                <li><a class="navlink" href="admin.php">home</a> </li>
                 <li><a class="navlink" href="inventory-list.php">inventory</a> </li>              
                 <li><a class="navlink" href="../logout.php">logout</a> </li>
 
@@ -90,7 +90,7 @@ else {
         </div>
 
         <div class="logo">
-            <h2 class="logo"> <a href="../index.php">Farm Organic</a> </h2>
+            <h2 class="logo"> <a href="admin.php">Farm Organic</a> </h2>
         </div>
     </div>
 

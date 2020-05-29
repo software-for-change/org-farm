@@ -59,7 +59,7 @@ if (count($_POST) > 0) {
         </div>
 
         <div class="logo">
-            <h2 class="logo"> <a href="../index.php">Farm Organic</a> </h2>
+            <h2 class="logo"> <a href="admin.php">Farm Organic</a> </h2>
         </div>
     </div>
 
@@ -68,6 +68,9 @@ if (count($_POST) > 0) {
     <h1>Welcome to the admin page</h1>
 
     <a href="inventory-list.php">access the inventory list</a>
+    <br>
+
+    <h2>Update the food in the inventory</h2>
 
     <div id="frm">
         <form method='POST' action="">
