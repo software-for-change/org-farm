@@ -102,38 +102,12 @@ if (count($_POST) > 0) {
         <input type='submit' value='submit'>
     </form>
 
+    <br><br>
     <form action="">
         <label for="img">Upload your image</label>
         <input type="file" id="img" name="food_image" accept="image/*">
         <input type='submit' value='submit'>
     </form>
-
-    <h1>enter the quantity for the foods you wish to add</h1>
-    <?php
-
-if ($result->num_rows > 0) {
-    echo "<form method='post' action=''>";
-    echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
-
-    // output data of each row
-    while ($row = mysqli_fetch_array($result)) {
-
-        $food_name = $row["food_name"];
-        echo "<tr style='height: 40px'>
-                        <td>" . $food_name . "</td>
-                        <td> <input name='quantity' type='text'></td>
-                        <input name='food_name'  type='hidden' value='$food_name' >
-                        <td> <input type='submit' value='submit'></td>
-                    </tr>";
-    }
-    echo "</table>";
-
-    echo "</form>";
-
-} else {
-    echo "0 results";
-}
-?>
 
     </div>
 
