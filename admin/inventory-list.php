@@ -1,9 +1,68 @@
 <?php
+session_start();
 include_once "../access-db.php";
 
-if (count($_POST) > 0) {
+if(!isset($_SESSION["user_id"])){ //if login in session is not set
+    header("location:admin-login.php");
+}
+
+echo "the user id", $_SESSION['user_id'];
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Simply Organic</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap"
+        rel="stylesheet">
+    <title>Farmer Inventory</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="menu_navbar">
+            <ul>             
+                <li><a class="navlink" href="admin.php">home</a> </li>
+                <li><a class="navlink" href="inventory-list.php">inventory</a> </li>              
+                <li><a class="navlink" href="../logout.php">logout</a> </li>
+
+            </ul>
+        </div>
+
+        <div class="logo">
+            <h2 class="logo"> <a href="admin.php">Farm Organic</a> </h2>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="page-content">
+
+    <h1> Inventory items </h1>
+
+    <form method="post" action="">
+        <label for="confirm_id">Enter your confirmation ID</label>
+        <input type="text" id="confirm_id" name="confirm_id" placeholder="confirmation ID">
+        <input id="btn" type="submit" value="submit" name="submit">
+    </form>
+<?php
+    if (count($_POST) > 0) {
     //get the confirmation id
-    $confirm_id = $_GET['confirm_id'];
+    $confirm_id = $_POST['confirm_id'];
+
+    echo "the confrimation id ", $confirm_id; 
 
     //use the confirm id to get the items with that id in the stock table
     $query = "SELECT * FROM farm_user_stock WHERE confirmation_id='$confirm_id'";
@@ -12,7 +71,9 @@ if (count($_POST) > 0) {
     //use the food id from items to get the food item details in stock.
     if ($row = mysqli_fetch_assoc($items)) {
         $food_id = $row['food_id'];
+        echo "the food id ", $food_id;
         $quantity = $row['stock_quantity'];
+        echo "the quantity ", $quantity;
 
         //use the food id to get the name and shelf life
         $query = "SELECT food_name, food_shelfLife FROM farm_food WHERE food_id='$food_id'";
@@ -43,97 +104,22 @@ if (count($_POST) > 0) {
 
         }
 
-       
-
     }
 
     
 }
+else {
+    echo "Sorry, the form is not submitted due to system failure";
+}
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Simply Organic</title>
-    <link rel="stylesheet" type="text/css" href="../style.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap"
-        rel="stylesheet">
-    <title>Farmer Inventory</title>
-</head>
-
-<body>
-
-    <div class="header">
-        <div class="menu_navbar">
-            <ul>
-                <li><a class="navlink" href="../about.html">about</a> </li>
-                <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li>
-                <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li>
-                <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
-                <li><a class="navlink" href="../index.html">logout</a> </li>
-
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="../index.html">Farm Organic</a> </h2>
-        </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-    <div class="page-content">
-
-    <h1> Inventory items </h1>
-
-    <form action="">
-        <label for="confirm_id">Enter your confirmation ID</label>
-        <input type="text" id="confirm_id" name="confirm_id" placeholder="confirmation ID">
-        <input type='submit' value='submit'>
-    </form>
-
+    <br><br>
     <form action="">
         <label for="img">Upload your image</label>
         <input type="file" id="img" name="food_image" accept="image/*">
         <input type='submit' value='submit'>
     </form>
-
-    <h1>enter the quantity for the foods you wish to add</h1>
-    <?php
-
-if ($result->num_rows > 0) {
-    echo "<form method='post' action=''>";
-    echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Food Type </th><th style='text-align:left'> Quantity </th></tr><br><br>";
-
-    // output data of each row
-    while ($row = mysqli_fetch_array($result)) {
-
-        $food_name = $row["food_name"];
-        echo "<tr style='height: 40px'>
-                        <td>" . $food_name . "</td>
-                        <td> <input name='quantity' type='text'></td>
-                        <input name='food_name'  type='hidden' value='$food_name' >
-                        <td> <input type='submit' value='submit'></td>
-                    </tr>";
-    }
-    echo "</table>";
-
-    echo "</form>";
-
-} else {
-    echo "0 results";
-}
-?>
 
     </div>
 

@@ -1,5 +1,12 @@
 <?php
+session_start();
 include_once "../access-db.php";
+
+if(!isset($_SESSION["user_id"])){ //if login in session is not set
+    header("location:admin-login.php");
+}
+
+echo "the user id", $_SESSION['user_id'];
 
 if (count($_POST) > 0) {
 
@@ -48,23 +55,26 @@ if (count($_POST) > 0) {
     <div class="header">
         <div class="menu_navbar">
             <ul>
-                <li><a class="navlink" href="../about.html">about</a> </li>
-                <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li>
-                <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li>
-                <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
-                <li><a class="navlink" href="../index.html">logout</a> </li>
+                <li><a class="navlink" href="admin.php">home</a> </li>
+                <li><a class="navlink" href="inventory-list.php">inventory</a> </li> 
+                <li><a class="navlink" href="../logout.php">logout</a> </li>
 
             </ul>
         </div>
 
         <div class="logo">
-            <h2 class="logo"> <a href="../index.php">Farm Organic</a> </h2>
+            <h2 class="logo"> <a href="admin.php">Farm Organic</a> </h2>
         </div>
     </div>
 
     <h1> Admin Page </h1>
 
     <h1>Welcome to the admin page</h1>
+
+    <a href="inventory-list.php">access the inventory list</a>
+    <br>
+
+    <h2>Update the food in the inventory</h2>
 
     <div id="frm">
         <form method='POST' action="">
