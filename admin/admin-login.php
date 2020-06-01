@@ -117,6 +117,8 @@
                     <br>
                     <label>Requires at least 8 characters, 1 uppercase, 1 lowercase, 1 special character and 1
                         number.</label>
+                    <br>
+                    <br>
                     <input class="sign_up_input" type="password" id="paswd" name="paswd" placeholder="passord">
                     <br>
                     <br>
