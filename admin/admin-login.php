@@ -73,10 +73,8 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
-            <div id="object2">dolor site amet</div>
+            
         </div>
 
         <div id="right">
@@ -137,11 +135,8 @@
 
                 </div>
 
-
-
-
             </div>
-            <div id="object4">dolor site amet</div>
+            
         </div>
     </div>
 
