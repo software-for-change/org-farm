@@ -43,10 +43,9 @@
     <div id="content">
         <div id="left">
             <div id="object1">
-                <h1>Login</h1>
-
+                
                 <div class="page-content">
-
+                    <h1>Login</h1>
                     <div class="modal">
                         <h1 class="">Admin Log In</h1>
                         <br><br>
@@ -83,9 +82,9 @@
         <div id="right">
             <div id="object3">
 
-                <h1>Sign Up</h1>
-
+                
                 <div class="page-content">
+                <h1>Sign Up</h1>
 
                 <form method="post" action="">
                     <label>Fields marked * must be filled in order to create an account.</label>
@@ -104,23 +103,32 @@
                     <label for="fname">First Name *</label>
 
                     <input class="sign_up_input" type="text" id="fname" name="fname" placeholder="first name" autofocus>
-
+                    <br>
+                    <br>
                     <label for="lname">Last Name *</label>
                     <input class="sign_up_input" type="text" id="lname" name="lname" placeholder="last name">
+                    <br>
+                    <br>
                     <label for="email">UB Email *</label>
                     <input class="sign_up_input" type="text" id="email" name="email" placeholder="abc123@buffalo.edu">
-
+                    <br>
+                    <br>
                     <label for="password">Password *</label>
                     <br>
                     <label>Requires at least 8 characters, 1 uppercase, 1 lowercase, 1 special character and 1
                         number.</label>
                     <input class="sign_up_input" type="password" id="paswd" name="paswd" placeholder="passord">
+                    <br>
+                    <br>
                     <label for="password">Confirm Password *</label>
                     <input class="sign_up_input" type="password" id="paswd2" name="paswd2"
                         placeholder="confirm password">
-
+                    <br>
+                    <br>
                     <label for="phoneNumber">10 digit US Phone Number *</label>
                     <input class="sign_up_input" type="text" id="phone" name="phone">
+                    <br>
+                    <br>
                     <input type="submit" id="tutor_signup_submit" value="Verify">
                     <br><br><br>
                 </form>
