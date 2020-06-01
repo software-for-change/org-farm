@@ -104,11 +104,10 @@
                     <input class="sign_up_input" type="text" id="lname" name="lname" placeholder="Enter Last name" required>
                     <br>
                     <br>
-                    <input class="sign_up_input" type="text" id="email" pattern=".+@+.com" size="30" name="email" placeholder="Enter Email" required>
+                    <input class="sign_up_input" type="text" id="email" size="30" name="email" placeholder="Enter Email" required>
                     <br>
                     <br>
-                    <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd" placeholder="Enter Password. 1 uppercase, lowercase, special character &
-                        number" required>
+                    <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd" placeholder="Enter Password. 1 uppercase, lowercase, special character & number" required>
                     <br>
                     <br>
                     
