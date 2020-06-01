@@ -42,6 +42,8 @@
     <br>
     <br>
 
+    <h1 class="page-title">ADMIN</h1>
+
 
     <div id="content">
         <div id="left">
@@ -49,8 +51,7 @@
                 
                 <div class="page-content">
 
-                <h1 class="page-title">ADMIN</h1>
-
+                
                 <br><br>
                     
                     <div class="modal">
