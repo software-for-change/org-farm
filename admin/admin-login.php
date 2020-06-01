@@ -77,6 +77,9 @@
             
         </div>
 
+        <hr>
+
+
         <div id="right">
             <div id="object3">
 
@@ -85,9 +88,7 @@
                 <h1>Sign Up</h1>
 
                 <form method="post" action="admin-signup-auth.php">
-                    <label>Fields marked * must be filled in order to create an account.</label>
-                    <br>
-                    <br>
+                    
                     <div class="message">
 
                         <?php
@@ -115,7 +116,7 @@
                         placeholder="Confirm password" required>
                     <br>
                     <br>
-                    <input class="sign_up_input" type="text" id="phone" name="phone" placeholder="Enter 10 digit phone number" required>
+                    <input class="sign_up_input" type="number" id="phone" name="phone" placeholder="Enter 10 digit phone number" required>
                     <br>
                     <br>
                     <input type="submit" id="tutor_signup_submit" value="Sign Up">
