@@ -107,19 +107,16 @@
                     <input class="sign_up_input" type="text" id="email" pattern=".+@globex.com" size="30" name="email" placeholder="Enter your email" required>
                     <br>
                     <br>
-                    <label>Requires at least 8 characters, 1 uppercase, 1 lowercase, 1 special character and 1
-                        number.</label>
-                    <br>
-                    <br>
-                    <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd" placeholder="Enter Password">
+                    <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd" placeholder="Enter Password. Must have 1 uppercase, 1 lowercase, 1 special character and 1
+                        number" required>
                     <br>
                     <br>
                     
                     <input class="sign_up_input" minlength="8" type="password" id="paswd2" name="paswd2"
-                        placeholder="Confirm password">
+                        placeholder="Confirm password" required>
                     <br>
                     <br>
-                    <input class="sign_up_input" type="text" id="phone" name="phone" placeholder="Enter 10 digit phone number">
+                    <input class="sign_up_input" type="text" id="phone" name="phone" placeholder="Enter 10 digit phone number" required>
                     <br>
                     <br>
                     <input type="submit" id="tutor_signup_submit" value="Sign Up">
