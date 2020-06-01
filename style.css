@@ -117,8 +117,6 @@ div[class*=container] {
     align-items: center;
   }
   
-  .container-2 { background: #4E598C; }
-  
   /*
    BUTTON STYLING
   */
@@ -136,6 +134,7 @@ div[class*=container] {
     border: none;
     background: transparent;
     text-align: center;
+    color: white;
   }
   
   .btn::before, .btn::after {
