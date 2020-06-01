@@ -46,10 +46,15 @@
                 <br><br>
                 <input type="text" class="login_input" id="paswd" name="paswd" placeholder="Enter Password">
                 <br><br>
-                <input id="btn" type="submit" value="Login" name="btn-login">
+                <div class="container-2">
+                    <div class="btn btn-two">
+                        <input id="btn" type="submit" value="Login" name="btn-login">
+                    </div>
+                </div>
                 <br>
                 <br>
                 <br>
+                
                 <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
                 <br>
                 <br>
