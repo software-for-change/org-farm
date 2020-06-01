@@ -98,38 +98,31 @@
                     </div>
                     <br>
                     <br>
-                    <label for="fname">First Name *</label>
-
-                    <input class="sign_up_input" type="text" id="fname" name="fname" placeholder="first name" autofocus>
+                    <input class="sign_up_input" type="text" id="fname" name="fname" placeholder="first name" required>
                     <br>
                     <br>
-                    <label for="lname">Last Name *</label>
-                    <input class="sign_up_input" type="text" id="lname" name="lname" placeholder="last name">
+                    <input class="sign_up_input" type="text" id="lname" name="lname" placeholder="last name" required>
                     <br>
                     <br>
-                    <label for="email">UB Email *</label>
-                    <input class="sign_up_input" type="text" id="email" name="email" placeholder="abc123@buffalo.edu">
+                    <input class="sign_up_input" type="text" id="email" pattern=".+@globex.com" size="30" name="email" placeholder="Enter your email" required>
                     <br>
-                    <br>
-                    <label for="password">Password *</label>
                     <br>
                     <label>Requires at least 8 characters, 1 uppercase, 1 lowercase, 1 special character and 1
                         number.</label>
                     <br>
                     <br>
-                    <input class="sign_up_input" type="password" id="paswd" name="paswd" placeholder="passord">
+                    <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd" placeholder="Enter Password">
                     <br>
                     <br>
-                    <label for="password">Confirm Password *</label>
-                    <input class="sign_up_input" type="password" id="paswd2" name="paswd2"
-                        placeholder="confirm password">
+                    
+                    <input class="sign_up_input" minlength="8" type="password" id="paswd2" name="paswd2"
+                        placeholder="Confirm password">
                     <br>
                     <br>
-                    <label for="phoneNumber">10 digit US Phone Number *</label>
-                    <input class="sign_up_input" type="text" id="phone" name="phone">
+                    <input class="sign_up_input" type="text" id="phone" name="phone" placeholder="Enter 10 digit phone number">
                     <br>
                     <br>
-                    <input type="submit" id="tutor_signup_submit" value="Verify">
+                    <input type="submit" id="tutor_signup_submit" value="Sign Up">
                     <br><br><br>
                 </form>
 

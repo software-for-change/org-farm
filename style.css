@@ -2,6 +2,7 @@
     --teal: #5CDB95;
     --sitefontColor: white;
     --sitebackgroundColor: #303133;
+    --placeholdercolor: #ececec;
 }
 
 body {
@@ -100,6 +101,7 @@ ul li a:hover {
     background-size: cover;
 }
 
+.sign_up_input,
 .login_input {
     background: transparent;
     border: none;
@@ -109,16 +111,16 @@ ul li a:hover {
 
 /* change the color of the placeholder text */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #ececec;
+    color: var(--placeholdercolor);
     opacity: 1; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #ececec;
+    color: var(--placeholdercolor);
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #ececec;
+    color: var(--placeholdercolor);
   }
 
 /* login button style */
