@@ -45,10 +45,10 @@
 
 
                 <label for="email">User Email</label>
-                <input type="text" id="email" name="email" placeholder="email" autofocus>
-
+                <input type="text" class="login_input" id="email" name="email" placeholder="email" autofocus>
+                <br><br>
                 <label for="password">Password</label>
-                <input type="text" id="paswd" name="paswd" placeholder="password">
+                <input type="text" class="login_input" id="paswd" name="paswd" placeholder="password">
 
                 <input id="btn" type="submit" value="Login" name="btn-login">
                 <br>
