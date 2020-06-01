@@ -8,8 +8,12 @@
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap"
+        rel="stylesheet">
     <title>Simply Organic </title>
 </head>
 
@@ -34,45 +38,102 @@
     <br>
     <br>
     <br>
-    <div class="page-content">
 
-        <div class="modal">
-            <h1 class="">Admin Log In</h1>
-            <br><br>
-
-            <div id="frm">
-                <form method='POST' action="admin-login-auth.php">
-
-                    <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email" autofocus>
-                    <br><br>
-
-                    <input type="text" class="login_input" id="paswd" name="paswd" placeholder="Enter Password">
-
-                    <br><br>
-                    <input id="btn" type="submit" value="Login" name="btn-login">
-                    <br>
-                    <br>
-                    <br>
-                    <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
-                    <br>
-                    <br>
-
-                </form>
-            </div>
-        </div>
-    </div>
 
     <div id="content">
-  <div id="left">
-     <div id="object1">lorem ipsum</div>
-     <div id="object2">dolor site amet</div>
-  </div>
+        <div id="left">
+            <div id="object1">
+                <h1>Login</h1>
 
-  <div id="right">
-     <div id="object3">lorem ipsum</div>
-     <div id="object4">dolor site amet</div>
-  </div>
-</div>
+                <div class="page-content">
+
+                    <div class="modal">
+                        <h1 class="">Admin Log In</h1>
+                        <br><br>
+
+                        <div id="frm">
+                            <form method='POST' action="admin-login-auth.php">
+
+                                <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email"
+                                    autofocus>
+                                <br><br>
+
+                                <input type="text" class="login_input" id="paswd" name="paswd"
+                                    placeholder="Enter Password">
+
+                                <br><br>
+                                <input id="btn" type="submit" value="Login" name="btn-login">
+                                <br>
+                                <br>
+                                <br>
+                                <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
+                                <br>
+                                <br>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="object2">dolor site amet</div>
+        </div>
+
+        <div id="right">
+            <div id="object3">
+
+                <h1>Sign Up</h1>
+
+                <div class="page-content">
+
+                <form method="post" action="">
+                    <label>Fields marked * must be filled in order to create an account.</label>
+                    <br>
+                    <br>
+                    <div class="message">
+
+                        <?php
+                            if ($message != "") {
+                                echo $message;
+
+                        }?>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="fname">First Name *</label>
+
+                    <input class="sign_up_input" type="text" id="fname" name="fname" placeholder="first name" autofocus>
+
+                    <label for="lname">Last Name *</label>
+                    <input class="sign_up_input" type="text" id="lname" name="lname" placeholder="last name">
+                    <label for="email">UB Email *</label>
+                    <input class="sign_up_input" type="text" id="email" name="email" placeholder="abc123@buffalo.edu">
+
+                    <label for="password">Password *</label>
+                    <br>
+                    <label>Requires at least 8 characters, 1 uppercase, 1 lowercase, 1 special character and 1
+                        number.</label>
+                    <input class="sign_up_input" type="password" id="paswd" name="paswd" placeholder="passord">
+                    <label for="password">Confirm Password *</label>
+                    <input class="sign_up_input" type="password" id="paswd2" name="paswd2"
+                        placeholder="confirm password">
+
+                    <label for="phoneNumber">10 digit US Phone Number *</label>
+                    <input class="sign_up_input" type="text" id="phone" name="phone">
+                    <input type="submit" id="tutor_signup_submit" value="Verify">
+                    <br><br><br>
+                </form>
+
+                </div>
+
+
+
+
+            </div>
+            <div id="object4">dolor site amet</div>
+        </div>
+    </div>
 
 
     <br><br>
