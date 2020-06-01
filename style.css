@@ -104,4 +104,5 @@ ul li a:hover {
     background: transparent;
     border: none;
     border-bottom: 1px solid #ffffff;
+    width: 50%;
 }
