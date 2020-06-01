@@ -34,6 +34,7 @@
     <br>
     <br>
     <br>
+    <div class="page-content">
     <div class="modal">
         <h1 class="">Customer Log In</h1>
         <br><br>
@@ -58,6 +59,7 @@
 
             </form>
         </div>
+    </div>
     </div>
 
     <br><br>
