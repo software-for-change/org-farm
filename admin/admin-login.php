@@ -13,16 +13,16 @@
     <title>Simply Organic </title>
 </head>
 
-<body>
+<body class="access_page">
 
     <div class="header">
         <div class="menu_navbar">
             <ul>
-                
+
                 <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li>
                 <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li>
                 <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
-                
+
             </ul>
         </div>
 
@@ -34,31 +34,46 @@
     <br>
     <br>
     <br>
-    <div class="modal">
-        <h1 class="">Admin Log In</h1>
-        <br><br>
+    <div class="page-content">
 
-        <div id="frm">
-            <form method='POST' action="admin-login-auth.php">
+        <div class="modal">
+            <h1 class="">Admin Log In</h1>
+            <br><br>
 
+            <div id="frm">
+                <form method='POST' action="admin-login-auth.php">
 
-                <label for="email">User Email</label>
-                <input type="text" id="email" name="email" placeholder="email" autofocus>
+                    <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email" autofocus>
+                    <br><br>
 
-                <label for="password">Password</label>
-                <input type="text" id="paswd" name="paswd" placeholder="password">
+                    <input type="text" class="login_input" id="paswd" name="paswd" placeholder="Enter Password">
 
-                <input id="btn" type="submit" value="Login" name="btn-login">
-                <br>
-                <br>
-                <br>
-                <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
-                <br>
-                <br>
+                    <br><br>
+                    <input id="btn" type="submit" value="Login" name="btn-login">
+                    <br>
+                    <br>
+                    <br>
+                    <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
+                    <br>
+                    <br>
 
-            </form>
+                </form>
+            </div>
         </div>
     </div>
+
+    <div id="content">
+  <div id="left">
+     <div id="object1">lorem ipsum</div>
+     <div id="object2">dolor site amet</div>
+  </div>
+
+  <div id="right">
+     <div id="object3">lorem ipsum</div>
+     <div id="object4">dolor site amet</div>
+  </div>
+</div>
+
 
     <br><br>
     <script src="../index.js"></script>

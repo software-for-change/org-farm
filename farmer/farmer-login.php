@@ -13,7 +13,7 @@
     <title>Simply Organic </title>
 </head>
 
-<body>
+<body class="access_page">
 
     <div class="header">
         <div class="menu_navbar">
@@ -43,13 +43,10 @@
             <div id="frm">
                 <form method='POST' action="farmer-login-auth.php">
 
-
-                    <label for="email">User Email</label>
-                    <input type="text" id="email" name="email" placeholder="email" autofocus>
-
-                    <label for="password">Password</label>
-                    <input type="text" id="paswd" name="paswd" placeholder="password">
-
+                    <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email" autofocus>
+                    <br><br>
+                    <input type="text" class="login_input" id="paswd" name="paswd" placeholder="Enter Password">
+                    <br><br>
                     <input id="btn" type="submit" value="Login" name="btn-login">
                     <br>
                     <br>
