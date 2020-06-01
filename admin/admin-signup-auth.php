@@ -13,8 +13,6 @@ if (count($_POST) > 0) {
 
     if (empty($fname) || empty($lname)) {
         echo "Please enter a first and last name.";
-    } else if ((strpos($email, '@.') === false)) {
-        echo "Please enter a valid email address.";
     } else if ($count > 0) {
         echo "Email address is already in use.";
     } else if (!preg_match('(^\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])\S*$)', $pass)) {
