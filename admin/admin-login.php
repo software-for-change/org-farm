@@ -15,6 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
 
     <title>Simply Organic </title>
 </head>
@@ -47,6 +48,10 @@
             <div id="object1">
                 
                 <div class="page-content">
+
+                <h1 class="page-title">ADMIN</h1>
+
+                <br><br>
                     
                     <div class="modal">
                         <h1 class="">Admin Log In</h1>
@@ -87,6 +92,7 @@
 
                 
                 <div class="page-content">
+                    <br><br>
                 <h1>Sign Up</h1>
 
                 <form method="post" action="admin-signup-auth.php">

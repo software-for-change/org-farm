@@ -111,6 +111,10 @@ ul li a:hover {
     color: var(--inputcolor);
 }
 
+.page-title {
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
 /* change the color of the placeholder text */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--placeholdercolor);
