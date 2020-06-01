@@ -94,7 +94,7 @@ ul li a:hover {
 
 
 /* styling for the login pages */
-.access_pages {
+.access_page {
     background-repeat: no-repeat;
     background: linear-gradient( rgba(20, 20, 20, .9), rgba(20, 20, 20, .9)), url(gray-garlic.jpg);
     background-size: cover;
