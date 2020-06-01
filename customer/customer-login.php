@@ -48,7 +48,7 @@
                 <br><br>
                 <div class="container-2">
                     <div class="btn btn-two">
-                        <input id="btn" type="submit" value="Login" name="btn-login">
+                        <input class="submit-button" id="btn" type="submit" value="Login" name="btn-login">
                     </div>
                 </div>
                 <br>

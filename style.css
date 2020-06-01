@@ -132,7 +132,7 @@ div[class*=container] {
     transition: all 0.3s;
   }
   
-  input[type="text"] {
+  .submit-button {
     border: none;
     background: transparent;
     text-align: center;
