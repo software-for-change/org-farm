@@ -3,6 +3,7 @@
     --sitefontColor: white;
     --sitebackgroundColor: #303133;
     --placeholdercolor: #ececec;
+    --inputcolor: #8abaae;
 }
 
 body {
@@ -107,6 +108,7 @@ ul li a:hover {
     border: none;
     border-bottom: 1px solid #ffffff;
     width: 50%;
+    color: var(--inputcolor);
 }
 
 /* change the color of the placeholder text */

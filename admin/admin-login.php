@@ -45,7 +45,7 @@
             <div id="object1">
                 
                 <div class="page-content">
-                    <h1>Login</h1>
+                    
                     <div class="modal">
                         <h1 class="">Admin Log In</h1>
                         <br><br>
@@ -84,7 +84,7 @@
                 <div class="page-content">
                 <h1>Sign Up</h1>
 
-                <form method="post" action="">
+                <form method="post" action="admin-signup-auth.php">
                     <label>Fields marked * must be filled in order to create an account.</label>
                     <br>
                     <br>
@@ -96,18 +96,18 @@
 
                         }?>
                     </div>
+                   
+                    <br>
+                    <input class="sign_up_input" type="text" id="fname" name="fname" placeholder="Enter First name" required>
                     <br>
                     <br>
-                    <input class="sign_up_input" type="text" id="fname" name="fname" placeholder="first name" required>
+                    <input class="sign_up_input" type="text" id="lname" name="lname" placeholder="Enter Last name" required>
                     <br>
                     <br>
-                    <input class="sign_up_input" type="text" id="lname" name="lname" placeholder="last name" required>
+                    <input class="sign_up_input" type="text" id="email" pattern=".+@+.com" size="30" name="email" placeholder="Enter Email" required>
                     <br>
                     <br>
-                    <input class="sign_up_input" type="text" id="email" pattern=".+@globex.com" size="30" name="email" placeholder="Enter your email" required>
-                    <br>
-                    <br>
-                    <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd" placeholder="Enter Password. Must have 1 uppercase, 1 lowercase, 1 special character and 1
+                    <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd" placeholder="Enter Password. 1 uppercase, lowercase, special character &
                         number" required>
                     <br>
                     <br>
