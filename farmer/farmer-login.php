@@ -44,9 +44,9 @@
                 <form method='POST' action="farmer-login-auth.php">
 
                     <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email" autofocus>
-
+                    <br><br>
                     <input type="text" class="login_input" id="paswd" name="paswd" placeholder="Enter Password">
-
+                    <br><br>
                     <input id="btn" type="submit" value="Login" name="btn-login">
                     <br>
                     <br>
