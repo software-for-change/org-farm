@@ -13,7 +13,7 @@
     <title>Simply Organic </title>
 </head>
 
-<body>
+<body class="access_page">
 
     <div class="header">
         <div class="menu_navbar">
