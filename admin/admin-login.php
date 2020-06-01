@@ -18,11 +18,11 @@
     <div class="header">
         <div class="menu_navbar">
             <ul>
-                
+
                 <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li>
                 <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li>
                 <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
-                
+
             </ul>
         </div>
 
@@ -35,32 +35,45 @@
     <br>
     <br>
     <div class="page-content">
-    
-    <div class="modal">
-        <h1 class="">Admin Log In</h1>
-        <br><br>
 
-        <div id="frm">
-            <form method='POST' action="admin-login-auth.php">
+        <div class="modal">
+            <h1 class="">Admin Log In</h1>
+            <br><br>
 
-                <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email" autofocus>
-                <br><br>
-               
-                <input type="text" class="login_input" id="paswd" name="paswd" placeholder="Enter Password">
+            <div id="frm">
+                <form method='POST' action="admin-login-auth.php">
 
-                <br><br>
-                <input id="btn" type="submit" value="Login" name="btn-login">
-                <br>
-                <br>
-                <br>
-                <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
-                <br>
-                <br>
+                    <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email" autofocus>
+                    <br><br>
 
-            </form>
+                    <input type="text" class="login_input" id="paswd" name="paswd" placeholder="Enter Password">
+
+                    <br><br>
+                    <input id="btn" type="submit" value="Login" name="btn-login">
+                    <br>
+                    <br>
+                    <br>
+                    <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
+                    <br>
+                    <br>
+
+                </form>
+            </div>
         </div>
     </div>
-    </div>
+
+    <div id="content">
+  <div id="left">
+     <div id="object1">lorem ipsum</div>
+     <div id="object2">dolor site amet</div>
+  </div>
+
+  <div id="right">
+     <div id="object3">lorem ipsum</div>
+     <div id="object4">dolor site amet</div>
+  </div>
+</div>
+
 
     <br><br>
     <script src="../index.js"></script>
