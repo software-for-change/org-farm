@@ -1,5 +1,6 @@
 <?php
 include_once "../access-db.php";
+$message = "";
 
 if (count($_POST) > 0) {
     $fname = $_POST['fname'];
@@ -14,7 +15,7 @@ if (count($_POST) > 0) {
     if (empty($fname) || empty($lname)) {
         echo "Please enter a first and last name.";
     } else if ($count > 0) {
-        echo "Email address is already in use.";
+        $message = "Email address is already in use.";
     } else if (!preg_match('(^\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])\S*$)', $pass)) {
         echo "Please enter a valid password.";
     } else if (strlen($phone) != 10) {
