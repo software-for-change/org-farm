@@ -12,7 +12,7 @@ session_start();
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="../style.css" />
@@ -22,7 +22,7 @@ session_start();
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
 
     <title>Simply Organic </title>
 </head>
@@ -50,24 +50,27 @@ session_start();
     <br>
 
     <h1 class="page-title">ADMIN</h1>
+    <div class="display-message">
+    <?php
+
+        if (isset($_SESSION['message'])) {
+            echo $_SESSION['message'];
+            unset($_SESSION['message']);
+        }
+    ?>
+
+    </div>
+    
 
 
     <div id="content">
         <div id="left">
             <div id="object1">
-                
+
                 <div class="page-content">
 
-                <?php 
-                
-                if(isset($_SESSION['error'])){
-                    echo $_SESSION['error'];
-                    unset($_SESSION['error']);
-                }
-                ?>
-                
-                <br><br>
-                    
+                    <br><br>
+
                     <div class="modal">
                         <h1 class="page-sub-title">Log In</h1>
                         <br><br>
@@ -96,7 +99,7 @@ session_start();
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <hr>
@@ -105,51 +108,47 @@ session_start();
         <div id="right">
             <div id="object3">
 
-                
+
                 <div class="page-content">
                     <br><br>
-                <h2 class="page-sub-title">Sign Up</h2>
+                    <h2 class="page-sub-title">Sign Up</h2>
 
-                <form method="post" action="admin-signup-auth.php">
-                    
-                    <div class="message">
+                    <form method="post" action="admin-signup-auth.php">
 
-                        <?php
-                            if ($message != "") {
-                                echo $message;
+                        <br>
+                        <input class="sign_up_input" type="text" id="fname" name="fname" placeholder="Enter First name"
+                            required>
+                        <br>
+                        <br>
+                        <input class="sign_up_input" type="text" id="lname" name="lname" placeholder="Enter Last name"
+                            required>
+                        <br>
+                        <br>
+                        <input class="sign_up_input" type="text" id="email" size="30" name="email"
+                            placeholder="Enter Email" required>
+                        <br>
+                        <br>
+                        <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd"
+                            placeholder="Enter Password. 1 uppercase, lowercase, special character & number" required>
+                        <br>
+                        <br>
 
-                        }?>
-                    </div>
-                   
-                    <br>
-                    <input class="sign_up_input" type="text" id="fname" name="fname" placeholder="Enter First name" required>
-                    <br>
-                    <br>
-                    <input class="sign_up_input" type="text" id="lname" name="lname" placeholder="Enter Last name" required>
-                    <br>
-                    <br>
-                    <input class="sign_up_input" type="text" id="email" size="30" name="email" placeholder="Enter Email" required>
-                    <br>
-                    <br>
-                    <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd" placeholder="Enter Password. 1 uppercase, lowercase, special character & number" required>
-                    <br>
-                    <br>
-                    
-                    <input class="sign_up_input" minlength="8" type="password" id="paswd2" name="paswd2"
-                        placeholder="Confirm password" required>
-                    <br>
-                    <br>
-                    <input class="sign_up_input" type="number" id="phone" name="phone" placeholder="Enter 10 digit phone number" required>
-                    <br>
-                    <br>
-                    <input type="submit" id="tutor_signup_submit" value="Sign Up">
-                    <br><br><br>
-                </form>
+                        <input class="sign_up_input" minlength="8" type="password" id="paswd2" name="paswd2"
+                            placeholder="Confirm password" required>
+                        <br>
+                        <br>
+                        <input class="sign_up_input" type="number" id="phone" name="phone"
+                            placeholder="Enter 10 digit phone number" required>
+                        <br>
+                        <br>
+                        <input type="submit" id="tutor_signup_submit" value="Sign Up">
+                        <br><br><br>
+                    </form>
 
                 </div>
 
             </div>
-            
+
         </div>
     </div>
 

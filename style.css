@@ -64,6 +64,11 @@ ul li a:hover {
     background-size: cover;
 }
 
+/* display message styles  */
+.display-message {
+    color: red;
+}
+
 /* styling for the customer page */
 .thegrid {
     display: grid;
