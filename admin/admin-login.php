@@ -55,7 +55,7 @@
                 <br><br>
                     
                     <div class="modal">
-                        <h1 class="">Admin Log In</h1>
+                        <h1 class="page-sub-title">Log In</h1>
                         <br><br>
 
                         <div id="frm">
@@ -94,7 +94,7 @@
                 
                 <div class="page-content">
                     <br><br>
-                <h1>Sign Up</h1>
+                <h2 class="page-sub-title">Sign Up</h2>
 
                 <form method="post" action="admin-signup-auth.php">
                     

@@ -113,6 +113,15 @@ ul li a:hover {
 
 .page-title {
     font-family: 'Tenali Ramakrishna', sans-serif;
+    text-align: center;
+    font-size: 90px;
+    color: var(--inputcolor);
+
+}
+.page-sub-title {
+    font-size: 30px;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    color: var(--inputcolor);
 }
 
 /* change the color of the placeholder text */
@@ -228,6 +237,6 @@ hr{
   
     border:         none;
     border-left:    1px solid hsla(200, 10%, 50%,100);
-    height:         100vh;
+    height:         45vh;
     width:          1px;  
 }
