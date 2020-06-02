@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+// $_SESSION["error"]
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -51,6 +58,13 @@
                 
                 <div class="page-content">
 
+                <?php 
+                
+                if(isset($_SESSION['error'])){
+                    echo $_SESSION['error'];
+                    unset($_SESSION['error']);
+                }
+                ?>
                 
                 <br><br>
                     
