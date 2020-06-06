@@ -84,9 +84,9 @@ if (isset($_SESSION['message'])) {
 
                                 <input type="text" class="login_input" id="paswd" name="paswd"
                                     placeholder="Enter Password">
-
-                                <input class="submit-button" id="btn" type="submit" value="Login" name="btn-login"></input>
                                 <br><br>
+                                <input class="submit-button" id="btn" type="submit" value="Login" name="btn-login"></input>
+                                
 
                                 <br>
                                 <br>
