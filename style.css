@@ -4,6 +4,7 @@
     --sitebackgroundColor: #303133;
     --placeholdercolor: #ececec;
     --inputcolor: #8abaae;
+    --displaymessagecolor: #ff726f
 }
 
 body {
@@ -66,7 +67,8 @@ ul li a:hover {
 
 /* display message styles  */
 .display-message {
-    color: red;
+    color: var(--displaymessagecolor);
+    text-align: center;
 }
 
 /* styling for the customer page */
