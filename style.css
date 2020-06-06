@@ -149,14 +149,13 @@ ul li a:hover {
 /* login button style */
 
 .submit-button {
-  color: white;
-  padding: 1px 20px;
-  background-color: transparent;
-  margin: 8px 0;
-  border: 1px solid gray;
-  cursor: pointer;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;;
+    color: white;
+    padding: 10px 50px;
+    background-color: transparent;
+    margin: 8px 0;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 /* styling for the split page */
