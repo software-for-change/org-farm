@@ -21,7 +21,7 @@ if (count($_POST) > 0) {
         header("Location:customer-login.php?");
     } else {
 
-        if (mysqli_query($conn, "INSERT INTO farm_clients (customer_email, customer_password, phone) VALUES ('$phone', '$email', '$pass')")) {
+        if (mysqli_query($conn, "INSERT INTO farm_clients (customer_email, customer_password, phone) VALUES ('$email', '$pass', '$phone')")) {
             $_SESSION['message'] = "you have successfully created an account as the client. You can now use your credentials to login";
             header("location:customer-login.php?");
         } else {
