@@ -56,8 +56,9 @@
             <div id="object1">
 
                 <div class="page-content">
+                    <br><br>
                     <div class="modal">
-                        <h1 class="">Customer Log In</h1>
+                        <h1 class="page-sub-title">Customer Log In</h1>
                         <br><br>
 
                         <div id="frm">
