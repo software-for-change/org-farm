@@ -138,8 +138,19 @@ session_start();
                             placeholder="Enter 10 digit phone number" required>
                         <br>
                         <br>
-                        <input type="submit" id="tutor_signup_submit" value="Sign Up">
+                        <input type="submit" value="Sign Up">
                         <br><br><br>
+                        <div class="button">
+                        <div class="button__text"><input type="submit" value="Sign Up"></div>
+
+                        <div class="button__wrapper">
+                            <div class="button__arrow"></div>
+                            <div class="button__border-circle"></div>
+                            <div class="button__mask-circle">
+                                <div class="button__small-circle"></div>
+                            </div>
+                        </div>
+                    </div>
                     </form>
 
                 </div>
