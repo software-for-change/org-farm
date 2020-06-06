@@ -46,6 +46,9 @@ session_start();
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
 
     <!-- <h1 class="page-title">ADMIN</h1> -->
     <div class="display-message">
