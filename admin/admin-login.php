@@ -85,19 +85,9 @@ if (isset($_SESSION['message'])) {
                                 <input type="text" class="login_input" id="paswd" name="paswd"
                                     placeholder="Enter Password">
 
+                                <input class="submit-button" id="btn" type="submit" value="Login" name="btn-login"></input>
                                 <br><br>
-                                <div class="button">
-                                    <div class="button__text"><input class="submit-button" id="btn" type="submit"
-                                            value="Login" name="btn-login"></input></div>
 
-                                    <div class="button__wrapper">
-                                        <div class="button__arrow"></div>
-                                        <div class="button__border-circle"></div>
-                                        <div class="button__mask-circle">
-                                            <div class="button__small-circle"></div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <br>
                                 <br>
                                 <br>
@@ -153,17 +143,7 @@ if (isset($_SESSION['message'])) {
                         <br>
                         <br>
                         <br>
-                        <div class="button">
-                            <div class="button__text"><input class="submit-button" type="submit" value="Sign Up"></div>
-
-                            <div class="button__wrapper">
-                                <div class="button__arrow"></div>
-                                <div class="button__border-circle"></div>
-                                <div class="button__mask-circle">
-                                    <div class="button__small-circle"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <input class="submit-button" type="submit" value="Sign Up">
                     </form>
 
                 </div>
