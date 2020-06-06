@@ -49,15 +49,15 @@ session_start();
 
     <h1 class="page-title">ADMIN</h1>
     <div class="display-message">
-    <?php
-        if (isset($_SESSION['message'])) {
-            echo $_SESSION['message'];
-            unset($_SESSION['message']);
-        }
-    ?>
+        <?php
+if (isset($_SESSION['message'])) {
+    echo $_SESSION['message'];
+    unset($_SESSION['message']);
+}
+?>
 
     </div>
-    
+
 
 
     <div id="content">
@@ -83,7 +83,18 @@ session_start();
                                     placeholder="Enter Password">
 
                                 <br><br>
-                                <input id="btn" type="submit" value="Login" name="btn-login">
+                                <div class="button">
+                                    <div class="button__text"><input class="submit-button" id="btn" type="submit"
+                                            value="Login" name="btn-login"></input></div>
+
+                                    <div class="button__wrapper">
+                                        <div class="button__arrow"></div>
+                                        <div class="button__border-circle"></div>
+                                        <div class="button__mask-circle">
+                                            <div class="button__small-circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <br>
                                 <br>
                                 <br>
@@ -138,18 +149,18 @@ session_start();
                             placeholder="Enter 10 digit phone number" required>
                         <br>
                         <br>
-                       <br>
+                        <br>
                         <div class="button">
-                        <div class="button__text"><input class="submit-button" type="submit" value="Sign Up"></div>
+                            <div class="button__text"><input class="submit-button" type="submit" value="Sign Up"></div>
 
-                        <div class="button__wrapper">
-                            <div class="button__arrow"></div>
-                            <div class="button__border-circle"></div>
-                            <div class="button__mask-circle">
-                                <div class="button__small-circle"></div>
+                            <div class="button__wrapper">
+                                <div class="button__arrow"></div>
+                                <div class="button__border-circle"></div>
+                                <div class="button__mask-circle">
+                                    <div class="button__small-circle"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </form>
 
                 </div>
