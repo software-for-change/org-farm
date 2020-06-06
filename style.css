@@ -146,12 +146,20 @@ ul li a:hover {
   }
 
 /* login button style */
-*, *:before, *:after {
+/* *, *:before, *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
+  } */
+
+.submit-button {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
   .button {
     display: -webkit-box;
     display: flex;
