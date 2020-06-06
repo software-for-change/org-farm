@@ -53,11 +53,11 @@ session_start();
     <!-- <h1 class="page-title">ADMIN</h1> -->
     <div class="display-message">
         <?php
-if (isset($_SESSION['message'])) {
-    echo $_SESSION['message'];
-    unset($_SESSION['message']);
-}
-?>
+            if (isset($_SESSION['message'])) {
+                echo $_SESSION['message'];
+                unset($_SESSION['message']);
+            }
+            ?>
 
     </div>
 

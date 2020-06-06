@@ -38,42 +38,105 @@
     <br>
     <br>
     <br>
-    <div class="page-content">
-        <div class="modal">
-            <h1 class="">Customer Log In</h1>
-            <br><br>
 
-            <div id="frm">
-                <form method='POST' action="customer-login-auth.php">
+    <div class="display-message">
+        <?php
+            if (isset($_SESSION['message'])) {
+                echo $_SESSION['message'];
+                unset($_SESSION['message']);
+            }
+            ?>
 
-                    <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email" autofocus>
-                    <br><br>
-                    <input type="text" class="login_input" id="paswd" name="paswd" placeholder="Enter Password">
-                    <br><br>
-                    <!-- <input class="submit-button" id="btn" type="submit" value="Login" name="btn-login"> -->
+    </div>
 
-                    <br><br>
-                    <div class="button">
-                        <div class="button__text"><input class="submit-button" id="btn" type="submit" value="Login" name="btn-login"></input></div>
+    <div id="content">
+        <div id="left">
+            <div id="object1">
 
-                        <div class="button__wrapper">
-                            <div class="button__arrow"></div>
-                            <div class="button__border-circle"></div>
-                            <div class="button__mask-circle">
-                                <div class="button__small-circle"></div>
-                            </div>
+                <div class="page-content">
+                    <div class="modal">
+                        <h1 class="">Customer Log In</h1>
+                        <br><br>
+
+                        <div id="frm">
+                            <form method='POST' action="customer-login-auth.php">
+
+                                <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email"
+                                    autofocus>
+                                <br><br>
+                                <input type="text" class="login_input" id="paswd" name="paswd"
+                                    placeholder="Enter Password">
+
+                                <br><br>
+                                <div class="button">
+                                    <div class="button__text"><input class="submit-button" id="btn" type="submit"
+                                            value="Login" name="btn-login"></input></div>
+
+                                    <div class="button__wrapper">
+                                        <div class="button__arrow"></div>
+                                        <div class="button__border-circle"></div>
+                                        <div class="button__mask-circle">
+                                            <div class="button__small-circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+
+                                <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
+                                <br>
+                                <br>
+
+                            </form>
                         </div>
                     </div>
-                    <br>
-                    <br>
-                    <br>
+                </div>
 
-                    <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
-                    <br>
-                    <br>
 
-                </form>
             </div>
+
+        </div>
+
+        <hr>
+
+
+        <div id="right">
+            <div id="object3">
+
+
+                <div class="page-content">
+                    <br><br>
+                    <h2 class="page-sub-title">Customer Sign Up</h2>
+
+                    <form method="post" action="customer-signup-auth.php">
+
+                        <br>
+                        <input class="sign_up_input" type="text" id="email" size="30" name="email"
+                            placeholder="Enter Email" required>
+                        <br>
+                        <br>
+                        <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd"
+                            placeholder="Enter Password. 1 uppercase, lowercase, special character & number" required>
+                        <br>
+                        <br>
+
+                        <input class="sign_up_input" minlength="8" type="password" id="paswd2" name="paswd2"
+                            placeholder="Confirm password" required>
+                        <br>
+                        <br>
+                        <input class="sign_up_input" type="number" id="phone" name="phone"
+                            placeholder="Enter mobile money number" required>
+                        <br>
+                        <br>
+                        <br>
+                        <input class="submit-button" type="submit" value="Sign Up">
+                    </form>
+
+                </div>
+
+            </div>
+
         </div>
     </div>
 
