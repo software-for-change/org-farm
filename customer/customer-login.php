@@ -50,11 +50,11 @@
                     <br><br>
                     <input type="text" class="login_input" id="paswd" name="paswd" placeholder="Enter Password">
                     <br><br>
-                    <input class="submit-button" id="btn" type="submit" value="Login" name="btn-login">
+                    <!-- <input class="submit-button" id="btn" type="submit" value="Login" name="btn-login"> -->
 
                     <br><br>
                     <div class="button">
-                        <div class="button__text"><input type="submit"></input></div>
+                        <div class="button__text"><input class="submit-button" id="btn" type="submit" value="Login" name="btn-login"></input></div>
 
                         <div class="button__wrapper">
                             <div class="button__arrow"></div>
