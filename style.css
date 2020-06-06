@@ -156,6 +156,7 @@ ul li a:hover {
   border: 1px solid gray;
   cursor: pointer;
   font-size: 20px;
+  font-family: "Roboto", sans-serif;;
 }
 
 /* styling for the split page */
