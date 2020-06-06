@@ -119,7 +119,7 @@ ul li a:hover {
 .page-title {
   font-family: "Tenali Ramakrishna", sans-serif;
   text-align: center;
-  font-size: 90px;
+  font-size: 60px;
   color: var(--inputcolor);
 }
 .page-sub-title {

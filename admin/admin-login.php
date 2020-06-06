@@ -47,7 +47,7 @@ session_start();
     <br>
     <br>
 
-    <h1 class="page-title">ADMIN</h1>
+    <!-- <h1 class="page-title">ADMIN</h1> -->
     <div class="display-message">
         <?php
 if (isset($_SESSION['message'])) {
@@ -69,7 +69,7 @@ if (isset($_SESSION['message'])) {
                     <br><br>
 
                     <div class="modal">
-                        <h1 class="page-sub-title">Log In</h1>
+                        <h1 class="page-sub-title"> Admin Log In</h1>
                         <br><br>
 
                         <div id="frm">
@@ -119,7 +119,7 @@ if (isset($_SESSION['message'])) {
 
                 <div class="page-content">
                     <br><br>
-                    <h2 class="page-sub-title">Sign Up</h2>
+                    <h2 class="page-sub-title">Admin Sign Up</h2>
 
                     <form method="post" action="admin-signup-auth.php">
 
