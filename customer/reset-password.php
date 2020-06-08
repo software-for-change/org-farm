@@ -1,6 +1,8 @@
 <?php
 session_start();
 include_once "../access-db.php";
+
+$_SESSION['message'] = $_SESSION['user_id'];
 if (count($_POST) > 0) {
     $client_id = $_SESSION['user_id'];
 
