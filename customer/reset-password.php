@@ -3,6 +3,8 @@ session_start();
 include_once "../access-db.php";
 if (count($_POST) > 0) {
     $client_id = $_SESSION['user_id'];
+
+    echo "the client id", $client_id;
     $password = $_POST['password'];
 
     if (!preg_match('(^\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])\S*$)', $password)) {

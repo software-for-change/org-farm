@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "../access-db.php";
 if(count($_POST)>0) {
     $result = mysqli_query($conn,"SELECT * FROM farm_clients WHERE customer_email='" . $_POST["email"] . "'");
