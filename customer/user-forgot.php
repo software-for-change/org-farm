@@ -24,10 +24,6 @@ if(count($_POST)>0) {
 
     }  
 }
-else {
-
-    $_SESSION['message'] = "Sorry, the form was not submitted";
-}
 
 ?>
 <!DOCTYPE html>
