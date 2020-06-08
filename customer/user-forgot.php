@@ -11,7 +11,7 @@ if(count($_POST)>0) {
         $code= strval(mt_rand(100000, 999999));
         $message="Your verification code is ";
         $message.=$code;
-        $from="no-reply@buffalo.com";
+        $from="no-reply@simplyorganic.com";
         $headers  = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type: text/plain; charset=iso-8859-1" . "\r\n";
         $headers .= "From: ". $from. "\r\n";
@@ -75,7 +75,7 @@ if(count($_POST)>0) {
     </div>
     <div class="modal">
 
-    <h1 class="welcome-page-title modal-title">Forgot Password</h1>
+    <h1 class="page-sub-title">Forgot Password</h1>
     <br>
     <br>
     <br>

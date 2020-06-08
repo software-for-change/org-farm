@@ -68,7 +68,7 @@ if (count($_POST) > 0) {
     </div>
     <div class="modal">
 
-    <h1 class="welcome-page-title modal-title">Forgot Password</h1>
+    <h1 class="page-sub-title">Reset Password</h1>
     <br>
     <br>
     <br>

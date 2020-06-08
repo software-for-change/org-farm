@@ -10,7 +10,7 @@ if (count($_POST) > 0) {
         header("Location:reset-password.php?");
     } else {
 
-        mysqli_query($conn, "UPDATE farm_client SET client_password='" . $password . "' WHERE customer_id='" . $client_id . "'");
+        mysqli_query($conn, "UPDATE farm_clients SET client_password='" . $password . "' WHERE customer_id='" . $client_id . "'");
         header('Location: customer-logged-in.php?');
     }
 
@@ -70,7 +70,7 @@ if (count($_POST) > 0) {
     </div>
     <div class="modal">
 
-    <h1 class="welcome-page-title modal-title">Forgot Password</h1>
+    <h1 class="page-sub-title">Reset Password</h1>
     <br>
     <br>
     <br>
