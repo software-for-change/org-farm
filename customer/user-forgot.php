@@ -84,18 +84,17 @@ else {
     <br>
     <br>
     <br>
-    <div id="tutor_signup_div">
+    <div class="page-content">
         <form method="post" action="">
-        <div class="modal-input">
 
             <input class= "sign_up_input" type="text" id="email" name="email" placeholder="Enter email">
 
-            <input class="submit-button" name="submit" type="submit" value="Submit">
+            <input class="submit-button" type="submit" value="Submit">
 
 
         </form>
         <br><br>
-        </div>
+    </div>
 
     </div>
     </div>
