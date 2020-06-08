@@ -81,9 +81,9 @@ if (count($_POST) > 0) {
         <form method="post" action="">
 
         <div class="modal-input">
-            <input class= "log_in_input" type="text" id="email" name="password" placeholder="Enter Password. 1 uppercase, lowercase, special character & number">
+            <input class= "sign_up_input" type="text" id="email" name="password" placeholder="Enter Password. 1 uppercase, lowercase, special character & number">
 
-            <input type="submit" id="log_in_button" name="submit" type="submit" value="Submit">
+            <input type="submit" class="submit-button" value="Submit">
 
 
         </form>
