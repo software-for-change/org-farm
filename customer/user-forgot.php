@@ -4,7 +4,7 @@ if(count($_POST)>0) {
     $result = mysqli_query($conn,"SELECT * FROM farm_clients WHERE email='" . $_POST["email"] . "'");
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
-		$message = "This email is not recognized in our system. Please try again.";
+		$_SESSION['message'] = "This email is not recognized in our system. Please try again.";
 	} else {
         $row=mysqli_fetch_array($result);
         $to=$_POST["email"];
@@ -23,6 +23,10 @@ if(count($_POST)>0) {
         header('Location: verify-email-customer.php?user_id=' . $row['customer_id']);
 
     }  
+}
+else {
+
+    $_SESSION['message'] = "Sorry, the form was not submitted";
 }
 
 ?>
@@ -84,10 +88,9 @@ if(count($_POST)>0) {
         <form method="post" action="">
         <div class="modal-input">
 
-            <label for="email">User Email</label>
-            <input class= "log_in_input" type="text" id="email" name="email" placeholder="Enter email">
+            <input class= "sign_up_input" type="text" id="email" name="email" placeholder="Enter email">
 
-            <input type="submit" id="log_in_button" name="submit" type="submit" value="Submit">
+            <input class="submit-button" name="submit" type="submit" value="Submit">
 
 
         </form>
