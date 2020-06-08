@@ -1,208 +1,177 @@
 :root {
-    --teal: #5CDB95;
-    --sitefontColor: white;
-    --sitebackgroundColor: #303133;
+  --teal: #5cdb95;
+  --sitefontColor: white;
+  --sitebackgroundColor: #303133;
+  --placeholdercolor: #ececec;
+  --inputcolor: #8abaae;
+  --displaymessagecolor: #ff726f;
 }
 
 body {
-    background-color: var(--sitebackgroundColor);
-    color: var(--sitefontColor);
+  background-color: var(--sitebackgroundColor);
+  color: var(--sitefontColor);
+  font-family: "Roboto", sans-serif;
 }
 
 .page-content {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* styling for the nav bar */
 .header {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .menu_navbar {
-    font-family: 'Roboto', sans-serif;
-    float: right;
+  font-family: "Roboto", sans-serif;
+  float: right;
 }
 
 .logo a {
-    color: white;
-    font-family: 'Fredericka the Great', cursive;
-    text-decoration: none;
+  color: white;
+  font-family: "Fredericka the Great", cursive;
+  text-decoration: none;
 }
 
 .logo a:hover {
-    color: var(--teal);
+  color: var(--teal);
 }
 
 ul li {
-    display: inline;
-    padding: 10px;
+  display: inline;
+  padding: 10px;
 }
 
 ul li a {
-    color: var(--sitefontColor);
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+  color: var(--sitefontColor);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* styling for the banner  */
 .banner {
-    height: 350px;
-    width: 100%;
-    font-family: 'Abril Fatface', cursive;
-    text-align: center;
-    font-size: 50px;
-    padding-top: 30px;
-    background-repeat: no-repeat;
-    background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .9)), url(customer/fruits-image.jpg);
-    background-size: cover;
+  height: 350px;
+  width: 100%;
+  font-family: "Abril Fatface", cursive;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 30px;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.9)),
+    url(customer/fruits-image.jpg);
+  background-size: cover;
+}
+
+/* display message styles  */
+.display-message {
+  color: var(--displaymessagecolor);
+  text-align: center;
 }
 
 /* styling for the customer page */
 .thegrid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr)
-  }
-
-.food-item {
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
+.food-item {
+  text-align: center;
+}
 
 /* styling for the farmer page */
-.prodcue-table
- {
-    /* border: 1px solid black; */
-    font-size: 16px;
-    width: 70%;
+.prodcue-table {
+  /* border: 1px solid black; */
+  font-size: 16px;
+  width: 70%;
 }
 
 /* styling for the customer logged in page */
 
 .customer-loggedin {
-    background-color: var(--sitefontColor);
-    color: var(--sitebackgroundColor);
+  background-color: var(--sitefontColor);
+  color: var(--sitebackgroundColor);
 }
 
 .customer-loggedin-menu-links li a {
-    color: var(--sitebackgroundColor);
+  color: var(--sitebackgroundColor);
 }
-
 
 /* styling for the login pages */
 .access_page {
-    background-repeat: no-repeat;
-    background: linear-gradient( rgba(20, 20, 20, .9), rgba(20, 20, 20, .9)), url(gray-login-img.jpg);
-    background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)),
+    url(gray-login-img.jpg);
+  background-size: cover;
 }
 
+.sign_up_input,
 .login_input {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #ffffff;
-    width: 50%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  width: 50%;
+  color: var(--inputcolor);
+}
+
+.page-title {
+  font-family: "Tenali Ramakrishna", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  color: var(--inputcolor);
+}
+.page-sub-title {
+  font-size: 45px;
+  font-family: "Tenali Ramakrishna", sans-serif;
+  color: var(--inputcolor);
+}
+
+/* change the color of the placeholder text */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--placeholdercolor);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--placeholdercolor);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--placeholdercolor);
 }
 
 /* login button style */
-div[class*=container] {
-    text-align: center;
-    width: 100%;
-    height: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /*
-   BUTTON STYLING
-  */
-  
-  .btn {
-    position: relative;
-    color: white;
-    width: 256px;
-    height: 64px;
-    line-height: 64px;
-    transition: all 0.3s;
-  }
-  
-  .submit-button {
-    border: none;
-    background: transparent;
-    text-align: center;
-    color: white;
-  }
-  
-  .btn::before, .btn::after {
-    content: '';
-    position: absolute;
-    transition: all 0.3s;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  
-  
-  /* BTN TWO */
-  .btn-two::before, .btn-two::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-      height: 100%;
-    bottom: 0;
-      left: 0;
-      z-index: 1;
-    transition: all 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-  }
-  
-  .btn-two:hover::after {
-    animation-name: rotatecw;
-    animation-duration: 2s;
-  }
-  .btn-two:hover::before {
-    animation-name: rotateccw; 
-    animation-duration: 3s;
-  }
-  .btn-two:hover::after, .btn-two:hover::before {
-    left: 96px;
-    width: 64px;
-    
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  
-  @keyframes rotatecw {
-      from {transform: rotate(0deg);}
-      to {transform: rotate(360deg);}
-  }
-  
-  @keyframes rotateccw {
-      from {transform: rotate(0deg);}
-      to {transform: rotate(-360deg);}
-  }
-  
 
+.submit-button {
+    color: white;
+    padding: 10px 50px;
+    background-color: transparent;
+    margin: 8px 0;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-size: 15px;
+}
 
-  /* styling for the split page */
-  #content {
-    background-color: rgba(210, 210, 210, 0.5);
-    border: 1px solid #000;
-    padding: 0.5rem;
-    display: flex;
-  }
-  
-  #left,
-  #right {
-    background-color: rgba(10, 10, 10, 0.5);
-    border: 1px solid #fff;
-    padding: 0.5rem;
-    flex-grow: 1;
-    color: #fff;
-  }  
+/* styling for the split page */
+#content {
+  display: flex;
+}
+
+#left,
+#right {
+  flex-grow: 1;
+  color: #fff;
+}
+
+hr {
+  border: none;
+  border-left: 1px solid hsla(200, 10%, 50%, 100);
+  height: 50vh;
+  width: 1px;
+}
