@@ -91,7 +91,7 @@ session_start();
                                 <br>
                                 <br>
                                 <br>
-                                <a href="user-forgot.php"> forgot password? </a>
+                                <a href="admin-user-forgot.php"> forgot password? </a>
                                 <br>
                                 <br>
 

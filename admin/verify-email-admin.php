@@ -3,14 +3,15 @@ session_start();
 
 include_once "../access-db.php";
 if(count($_POST)>0) {
-    $result = mysqli_query($conn,"SELECT * FROM farm_clients WHERE vcode='" . $_POST["code"] . "'");
+    $result = mysqli_query($conn,"SELECT * FROM farm_admin WHERE vcode='" . $_POST["code"] . "'");
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
 		$_SESSION['message'] = "This passcode is not recognized in our system. Please try again.";
 	} else {
-        $idnum=$row['customer_id'];
+        $row=mysqli_fetch_array($result);
+        $idnum=$row['admin_id'];
         $_SESSION['user_id'] = $idnum;
-        header('Location: reset-password.php?');
+        header('Location: admin-reset-password.php?');
 
     }  
 }
@@ -52,10 +53,12 @@ if(count($_POST)>0) {
             <h2 class="logo"> <a href="../index.php">Farm Organic</a> </h2>
         </div>
     </div>
+
     <br>
     <br>
     <br>
     <br>
+
     <div class="display-message">
         <?php
             if (isset($_SESSION['message'])) {

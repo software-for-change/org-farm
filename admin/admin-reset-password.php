@@ -1,18 +1,18 @@
 <?php
 session_start();
-
 include_once "../access-db.php";
-if(count($_POST)>0) {
-    $result = mysqli_query($conn,"SELECT * FROM farm_clients WHERE vcode='" . $_POST["code"] . "'");
-	$count  = mysqli_num_rows($result);
-	if($count==0) {
-		$_SESSION['message'] = "This passcode is not recognized in our system. Please try again.";
-	} else {
-        $idnum=$row['customer_id'];
-        $_SESSION['user_id'] = $idnum;
-        header('Location: reset-password.php?');
+if (count($_POST) > 0) {
+    $admin_id = $_SESSION['user_id'];
+    $password = $_POST['password'];
 
-    }  
+    if (!preg_match('(^\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])\S*$)', $password)) {
+        $_SESSION['message'] = "Please enter a valid password.";
+        header("Location:admin-reset-password.php?");
+    } else {
+        mysqli_query($conn, "UPDATE farm_admin SET admin_password='" . $password . "' WHERE admin_id='" . $admin_id . "'");
+        header('Location: admin.php?');
+    }
+
 }
 
 ?>
@@ -44,7 +44,6 @@ if(count($_POST)>0) {
             <ul>
 
                 <li><a class="navlink" href="admin-login.php">admin login</a> </li>
-               
             </ul>
         </div>
 
@@ -52,10 +51,12 @@ if(count($_POST)>0) {
             <h2 class="logo"> <a href="../index.php">Farm Organic</a> </h2>
         </div>
     </div>
+
     <br>
     <br>
     <br>
     <br>
+
     <div class="display-message">
         <?php
             if (isset($_SESSION['message'])) {
@@ -74,10 +75,9 @@ if(count($_POST)>0) {
     <br>
     <div id="tutor_signup_div">
         <form method="post" action="">
+       
         <div class="modal-input">
-
-           
-            <input class= "log_in_input" type="text" id="email" name="code" placeholder="Enter passcode">
+            <input class= "log_in_input" type="text" id="email" name="password" placeholder="Enter Password. 1 uppercase, lowercase, special character & number">
 
             <input type="submit" id="log_in_button" name="submit" type="submit" value="Submit">
 

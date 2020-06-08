@@ -1,16 +1,27 @@
 <?php
 session_start();
-
 include_once "../access-db.php";
 if(count($_POST)>0) {
-    $result = mysqli_query($conn,"SELECT * FROM farm_clients WHERE vcode='" . $_POST["code"] . "'");
+    $result = mysqli_query($conn,"SELECT * FROM farm_admin WHERE email='" . $_POST["email"] . "'");
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
-		$_SESSION['message'] = "This passcode is not recognized in our system. Please try again.";
+		$_SESSION['message'] = "This email is not recognized in our system. Please try again.";
 	} else {
-        $idnum=$row['customer_id'];
-        $_SESSION['user_id'] = $idnum;
-        header('Location: reset-password.php?');
+        $row=mysqli_fetch_array($result);
+        $to=$_POST["email"];
+        $code= strval(mt_rand(100000, 999999));
+        $message="Your verification code is ";
+        $message.=$code;
+        $from="no-reply@buffalo.com";
+        $headers  = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type: text/plain; charset=iso-8859-1" . "\r\n";
+        $headers .= "From: ". $from. "\r\n";
+        $headers .= "Reply-To: ". $from. "\r\n";
+        $headers .= "X-Mailer: PHP/" . phpversion();
+        $headers .= "X-Priority: 1" . "\r\n";
+        mail($to, $subject, $message, $headers);
+        mysqli_query($conn,"UPDATE farm_admin SET vcode='" . $code  . "' WHERE admin_id='" . $row['admin_id'] . "'"); 
+        header('Location: verify-email-admin.php?');
 
     }  
 }
@@ -42,9 +53,7 @@ if(count($_POST)>0) {
     <div class="header">
         <div class="menu_navbar">
             <ul>
-
                 <li><a class="navlink" href="admin-login.php">admin login</a> </li>
-               
             </ul>
         </div>
 
@@ -56,6 +65,7 @@ if(count($_POST)>0) {
     <br>
     <br>
     <br>
+
     <div class="display-message">
         <?php
             if (isset($_SESSION['message'])) {
@@ -74,10 +84,11 @@ if(count($_POST)>0) {
     <br>
     <div id="tutor_signup_div">
         <form method="post" action="">
+       
         <div class="modal-input">
 
-           
-            <input class= "log_in_input" type="text" id="email" name="code" placeholder="Enter passcode">
+            <label for="email">User Email</label>
+            <input class= "log_in_input" type="text" id="email" name="email" placeholder="Enter email">
 
             <input type="submit" id="log_in_button" name="submit" type="submit" value="Submit">
 
