@@ -1,7 +1,7 @@
 <?php
 include_once "../access-db.php";
 if(count($_POST)>0) {
-    $result = mysqli_query($conn,"SELECT * FROM farm_clients WHERE email='" . $_POST["email"] . "'");
+    $result = mysqli_query($conn,"SELECT * FROM farm_clients WHERE customer_email='" . $_POST["email"] . "'");
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
 		$_SESSION['message'] = "This email is not recognized in our system. Please try again.";
