@@ -10,7 +10,7 @@ if (count($_POST) > 0) {
         header("Location:reset-password.php?");
     } else {
 
-        mysqli_query($conn, "UPDATE farm_clients SET client_password='" . $password . "' WHERE customer_id='" . $client_id . "'");
+        mysqli_query($conn, "UPDATE farm_clients SET customer_password='" . $password . "' WHERE customer_id='" . $client_id . "'");
         header('Location: customer-logged-in.php?');
     }
 
