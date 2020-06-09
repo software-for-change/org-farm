@@ -13,16 +13,15 @@
     <title>Simply Organic </title>
 </head>
 
-<body>
+<body class="access_page">
 
     <div class="header">
         <div class="menu_navbar">
             <ul>
-                <li><a class="navlink" href="../about.html">about</a> </li>
+                
                 <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li>
                 <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li>
                 <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
-                <li><a class="navlink" href="../index.html">logout</a> </li>
                 
             </ul>
         </div>
@@ -35,6 +34,7 @@
     <br>
     <br>
     <br>
+    <div class="page-content">
     <div class="modal">
         <h1 class="">Customer Log In</h1>
         <br><br>
@@ -42,23 +42,29 @@
         <div id="frm">
             <form method='POST' action="customer-login-auth.php">
 
+                <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email" autofocus>
+                <br><br>
+                <input type="text" class="login_input" id="paswd" name="paswd" placeholder="Enter Password">
+                <br><br>
+                <input class="submit-button" id="btn" type="submit" value="Login" name="btn-login">
 
-                <label for="email">User Email</label>
-                <input type="text" id="email" name="email" placeholder="email" autofocus>
-
-                <label for="password">Password</label>
-                <input type="text" id="paswd" name="paswd" placeholder="password">
-
-                <input id="btn" type="submit" value="Login" name="btn-login">
+                <br><br>
+                <div class="container-2">
+                    <div class="btn btn-two">
+                        <input class="submit-button" id="btn" type="submit" value="Login" name="btn-login">
+                    </div>
+                </div>
                 <br>
                 <br>
                 <br>
+                
                 <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
                 <br>
                 <br>
 
             </form>
         </div>
+    </div>
     </div>
 
     <br><br>

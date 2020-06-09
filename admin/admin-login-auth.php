@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "../access-db.php";
 
 if(isset($_POST['btn-login'])){
@@ -16,9 +17,10 @@ if(isset($_POST['btn-login'])){
 
         if($row=mysqli_fetch_assoc($result)){
             $db_password = $row['admin_password'];
-
+            
             if($paswd == $db_password){
                 $idnum=$row['admin_id'];
+                $_SESSION["user_id"] = $idnum;
                 header("location:admin.php?user_id=" .$idnum);
             }
             else {
