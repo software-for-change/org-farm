@@ -84,7 +84,8 @@ ul li a:hover {
 /* styling for the customer logged in page */
 
 .customer-loggedin {
-    background-color: var(--sitefontColor);
+    /* background-color: var(--sitefontColor); */
+    background-image: url("paper.gif");
     color: var(--sitebackgroundColor);
 }
 
