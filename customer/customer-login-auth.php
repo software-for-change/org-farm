@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "../access-db.php";
 
 if(isset($_POST['btn-login'])){
@@ -19,7 +20,9 @@ if(isset($_POST['btn-login'])){
 
             if($paswd == $db_password){
                 $idnum=$row['customer_id'];
-                header("location:customer.php?user_id=" .$idnum);
+                $_SESSION["user_id"] = $idnum;
+                
+                header("location:customer-logged-in.php?user_id=" .$idnum);
             }
             else {
                 echo 'incorrect password';

@@ -1,10 +1,3 @@
-<?php
-include_once "access-db.php";
-
-$sql = "SELECT food_name, price, food_image FROM farm_food";
-$result = $conn->query($sql);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,10 +22,11 @@ $result = $conn->query($sql);
     <div class="header">
         <div class="menu_navbar">
             <ul>
+                <li><a class="navlink" href="about.html">about</a> </li>
                 <li><a class="navlink" href="admin/admin-login.php">admin login</a> </li>
                 <li><a class="navlink" href="farmer/farmer-login.php">farmer login</a> </li>
                 <li><a class="navlink" href="customer/customer-login.php">customer login </a> </li>
-                
+                <li><a class="navlink" href="index.html">logout</a> </li>
 
             </ul>
         </div>
@@ -43,56 +37,36 @@ $result = $conn->query($sql);
     </div>
 
     <div class="banner">
-        <h1 class="pageTitle">Simply Organic</h1>
+        <p>Simply Organic</p>
     </div>
 
+    <h3>Contact Form</h3>
+
+    <h4>Contact us business@gmail.com</h4>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
     <br> <br>
-
-    <?php
-
-if ($result->num_rows > 0) {
-
-    echo "<div class='thegrid'";
-    echo "<table class='prodcue-table'>";
-
-    // output data of each row
-    while ($row = mysqli_fetch_array($result)) {
-
-        $food_name = $row["food_name"];
-        $food_image = $row["food_image"];
-        $price = $row["price"];
-
-        echo "<div class='food-item'";
-
-        echo "<tr>
-                                <td>";
-        echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-        echo "
-                                    <div class='food-post'>
-                                    <p> " . $food_name . " </p>
-                                    <p> $" . $price . " </p>";
-
-        echo "<br>";
-        echo "<button id='minus'>−</button>
-                    <input type='number' value='0' id='input' />
-                    <button id='plus'>+</button>";
-
-        echo " </div>";
-
-        echo "</td>";
-        echo "</tr>";
-        echo "</div>";
-
-    }
-    echo "</table>";
-    echo "</div>";
-
-} else {
-    echo "0 results";
-}
-?>
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>
     <script>
