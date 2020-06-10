@@ -54,9 +54,9 @@ $result = $conn->query($sql);
         <div id="left">
             <div class="slogan">
 
-                <h1>We want to serve our customers</h1>
+                <h3>We want to serve our customers</h3>
                 <br>
-                <h1>with the highest quality products</h1>
+                <h3>with the highest quality products</h3>
 
 
             </div>

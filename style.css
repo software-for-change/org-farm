@@ -104,12 +104,6 @@ ul li a:hover {
   color: var(--sitebackgroundColor);
 }
 
-.loggedin-image img{
-  height: 100px;
-  width: 500px;
-
-}
-
 .slogan {
   color: var(--sitebackgroundColor);
   font-size: 15px;
