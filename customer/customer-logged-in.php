@@ -34,23 +34,42 @@ $result = $conn->query($sql);
     <div class="header">
         <div class="menu_navbar">
             <ul class="customer-loggedin-menu-links">
+                <li><a class="navlink" href="admin/admin-login.php">How it works</a> </li>
                 <li><a class="navlink" href="shopping-cart">shopping cart</a> </li>
-                <!-- <li><a class="navlink" href="admin/admin-login.php">past orders</a> </li> -->
+                <li><a class="navlink" href="admin/admin-login.php">contact support</a> </li>
                 <li><a class="navlink" href="../logout.php">logout</a> </li>
 
             </ul>
         </div>
 
-        <div class="logo">
+        <div class="logo loggedin-logo">
             <h2 class="logo"> <a href="customer-logged-in.php">Farm Organic</a> </h2>
         </div>
     </div>
-
-    <div class="banner">
-        <h1 class="pageTitle">Simply Organic</h1>
-    </div>
-
     <br> <br>
+
+
+
+    <div id="content">
+        <div id="left">
+            <div id="slogan">
+
+            <h1>We want to serve our customers</h1>
+            <br>
+            <h1>with the highest quality products</h1>
+
+
+            </div>
+
+        </div>
+
+        <div id="right">
+            <div id="loggedin-image">
+                <img src="pngfuel.com-other.png" alt="">
+            </div>
+
+        </div>
+    </div>
 
     <?php
 

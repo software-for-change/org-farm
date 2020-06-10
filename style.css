@@ -92,13 +92,22 @@ ul li a:hover {
 /* styling for the customer logged in page */
 
 .customer-loggedin {
-    /* background-color: var(--sitefontColor); */
-    background-image: url("paper.gif");
+    background-color: var(--sitefontColor);
     color: var(--sitebackgroundColor);
 }
 
 .customer-loggedin-menu-links li a {
   color: var(--sitebackgroundColor);
+}
+
+.loggedin-logo a {
+  color: var(--sitebackgroundColor);
+}
+
+.loggedin-image img{
+  height: 100px;
+  width: 500px;
+
 }
 
 /* styling for the login pages */
