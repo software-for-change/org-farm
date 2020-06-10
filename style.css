@@ -110,6 +110,11 @@ ul li a:hover {
 
 }
 
+.slogan {
+  color: var(--sitebackgroundColor);
+  font-size: 15px;
+}
+
 /* styling for the login pages */
 .access_page {
   background-repeat: no-repeat;

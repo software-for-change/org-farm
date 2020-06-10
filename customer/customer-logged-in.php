@@ -52,11 +52,11 @@ $result = $conn->query($sql);
 
     <div id="content">
         <div id="left">
-            <div id="slogan">
+            <div class="slogan">
 
-            <h1>We want to serve our customers</h1>
-            <br>
-            <h1>with the highest quality products</h1>
+                <h1>We want to serve our customers</h1>
+                <br>
+                <h1>with the highest quality products</h1>
 
 
             </div>
@@ -64,8 +64,8 @@ $result = $conn->query($sql);
         </div>
 
         <div id="right">
-            <div id="loggedin-image">
-                <img src="pngfuel.com-other.png" alt="">
+            <div class="loggedin-image">
+                <img src="../pngfuel.com-other.png" alt="">
             </div>
 
         </div>
