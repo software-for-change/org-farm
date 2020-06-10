@@ -19,18 +19,20 @@ body {
 
 /* styling for the nav bar */
 .header {
-  padding-left: 10px;
+  padding-top: 30px;
 }
 
 .menu_navbar {
   font-family: "Roboto", sans-serif;
   float: right;
+  padding-right: 70px;
 }
 
 .logo a {
   color: white;
   font-family: "Fredericka the Great", cursive;
   text-decoration: none;
+  padding-left: 70px;
 }
 
 .logo a:hover {
