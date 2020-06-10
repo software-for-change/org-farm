@@ -72,6 +72,10 @@ $result = $conn->query($sql);
         </div>
     </div>
 
+    <div class="display-items">
+
+    
+
     <?php
 
 if ($result->num_rows > 0) {
@@ -115,7 +119,7 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 ?>
-
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>
