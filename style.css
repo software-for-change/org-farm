@@ -85,6 +85,9 @@ ul li a:hover {
 .food-item {
   text-align: center;
 }
+.food-item:hover {
+  background-color: green;
+}
 
 /* styling for the farmer page */
 .prodcue-table {
