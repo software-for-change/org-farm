@@ -109,8 +109,13 @@ ul li a:hover {
   text-align: center;
     padding: 200px;
     margin-top: 100px;
+    line-height: 50%;
 }
 
+.slogan h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 /* styling for the login pages */
 .access_page {
   background-repeat: no-repeat;
