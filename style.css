@@ -79,7 +79,7 @@ ul li a:hover {
 /* styling for the customer page */
 .thegrid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .food-item {
