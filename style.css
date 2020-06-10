@@ -112,9 +112,14 @@ ul li a:hover {
     line-height: 50%;
 }
 
-.slogan h3 {
+.loggedin-title h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+}
+
+.loggedin-title {
+  height: 100%;
+  width: 100%;
 }
 /* styling for the login pages */
 .access_page {

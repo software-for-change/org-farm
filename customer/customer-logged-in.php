@@ -55,10 +55,12 @@ $result = $conn->query($sql);
         <div id="left">
             <div class="slogan">
 
-                <h3>We want to serve our customers</h3>
-                <br>
-                <h3>with the highest quality products</h3>
-
+                <div class="loggedin-title">
+                    <h3>We want to serve our customers</h3>
+                    <br>
+                    <h3>with the highest quality products</h3>
+                </div>
+                
 
             </div>
 
