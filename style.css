@@ -125,6 +125,10 @@ ul li a:hover {
   width: 50%;
   display: inline-block;
 }
+
+.loggedin-image img{
+  margin-right: 20px;
+}
 /* styling for the login pages */
 .access_page {
   background-repeat: no-repeat;
