@@ -106,7 +106,9 @@ ul li a:hover {
 
 .slogan {
   color: var(--sitebackgroundColor);
-  font-size: 15px;
+  text-align: center;
+    padding: 200px;
+    margin-top: 100px;
 }
 
 /* styling for the login pages */
