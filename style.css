@@ -87,11 +87,10 @@ ul li a:hover {
   text-align: center;
   padding: 40px;
   width: 80%;
-  transition: width 2s;
+  border-radius: 25px;
 }
 .food-item:hover {
   box-shadow: 10px 10px 10px 10px gray;
-  width: 85%;
 }
 
 .food-item button {
