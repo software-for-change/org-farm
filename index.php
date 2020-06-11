@@ -33,7 +33,7 @@ $result = $conn->query($sql);
                 <li><a class="navlink" href="admin/admin-login.php">How it works</a> </li>
                 <li><a class="navlink" href="admin/admin-login.php">Delivery</a> </li>
                 <li><a class="navlink" href="farmer/farmer-login.php">About us</a> </li>
-                
+
 
             </ul>
         </div>
@@ -43,14 +43,30 @@ $result = $conn->query($sql);
         </div>
     </div>
 
-    
-        <h1 class="pageTitle">We Deliver Fresh, Natural and Organic Produce</h1>
-    
+    <div id="content">
+        <div id="left">
+            <div class="slogan">
+
+                <div class="loggedin-title">
+                    <h3>We Deliver Fresh, Natural and Organic Produce</h3>
+                </div>
 
 
-        <div class="display-items">
+            </div>
 
-    <br> <br>
+        </div>
+
+        <div id="right">
+            <div class="loggedin-image">
+                <img src="pngfuel.com-other.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+    <div class="display-items">
+    <br><br><br><br><br><br>
 
     <?php
 
