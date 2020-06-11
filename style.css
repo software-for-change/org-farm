@@ -111,11 +111,11 @@ ul li a:hover {
 /* styling for the customer logged in page */
 
 .display-items {
-  background-color: var(--inputcolor);
+  background-color: var(--sitefontColor);
 }
 
 .customer-loggedin {
-    background-color: var(--sitefontColor);
+    background-color: var(--inputcolor);
     color: var(--sitebackgroundColor);
 }
 
