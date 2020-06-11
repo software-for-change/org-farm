@@ -55,7 +55,7 @@ $result = $conn->query($sql);
         <div id="left">
             <div class="slogan">
 
-                <div class="loggedin-title">
+                <div class="banner-title">
                     <h3>We want to serve our customers with the highest quality products</h3>
                 </div>
                 

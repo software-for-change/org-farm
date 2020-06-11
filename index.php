@@ -47,8 +47,8 @@ $result = $conn->query($sql);
         <div id="left">
             <div class="slogan">
 
-                <div class="loggedin-title">
-                    <h3>We Deliver Fresh, Natural and Organic Produce</h3>
+                <div class="banner-title before-login">
+                    <h3>We Deliver Fresh, Natural and Organic Produce right at your door step</h3>
                 </div>
 
 

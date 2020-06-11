@@ -128,7 +128,7 @@ ul li a:hover {
     line-height: 50%;
 }
 
-.loggedin-title h3 {
+.banner-title h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -136,7 +136,7 @@ ul li a:hover {
     letter-spacing: 3px;
 }
 
-.loggedin-title {
+.banner-title {
   width: 50%;
   display: inline-block;
 }
@@ -222,5 +222,8 @@ hr {
 }
 
 
-/* styling for the display items section */
+/* styling for the items before login */
+.before-login {
+  color: var(--sitefontColor);
+}
 
