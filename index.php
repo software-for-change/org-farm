@@ -48,7 +48,7 @@ $result = $conn->query($sql);
             <div class="slogan">
 
                 <div class="banner-title before-login">
-                    <h3>We Deliver Fresh, Natural and Organic Produce right at your door step</h3>
+                    <h3>We Deliver Fresh, Natural and Organic Produce to your door</h3>
                 </div>
 
 
@@ -65,7 +65,7 @@ $result = $conn->query($sql);
     </div>
     <br><br><br><br><br>
 
-    <div class="display-items">
+    <div class="display-items before-login-bkgd">
     <br><br><br><br><br><br>
 
     <?php

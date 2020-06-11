@@ -139,6 +139,7 @@ ul li a:hover {
 .banner-title {
   width: 50%;
   display: inline-block;
+  text-align: left;
 }
 
 .loggedin-image img{
@@ -227,3 +228,6 @@ hr {
   color: var(--sitefontColor);
 }
 
+.before-login-bkgd {
+  background-color: var(--sitebackgroundColor);
+}
