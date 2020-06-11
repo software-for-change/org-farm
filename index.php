@@ -47,6 +47,9 @@ $result = $conn->query($sql);
         <h1 class="pageTitle">We Deliver Fresh, Natural and Organic Produce</h1>
     
 
+
+        <div class="display-items">
+
     <br> <br>
 
     <?php
@@ -93,6 +96,7 @@ if ($result->num_rows > 0) {
 }
 ?>
 
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>
