@@ -44,7 +44,9 @@ session_start();
     <br>
     <br>
     <br>
-
+    <br>
+    <br>
+    <br>
     <div class="display-message">
         <?php
             if (isset($_SESSION['message'])) {

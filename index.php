@@ -24,14 +24,15 @@ $result = $conn->query($sql);
     <title>Customer</title>
 </head>
 
-<body>
+<body class="banner">
 
     <div class="header">
         <div class="menu_navbar">
             <ul>
-                <li><a class="navlink" href="admin/admin-login.php">admin login</a> </li>
-                <!-- <li><a class="navlink" href="farmer/farmer-login.php">farmer login</a> </li> -->
-                <li><a class="navlink" href="customer/customer-login.php">customer login </a> </li>
+                <li><a class="navlink" href="customer/customer-login.php">Login </a> </li>
+                <li><a class="navlink" href="admin/admin-login.php">How it works</a> </li>
+                <li><a class="navlink" href="admin/admin-login.php">Delivery</a> </li>
+                <li><a class="navlink" href="farmer/farmer-login.php">About us</a> </li>
                 
 
             </ul>
@@ -42,9 +43,9 @@ $result = $conn->query($sql);
         </div>
     </div>
 
-    <div class="banner">
-        <h1 class="pageTitle">Simply Organic</h1>
-    </div>
+    
+        <h1 class="pageTitle">We Deliver Fresh, Natural and Organic Produce</h1>
+    
 
     <br> <br>
 
