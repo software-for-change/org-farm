@@ -80,13 +80,26 @@ ul li a:hover {
 .thegrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 50px;
 }
 
 .food-item {
   text-align: center;
+  padding: 40px;
+  width: 80%;
+  transition: width 2s;
 }
 .food-item:hover {
   box-shadow: 10px 10px 10px 10px gray;
+  width: 85%;
+}
+
+.food-item button {
+  opacity: 0;
+}
+
+.food-item:hover button {
+  opacity: 1;
 }
 
 /* styling for the farmer page */
@@ -97,6 +110,10 @@ ul li a:hover {
 }
 
 /* styling for the customer logged in page */
+
+.display-items {
+  background-color: var(--inputcolor);
+}
 
 .customer-loggedin {
     background-color: var(--sitefontColor);
@@ -134,6 +151,7 @@ ul li a:hover {
 .loggedin-image img{
   margin-right: 20px;
 }
+
 /* styling for the login pages */
 .access_page {
   background-repeat: no-repeat;
@@ -192,7 +210,7 @@ ul li a:hover {
     font-size: 15px;
 }
 
-/* styling for the split page */
+/* styling for the split page for login and sign up*/
 #content {
   display: flex;
 }
@@ -213,6 +231,3 @@ hr {
 
 /* styling for the display items section */
 
-.display-items {
-  background-color: var(--inputcolor);
-}
