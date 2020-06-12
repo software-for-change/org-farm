@@ -299,8 +299,13 @@ hr {
   text-align: center;
 }
 
+
 .steps-how-it-works hr, .display-items hr {
   border: 3px solid var(--sitebackgroundColor);
   width: 10%;
   margin: auto;
+}
+
+.first-bar {
+  border-color: var(--sitefontColor);
 }
