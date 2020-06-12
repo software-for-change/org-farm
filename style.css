@@ -277,3 +277,9 @@ hr {
   width: 50%;
   background-color: var(--inputcolor);
 }
+
+.steps-how-it-works ul {
+  display: list-item;
+  list-style-image: url(https://img.icons8.com/color/48/000000/beet.png) ;
+  
+}

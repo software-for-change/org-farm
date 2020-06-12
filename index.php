@@ -169,6 +169,9 @@ if ($result->num_rows > 0) {
 
             <div id="right">
                 <div class="steps-how-it-works">
+                    <h1>Step By Step</h1>
+                    <hr class="bar first-bar">
+                    <hr class="bar second-bar">
 
                     <ul>
                         <li>we get our fresh produce from our organic farms</li>
@@ -219,6 +222,7 @@ if ($result->num_rows > 0) {
         <a href="about.php">About us</a>
 
         <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+        <a href="https://icons8.com/icon/13299/beet">Beet icon by Icons8</a>
 
     </div>
 
