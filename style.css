@@ -241,7 +241,18 @@ hr {
 .banner-how-it-works #left {
   width: 50%;
   background-color: yellow;
-  color: black;
+}
+
+.content-how-it-works {
+  color: var(--sitebackgroundColor);
+  text-align: center;
+  width: 50%;
+
+}
+
+.steps-how-it-works {
+  width: 50%;
+  text-align: center;
 }
 
 /* delivery banner styling */
