@@ -175,13 +175,13 @@ if ($result->num_rows > 0) {
                     <hr class="first-bar">
                     <br>
                     <ul>
-                        <img src="https://img.icons8.com/color/48/000000/beet.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/beet.png" />
                         <li>We get our fresh produce from our organic farms</li>
-                        <img src="https://img.icons8.com/color/48/000000/beet.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/beet.png" />
                         <li>You create an account and choose your delivery frequency</li>
-                        <img src="https://img.icons8.com/color/48/000000/beet.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/beet.png" />
                         <li>Select your box size</li>
-                        <img src="https://img.icons8.com/color/48/000000/beet.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/beet.png" />
                         <li>We then deliver our simpliy organic products to your door step </li>
                     </ul>
                     <button>icon / image</button>
@@ -211,6 +211,8 @@ if ($result->num_rows > 0) {
 
             <div id="right">
                 <div class="icon-delivery">
+                    <img src="delivery-man.svg" alt="triangle with all three sides equal" height="87" width="100" />
+                    <img src="delivery-truck.svg" alt="triangle with all three sides equal" height="87" width="100" />
                     <button>Delivery image</button>
                 </div>
 
@@ -228,7 +230,10 @@ if ($result->num_rows > 0) {
 
         <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
         <a href="https://icons8.com/icon/13299/beet">Beet icon by Icons8</a>
-
+        <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a>
+        from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
