@@ -171,9 +171,9 @@ if ($result->num_rows > 0) {
             <div id="right">
                 <div class="steps-how-it-works">
                     <h1>Step By Step</h1>
+                    <br>
                     <hr class="first-bar">
-                    <hr class="second-bar">
-
+                    <br><br>
                     <ul>
                         <img src="https://img.icons8.com/color/48/000000/beet.png"/>
                         <li>we get our fresh produce from our organic farms</li>
