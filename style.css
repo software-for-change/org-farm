@@ -242,11 +242,11 @@ hr {
 .banner-how-it-works #left {
   width: 50%;
   background-color: var(--boldpink);
-  color: var(--sitefontColor);
+  
 }
 
 .content-how-it-works {
-  color: var(--sitebackgroundColor);
+  color: var(--sitefontColor);
   text-align: center;
   width: 50%;
 
