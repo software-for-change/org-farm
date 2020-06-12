@@ -231,3 +231,20 @@ hr {
 .before-login-bkgd {
   background-color: var(--sitebackgroundColor);
 }
+
+/* how it works banner styling */
+
+.banner-how-it-works {
+  background-color: white;
+}
+
+.banner-how-it-works #left {
+  width: 50%;
+  background-color: yellow;
+  color: black;
+}
+
+/* delivery banner styling */
+.banner-delivery {
+ background-color: pink;
+}
