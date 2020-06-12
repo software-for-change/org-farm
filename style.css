@@ -239,6 +239,10 @@ hr {
   background-color: var(--sitefontColor);
 }
 
+.banner-how-it-works #content {
+  background-color: rgba(0,0,0,0.5);
+}
+
 .banner-how-it-works #left {
   width: 50%;
   background-color: var(--boldpink);

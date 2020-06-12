@@ -173,7 +173,7 @@ if ($result->num_rows > 0) {
                     <h1>Step By Step</h1>
                     <br>
                     <hr class="first-bar">
-                    <br><br>
+                    <br>
                     <ul>
                         <img src="https://img.icons8.com/color/48/000000/beet.png"/>
                         <li>We get our fresh produce from our organic farms</li>
