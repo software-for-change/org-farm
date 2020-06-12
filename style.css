@@ -262,6 +262,9 @@ hr {
   display: inline-block;
   color: var(--sitebackgroundColor);
   padding: 80px;
+  font-family: 'Enriqueta', serif;
+    font-weight: 500;
+    font-size: large;
 }
 
 /* delivery banner styling */
@@ -290,6 +293,7 @@ hr {
   text-transform: uppercase;
   font-size: 25px;
   letter-spacing: 4px;
+  font-weight: 700;
 }
 
 .steps-how-it-works hr {
