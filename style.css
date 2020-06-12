@@ -252,12 +252,12 @@ hr {
 
 .banner-how-it-works #right {
   width: 50%;
-  background-color: yellow;
 }
 
 .steps-how-it-works {
   width: 50%;
   text-align: center;
+  color: var(--sitebackgroundColor);
 }
 
 /* delivery banner styling */
