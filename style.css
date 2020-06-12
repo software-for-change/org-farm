@@ -258,9 +258,10 @@ hr {
 }
 
 .steps-how-it-works {
-  width: 50%;
+  width: 100%;
   display: inline-block;
   color: var(--sitebackgroundColor);
+  padding: 80px;
 }
 
 /* delivery banner styling */
@@ -285,6 +286,7 @@ hr {
 }
 
 .steps-how-it-works h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Enriqueta', serif;
   text-transform: uppercase;
+  font-size: 25px;
 }
