@@ -213,7 +213,7 @@ if ($result->num_rows > 0) {
                 <div class="icon-delivery">
                     <img src="delivery-man.svg" alt="triangle with all three sides equal" height="87" width="100" />
                     <img src="delivery-truck.svg" alt="triangle with all three sides equal" height="87" width="100" />
-                    <button>Delivery image</button>
+                    
                 </div>
 
             </div>

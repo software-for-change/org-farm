@@ -289,7 +289,7 @@ hr {
 
 }
 
-.steps-how-it-works h1 {
+.steps-how-it-works h1, .display-items h1 {
   font-family: 'Enriqueta', serif;
   text-transform: uppercase;
   font-size: 25px;
