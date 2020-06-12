@@ -295,4 +295,5 @@ hr {
 .steps-how-it-works hr {
   border: 3px solid var(--sitebackgroundColor);
   width: 10%;
+  margin: auto;
 }
