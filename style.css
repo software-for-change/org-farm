@@ -283,3 +283,8 @@ hr {
   display: block;
 
 }
+
+.steps-how-it-works h1 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
