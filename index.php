@@ -190,7 +190,7 @@ if ($result->num_rows > 0) {
 
         <div id="content">
             <div id="left">
-                <div class="slogan">
+                <div class="content-delivery">
 
                     <h2>Where we deliver</h2>
 
@@ -202,7 +202,7 @@ if ($result->num_rows > 0) {
             </div>
 
             <div id="right">
-                <div class="loggedin-image">
+                <div class="icon-delivery">
                     <button>Delivery image</button>
                 </div>
 

@@ -264,3 +264,13 @@ hr {
 .banner-delivery {
  background-color: pink;
 }
+
+.banner-delivery #left {
+  width: 50%;
+  background-color: blue;
+}
+
+.banner-delivery #left {
+  width: 50%;
+  background-color: gray;
+}
