@@ -254,11 +254,12 @@ hr {
 
 .banner-how-it-works #right {
   width: 50%;
+  text-align: center;
 }
 
 .steps-how-it-works {
   width: 50%;
-  text-align: center;
+  display: inline-block;
   color: var(--sitebackgroundColor);
 }
 
@@ -279,7 +280,6 @@ hr {
 }
 
 .steps-how-it-works ul li {
-  display: list-item;
-  /* list-style-image: url(https://img.icons8.com/color/48/000000/beet.png) ; */
-  
+  display: block;
+
 }

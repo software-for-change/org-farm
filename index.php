@@ -174,12 +174,13 @@ if ($result->num_rows > 0) {
                     <hr class="bar second-bar">
 
                     <ul>
-                    <img src="https://img.icons8.com/color/48/000000/beet.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/beet.png"/>
                         <li>we get our fresh produce from our organic farms</li>
                         <img src="https://img.icons8.com/color/48/000000/beet.png"/>
                         <li>You create an account and choose your delivery frequency</li>
                         <img src="https://img.icons8.com/color/48/000000/beet.png"/>
                         <li>select your box size</li>
+                        <img src="https://img.icons8.com/color/48/000000/beet.png"/>
                         <li>We then deliver our simpliy organic products to your door step </li>
                     </ul>
                     <button>icon / image</button>
