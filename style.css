@@ -5,6 +5,7 @@
   --placeholdercolor: #ececec;
   --inputcolor: #8abaae;
   --displaymessagecolor: #ff726f;
+  --boldpink: #e11584;
 }
 
 body {
@@ -235,12 +236,12 @@ hr {
 /* how it works banner styling */
 
 .banner-how-it-works {
-  background-color: white;
+  background-color: var(--sitefontColor);
 }
 
 .banner-how-it-works #left {
   width: 50%;
-  background-color: yellow;
+  background-color: var(--boldpink);
 }
 
 .content-how-it-works {
@@ -262,15 +263,16 @@ hr {
 
 /* delivery banner styling */
 .banner-delivery {
- background-color: pink;
+ background-color: var(--sitefontColor);
 }
 
 .banner-delivery #left {
   width: 50%;
-  background-color: blue;
+  background-color: var(--sitefontColor);
+  color: var(--sitebackgroundColor);
 }
 
 .banner-delivery #right {
   width: 50%;
-  background-color: gray;
+  background-color: var(--inputcolor);
 }
