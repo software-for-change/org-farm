@@ -117,7 +117,7 @@ if ($result->num_rows > 0) {
 
 </div>
 
-<div id="how-it-works">
+<div class="banner-how-it-works" id="how-it-works">
 
 <div id="content">
         <div id="left">
@@ -169,7 +169,7 @@ We deliver on different days to different zip codes.  Please input your zip code
 
 </div>
 
-<div id="where-we-deliver">
+<div class="banner-delivery" id="where-we-deliver">
 
 <div id="content">
         <div id="left">
