@@ -72,6 +72,9 @@ $result = $conn->query($sql);
     <div class="display-items before-login-bkgd">
 
         <h1>Our Packages</h1>
+        <br>
+        <hr class="first-bar">
+        <br>
         <?php
 
 if ($result->num_rows > 0) {

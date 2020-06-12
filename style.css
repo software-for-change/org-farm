@@ -231,6 +231,7 @@ hr {
 
 .before-login-bkgd {
   background-color: var(--sitebackgroundColor);
+  padding: 60px;
 }
 
 /* how it works banner styling */
@@ -295,9 +296,10 @@ hr {
   font-size: 25px;
   letter-spacing: 4px;
   font-weight: 700;
+  text-align: center;
 }
 
-.steps-how-it-works hr {
+.steps-how-it-works hr, .display-items hr {
   border: 3px solid var(--sitebackgroundColor);
   width: 10%;
   margin: auto;
