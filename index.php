@@ -171,8 +171,8 @@ if ($result->num_rows > 0) {
             <div id="right">
                 <div class="steps-how-it-works">
                     <h1>Step By Step</h1>
-                    <hr class="bar first-bar">
-                    <hr class="bar second-bar">
+                    <hr class="first-bar">
+                    <hr class="second-bar">
 
                     <ul>
                         <img src="https://img.icons8.com/color/48/000000/beet.png"/>

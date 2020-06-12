@@ -289,4 +289,14 @@ hr {
   font-family: 'Enriqueta', serif;
   text-transform: uppercase;
   font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.steps-how-it-works hr {
+  border: 3px solid var(--sitebackgroundColor);
+  width: 5%;
+}
+
+.second-bar {
+  border: 3px solid var(--boldpink);
 }
