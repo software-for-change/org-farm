@@ -75,7 +75,7 @@ $result = $conn->query($sql);
     <div class="display-items">
     <br><br><br><br><br><br>
     
-
+<p>Our prices: Nsaze ko nawe!</p>
     <?php
 
 if ($result->num_rows > 0) {

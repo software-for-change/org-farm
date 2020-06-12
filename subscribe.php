@@ -40,10 +40,35 @@
         <p>Simply Organic</p>
     </div>
 
-   <h1>our story and mission </h1>
-   <p>our mission is to help other farmers so choose us. we want to provide machinery for neigbouring farmers globally. we plan to partner with small farms so %age of the proceeds go to helping other farmers around the world and at home! join our global family.</p>
+
+   <h1>how it works </h1>
 
 
+
+
+<h1>Why us? </h1>
+
+<p>
+
+1. We make eating healthier organic, and local items affordable!
+
+2. We deliver your items right to your door!
+
+3. You're making a change for your health for the better!
+
+4. You're supporting local businesses!
+
+5. We pick the BEST organic and natural items to bring to you each week!
+
+
+
+</p>
+
+
+
+
+
+</p>
     <br> <br>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>
