@@ -175,7 +175,7 @@ if ($result->num_rows > 0) {
                 <div class="steps-how-it-works">
                     <h1>Step By Step</h1>
                     <br>
-                    <hr class="first-bar">
+                    <hr>
                     <br>
                     <ul>
                         <img src="https://img.icons8.com/color/48/000000/beet.png" />
@@ -187,7 +187,7 @@ if ($result->num_rows > 0) {
                         <img src="https://img.icons8.com/color/48/000000/beet.png" />
                         <li>We then deliver our simpliy organic products to your door step </li>
                     </ul>
-                    <button>icon / image</button>
+                    
                 </div>
 
             </div>

@@ -306,6 +306,7 @@ hr {
   margin: auto;
 }
 
-.first-bar {
+.display-items .first-bar {
   border-color: var(--sitefontColor);
+  width: 5%;
 }
