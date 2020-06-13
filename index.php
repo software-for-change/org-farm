@@ -55,8 +55,6 @@ $result = $conn->query($sql);
 
         </div>
 
-        <br><br><br><br><br><br><br><br><br><br>
-
         <div id="right">
             <div class="loggedin-image">
                 <button>Order With Us</button>
@@ -68,7 +66,7 @@ $result = $conn->query($sql);
         </div>
     </div>
 
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <div class="display-items before-login-bkgd">
 
