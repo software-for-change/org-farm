@@ -26,6 +26,7 @@ $result = $conn->query($sql);
         href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Customer</title>
 </head>
 
@@ -34,24 +35,47 @@ $result = $conn->query($sql);
     <div class="header">
         <div class="menu_navbar">
             <ul class="customer-loggedin-menu-links">
+                <li><a class="navlink" href="admin/admin-login.php">How it works</a> </li>
                 <li><a class="navlink" href="shopping-cart">shopping cart</a> </li>
-                <!-- <li><a class="navlink" href="admin/admin-login.php">past orders</a> </li> -->
+                <li><a class="navlink" href="admin/admin-login.php">contact support</a> </li>
                 <li><a class="navlink" href="../logout.php">logout</a> </li>
 
             </ul>
         </div>
 
-        <div class="logo">
+        <div class="logo loggedin-logo">
             <h2 class="logo"> <a href="customer-logged-in.php">Farm Organic</a> </h2>
         </div>
     </div>
-
-    <div class="banner">
-        <h1 class="pageTitle">Simply Organic</h1>
-    </div>
-
     <br> <br>
 
+
+
+    <div id="content">
+        <div id="left">
+            <div class="slogan">
+
+                <div class="banner-title">
+                    <h3>We want to serve our customers with the highest quality products</h3>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <div id="right">
+            <div class="loggedin-image">
+                <img src="../pngfuel.com-other.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="display-items">
+    <br><br><br><br><br><br>
+    
+<p>Our prices: Nsaze ko nawe!</p>
     <?php
 
 if ($result->num_rows > 0) {
@@ -95,7 +119,7 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 ?>
-
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>

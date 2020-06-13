@@ -24,7 +24,7 @@
             <ul>
                 <li><a class="navlink" href="about.html">about</a> </li>
                 <li><a class="navlink" href="admin/admin-login.php">admin login</a> </li>
-                <li><a class="navlink" href="farmer/farmer-login.php">farmer login</a> </li>
+                <!-- <li><a class="navlink" href="farmer/farmer-login.php">farmer login</a> </li> -->
                 <li><a class="navlink" href="customer/customer-login.php">customer login </a> </li>
                 <li><a class="navlink" href="index.html">logout</a> </li>
 
@@ -40,7 +40,10 @@
         <p>Simply Organic</p>
     </div>
 
-   <h1>our story </h1>
+   <h1>our story and mission </h1>
+   <p>our mission is to help other farmers so choose us. we want to provide machinery for neigbouring farmers globally. we plan to partner with small farms so %age of the proceeds go to helping other farmers around the world and at home! join our global family.</p>
+
+
     <br> <br>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>
