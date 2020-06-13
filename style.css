@@ -244,14 +244,21 @@ hr {
 .banner-how-it-works #left {
   width: 50%;
   background-color: var(--boldpink);
+  text-align: center;
   
 }
 
 .content-how-it-works {
   color: var(--sitefontColor);
-  text-align: center;
-  width: 50%;
+  display: inline-block;
+  padding: 80px;
 
+}
+
+.content-how-it-works p {
+  font-family: 'Enriqueta', serif;
+    font-weight: 500;
+    font-size: large;
 }
 
 .banner-how-it-works #right {
@@ -308,5 +315,5 @@ hr {
 
 .display-items .first-bar, .content-how-it-works .first-bar {
   border-color: var(--sitefontColor);
-  width: 5%;
 }
+

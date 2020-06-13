@@ -127,7 +127,9 @@ if ($result->num_rows > 0) {
                 <div class="content-how-it-works">
 
                     <h1>How it works</h1>
+                    <br>
                     <hr class="first-bar">
+                    <br>
                     <p> Every beginning of the week, we send out an email to our registered users letting you know what
                         we have harvested by
                         our farmers for the current week’s Packages. Once an order has been made, you can not cancel it
