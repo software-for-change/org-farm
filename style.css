@@ -290,7 +290,7 @@ hr {
 
 }
 
-.steps-how-it-works h1, .display-items h1 {
+.steps-how-it-works h1, .display-items h1, .content-how-it-works h1 {
   font-family: 'Enriqueta', serif;
   text-transform: uppercase;
   font-size: 25px;
@@ -300,13 +300,13 @@ hr {
 }
 
 
-.steps-how-it-works hr, .display-items hr {
+.steps-how-it-works hr, .display-items hr, .content-how-it-works hr{
   border: 3px solid var(--sitebackgroundColor);
   width: 10%;
   margin: auto;
 }
 
-.display-items .first-bar {
+.display-items .first-bar, .content-how-it-works .first-bar {
   border-color: var(--sitefontColor);
   width: 5%;
 }

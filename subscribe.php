@@ -49,6 +49,11 @@
 <h1>Why us? </h1>
 
 <p>
+                        We do not charge a fee for registration or membership! </p>
+
+                    <p>
+
+<p>
 
 1. We make eating healthier organic, and local items affordable!
 

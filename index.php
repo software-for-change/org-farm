@@ -126,46 +126,16 @@ if ($result->num_rows > 0) {
             <div id="left">
                 <div class="content-how-it-works">
 
-                    <h2>How it works</h2>
-
-                    <p>At the beginning of each week we send out an email letting you know what is being harvested by
-                        our farmers for the current week’s Farmbox. You then can go into your account and customize your
-                        Farmbox with up to 5 substitutions, per Farmbox. You then can add Artisanal items, and other
-                        grocery items we offer to come with your Farmbox delivery. The cut off is Wednesday at 12PM EST
-                        to skip or cancel an order for the next week. The cut off Ito make subs is Friday at 10am EST.
-                        We then deliver your Farmbox to your door in a box that is Eco friendly! Please be sure to
-                        recycle your boxes and packing material.</p>
-
-
-
-                    <p>
-                        We do not charge a fee for registration or membership! </p>
-
-                    <p>
-
-                        Minimum order is $38.95 and we have a $5.98 handling and packing fee. All of our boxes and
-                        packing material are biodegradable / recyclable.
-
-                        How It Works:
-
-                        We use UPS for our delivery needs and provide all customers with tracking information.
-                        Unfortunatley we are unable to deliver to PO Boxes. We use insulation that is biodegradable and
-                        ice packs to keep your box at the perfect temperature and insure safe delivery.
-
-                        Delivery Schedule
-
-                        We deliver on different days to different zip codes. Please input your zip code to find out your
-                        delivery day. Once the box leaves us it is in the hands of UPS. Your credit card will be charged
-                        on Friday at 10am EST. We have a cut off because we must tell our Farmers and Artisans what we
-                        need for each delivery. Don’t worry, if you miss this week’s cut off, be sure to still create an
-                        account so you are on our email list for the following week's harvest!
-
-                        *Please note: Delivery delay can be at the hands of Mother Nature due to weather, or traffic
-                        delays, once the order leaves us it is in the hands of UPS. All damage reports must be made to
-                        hello@farmboxdirect.com within 24 hours of receiving your order and pictures may be requested*
+                    <h1>How it works</h1>
+                    <hr class="first-bar">
+                    <p> Every beginning of the week, we send out an email to our registered users letting you know what
+                        we have harvested by
+                        our farmers for the current week’s Packages. Once an order has been made, you can not cancel it
+                        but can reschedule delivery.
+                        The cut off is Wednesday at 12PM EST to skip or cancel an order for the next week. Please be
+                        sure to
+                        recycle your boxes and packing material. Your mobile money is charged at the time of purchase.
                     </p>
-
-
                 </div>
 
             </div>
@@ -186,7 +156,7 @@ if ($result->num_rows > 0) {
                         <img src="https://img.icons8.com/color/48/000000/beet.png" />
                         <li>We then deliver our simpliy organic products to your door step </li>
                     </ul>
-                    
+
                 </div>
 
             </div>
@@ -206,6 +176,18 @@ if ($result->num_rows > 0) {
 
                     <p>residential areas and offices around kampala and Mbale</p>
 
+                    <p> We use our farm transportation services for delivery needs and provide all customers with
+                        tracking information.
+
+                        We deliver between 3pm - 6pm on Friday and Saturday. Please input area to find out your delivery
+                        day. Don’t worry, if you miss this week’s cut off, be sure to still create an
+                        account so you are on our email list for the following week's harvest!
+
+                        *Please note: Delivery delay can be at the hands of Mother Nature due to weather, or traffic
+                        delays, once the order leaves us it is in the hands of UPS. All damage reports must be made to
+                        hello@farmboxdirect.com within 24 hours of receiving your order and pictures may be requested*
+                    </p>
+
 
                 </div>
 
@@ -215,7 +197,7 @@ if ($result->num_rows > 0) {
                 <div class="icon-delivery">
                     <img src="delivery-man.svg" alt="triangle with all three sides equal" height="87" width="100" />
                     <img src="delivery-truck.svg" alt="triangle with all three sides equal" height="87" width="100" />
-                    
+
                 </div>
 
             </div>
