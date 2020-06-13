@@ -31,10 +31,10 @@ $result = $conn->query($sql);
         <div class="menu_navbar">
             <ul>
                 <li><a class="navlink" href="customer/customer-login.php">Login </a> </li>
-                <li><a class="navlink" href="admin/admin-login.php">Contact Us</a> </li>
-                <li><a class="navlink" href="admin/admin-login.php">Delivery</a> </li>
-                <li><a class="navlink" href="farmer/farmer-login.php">About us</a> </li>
-                <li><a class="navlink" href="farmer/farmer-login.php">Why Subscribe?</a> </li>
+                <li><a class="navlink" href="#contact-us">Contact Us</a> </li>
+                <li><a class="navlink" href="#where-we-deliver">Delivery</a> </li>
+                <li><a class="navlink" href="about.php">About us</a> </li>
+                <li><a class="navlink" href="subscribe.php">Why Subscribe?</a> </li>
             </ul>
         </div>
 
@@ -190,6 +190,34 @@ if ($result->num_rows > 0) {
                         hello@farmboxdirect.com within 24 hours of receiving your order and pictures may be requested*
                     </p>
 
+
+                </div>
+
+            </div>
+
+            <div id="right">
+                <div class="icon-delivery">
+                    <img src="delivery-man.svg" alt="triangle with all three sides equal" height="87" width="100" />
+                    <img src="delivery-truck.svg" alt="triangle with all three sides equal" height="87" width="100" />
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="banner-contact-us" id="contact-us">
+
+        <div id="content">
+            <div id="left">
+                <div class="content-delivery">
+
+                    <h2>Where we deliver</h2>
+
+                    https://smartpixel.com/#contact
 
                 </div>
 

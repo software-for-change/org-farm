@@ -8,6 +8,10 @@
   --boldpink: #e11584;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--sitebackgroundColor);
   color: var(--sitefontColor);
@@ -259,6 +263,7 @@ hr {
   font-family: 'Enriqueta', serif;
     font-weight: 500;
     font-size: large;
+    line-height: 2.8;
 }
 
 .banner-how-it-works #right {
