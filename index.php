@@ -30,11 +30,11 @@ $result = $conn->query($sql);
     <div class="header">
         <div class="menu_navbar">
             <ul>
-                <li><a class="navlink" href="customer/customer-login.php">Login </a> </li>
-                <li><a class="navlink" href="#contact-us">Contact Us</a> </li>
+                <li><a class="navlink" href="customer/customer-login.php">Login</a> </li>
+                <li><a class="navlink" href="#contact-us">Contact</a> </li>
                 <li><a class="navlink" href="#where-we-deliver">Delivery</a> </li>
-                <li><a class="navlink" href="about.php">About us</a> </li>
-                <li><a class="navlink" href="subscribe.php">Why Subscribe?</a> </li>
+                <li><a class="navlink" href="about.php">About</a> </li>
+                <li><a class="navlink" href="subscribe.php">Subscribe</a> </li>
             </ul>
         </div>
 
@@ -215,10 +215,43 @@ if ($result->num_rows > 0) {
             <div id="left">
                 <div class="content-delivery">
 
-                    <h2>Where we deliver</h2>
+                    <h3>Contact Form</h3>
 
-                    https://smartpixel.com/#contact
+                    <h4>Contact us business@gmail.com</h4>
 
+                    <div class="contain">
+
+                        <div class="wrapper">
+                            <div class="form">
+                                <h3>Send us a message</h3>
+                                <form action="">
+                                    <p>
+                                        <label for="">Your name</label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label for="">Skype</label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label for="">Email Address</label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label for="">Topic</label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label for="">Write your message</label>
+                                        <textarea name="" id="" cols="30" rows="7"></textarea>
+                                    </p>
+                                    <p>
+                                        <button>Send</button>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
