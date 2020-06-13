@@ -51,10 +51,11 @@ $result = $conn->query($sql);
                     <h3>We Deliver Fresh, Natural and Organic Produce to your door!</h3>
                 </div>
 
-
             </div>
 
         </div>
+
+        <br><br><br><br><br><br><br><br><br><br>
 
         <div id="right">
             <div class="loggedin-image">
@@ -93,7 +94,7 @@ if ($result->num_rows > 0) {
 
         echo "<tr>
                                 <td>";
-        echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+        echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
         echo "
                                     <div class='food-post'>
                                     <p> " . $food_name . " </p>
