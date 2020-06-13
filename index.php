@@ -66,7 +66,7 @@ $result = $conn->query($sql);
         </div>
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <div class="display-items before-login-bkgd">
 
