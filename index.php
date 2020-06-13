@@ -224,7 +224,7 @@ if ($result->num_rows > 0) {
                         <div class="wrapper">
                             <div class="form">
                                 <h3>Send us a message</h3>
-                                <form action="">
+                                <form class="contact-input" action="">
                                     <p>
                                         <label for="">Your name</label>
                                         <input type="text">
