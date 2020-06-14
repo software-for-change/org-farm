@@ -62,6 +62,13 @@ ul li a:hover {
   text-decoration: underline;
 }
 
+/* landing page top section styling */
+.welcomepage-card {
+  height: 400px;
+  width: 400px;
+  background-color: #454547;
+}
+
 /* styling for the banner  */
 .banner {
   background-repeat: no-repeat;

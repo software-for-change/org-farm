@@ -56,11 +56,14 @@ $result = $conn->query($sql);
         </div>
 
         <div id="right">
-            <div class="loggedin-image">
+            <div class="welcomepage-card">
+                <!-- <h1>raining vegetables</h1>
+                <p>First things first, yes, it's true I want your money. But I want to give you great food in return</p>
+                <p>Shop with me so I can meet your food demands and you meet my money demands. Buy today.</p>
                 <button>Order With Us</button>
                 <a href="#how-it-works">How it works?</a>
                 <a href="#where-we-deliver">Where we deliver</a>
-                <a href="subscribe.php">Subscribe NOW!</a>
+                <a href="subscribe.php">Subscribe NOW!</a> -->
             </div>
 
         </div>
@@ -222,7 +225,8 @@ if ($result->num_rows > 0) {
                                 <h1>Send us a message</h1>
                                 <br>
                                 <hr class="first-bar">
-                                <br>
+                                <br><br>
+
                                 <form class="contact-input" action="">
                                     <p>
                                         <label for="">Your name</label>
