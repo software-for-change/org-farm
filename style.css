@@ -246,11 +246,16 @@ hr {
 }
 
 
-.banner-how-it-works #left {
+.banner-how-it-works #left, banner-contact-us #left {
   width: 50%;
   background-color: var(--boldpink);
   text-align: center;
   
+}
+
+.banner-how-it-works #right, banner-contact-us #right {
+  width: 50%;
+  text-align: center;
 }
 
 .content-how-it-works {
@@ -267,10 +272,7 @@ hr {
     line-height: 2.8;
 }
 
-.banner-how-it-works #right {
-  width: 50%;
-  text-align: center;
-}
+
 
 .steps-how-it-works {
   width: 100%;
@@ -433,11 +435,11 @@ textarea:focus {
   outline: 3px solid gold;
 }
 
-input,
-textarea,
-button {
+.form input,
+.form textarea{
   width: 100%;
   border: 1px solid #000;
+  background-color: rgba(255,255,255,.2);
 }
 
 .contact-input input {
