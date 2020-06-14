@@ -92,7 +92,7 @@ ul li a:hover {
 
 .group-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 /* styling for the banner  */
