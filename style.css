@@ -76,6 +76,11 @@ ul li a:hover {
   font-weight: 700;
 }
 
+.veges-rain img{
+  height: 10;
+  width: 10;
+}
+
 /* styling for the banner  */
 .banner {
   background-repeat: no-repeat;
