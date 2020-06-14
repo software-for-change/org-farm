@@ -58,9 +58,10 @@ $result = $conn->query($sql);
         <div id="right">
             <div class="welcomepage-card">
                 <img src="rain-128.png" width="40" height="40" alt="">
-                <img src="sweet-pepper.png" alt="">
+                <br>
+                <img src="sweet-pepper-24.png" alt="">
                 <img src="carrot-24.png" alt="">
-                <img src="chilli-pepper-29-24.png" alt="">
+                <img src="chili-pepper-29-24.png" alt="">
                 <!-- <h1>raining vegetables</h1>
                 <p>First things first, yes, it's true I want your money. But I want to give you great food in return</p>
                 <p>Shop with me so I can meet your food demands and you meet my money demands. Buy today.</p>
