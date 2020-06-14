@@ -261,12 +261,12 @@ if ($result->num_rows > 0) {
                     <h2>Mbale Ecological Farm</h2>
                     <p>123, Nabowa Road, Mbale, Uganda, Tell: +256 772 50601 </p>
                     
-                    <br><br>
+                    <br>
 
                     <h2>Email Us</h2>
                     <p>Reach our customer service: mbalefarm@gmail.com</p>
                     
-                    <br><br>
+                    <br>
                     <h2>Social Meida</h2>
                     <p>Follow us on social media coming soon</p>
 
