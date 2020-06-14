@@ -253,7 +253,7 @@ hr {
   
 }
 
-.banner-how-it-works #right, .banner-contact-us #right .banner-contact-us #left {
+.banner-how-it-works #right, .banner-contact-us #right, .banner-contact-us #left {
   width: 50%;
   text-align: center;
 }
