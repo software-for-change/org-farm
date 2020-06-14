@@ -259,9 +259,15 @@ if ($result->num_rows > 0) {
                 <div class="contact-info">
 
                     <h2>Mbale Ecological Farm</h2>
-                    <p>123, Nabowa Road, Mbale, Uganda </p>
-                    <p>Tell: +256 772 50601</p>
-                    <p>Email: mbalefarm@gmail.com</p>
+                    <p>123, Nabowa Road, Mbale, Uganda, Tell: +256 772 50601 </p>
+                    
+                    <br><br>
+
+                    <h2>Email Us</h2>
+                    <p>Reach our customer service: mbalefarm@gmail.com</p>
+
+                    <h2>Social Meida</h2>
+                    <p>Follow us on social media coming soon</p>
 
                 </div>
 
