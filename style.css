@@ -90,6 +90,11 @@ ul li a:hover {
   border: 1px solid var(--inputcolor); 
 }
 
+.group-buttons {
+  display: flex;
+  justify-content: center;
+}
+
 /* styling for the banner  */
 .banner {
   background-repeat: no-repeat;
