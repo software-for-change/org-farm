@@ -75,9 +75,9 @@ $result = $conn->query($sql);
                 <br>
                 <button>Order With Us</button>
                 <br> <br>
-                <a class="w3-btn w3-black card-button-1" href="#how-it-works">How it works</a>
-                <a class="w3-btn w3-black card-button-2" href="#where-we-deliver">Delivery</a>
-                <a class="w3-btn w3-black card-button-3" href="subscribe.php">Subscribe</a>
+                <a class="w3-btn  card-button-1" href="#how-it-works">How it works</a>
+                <a class="w3-btn  card-button-2" href="#where-we-deliver">Delivery</a>
+                <a class="w3-btn card-button-3" href="subscribe.php">Subscribe</a>
             </div>
 
         </div>
