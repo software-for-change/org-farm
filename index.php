@@ -62,13 +62,16 @@ $result = $conn->query($sql);
                 <img src="sweet-pepper-24.png" alt="">
                 <img src="carrot-24.png" alt="">
                 <img src="chili-pepper-29-24.png" alt="">
-                <!-- <h1>raining vegetables</h1>
-                <p>First things first, yes, it's true I want your money. But I want to give you great food in return</p>
-                <p>Shop with me so I can meet your food demands and you meet my money demands. Buy today.</p>
+                <h1>Raining Vegetables</h1>
+                <p>First things first, yes, it's true I want your money. 
+                    But I want to give you great food in return Shop with me so I can meet your
+                     food demands and you meet my money demands. Buy today
+                </p>
+                
                 <button>Order With Us</button>
                 <a href="#how-it-works">How it works?</a>
                 <a href="#where-we-deliver">Where we deliver</a>
-                <a href="subscribe.php">Subscribe NOW!</a> -->
+                <a href="subscribe.php">Subscribe NOW!</a>
             </div>
 
         </div>
