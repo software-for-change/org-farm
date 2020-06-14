@@ -86,9 +86,16 @@ ul li a:hover {
   font-size: 15px;
 }
 
-.card-button {
-  background-color: var(--sitebackgroundColor);
-  border: 2px solid #4CAF50; /* Green */
+.card-button-1 {
+  border: 1px solid var(--boldpink); 
+}
+
+.card-button-2 {
+  border: 1px solid var(--displaymessagecolor); 
+}
+
+.card-button-3 {
+  border: 1px solid var(--inputcolor); 
 }
 
 /* styling for the banner  */
