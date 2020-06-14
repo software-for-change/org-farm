@@ -69,11 +69,15 @@ $result = $conn->query($sql);
                 <br>
                 <p>First things first, yes, it's true I want your money. 
                     But I want to give you great food in return Shop with me so I can meet your
-                     food demands and you meet my money demands. Buy today
+                     food demands and you meet my money demands. Buy today!
                 </p>
-                
+                <br>
                 <button>Order With Us</button>
+                <div class="circle-one">
+
                 <a href="#how-it-works">How it works?</a>
+                </div>
+                
                 <a href="#where-we-deliver">Where we deliver</a>
                 <a href="subscribe.php">Subscribe NOW!</a>
             </div>
