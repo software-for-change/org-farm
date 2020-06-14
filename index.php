@@ -73,13 +73,10 @@ $result = $conn->query($sql);
                 </p>
                 <br>
                 <button>Order With Us</button>
-                <div class="circle-one">
 
-                <a href="#how-it-works">How it works?</a>
-                </div>
-                
-                <a href="#where-we-deliver">Where we deliver</a>
-                <a href="subscribe.php">Subscribe NOW!</a>
+                <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
+                <a class="w3-btn w3-black card-button" href="#where-we-deliver">Where we deliver</a>
+                <a class="w3-btn w3-black card-button" href="subscribe.php">Subscribe NOW!</a>
             </div>
 
         </div>
