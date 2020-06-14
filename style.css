@@ -388,6 +388,12 @@ hr {
 
 .contact-info h2 {
   text-align: left;
+  font-size: large;
+}
+
+.contact-info {
+  padding: 80px;
+  margin-top: 60px;
 }
 
 
@@ -397,7 +403,7 @@ body {
 }
 
 .wrapper > * {
-  padding: 1em;
+  padding: 6em;
 }
 .contact-input label {
   display: block;
@@ -459,7 +465,4 @@ textarea:focus {
 
 }
 
-.contact-info {
-  padding: 80px;
-  margin-top: 40px;
-}
+
