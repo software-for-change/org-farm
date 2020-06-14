@@ -71,6 +71,11 @@ ul li a:hover {
   padding: 60px;
 }
 
+.welcomepage-card h1 {
+  font-size: small;
+  font-weight: 700;
+}
+
 /* styling for the banner  */
 .banner {
   background-repeat: no-repeat;
