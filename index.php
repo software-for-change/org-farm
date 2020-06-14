@@ -12,8 +12,9 @@ $result = $conn->query($sql);
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Simply Organic</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+   
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap"
         rel="stylesheet">
@@ -73,7 +74,7 @@ $result = $conn->query($sql);
                 </p>
                 <br>
                 <button>Order With Us</button>
-                <br>
+                <br> <br>
                 <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
                 <a class="w3-btn w3-black card-button" href="#where-we-deliver">Where we deliver</a>
                 <a class="w3-btn w3-black card-button" href="subscribe.php">Subscribe</a>
