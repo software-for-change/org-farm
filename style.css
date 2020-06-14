@@ -86,15 +86,7 @@ ul li a:hover {
   font-size: 15px;
 }
 
-.card-button-1 {
-  border: 1px solid var(--boldpink); 
-}
-
-.card-button-2 {
-  border: 1px solid var(--displaymessagecolor); 
-}
-
-.card-button-3 {
+.card-button {
   border: 1px solid var(--inputcolor); 
 }
 
