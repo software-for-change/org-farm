@@ -215,15 +215,11 @@ if ($result->num_rows > 0) {
             <div id="left">
                 <div class="content-delivery">
 
-                    <h3>Contact Form</h3>
-
-                    <h4>Contact us business@gmail.com</h4>
-
                     <div class="contain">
 
                         <div class="wrapper">
                             <div class="form">
-                                <h3>Send us a message</h3>
+                                <h1>Send us a message</h1>
                                 <form class="contact-input" action="">
                                     <p>
                                         <label for="">Your name</label>
@@ -246,7 +242,7 @@ if ($result->num_rows > 0) {
                                         <textarea name="" id="" cols="30" rows="7"></textarea>
                                     </p>
                                     <p>
-                                        <button>Send</button>
+                                        <input type="submit" value="Send">
                                     </p>
                                 </form>
                             </div>
@@ -257,9 +253,12 @@ if ($result->num_rows > 0) {
             </div>
 
             <div id="right">
-                <div class="icon-delivery">
-                    <img src="delivery-man.svg" alt="triangle with all three sides equal" height="87" width="100" />
-                    <img src="delivery-truck.svg" alt="triangle with all three sides equal" height="87" width="100" />
+                <div class="contact-info">
+
+                    <h2>Mbale Ecological Farm</h2>
+                    <p>123, Nabowa Road, Mbale, Uganda </p>
+                    <p>Tell: +256 772 50601</p>
+                    <p>Email: mbalefarm@gmail.com</p>
 
                 </div>
 
