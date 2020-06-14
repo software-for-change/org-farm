@@ -263,9 +263,6 @@ hr {
   text-align: left;
 }
 
-.contact-info {
-  text-align: left;
-}
 
 .content-how-it-works {
   color: var(--sitefontColor);
@@ -388,6 +385,11 @@ hr {
   clear: both;
   width: 100%;
 }
+
+.contact-info h2 {
+  text-align: left;
+}
+
 
 /**************************************/
 body {
