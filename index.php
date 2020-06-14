@@ -64,8 +64,9 @@ $result = $conn->query($sql);
                 <img src="carrot-24.png" alt="">
                 <img src="chili-pepper-29-24.png" alt="">
                 </div>
-                <br><br>
+                <br>
                 <h1>Raining Vegetables</h1>
+                <br><br>
                 <p>First things first, yes, it's true I want your money. 
                     But I want to give you great food in return Shop with me so I can meet your
                      food demands and you meet my money demands. Buy today
