@@ -57,7 +57,7 @@ $result = $conn->query($sql);
 
         <div id="right">
             <div class="welcomepage-card">
-                <img src="rain-128.png" alt="">
+                <img src="rain-128.png" width="40" height="40" alt="">
                 <img src="sweet-pepper.png" alt="">
                 <img src="carrot-24.png" alt="">
                 <img src="chilli-pepper-29-24.png" alt="">

@@ -67,6 +67,8 @@ ul li a:hover {
   height: 400px;
   width: 400px;
   background-color: #454547;
+  margin-top: 40px;
+  padding: 60px;
 }
 
 /* styling for the banner  */
