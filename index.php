@@ -220,6 +220,9 @@ if ($result->num_rows > 0) {
                         <div class="wrapper">
                             <div class="form">
                                 <h1>Send us a message</h1>
+                                <br>
+                                <hr class="first-bar">
+                                <br>
                                 <form class="contact-input" action="">
                                     <p>
                                         <label for="">Your name</label>
