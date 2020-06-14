@@ -66,7 +66,7 @@ $result = $conn->query($sql);
                 </div>
                 <br>
                 <h1>Raining Vegetables</h1>
-                <br><br>
+                <br>
                 <p>First things first, yes, it's true I want your money. 
                     But I want to give you great food in return Shop with me so I can meet your
                      food demands and you meet my money demands. Buy today
@@ -81,7 +81,7 @@ $result = $conn->query($sql);
         </div>
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <div class="display-items before-login-bkgd">
 
