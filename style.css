@@ -331,16 +331,18 @@ hr {
   border-color: var(--sitefontColor);
 }
 
+
+
+/* styling for the contact section */
+
 .contact-info .h2 {
   font-size: medium;
 }
 
 .contact-info p {
   font-size: small;
+  letter-spacing: 3px;
 }
-
-
-/* styling for the contact section */
 
 * {
   box-sizing: border-box;

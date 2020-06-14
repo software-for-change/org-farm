@@ -265,7 +265,8 @@ if ($result->num_rows > 0) {
 
                     <h2>Email Us</h2>
                     <p>Reach our customer service: mbalefarm@gmail.com</p>
-
+                    
+                    <br><br>
                     <h2>Social Meida</h2>
                     <p>Follow us on social media coming soon</p>
 
