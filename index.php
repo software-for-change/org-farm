@@ -73,7 +73,7 @@ $result = $conn->query($sql);
                      food demands and you meet my money demands. Buy today!
                 </p>
                 <br>
-                <button>Order With Us</button>
+                <button onclick="window.location.href='#our-packages'">Order With Us</button>
                 <br> <br>
                 <div class="group-buttons">
                 <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
@@ -87,9 +87,9 @@ $result = $conn->query($sql);
         </div>
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <div class="display-items before-login-bkgd">
+    <div class="display-items before-login-bkgd" id="our-packages">
 
         <h1>Our Packages</h1>
         <br>
