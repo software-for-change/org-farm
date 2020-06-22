@@ -3,7 +3,7 @@ session_start();
 include_once "access-db.php";
 
 if(!isset($_SESSION["user_id"])){ //if login in session is not set
-    echo 'please log in before purchasing an item';
+    $_SESSION['message'] = 'please log in before purchasing an item';
     header("location:customer/customer-login.php");
 }
 else {
