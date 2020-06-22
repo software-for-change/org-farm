@@ -34,27 +34,6 @@ $result = $conn->query($sql);
 
 <?php include '../header.php';?>
 
-    <div id="content">
-        <div id="left">
-            <div class="slogan">
-
-                <div class="banner-title">
-                    <h3>We want to serve our customers with the highest quality products</h3>
-                </div>
-
-
-            </div>
-
-        </div>
-
-        <div id="right">
-            <div class="loggedin-image">
-                <img src="../pngfuel.com-other.png" alt="">
-            </div>
-
-        </div>
-    </div>
-
     <div class="display-items">
 
         <p>Our prices: Nsaze ko nawe!</p>

@@ -23,23 +23,18 @@ session_start();
 
     <title>Simply Organic </title>
 </head>
+
 <body class="access_page">
 
-<?php include '../header.php';?>
+    <?php include '../header.php';?>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div class="display-message">
         <?php
-            if (isset($_SESSION['message'])) {
-                echo $_SESSION['message'];
-                unset($_SESSION['message']);
-            }
-            ?>
+if (isset($_SESSION['message'])) {
+    echo $_SESSION['message'];
+    unset($_SESSION['message']);
+}
+?>
 
     </div>
 
@@ -135,11 +130,20 @@ session_start();
         </div>
     </div>
 
-    <br><br>
-    <script src="../index.js"></script>
+    <?php include '../footer.php';?>
+
+
+    <script src="../index.js">
+    $(document).ready(function() {
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+    });
+    </script>
 
 </body>
 
-<?php include '../footer.php';?>
+
 
 </html>
