@@ -67,9 +67,10 @@
 
 
 
+
 </p>
 
-
+<p>we have a premium plan that you can join</p>
 
 
 
