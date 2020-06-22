@@ -2,9 +2,14 @@
 session_start();
 include_once "../access-db.php";
 
-if(!isset($_SESSION["user_id"])){ //if login in session is not set
+if (!isset($_SESSION["user_id"])) { //if login in session is not set
     header("location:customer-login.php");
 }
+
+$user = $_SESSION['user_id'];
+
+$sql = "SELECT * FROM farm_purchase_items WHERE user_id='$user'";
+$result = $conn->query($sql);
 
 ?>
 <!DOCTYPE html>
@@ -28,34 +33,132 @@ if(!isset($_SESSION["user_id"])){ //if login in session is not set
 
 <body>
 
-    <div class="header">
-        <div class="menu_navbar">
-            <ul class="menu-links">
-                <li><a class="navlink" href="shopping-cart">shopping cart</a> </li>
-                <li><a class="navlink" href="customer-logged-in.php">home</a> </li>
-                <li><a class="navlink" href="../logout.php">logout</a> </li>
-
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="customer-logged-in.php">Farm Organic</a> </h2>
-        </div>
-    </div>
-
+<?php include '../header.php';?>
     <div class="banner">
         <h1 class="pageTitle">Simply Organic</h1>
     </div>
 
     <h1>shopping cart</h1>
 
-    <p>the current items in your cart</p>
+    <div class="page-content">
+        <div id="content">
+            <div id="left">
+                <div class="slogan">
 
-    <br> <br>
+                    <?php
 
-    <h1>past orders </h1>
+                        if ($result->num_rows > 0) {
 
-    <p>your past orders</p>
+                            echo "<div class='thegrid'";
+                            echo "<table class='prodcue-table'>";
+
+                            // output data of each row
+                            while ($row = mysqli_fetch_array($result)) {
+
+                                $package = $row['package_id'];
+
+                                $query = "SELECT food_name, price, food_image FROM farm_food WHERE food_id='$package'";
+                                $newresult = $conn->query($query);
+
+                                while ($newrow = mysqli_fetch_array($newresult)) {
+                                    $food_name = $newrow["food_name"];
+                                    $food_image = $newrow["food_image"];
+                                    $price = $newrow["price"];
+                                    $sum += $price;
+
+                                    echo "<div class='food-item'";
+
+                                    echo "<tr>
+                                                                                    <td>";
+                                    echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+                                    echo "
+                                                                                        <div class='food-post'>
+                                                                                        <p> " . $food_name . " </p>
+                                                                                        <p> $" . $price . " </p>";
+
+                                    echo "<br>";
+                                    echo "<button id='minus'>−</button>
+                                                                        <input type='number' value='0' id='input' />
+                                                                        <button id='plus'>+</button>";
+
+                                    echo " </div>";
+
+                                    echo "</td>";
+                                    echo "</tr>";
+                                    echo "</div>";
+
+                                }
+                                echo "<p> The total price for your items ".$sum."</p>";
+                                echo "</table>";
+                                echo "</div>";
+
+                            }
+                        } else {
+                            echo "Sorry, you did not select any item to be added to the cart";
+
+                        }
+                        ?>
+
+                </div>
+
+            </div>
+
+            <div id="right">
+                <div class="welcomepage-card shopping-message">
+                    <img class="rain-img" src="rain-128.png" width="40" height="40" alt="">
+                    <br>
+                    <div class="veges-rain">
+                        <img src="../images/sweet-pepper-24.png" alt="">
+                        <img src="../images/carrot-24.png" alt="">
+                        <img src="../images/chili-pepper-29-24.png" alt="">
+                    </div>
+                    <br>
+                    <h1>Raining Vegetables</h1>
+                    <br>
+                    <p>First things first, yes, it's true I want your money.
+                        But I want to give you great food in return Shop with me so I can meet your
+                        food demands and you meet my money demands. Buy today!
+
+
+
+                        <!-- have a form to submit this info -->
+
+                        <p>Choose your delivery frequency</p>
+                        <!-- options are: once, weekly, bi-weekly -->
+
+                        <!-- have a complete purchase button -->
+
+                        <!-- that button routes you to the checkout shopping cart page -->
+
+                        <!-- check out has a continue shoppint button and a complete order button -->
+
+                        <!-- include a shopping cart table that displays all the items in the cart table -->
+
+                        <!-- one takes you to the index page and the other takes you to complete order -->
+
+
+
+                    </p>
+                    <br>
+                    <button onclick="window.location.href='#our-packages'">Order With Us</button>
+                    <br> <br>
+                    <div class="group-buttons">
+                        <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
+                        <a class="w3-btn w3-black card-button" href="#where-we-deliver">Delivery</a>
+                        <a class="w3-btn w3-black card-button" href="subscribe.php">Subscribe</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <p>your past orders</p>
+
+    </div>
+
+    <?php include '../footer.php';?>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

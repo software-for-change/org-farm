@@ -1,13 +1,14 @@
 <?php
-session_start();
-include_once "../access-db.php";
+    session_start();
+    include_once "../access-db.php";
 
-if(!isset($_SESSION["user_id"])){ //if login in session is not set
-    header("location:customer-login.php");
-}
+    if(!isset($_SESSION["user_id"])){ //if login in session is not set
+        header("location:customer-login.php");
+    }
+    $package = $_SESSION['package_id'];
 
-$sql = "SELECT food_name, price, food_image FROM farm_food";
-$result = $conn->query($sql);
+    $sql = "SELECT food_name, price, food_image FROM farm_food WHERE food_id='$package'";
+    $result = $conn->query($sql);
 
 ?>
 <!DOCTYPE html>
@@ -80,7 +81,7 @@ $result = $conn->query($sql);
                             echo "</div>";
 
                         } else {
-                            echo "0 results";
+                            echo "Sorry, you did not select any item to be added to the cart";
                         }
                         ?>
 
