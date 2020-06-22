@@ -16,7 +16,7 @@ else {
 
         if (mysqli_query($conn, "INSERT INTO farm_purchase_items (package_id, client_id) VALUES ('$pack_id', '$client_id')")) {
             $_SESSION['message'] = "you have successfully created an account as the client. You can now use your credentials to login";
-            header("location:customer/customer-loggedin.php?");
+            header("location:customer/customer-logged-in.php?");
 
         } else {
             $_SESSION['message'] = 'sorry your item has not been added to the cart due to system failure';
