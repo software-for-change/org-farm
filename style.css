@@ -67,7 +67,7 @@ ul li a:hover {
 .welcomepage-card {
   height: 500px;
   width: 500px;
-  background-color: rgba(0,0, 0,.4)
+  background-color: rgba(0,0, 0,.4);
   margin-top: 100px;
   padding: 60px;
   margin-right: 200px;
@@ -147,19 +147,6 @@ ul li a:hover {
 
 .display-items {
   background-color: var(--sitefontColor);
-}
-
-.customer-loggedin {
-    background-color: var(--inputcolor);
-    color: var(--sitebackgroundColor);
-}
-
-.customer-loggedin-menu-links li a {
-  color: var(--sitebackgroundColor);
-}
-
-.loggedin-logo a {
-  color: var(--sitebackgroundColor);
 }
 
 .slogan {
@@ -282,7 +269,6 @@ ul li a:hover {
     border-style: double;
 }
   
-}
 
 .banner-how-it-works #right {
   width: 50%;

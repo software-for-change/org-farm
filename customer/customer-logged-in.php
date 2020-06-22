@@ -35,7 +35,6 @@ $result = $conn->query($sql);
     <div class="header">
         <div class="menu_navbar">
             <ul class="customer-loggedin-menu-links">
-                <li><a class="navlink" href="admin/admin-login.php">How it works</a> </li>
                 <li><a class="navlink" href="shopping-cart">shopping cart</a> </li>
                 <li><a class="navlink" href="admin/admin-login.php">contact support</a> </li>
                 <li><a class="navlink" href="../logout.php">logout</a> </li>
@@ -43,8 +42,8 @@ $result = $conn->query($sql);
             </ul>
         </div>
 
-        <div class="logo loggedin-logo">
-            <h2 class="logo"> <a href="customer-logged-in.php">Farm Organic</a> </h2>
+        <div class="logo">
+            <h2 class="logo"> <a href="../index.php">Farm Organic</a> </h2>
         </div>
     </div>
     <br> <br>
@@ -58,7 +57,7 @@ $result = $conn->query($sql);
                 <div class="banner-title">
                     <h3>We want to serve our customers with the highest quality products</h3>
                 </div>
-                
+
 
             </div>
 
@@ -71,55 +70,73 @@ $result = $conn->query($sql);
 
         </div>
     </div>
-    <br><br><br><br><br>
+
     <div class="display-items">
-    <br><br><br><br><br><br>
-    
-<p>Our prices: Nsaze ko nawe!</p>
-    <?php
 
-if ($result->num_rows > 0) {
+        <p>Our prices: Nsaze ko nawe!</p>
+        <?php
 
-    echo "<div class='thegrid'";
-    echo "<table class='prodcue-table'>";
+            if ($result->num_rows > 0) {
 
-    // output data of each row
-    while ($row = mysqli_fetch_array($result)) {
+                echo "<div class='thegrid'";
+                echo "<table class='prodcue-table'>";
 
-        $food_name = $row["food_name"];
-        $food_image = $row["food_image"];
-        $price = $row["price"];
+                // output data of each row
+                while ($row = mysqli_fetch_array($result)) {
 
-        echo "<div class='food-item'";
+                    $food_name = $row["food_name"];
+                    $food_image = $row["food_image"];
+                    $price = $row["price"];
 
-        echo "<tr>
-                                <td>";
-        echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-        echo "
-                                    <div class='food-post'>
-                                    <p> " . $food_name . " </p>
-                                    <p> $" . $price . " </p>";
+                    echo "<div class='food-item'";
 
-        echo "<br>";
-        echo "<button id='minus'>−</button>
-                    <input type='number' value='0' id='input' />
-                    <button id='plus'>+</button>";
+                    echo "<tr>
+                                            <td>";
+                    echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+                    echo "
+                                                <div class='food-post'>
+                                                <p> " . $food_name . " </p>
+                                                <p> $" . $price . " </p>";
 
-        echo " </div>";
+                    echo "<br>";
+                    echo "<button id='minus'>−</button>
+                                <input type='number' value='0' id='input' />
+                                <button id='plus'>+</button>";
 
-        echo "</td>";
-        echo "</tr>";
-        echo "</div>";
+                    echo " </div>";
 
-    }
-    echo "</table>";
-    echo "</div>";
+                    echo "</td>";
+                    echo "</tr>";
+                    echo "</div>";
 
-} else {
-    echo "0 results";
-}
-?>
-</div>
+                }
+                echo "</table>";
+                echo "</div>";
+
+            } else {
+                echo "0 results";
+            }
+            ?>
+    </div>
+
+    <div class="shopping-message">
+
+            <!-- have a form to submit this info -->
+
+            <p>Choose your delivery frequency</p>
+            <!-- options are: once, weekly, bi-weekly -->
+
+            <!-- have a complete purchase button -->
+
+            <!-- that button routes you to the checkout shopping cart page -->
+
+            <!-- check out has a continue shoppint button and a complete order button -->
+
+            <!-- include a shopping cart table that displays all the items in the cart table -->
+
+            <!-- one takes you to the index page and the other takes you to complete order -->
+
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>

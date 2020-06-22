@@ -29,9 +29,9 @@ session_start();
         <div class="menu_navbar">
             <ul>
 
-                <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li>
+                <!-- <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li> -->
                 <!-- <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li> -->
-                <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
+                <li><a class="navlink" href="../index.php">home </a> </li>
 
             </ul>
         </div>

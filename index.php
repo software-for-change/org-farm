@@ -119,9 +119,7 @@ if ($result->num_rows > 0) {
                                     <p> $" . $price . " </p>";
 
         echo "<br>";
-        echo "<button id='minus'>−</button>
-                    <input type='number' value='0' id='input' />
-                    <button id='plus'>+</button>";
+        echo "<button onclick='window.location.href='customer-login.php''>Purchase Item</button>";
 
         echo " </div>";
 
