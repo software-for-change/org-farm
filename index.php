@@ -114,7 +114,7 @@ if ($result->num_rows > 0) {
                                     <p> $" . $price . " </p>";
 
         echo "<br>";
-        echo "<button onclick='window.location.href='customer-login.php''>Purchase Item</button>";
+        echo "<button onclick='window.location.href='process-purchase-btn.php''>Purchase Item</button>";
 
         echo " </div>";
 
