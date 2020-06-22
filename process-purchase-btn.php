@@ -15,7 +15,7 @@ else {
         $_SESSION['package_id'] = $pack_id;
 
         if (mysqli_query($conn, "INSERT INTO farm_purchase_items (package_id, client_id) VALUES ('$pack_id', '$client_id')")) {
-            $_SESSION['message'] = "you have successfully created an account as the client. You can now use your credentials to login";
+            $_SESSION['message'] = "item has been added to cart";
             header("location:customer/customer-logged-in.php?");
 
         } else {

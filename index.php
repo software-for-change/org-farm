@@ -2,7 +2,7 @@
 include_once "access-db.php";
 session_start();
 
-$sql = "SELECT food_name, price, food_image FROM farm_food";
+$sql = "SELECT * FROM farm_food";
 $result = $conn->query($sql);
 
 ?>
@@ -108,9 +108,12 @@ if ($result->num_rows > 0) {
     // output data of each row
     while ($row = mysqli_fetch_array($result)) {
 
+        echo "<form method='post' action='process-purchase.php'>";
+
         $food_name = $row["food_name"];
         $food_image = $row["food_image"];
         $price = $row["price"];
+        $food_id = $row["food_id"];
 
         echo "<div class='food-item'";
 
@@ -123,8 +126,8 @@ if ($result->num_rows > 0) {
                                     <p> $" . $price . " </p>";
 
         echo "<br>";
-        echo "<button onclick=\"window.location.href='process-purchase-btn.php'\">Purchase Item</button>";
-
+        echo "<input name='package_id'  type='hidden' value='$food_id' >";
+        echo "<input type='submit' class='submit-button' value='Purchase Item'>";
         echo " </div>";
 
         echo "</td>";
