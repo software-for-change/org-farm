@@ -124,15 +124,17 @@ if ($result->num_rows > 0) {
                                     <div class='food-post'>
                                     <p> " . $food_name . " </p>
                                     <p> $" . $price . " </p>";
+                                    echo "<input name='package_id'  type='hidden' value='$food_id' >";
+        echo "<input type='submit' class='submit-button' value='Purchase Item'>";
 
         echo "<br>";
-        echo "<input name='package_id'  type='hidden' value='$food_id' >";
-        echo "<input type='submit' class='submit-button' value='Purchase Item'>";
+        
         echo " </div>";
 
         echo "</td>";
         echo "</tr>";
         echo "</div>";
+        echo "</form>";
 
     }
     echo "</table>";
