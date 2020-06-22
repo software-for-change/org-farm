@@ -51,9 +51,9 @@ $result = $conn->query($sql);
                     <img class="rain-img" src="rain-128.png" width="40" height="40" alt="">
                     <br>
                     <div class="veges-rain">
-                        <img src="sweet-pepper-24.png" alt="">
-                        <img src="carrot-24.png" alt="">
-                        <img src="chili-pepper-29-24.png" alt="">
+                        <img src="images/sweet-pepper-24.png" alt="">
+                        <img src="images/carrot-24.png" alt="">
+                        <img src="images/chili-pepper-29-24.png" alt="">
                     </div>
                     <br>
                     <h1>Raining Vegetables</h1>
@@ -210,8 +210,8 @@ if ($result->num_rows > 0) {
                     </div>
 
                     <div class="icon-delivery">
-                        <img src="delivery-man.svg" alt="triangle with all three sides equal" height="87" width="100" />
-                        <img src="delivery-truck.svg" alt="triangle with all three sides equal" height="87"
+                        <img src="images/delivery-man.svg" alt="triangle with all three sides equal" height="87" width="100" />
+                        <img src="images/delivery-truck.svg" alt="triangle with all three sides equal" height="87"
                             width="100" />
 
                     </div>

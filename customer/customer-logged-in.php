@@ -32,23 +32,7 @@ $result = $conn->query($sql);
 
 <body class="customer-loggedin">
 
-    <div class="header">
-        <div class="menu_navbar">
-            <ul class="customer-loggedin-menu-links">
-                <li><a class="navlink" href="shopping-cart">shopping cart</a> </li>
-                <li><a class="navlink" href="admin/admin-login.php">contact support</a> </li>
-                <li><a class="navlink" href="../logout.php">logout</a> </li>
-
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="../index.php">Farm Organic</a> </h2>
-        </div>
-    </div>
-    <br> <br>
-
-
+<?php include '../header.php';?>
 
     <div id="content">
         <div id="left">
@@ -137,6 +121,8 @@ $result = $conn->query($sql);
             <!-- one takes you to the index page and the other takes you to complete order -->
 
     </div>
+
+    <?php include '../footer.php';?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>

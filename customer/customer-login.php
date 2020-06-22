@@ -25,21 +25,7 @@ session_start();
 </head>
 <body class="access_page">
 
-    <div class="header">
-        <div class="menu_navbar">
-            <ul>
-
-                <!-- <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li> -->
-                <!-- <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li> -->
-                <li><a class="navlink" href="../index.php">home </a> </li>
-
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="../index.php">Farm Organic</a> </h2>
-        </div>
-    </div>
+<?php include '../header.php';?>
 
     <br>
     <br>
@@ -153,5 +139,7 @@ session_start();
     <script src="../index.js"></script>
 
 </body>
+
+<?php include '../footer.php';?>
 
 </html>

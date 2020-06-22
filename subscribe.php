@@ -19,22 +19,8 @@
 
 <body>
 
-    <div class="header">
-        <div class="menu_navbar">
-            <ul>
-                <li><a class="navlink" href="about.html">about</a> </li>
-                <li><a class="navlink" href="admin/admin-login.php">admin login</a> </li>
-                <!-- <li><a class="navlink" href="farmer/farmer-login.php">farmer login</a> </li> -->
-                <li><a class="navlink" href="customer/customer-login.php">customer login </a> </li>
-                <li><a class="navlink" href="index.html">logout</a> </li>
+<?php include 'header.php';?>
 
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="index.php">Farm Organic</a> </h2>
-        </div>
-    </div>
 
     <div class="banner">
         <p>Simply Organic</p>
@@ -75,6 +61,8 @@
 
 
 </p>
+
+<?php include 'footer.php';?>
     <br> <br>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>
