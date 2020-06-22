@@ -2,7 +2,7 @@
 include_once "access-db.php";
 session_start();
 
-$sql = "SELECT * FROM farm_food";
+$sql = "SELECT food_name, food_id, price, food_image FROM farm_food";
 $result = $conn->query($sql);
 
 ?>
@@ -108,7 +108,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     while ($row = mysqli_fetch_array($result)) {
 
-        echo "<form method='post' action='process-purchase.php'>";
+        echo "<form method='post' action='process-purchase-btn.php'>";
 
         $food_name = $row["food_name"];
         $food_image = $row["food_image"];
