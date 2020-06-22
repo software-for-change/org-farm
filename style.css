@@ -78,6 +78,10 @@ ul li a:hover {
 
 /* end styling for the nav bar  */
 
+
+
+
+
 /* landing page top section styling */
 .welcomepage-card {
   height: 500px;
@@ -126,7 +130,10 @@ ul li a:hover {
   text-align: center;
 }
 
-/* styling for the customer page */
+
+
+
+
 .thegrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -151,15 +158,9 @@ ul li a:hover {
   opacity: 1;
 }
 
-/* styling for the farmer page */
-.prodcue-table {
-  /* border: 1px solid black; */
-  font-size: 16px;
-  width: 70%;
-}
+/* end of styling for the first section of the landing page */
 
-/* styling for the customer logged in page */
-
+/* styling for the pac */
 .display-items {
   background-color: var(--sitefontColor);
 }
@@ -188,6 +189,31 @@ ul li a:hover {
 .loggedin-image img {
   margin-right: 20px;
 }
+
+/* styling for the customer logged in page */
+.customer-loggedin .food-item {
+
+  background-color: var(--matteblack);
+}
+
+.customer-loggedin .slogan{
+margin-top: 90px;
+}
+
+
+
+/* end of styling for the customer logged in page */
+
+
+
+/* styling for the farmer page */
+.prodcue-table {
+  /* border: 1px solid black; */
+  font-size: 16px;
+  width: 70%;
+}
+
+
 
 /* styling for the login pages */
 .access_page {

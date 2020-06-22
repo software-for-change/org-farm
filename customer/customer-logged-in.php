@@ -30,7 +30,7 @@ $result = $conn->query($sql);
     <title>Customer</title>
 </head>
 
-<body class="customer-loggedin">
+<body class="banner customer-loggedin">
 
     <?php include '../header.php';?>
 
@@ -93,9 +93,9 @@ $result = $conn->query($sql);
                     <img class="rain-img" src="rain-128.png" width="40" height="40" alt="">
                     <br>
                     <div class="veges-rain">
-                        <img src="images/sweet-pepper-24.png" alt="">
-                        <img src="images/carrot-24.png" alt="">
-                        <img src="images/chili-pepper-29-24.png" alt="">
+                        <img src="../images/sweet-pepper-24.png" alt="">
+                        <img src="../images/carrot-24.png" alt="">
+                        <img src="../images/chili-pepper-29-24.png" alt="">
                     </div>
                     <br>
                     <h1>Raining Vegetables</h1>
