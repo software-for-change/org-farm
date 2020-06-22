@@ -63,6 +63,23 @@ ul li a:hover {
   text-decoration: underline;
 }
 
+/* styling for the scroll feature in the nav bar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .page-content {
+  padding-top: 102px;
+}
+
+
+
+/* end styling for the nav bar  */
+
+
+
 /* landing page top section styling */
 .welcomepage-card {
   height: 500px;

@@ -1,7 +1,7 @@
 <?php
 
 echo "
-    <div class='header'>
+    <div class='header' id='myHeader'>
     <div class='menu_navbar'>
         <ul>
             <li><a class='navlink' href='customer/customer-login.php'>Login</a> </li>
