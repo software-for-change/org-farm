@@ -26,25 +26,11 @@ $result = $conn->query($sql);
     <title>Customer</title>
 </head>
 
+<?php include 'header.php';?>
+
 <body class="banner">
 
-    <div class="header">
-        <div class="menu_navbar">
-            <ul>
-                <li><a class="navlink" href="customer/customer-login.php">Login</a> </li>
-                <li><a class="navlink" href="#our-packages">Packages</a> </li>
-                <li><a class="navlink" href="#contact-us">Contact</a> </li>
-                <li><a class="navlink" href="#where-we-deliver">Delivery</a> </li>
-                <li><a class="navlink" href="about.php">About</a> </li>
-                <li><a class="navlink" href="subscribe.php">Subscribe</a> </li>
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="index.php">Farm Organic</a> </h2>
-        </div>
-    </div>
-
+    
     <div id="content">
         <div id="left">
             <div class="slogan">
@@ -294,12 +280,12 @@ if ($result->num_rows > 0) {
 
             </div>
         </div>
-
-
-
     </div>
+    <!-- end of contact us banner -->
 
-    <div class="footer">
+    <?php include 'footer.php';?>
+
+    <!-- <div class="footer">
         <a href="contact.php">Need help?</a>
         <a href="subscribe.php">subscribe</a>
         <a href="about.php">About us</a>
@@ -310,72 +296,9 @@ if ($result->num_rows > 0) {
             href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
         <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a>
         from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-    </div>
+    </div> -->
 
-    <!-- FOOTER START -->
-    <div class="footer">
-        <div class="contain">
-            <div class="col">
-                <h1>Company</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Mission</li>
-                    <li>Services</li>
-                    <li>Social</li>
-                    <li>Get in touch</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Products</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Mission</li>
-                    <li>Services</li>
-                    <li>Social</li>
-                    <li>Get in touch</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Accounts</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Mission</li>
-                    <li>Services</li>
-                    <li>Social</li>
-                    <li>Get in touch</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Resources</h1>
-                <ul>
-                    <li>Webmail</li>
-                    <li>Redeem code</li>
-                    <li>WHOIS lookup</li>
-                    <li>Site map</li>
-                    <li>Web templates</li>
-                    <li>Email templates</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Support</h1>
-                <ul>
-                    <li>Contact us</li>
-                    <li>Web chat</li>
-                    <li>Open ticket</li>
-                </ul>
-            </div>
-            <div class="col social">
-                <h1>Social</h1>
-                <ul>
-                    <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
-                    <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
-                    <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
-                </ul>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-    <!-- END OF FOOTER -->
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>
