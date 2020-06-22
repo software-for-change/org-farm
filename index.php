@@ -33,6 +33,8 @@ $result = $conn->query($sql);
 
     <div class="page-content">
 
+        <!-- begining of the header content on the index page -->
+
 
         <div id="content">
             <div id="left">
@@ -76,6 +78,9 @@ $result = $conn->query($sql);
 
             </div>
         </div>
+
+
+        <!-- end of the top header content for the index page -->
 
         <div class="display-items before-login-bkgd" id="our-packages">
 

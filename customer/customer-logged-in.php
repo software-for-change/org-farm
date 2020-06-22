@@ -32,74 +32,115 @@ $result = $conn->query($sql);
 
 <body class="customer-loggedin">
 
-<?php include '../header.php';?>
+    <?php include '../header.php';?>
 
-    <div class="display-items">
 
-        <p>Our prices: Nsaze ko nawe!</p>
-        <?php
+    <div class="page-content">
+        <div id="content">
+            <div id="left">
+                <div class="slogan">
 
-            if ($result->num_rows > 0) {
+                    <?php
 
-                echo "<div class='thegrid'";
-                echo "<table class='prodcue-table'>";
+                        if ($result->num_rows > 0) {
 
-                // output data of each row
-                while ($row = mysqli_fetch_array($result)) {
+                            echo "<div class='thegrid'";
+                            echo "<table class='prodcue-table'>";
 
-                    $food_name = $row["food_name"];
-                    $food_image = $row["food_image"];
-                    $price = $row["price"];
+                            // output data of each row
+                            while ($row = mysqli_fetch_array($result)) {
 
-                    echo "<div class='food-item'";
+                                $food_name = $row["food_name"];
+                                $food_image = $row["food_image"];
+                                $price = $row["price"];
 
-                    echo "<tr>
-                                            <td>";
-                    echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-                    echo "
-                                                <div class='food-post'>
-                                                <p> " . $food_name . " </p>
-                                                <p> $" . $price . " </p>";
+                                echo "<div class='food-item'";
 
-                    echo "<br>";
-                    echo "<button id='minus'>−</button>
-                                <input type='number' value='0' id='input' />
-                                <button id='plus'>+</button>";
+                                echo "<tr>
+                                                        <td>";
+                                echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+                                echo "
+                                                            <div class='food-post'>
+                                                            <p> " . $food_name . " </p>
+                                                            <p> $" . $price . " </p>";
 
-                    echo " </div>";
+                                echo "<br>";
+                                echo "<button id='minus'>−</button>
+                                            <input type='number' value='0' id='input' />
+                                            <button id='plus'>+</button>";
 
-                    echo "</td>";
-                    echo "</tr>";
-                    echo "</div>";
+                                echo " </div>";
 
-                }
-                echo "</table>";
-                echo "</div>";
+                                echo "</td>";
+                                echo "</tr>";
+                                echo "</div>";
 
-            } else {
-                echo "0 results";
-            }
-            ?>
+                            }
+                            echo "</table>";
+                            echo "</div>";
+
+                        } else {
+                            echo "0 results";
+                        }
+                        ?>
+
+                </div>
+
+            </div>
+
+            <div id="right">
+                <div class="welcomepage-card shopping-message">
+                    <img class="rain-img" src="rain-128.png" width="40" height="40" alt="">
+                    <br>
+                    <div class="veges-rain">
+                        <img src="images/sweet-pepper-24.png" alt="">
+                        <img src="images/carrot-24.png" alt="">
+                        <img src="images/chili-pepper-29-24.png" alt="">
+                    </div>
+                    <br>
+                    <h1>Raining Vegetables</h1>
+                    <br>
+                    <p>First things first, yes, it's true I want your money.
+                        But I want to give you great food in return Shop with me so I can meet your
+                        food demands and you meet my money demands. Buy today!
+
+
+
+                        <!-- have a form to submit this info -->
+
+                        <p>Choose your delivery frequency</p>
+                        <!-- options are: once, weekly, bi-weekly -->
+
+                        <!-- have a complete purchase button -->
+
+                        <!-- that button routes you to the checkout shopping cart page -->
+
+                        <!-- check out has a continue shoppint button and a complete order button -->
+
+                        <!-- include a shopping cart table that displays all the items in the cart table -->
+
+                        <!-- one takes you to the index page and the other takes you to complete order -->
+
+
+
+                    </p>
+                    <br>
+                    <button onclick="window.location.href='#our-packages'">Order With Us</button>
+                    <br> <br>
+                    <div class="group-buttons">
+                        <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
+                        <a class="w3-btn w3-black card-button" href="#where-we-deliver">Delivery</a>
+                        <a class="w3-btn w3-black card-button" href="subscribe.php">Subscribe</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
-    <div class="shopping-message">
-
-            <!-- have a form to submit this info -->
-
-            <p>Choose your delivery frequency</p>
-            <!-- options are: once, weekly, bi-weekly -->
-
-            <!-- have a complete purchase button -->
-
-            <!-- that button routes you to the checkout shopping cart page -->
-
-            <!-- check out has a continue shoppint button and a complete order button -->
-
-            <!-- include a shopping cart table that displays all the items in the cart table -->
-
-            <!-- one takes you to the index page and the other takes you to complete order -->
-
-    </div>
 
     <?php include '../footer.php';?>
 
