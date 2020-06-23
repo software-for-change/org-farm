@@ -8,8 +8,6 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set
 
 $user = $_SESSION['user_id'];
 
-echo "the user id is", $user;
-
 $sql = "SELECT * FROM farm_purchase_items WHERE client_id='$user'";
 $result = $conn->query($sql);
 
@@ -47,9 +45,7 @@ $result = $conn->query($sql);
 
                         if ($result->num_rows > 0) {
                             
-                            echo "did we get here";
-                            echo "<div class='thegrid'";
-                            echo "<table class='prodcue-table'>";
+                            
 
                             // output data of each row
                             while ($row = mysqli_fetch_array($result)) {
@@ -58,6 +54,9 @@ $result = $conn->query($sql);
 
                                 $query = "SELECT food_name, price, food_image FROM farm_food WHERE food_id='$package'";
                                 $newresult = $conn->query($query);
+
+                                echo "<div class='thegrid'";
+                                echo "<table class='prodcue-table'>";
 
                                 while ($newrow = mysqli_fetch_array($newresult)) {
                                     $food_name = $newrow["food_name"];
