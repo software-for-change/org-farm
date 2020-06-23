@@ -130,10 +130,16 @@ ul li a:hover {
   text-align: center;
 }
 
+/* end of styling for the first section of the landing page */
 
 
 
 
+
+
+
+
+/* styling for the grid for the package section */
 .thegrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -143,7 +149,7 @@ ul li a:hover {
 .food-item {
   text-align: center;
   padding: 40px;
-  width: 80%;
+  width: 100%;
   border-radius: 25px;
 }
 .food-item:hover {
@@ -158,9 +164,6 @@ ul li a:hover {
   opacity: 1;
 }
 
-/* end of styling for the first section of the landing page */
-
-/* styling for the pac */
 .display-items {
   background-color: var(--sitefontColor);
 }
@@ -186,23 +189,46 @@ ul li a:hover {
   text-align: left;
 }
 
-.loggedin-image img {
-  margin-right: 20px;
-}
+
+/* end of styling for the package section in index page */
+
+
+
+
+
+
+
+
 
 /* styling for the customer logged in page */
-.customer-loggedin .food-item {
-
-  background-color: var(--matteblack);
+.customer-loggedin #content {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .customer-loggedin .slogan{
 margin-top: 90px;
+color: white;
 }
 
+.loggedin-image img {
+  margin-right: 20px;
+}
 
+.customer-loggedin .welcomepage-card {
+  width: 100%;
+}
 
 /* end of styling for the customer logged in page */
+
+
+
+
+
+
+
+
+
+
 
 
 

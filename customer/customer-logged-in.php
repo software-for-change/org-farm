@@ -59,7 +59,7 @@
 
                                 echo "<tr>
                                                         <td>";
-                                echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+                                echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
                                 echo "
                                                             <div class='food-post'>
                                                             <p> " . $food_name . " </p>
