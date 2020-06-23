@@ -210,13 +210,21 @@ margin-top: 90px;
 color: white;
 }
 
+.customer-loggedin .food-item {
+  margin-left: 100px;
+}
+
+
+.customer-loggedin .welcomepage-card {
+  width: 100%;
+  margin-top: 150px;
+  background: none;
+}
+
 .loggedin-image img {
   margin-right: 20px;
 }
 
-.customer-loggedin .welcomepage-card {
-  width: 100%;
-}
 
 /* end of styling for the customer logged in page */
 
