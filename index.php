@@ -59,6 +59,7 @@ $result = $conn->query($sql);
 
             </div>
 
+            
             <div id="right">
                 <div class="welcomepage-card">
                     <img class="rain-img" src="rain-128.png" width="40" height="40" alt="">
