@@ -93,8 +93,7 @@ $result = $conn->query($sql);
 
                             echo "</table>";
                             echo "</div>";
-                            
-                        echo "<p> The total price for your items ".$sum."</p>";
+
                         } else {
                             echo "Sorry, you did not select any item to be added to the cart";
 
@@ -125,19 +124,13 @@ $result = $conn->query($sql);
                         ?>
 
                     <button>Continue shopping</button>
+                    <br><br>
                     <button>Pay for Order</button>
 
                     </p>
                     <br>
-                    <button onclick="window.location.href='#our-packages'">Order With Us</button>
-                    <br> <br>
-                    <div class="group-buttons">
-                        <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
-                        <a class="w3-btn w3-black card-button" href="#where-we-deliver">Delivery</a>
-                        <a class="w3-btn w3-black card-button" href="subscribe.php">Subscribe</a>
 
-                    </div>
-
+                    
                 </div>
 
             </div>
