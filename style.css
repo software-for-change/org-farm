@@ -206,12 +206,12 @@ ul li a:hover {
 }
 
 .customer-loggedin .slogan{
-margin-top: 90px;
+margin-top: 10px;
 color: white;
 }
 
-.customer-loggedin .food-item {
-  margin-left: 100px;
+.customer-loggedin #grid {
+  margin-left: 150px;
 }
 
 
