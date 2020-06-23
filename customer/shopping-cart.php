@@ -89,10 +89,9 @@ $result = $conn->query($sql);
 
                                 }
                                 
-                                echo "</table>";
-                                echo "</div>";
-
                             }
+                            echo "</table>";
+                                echo "</div>";
                         echo "<p> The total price for your items ".$sum."</p>";
                         } else {
                             echo "Sorry, you did not select any item to be added to the cart";
