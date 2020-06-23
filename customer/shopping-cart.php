@@ -122,7 +122,7 @@ $result = $conn->query($sql);
                             echo "<h1>TOTAL  : ".$sum. " </h1> ";
                             
                         ?>
-
+                    <br><br>
                     <button>Continue shopping</button>
                     <br><br>
                     <button>Pay for Order</button>

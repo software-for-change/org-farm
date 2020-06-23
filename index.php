@@ -42,7 +42,17 @@ $result = $conn->query($sql);
                 <div class="slogan">
 
                     <div class="banner-title before-login">
-                        <h3>We Deliver Fresh, Natural and Organic Produce to your door!</h3>
+                        <h3>We Deliver Fresh, Natural and Organic Produce to your
+                            <div class="sliding-words-wrapper">
+                                <div class="sliding-words">
+                                    <span>Data</span>
+                                    <span>Process</span>
+                                    <span>Technology</span>
+                                    <span>Formula</span>
+                                </div>
+                            </div>
+                        </h3>
+
                     </div>
 
                 </div>
@@ -90,14 +100,14 @@ $result = $conn->query($sql);
             <hr class="first-bar">
             <br>
             <div class="display-message">
-        <?php
+                <?php
             if (isset($_SESSION['message'])) {
                 echo $_SESSION['message'];
                 unset($_SESSION['message']);
             }
             ?>
 
-    </div>
+            </div>
             <?php
 
 if ($result->num_rows > 0) {
@@ -230,7 +240,8 @@ if ($result->num_rows > 0) {
                     </div>
 
                     <div class="icon-delivery">
-                        <img src="images/delivery-man.svg" alt="triangle with all three sides equal" height="87" width="100" />
+                        <img src="images/delivery-man.svg" alt="triangle with all three sides equal" height="87"
+                            width="100" />
                         <img src="images/delivery-truck.svg" alt="triangle with all three sides equal" height="87"
                             width="100" />
 

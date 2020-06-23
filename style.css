@@ -82,7 +82,7 @@ ul li a:hover {
 
 
 
-/* landing page top section styling */
+/* index page styling for the top section styling */
 .welcomepage-card {
   height: 500px;
   width: 500px;
@@ -115,7 +115,6 @@ ul li a:hover {
   justify-content: space-between;
 }
 
-/* styling for the banner  */
 .banner {
   background-repeat: no-repeat;
   background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)),
@@ -124,13 +123,16 @@ ul li a:hover {
   font-family: "Enriqueta", serif;
 }
 
-/* display message styles  */
+/*-------- display message styles  */
 .display-message {
   color: var(--displaymessagecolor);
   text-align: center;
 }
 
-/* end of styling for the first section of the landing page */
+
+/* --------styling for the sliding words */
+
+/* end of styling for the first section of the index/ landing page */
 
 
 
