@@ -31,7 +31,7 @@ $result = $conn->query($sql);
     <title>Customer</title>
 </head>
 
-<body class="banner">
+<body class="banner shopping-cart-pg">
 
 <?php include '../header.php';?>
     <h1>shopping cart</h1>
