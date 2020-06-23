@@ -10,7 +10,7 @@ $user = $_SESSION['user_id'];
 
 echo "the user id is", $user;
 
-$sql = "SELECT * FROM farm_purchase_items WHERE user_id='$user'";
+$sql = "SELECT * FROM farm_purchase_items WHERE client_id='$user'";
 $result = $conn->query($sql);
 
 ?>
@@ -33,7 +33,7 @@ $result = $conn->query($sql);
     <title>Customer</title>
 </head>
 
-<body>
+<body class="banner">
 
 <?php include '../header.php';?>
     <h1>shopping cart</h1>
@@ -104,7 +104,7 @@ $result = $conn->query($sql);
 
             <div id="right">
                 <div class="welcomepage-card shopping-message">
-                    <img class="rain-img" src="rain-128.png" width="40" height="40" alt="">
+                    <img class="rain-img" src="../images/rain-128.png" width="40" height="40" alt="">
                     <br>
                     <div class="veges-rain">
                         <img src="../images/sweet-pepper-24.png" alt="">
