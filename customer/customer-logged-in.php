@@ -10,6 +10,13 @@
     $sql = "SELECT food_name, price, food_image FROM farm_food WHERE food_id='$package'";
     $result = $conn->query($sql);
 
+    if (count($_POST) > 0) {
+
+        //route to the shopping cart after update
+        header("location:shopping-cart.php");
+
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -99,31 +106,27 @@
                         <img src="../images/chili-pepper-29-24.png" alt="">
                     </div>
                     <br>
-                    <h1>Raining Vegetables</h1>
+                    <h1>PURCHASE ITEM</h1>
                     <br>
-                    <p>First things first, yes, it's true I want your money.
-                        But I want to give you great food in return Shop with me so I can meet your
-                        food demands and you meet my money demands. Buy today!
-
-
+                    <p> Our packages have fresh produce from our farms specially picked and packaged
+                        to mee your nuitrition needs. We pride ourselves in producing strictly organic
+                        farming produce.
 
                         <!-- have a form to submit this info -->
 
                         <p>Choose your delivery frequency</p>
-                        <!-- options are: once, weekly, bi-weekly -->
 
-                        <!-- have a complete purchase button -->
+                        <form method="POST" action="">
+                            <input type="checkbox"  name="once" checked>
+                            <label for="once">Just Once</label>
+                            <input type="checkbox" name="weekly" >
+                            <label for="weekly">Weekly</label>
+                            <input type="checkbox" name="bi-weekly" >
+                            <label for="bi-week">Bi-Weekly</label>
+                            <input type="submit" class="submit-button" name="delivery" value="Purchase" >
+                        </form>
 
-                        <!-- that button routes you to the checkout shopping cart page -->
-
-                        <!-- check out has a continue shoppint button and a complete order button -->
-
-                        <!-- include a shopping cart table that displays all the items in the cart table -->
-
-                        <!-- one takes you to the index page and the other takes you to complete order -->
-
-
-
+                       
                     </p>
                     <br>
                     <button onclick="window.location.href='#our-packages'">Order With Us</button>

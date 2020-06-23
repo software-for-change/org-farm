@@ -136,7 +136,9 @@ $result = $conn->query($sql);
 
                         <!-- one takes you to the index page and the other takes you to complete order -->
 
+                        <!-- have a form to submit this info -->
 
+                        <p>Choose your delivery frequency</p>
 
                     </p>
                     <br>
