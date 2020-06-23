@@ -45,7 +45,8 @@ $result = $conn->query($sql);
 
                         if ($result->num_rows > 0) {
                             
-                            
+                            echo "<div class='thegrid'";
+                            echo "<table class='prodcue-table'>";
 
                             // output data of each row
                             while ($row = mysqli_fetch_array($result)) {
@@ -55,8 +56,7 @@ $result = $conn->query($sql);
                                 $query = "SELECT food_name, price, food_image FROM farm_food WHERE food_id='$package'";
                                 $newresult = $conn->query($query);
 
-                                echo "<div class='thegrid'";
-                                echo "<table class='prodcue-table'>";
+                                
 
                                 while ($newrow = mysqli_fetch_array($newresult)) {
                                     $food_name = $newrow["food_name"];
@@ -64,7 +64,7 @@ $result = $conn->query($sql);
                                     $price = $newrow["price"];
                                     $sum += $price;
 
-                                    
+                                   
 
                                     echo "<div class='food-item'";
 
@@ -86,10 +86,12 @@ $result = $conn->query($sql);
 
                                 }
 
-                                echo "</table>";
-                                echo "</div>";
+                                
                                 
                             }
+
+                            echo "</table>";
+                            echo "</div>";
                             
                         echo "<p> The total price for your items ".$sum."</p>";
                         } else {
