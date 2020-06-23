@@ -7,6 +7,7 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set
 }
 
 $user = $_SESSION['user_id'];
+$sum = 0;
 
 $sql = "SELECT * FROM farm_purchase_items WHERE client_id='$user'";
 $result = $conn->query($sql);
@@ -116,30 +117,15 @@ $result = $conn->query($sql);
                     <br>
                     <h1>Raining Vegetables</h1>
                     <br>
-                    <p>First things first, yes, it's true I want your money.
-                        But I want to give you great food in return Shop with me so I can meet your
-                        food demands and you meet my money demands. Buy today!
+                    <p>
+                        
+                        <?php
+                            echo "<h1>TOTAL  : ".$sum. " </h1> ";
+                            
+                        ?>
 
-
-
-                        <!-- have a form to submit this info -->
-
-                        <p>Choose your delivery frequency</p>
-                        <!-- options are: once, weekly, bi-weekly -->
-
-                        <!-- have a complete purchase button -->
-
-                        <!-- that button routes you to the checkout shopping cart page -->
-
-                        <!-- check out has a continue shoppint button and a complete order button -->
-
-                        <!-- include a shopping cart table that displays all the items in the cart table -->
-
-                        <!-- one takes you to the index page and the other takes you to complete order -->
-
-                        <!-- have a form to submit this info -->
-
-                        <p>Choose your delivery frequency</p>
+                    <button>Continue shopping</button>
+                    <button>Pay for Order</button>
 
                     </p>
                     <br>
@@ -156,8 +142,6 @@ $result = $conn->query($sql);
 
             </div>
         </div>
-
-        <p>your past orders</p>
 
     </div>
 
