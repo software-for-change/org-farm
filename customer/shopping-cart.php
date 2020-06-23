@@ -77,10 +77,7 @@ $result = $conn->query($sql);
                                                                                         <p> $" . $price . " </p>";
 
                                     echo "<br>";
-                                    echo "<button id='minus'>−</button>
-                                                                        <input type='number' value='0' id='input' />
-                                                                        <button id='plus'>+</button>";
-
+                                    echo "<button >delete</button>";
                                     echo " </div>";
 
                                     echo "</td>";
@@ -88,10 +85,12 @@ $result = $conn->query($sql);
                                     echo "</div>";
 
                                 }
+
+                                echo "</table>";
+                                echo "</div>";
                                 
                             }
-                            echo "</table>";
-                                echo "</div>";
+                            
                         echo "<p> The total price for your items ".$sum."</p>";
                         } else {
                             echo "Sorry, you did not select any item to be added to the cart";
