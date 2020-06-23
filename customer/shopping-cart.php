@@ -55,7 +55,8 @@ $result = $conn->query($sql);
                                 $query = "SELECT food_name, price, food_image FROM farm_food WHERE food_id='$package'";
                                 $newresult = $conn->query($query);
 
-                                
+                                echo "<div class='thegrid'";
+                                echo "<table class='prodcue-table'>";
 
                                 while ($newrow = mysqli_fetch_array($newresult)) {
                                     $food_name = $newrow["food_name"];
@@ -63,8 +64,7 @@ $result = $conn->query($sql);
                                     $price = $newrow["price"];
                                     $sum += $price;
 
-                                    echo "<div class='thegrid'";
-                                echo "<table class='prodcue-table'>";
+                                    
 
                                     echo "<div class='food-item'";
 
