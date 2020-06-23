@@ -8,6 +8,8 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set
 
 $user = $_SESSION['user_id'];
 
+echo "the user id is", $user;
+
 $sql = "SELECT * FROM farm_purchase_items WHERE user_id='$user'";
 $result = $conn->query($sql);
 
