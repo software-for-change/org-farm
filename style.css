@@ -144,7 +144,7 @@ ul li a:hover {
   flex-direction: column;
   position: relative;
   top: 0;
-  animation: slide-words 10s linear infinite;
+  animation: slide-words 3s linear infinite;
 }
 
 @keyframes slide-words {

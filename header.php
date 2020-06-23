@@ -39,7 +39,7 @@ if (!isset($_SESSION['user_id'])) { //if login in session is not set
     </div>
 
     <div class='logo'>
-        <h2 class='logo'> <a href='index.php'>Farm Organic</a> </h2>
+        <h2 class='logo'> <a href='index.php'><img src='images/logo.png'></a> </h2>
     </div>
     </div>
 
