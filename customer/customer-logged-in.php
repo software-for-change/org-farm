@@ -114,7 +114,7 @@
 
                         <!-- have a form to submit this info -->
 
-                        <p>Choose your delivery frequency</p>
+                        <p>Choose your delivery frequency:</p>
 
                         <form method="POST" action="">
                             <input type="checkbox"  name="once" checked>
@@ -123,20 +123,12 @@
                             <label for="weekly">Weekly</label>
                             <input type="checkbox" name="bi-weekly" >
                             <label for="bi-week">Bi-Weekly</label>
+                            <br>
                             <input type="submit" class="submit-button" name="delivery" value="Purchase" >
                         </form>
 
                        
                     </p>
-                    <br>
-                    <button onclick="window.location.href='#our-packages'">Order With Us</button>
-                    <br> <br>
-                    <div class="group-buttons">
-                        <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
-                        <a class="w3-btn w3-black card-button" href="#where-we-deliver">Delivery</a>
-                        <a class="w3-btn w3-black card-button" href="subscribe.php">Subscribe</a>
-
-                    </div>
 
                 </div>
 
