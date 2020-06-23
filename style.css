@@ -236,8 +236,7 @@ color: white;
 /* styling for the shopping cart page */
 .shopping-cart-pg .slogan {
   color: white;
-  text-align: center;
-  line-height: 50%;
+  margin-top: 0px;
 }
 
 /* end of styling for the shopping cart page */

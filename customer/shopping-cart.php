@@ -60,7 +60,7 @@ $result = $conn->query($sql);
 
                                 while ($newrow = mysqli_fetch_array($newresult)) {
                                     $food_name = $newrow["food_name"];
-                                    $food_image = $newrow["food_image"];
+                                    
                                     $price = $newrow["price"];
                                     $sum += $price;
 
@@ -70,7 +70,7 @@ $result = $conn->query($sql);
 
                                     echo "<tr>
                                                                                     <td>";
-                                    echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+                                    echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($newrow['food_image']) . '" />';
                                     echo "
                                                                                         <div class='food-post'>
                                                                                         <p> " . $food_name . " </p>
