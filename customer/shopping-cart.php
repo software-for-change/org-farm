@@ -34,10 +34,6 @@ $result = $conn->query($sql);
 <body>
 
 <?php include '../header.php';?>
-    <div class="banner">
-        <h1 class="pageTitle">Simply Organic</h1>
-    </div>
-
     <h1>shopping cart</h1>
 
     <div class="page-content">
@@ -48,7 +44,8 @@ $result = $conn->query($sql);
                     <?php
 
                         if ($result->num_rows > 0) {
-
+                            
+                            echo "did we get here";
                             echo "<div class='thegrid'";
                             echo "<table class='prodcue-table'>";
 

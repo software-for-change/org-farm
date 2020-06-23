@@ -123,7 +123,7 @@
                             <label for="weekly">Weekly</label>
                             <input type="checkbox" name="bi-weekly" >
                             <label for="bi-week">Bi-Weekly</label>
-                            <br>
+                            <br> <br><br>
                             <input type="submit" class="submit-button" name="delivery" value="Purchase" >
                         </form>
 
