@@ -131,6 +131,31 @@ ul li a:hover {
 
 
 /* --------styling for the sliding words */
+.sliding-words-wrapper {
+  vertical-align: top;
+  display: inline-block;
+  overflow: hidden;
+  /* set height to fit one item */
+  height: 18.4px;
+}
+
+.sliding-words {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  animation: slide-words 10s linear infinite;
+}
+
+@keyframes slide-words {
+  from {
+    top: 0;
+  }
+  to {
+    /* (Word count - 1) * 100% */
+    top: -300%;
+  }
+}
 
 /* end of styling for the first section of the index/ landing page */
 
