@@ -42,18 +42,12 @@ $result = $conn->query($sql);
                 <div class="slogan">
 
                     <div class="banner-title before-login">
-                        <h3>We Deliver Fresh, Natural and Organic Produce to your
-                            <div class="sliding-words-wrapper">
-                                <div class="sliding-words">
-                                    <span>Data</span>
-                                    <span>Process</span>
-                                    <span>Technology</span>
-                                    <span>Formula</span>
-                                </div>
-                            </div>
+                        <h3>We Deliver Fresh, Natural and Organic Produce to your Door
                         </h3>
 
                     </div>
+
+                    <button onclick="window.location.href='#our-packages'">Order With Us</button>
 
                 </div>
 
@@ -62,7 +56,7 @@ $result = $conn->query($sql);
 
             <div id="right">
                 <div class="welcomepage-card">
-                    <img class="rain-img" src="rain-128.png" width="40" height="40" alt="">
+                    <img class="rain-img" src="images/rain-128.png" width="40" height="40" alt="">
                     <br>
                     <div class="veges-rain">
                         <img src="images/sweet-pepper-24.png" alt="">
@@ -77,7 +71,7 @@ $result = $conn->query($sql);
                         food demands and you meet my money demands. Buy today!
                     </p>
                     <br>
-                    <button onclick="window.location.href='#our-packages'">Order With Us</button>
+                    
                     <br> <br>
                     <div class="group-buttons">
                         <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>

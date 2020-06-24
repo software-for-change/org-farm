@@ -5,11 +5,12 @@ if (!isset($_SESSION['user_id'])) { //if login in session is not set
 
     echo "
     <div class='sidebar'>
-    <a class='active' href='#home'>Home</a>
-    <a href='#news'>News</a>
-    <a href='#contact'>Contact</a>
-    <a href='#about'>About</a>
-    <a href='#about'>return</a>
+    <a class='active' href='index.php'>Home</a>
+    <a href='#our-packages'>Packages</a>
+    <a href='#contact-us'>Contact</a>
+    <a href='about.php'>About</a>
+    <a href='subscribe.php'>Subscribe</a>
+    <a href='customer/customer-login.php'>Login</a>
     </div>
 
 ";
