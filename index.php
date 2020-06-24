@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 </head>
 
 <body class="banner">
-<?php include '../header.php';?>
+<?php include 'header.php';?>
 
 
     <div class="page-content">
