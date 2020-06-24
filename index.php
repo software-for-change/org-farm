@@ -25,52 +25,11 @@ $result = $conn->query($sql);
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;700&display=swap" rel="stylesheet">
 
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Customer</title>
 </head>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-          <img src="http://placehold.it/150x50?text=Logo" alt="">
-        </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
 <body class="banner">
+<?php include '../header.php';?>
 
 
     <div class="page-content">
@@ -152,50 +111,50 @@ $result = $conn->query($sql);
             </div>
             <?php
 
-if ($result->num_rows > 0) {
+                if ($result->num_rows > 0) {
 
-    echo "<div class='thegrid'";
-    echo "<table class='prodcue-table'>";
+                    echo "<div class='thegrid'";
+                    echo "<table class='prodcue-table'>";
 
-    // output data of each row
-    while ($row = mysqli_fetch_array($result)) {
+                    // output data of each row
+                    while ($row = mysqli_fetch_array($result)) {
 
-        echo "<form method='post' action='process-purchase-btn.php'>";
+                        echo "<form method='post' action='process-purchase-btn.php'>";
 
-        $food_name = $row["food_name"];
-        $food_image = $row["food_image"];
-        $price = $row["price"];
-        $food_id = $row["food_id"];
+                        $food_name = $row["food_name"];
+                        $food_image = $row["food_image"];
+                        $price = $row["price"];
+                        $food_id = $row["food_id"];
 
-        echo "<div class='food-item'";
+                        echo "<div class='food-item'";
 
-        echo "<tr>
-                                <td>";
-        echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-        echo "
-                                    <div class='food-post'>
-                                    <p> " . $food_name . " </p>
-                                    <p> $" . $price . " </p>";
-                                    echo "<input name='package_id'  type='hidden' value='$food_id' >";
-        echo "<input type='submit' class='submit-button' value='Purchase Item'>";
+                        echo "<tr>
+                                                <td>";
+                        echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+                        echo "
+                                                    <div class='food-post'>
+                                                    <p> " . $food_name . " </p>
+                                                    <p> $" . $price . " </p>";
+                                                    echo "<input name='package_id'  type='hidden' value='$food_id' >";
+                        echo "<input type='submit' class='submit-button' value='Purchase Item'>";
 
-        echo "<br>";
-        
-        echo " </div>";
+                        echo "<br>";
+                        
+                        echo " </div>";
 
-        echo "</td>";
-        echo "</tr>";
-        echo "</div>";
-        echo "</form>";
+                        echo "</td>";
+                        echo "</tr>";
+                        echo "</div>";
+                        echo "</form>";
 
-    }
-    echo "</table>";
-    echo "</div>";
+                    }
+                    echo "</table>";
+                    echo "</div>";
 
-} else {
-    echo "0 results";
-}
-?>
+                } else {
+                    echo "0 results";
+                }
+                ?>
 
             <p>add a section for purchase in bulk</p>
 

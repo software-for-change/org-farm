@@ -19,10 +19,6 @@ body {
   font-family: "Enriqueta", serif;
 }
 
-.page-content {
-  text-align: center;
-}
-
 /* styling for the nav bar */
 .header {
   padding-top: 30px;
@@ -65,17 +61,58 @@ ul li a:hover {
   text-decoration: underline;
 }
 
-/* styling for the scroll feature in the nav bar */
-.sticky {
+/* styling for the side bar nav bar */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
   position: fixed;
-  top: 0;
-  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
-.sticky + .page-content {
-  padding-top: 102px;
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.page-content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+  text-align: center;
+  
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
 /* end styling for the nav bar  */
 
 
