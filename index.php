@@ -47,7 +47,7 @@ $result = $conn->query($sql);
 
                     </div>
 
-                    <button onclick="window.location.href='#our-packages'">Order With Us</button>
+                    <a href="#customer/customer-login.php">Order With Us Today</a>
 
                 </div>
 

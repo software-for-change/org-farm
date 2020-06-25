@@ -5,6 +5,7 @@ if (!isset($_SESSION['user_id'])) { //if login in session is not set
 
     echo "
     <div class='sidebar'>
+    <a class='active' href='index.php'><img src='images/logo.png'></a>
     <a class='active' href='index.php'>Home</a>
     <a href='#our-packages'>Packages</a>
     <a href='#contact-us'>Contact</a>
