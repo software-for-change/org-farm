@@ -188,7 +188,8 @@ ul.topnav li.right {
 
 .how-link,
 .deliver-link,
-.sub-link {
+.sub-link,
+.contact-link {
     font-size: 17px;
     font-weight: 300;
     color: black;
@@ -207,6 +208,10 @@ ul.topnav li.right {
 
 .sub-link {
     transform: rotate(90deg);
+}
+
+.contact-link {
+    padding-bottom: 180px;
 }
 
 .vl {
