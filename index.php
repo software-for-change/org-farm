@@ -11,15 +11,15 @@ $result = $conn->query($sql);
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simply Organic</title>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
@@ -34,10 +34,9 @@ $result = $conn->query($sql);
             <div class="w3-half w3-center">
 
                 <img src="images/index-image.png" alt="vegetables in basket">
-                <h3>At Simply organic, we deliver fresh, natural and organic produce to your door straight from our
-                    farms. We grow a range of fruits and vegetables suitable for a rich nuitrious diet.
-                </h3>
-                <a class="w3-button w3-light-green" href="#customer/customer-login.php">Order With Us Today</a>
+                <br>
+                <a class="w3-button w3-light-green w3-block order-btn" href="#customer/customer-login.php">Order With Us
+                    Today</a>
 
             </div>
             <div class="w3-half">
@@ -52,8 +51,9 @@ $result = $conn->query($sql);
                     <br>
                     <h1>Raining Vegetables</h1>
                     <br>
-                    <p>First things first, yes, it's true I want your money.
-                        But I want to give you great food in return Shop with me so I can meet your
+                    <p>We sell fresh, organic fruits and vegetables grown on your farms.
+                        With an option to join our subscription plan or a choice to buy whenever you want, you can
+                        purchase a package of fresh furits and vegetables.
                         food demands and you meet my money demands. Buy today!
                     </p>
                     <br>
