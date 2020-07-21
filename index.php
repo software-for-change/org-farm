@@ -16,6 +16,8 @@ $result = $conn->query($sql);
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
     <title>Customer</title>
@@ -27,8 +29,7 @@ $result = $conn->query($sql);
 
 
         <div class="w3-row index-header-content">
-
-        <h1 class="index-title">Raining Vegetables ! Sunny Fruits...</h1>
+        <h1 class="index-title">Raining Vegetables ! Sunny Fruits ...</h1>
             <div class="w3-half w3-center">
 
                 <img src="images/index-image.png" alt="vegetables in basket">
