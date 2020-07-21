@@ -37,6 +37,7 @@ $result = $conn->query($sql);
             <div class="w3-half">
                 <h3>We Deliver Fresh, Natural and Organic Produce to your Door
                 </h3>
+                <img src="images/index-image.png" alt="">
                 <a class="w3-button w3-light-green" href="#customer/customer-login.php">Order With Us Today</a>
 
             </div>
