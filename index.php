@@ -29,51 +29,58 @@ $result = $conn->query($sql);
         <?php include 'header.php';?>
 
 
-        <div class="w3-row index-header-content">
-            <h1 class="index-title w3-center">Raining Vegetables ! Sunny Fruits ...</h1>
-            <div class="w3-half w3-center">
+        <div class="w3-container">
+            <div class="w3-display-container">
+                <div class="w3-row index-header-content">
+                    <h1 class="index-title w3-center">Raining Vegetables ! Sunny Fruits ...</h1>
+                    <div class="w3-half w3-center">
 
-                <img src="images/index-image.png" alt="vegetables in basket">
-                <br>
-                <a class="w3-button w3-light-green w3-block order-btn" href="#customer/customer-login.php">Order With Us
-                    Today</a>
+                        <img src="images/index-image.png" alt="vegetables in basket">
+                        <br>
+                        <a class="w3-button w3-light-green w3-block order-btn" href="#customer/customer-login.php">Order
+                            With Us
+                            Today</a>
 
-            </div>
-            <div class="w3-half">
-                <div class="welcomepage-card">
-                    <img class="rain-img" src="images/rain-128.png" width="40" height="40" alt="">
-                    <br>
-                    <div class="veges-rain">
-                        <img src="images/sweet-pepper-24.png" alt="">
-                        <img src="images/carrot-24.png" alt="">
-                        <img src="images/chili-pepper-29-24.png" alt="">
                     </div>
-                    <br>
-                    <h1>Raining Vegetables</h1>
-                    <br>
-                    <p>We sell fresh, organic fruits and vegetables grown on your farms.
-                        With an option to join our subscription plan or a choice to buy whenever you want, you can
-                        purchase a package of fresh furits and vegetables.
-                        food demands and you meet my money demands. Buy today!
-                    </p>
-                    <br>
+                    <div class="w3-half">
+                        <div class="welcomepage-card">
+                            <img class="rain-img" src="images/rain-128.png" width="40" height="40" alt="">
+                            <br>
+                            <div class="veges-rain">
+                                <img src="images/sweet-pepper-24.png" alt="">
+                                <img src="images/carrot-24.png" alt="">
+                                <img src="images/chili-pepper-29-24.png" alt="">
+                            </div>
+                            <br>
+                            <h1>Raining Vegetables</h1>
+                            <br>
+                            <p>We sell fresh, organic fruits and vegetables grown on your farms.
+                                With an option to join our subscription plan or a choice to buy whenever you want, you
+                                can
+                                purchase a package of fresh furits and vegetables.
+                                food demands and you meet my money demands. Buy today!
+                            </p>
+                            <br>
 
-                    <br> <br>
-                    <div class="group-buttons">
-                        <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
-                        <a class="w3-btn w3-black card-button" href="#where-we-deliver">Delivery</a>
-                        <a class="w3-btn w3-black card-button" href="subscribe.php">Subscribe</a>
+                            <br> <br>
+                            <div class="group-buttons">
+                                <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
+                                <a class="w3-btn w3-black card-button" href="#where-we-deliver">Delivery</a>
+                                <a class="w3-btn w3-black card-button" href="subscribe.php">Subscribe</a>
 
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
             </div>
-
         </div>
+
 
         <div class="display-items before-login-bkgd" id="our-packages">
 
-            <a href="" class="w3-display-topleft">Purchase In Bulk</a>
+            <a href="" class="w3-display-topright">Purchase In Bulk</a>
             <h1 class="w3-display-topmiddle">Our Packages</h1>
 
             <div class="display-message">
