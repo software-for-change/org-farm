@@ -37,6 +37,10 @@ body {
     background-color: var(--siteorange);
 }
 
+.index-header-content {
+    height: 50vh;
+}
+
 
 /* styling for the nav bar */
 

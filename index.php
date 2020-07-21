@@ -33,7 +33,7 @@ $result = $conn->query($sql);
         <?php include 'header.php';?>
 
 
-        <div class="w3-row">
+        <div class="w3-row index-header-content">
             <div class="w3-half">
                 <h3>We Deliver Fresh, Natural and Organic Produce to your Door
                 </h3>
