@@ -81,7 +81,7 @@ $result = $conn->query($sql);
             <div class="w3-display-container">
 
 
-                <div class="display-items before-login-bkgd" id="our-packages">
+                <div class="display-items w3-padding-64 before-login-bkgd" id="our-packages">
 
                     <a href="" class="w3-display-topright w3-padding-48">Purchase produce in large bulk instead?</a>
                     <h1 class="w3-display-topmiddle w3-padding-48">Our Packages</h1>
@@ -99,7 +99,7 @@ $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
 
-                    echo "<div class='w3-row'>";
+                    echo "<div class='w3-row w3-padding-64'>";
                     
 
                     // output data of each row
