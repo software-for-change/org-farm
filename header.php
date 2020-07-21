@@ -1,41 +1,24 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['user_id'])) { //if login in session is not set
-
-    echo "
-    <div class='sidebar'>
-    <a class='active' href='index.php'>Simply Organic</a>
-    <a class='active' href='index.php'>Home</a>
-    <a href='#our-packages'>Packages</a>
-    <a href='#contact-us'>Contact</a>
-    <a href='about.php'>About</a>
-    <a href='subscribe.php'>Subscribe</a>
-    <a href='customer/customer-login.php'>Login</a>
-    </div>
-
+// when nav bar for desktop size
+echo "
+    <ul class='topnav'>
+                <li><a class='logo' href='home.php'>Journey to Mental Wealth</a></li>
+               
+                <li class='right'><a href='recommend.php'>Suggest an article</a></li>
+                <li class='right'><a href='about.php'>About</a></li>
+                <li class='right'><a href='category-validate.php'>Categories</a></li>
+                <li class='right'><a href='category-help.php'>Home</a></li>
+            </ul>
+            <!-- mobile navigation -->
+            <div id='mySidepanel' class='sidepanel'>
+                <a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>×</a>
+                <a href='home.php'>Home</a>
+                <a href='category-validate.php'>Signs</a>
+                <a href='category-help.php'>Help</a>
+                <a href='about.php'>About</a>
+                <a href='recommend.php'>Suggest a link</a>
+            </div>
+            <button class='openbtn mobile-nav' onclick='openNav()'>☰ Menu </button>
 ";
-} else {
-
-    echo "
-    <div class='header' id='myHeader'>
-    <div class='menu_navbar'>
-        <ul>
-            <li><a class='navlink' href='shopping-cart'>shopping cart</a> </li>
-            <li><a class='navlink' href='#our-packages'>Packages</a> </li>
-            <li><a class='navlink' href='#contact-us'>Contact</a> </li>
-            <li><a class='navlink' href='#where-we-deliver'>Delivery</a> </li>
-            <li><a class='navlink' href='about.php'>About</a> </li>
-            <li><a class='navlink' href='subscribe.php'>Subscribe</a> </li>
-            <li><a class='navlink' href='../logout.php'>logout</a> </li>
-        </ul>
-    </div>
-
-    <div class='logo'>
-        <h2 class='logo'> <a href='index.php'>Simply Organic</a> </h2>
-    </div>
-    </div>
-
-";
-
-}
