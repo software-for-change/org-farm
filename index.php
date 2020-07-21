@@ -73,10 +73,9 @@ $result = $conn->query($sql);
 
         <div class="display-items before-login-bkgd" id="our-packages">
 
-            <h1>Our Packages</h1>
-            <br>
-            <hr class="first-bar">
-            <br>
+            <a href="" class="w3-display-topleft">Purchase In Bulk</a>
+            <h1 class="w3-display-topmiddle">Our Packages</h1>
+
             <div class="display-message">
                 <?php
             if (isset($_SESSION['message'])) {
