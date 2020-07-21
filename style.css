@@ -7,16 +7,34 @@
     --displaymessagecolor: #ff726f;
     --boldpink: #e11584;
     --matteblack: #454547;
+    --siteorange: #FC7753;
 }
 
-html {
+html * {
     scroll-behavior: smooth;
 }
+
+
+/* universal styles for all pages in the app */
 
 body {
     background-color: var(--sitebackgroundColor);
     color: var(--sitefontColor);
     font-family: "Enriqueta", serif;
+}
+
+.content {
+    max-width: 1800px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+
+/* styling for the index page */
+
+.index-banner {
+    background-color: var(--siteorange);
 }
 
 
@@ -158,9 +176,6 @@ ul li a:hover {
 }
 
 .banner {
-    background-repeat: no-repeat;
-    background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url(images/food-bunch.jpg);
-    background-size: cover;
     font-family: "Enriqueta", serif;
 }
 

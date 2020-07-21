@@ -28,62 +28,49 @@ $result = $conn->query($sql);
     <title>Customer</title>
 </head>
 
-<body class="banner">
-<?php include 'header.php';?>
-
-
-    <div class="page-content">
-
-        <!-- begining of the header content on the index page -->
-
+<body class="index-banner">
+    <div class="content">
+        <?php include 'header.php';?>
 
         <div id="content">
-            <div id="left">
-                <div class="slogan">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <h3>We Deliver Fresh, Natural and Organic Produce to your Door
+                    </h3>
+                    <a class="w3-button w3-light-green" href="#customer/customer-login.php">Order With Us Today</a>
 
-                    <div class="banner-title before-login">
-                        <h3>We Deliver Fresh, Natural and Organic Produce to your Door
-                        </h3>
+                </div>
+                <div class="w3-half">
+                    <div class="welcomepage-card">
+                        <img class="rain-img" src="images/rain-128.png" width="40" height="40" alt="">
+                        <br>
+                        <div class="veges-rain">
+                            <img src="images/sweet-pepper-24.png" alt="">
+                            <img src="images/carrot-24.png" alt="">
+                            <img src="images/chili-pepper-29-24.png" alt="">
+                        </div>
+                        <br>
+                        <h1>Raining Vegetables</h1>
+                        <br>
+                        <p>First things first, yes, it's true I want your money.
+                            But I want to give you great food in return Shop with me so I can meet your
+                            food demands and you meet my money demands. Buy today!
+                        </p>
+                        <br>
+
+                        <br> <br>
+                        <div class="group-buttons">
+                            <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
+                            <a class="w3-btn w3-black card-button" href="#where-we-deliver">Delivery</a>
+                            <a class="w3-btn w3-black card-button" href="subscribe.php">Subscribe</a>
+
+                        </div>
 
                     </div>
-                    
-
-                    <a href="#customer/customer-login.php">Order With Us Today</a>
-
                 </div>
 
             </div>
-
-
-            <div id="right">
-                <div class="welcomepage-card">
-                    <img class="rain-img" src="images/rain-128.png" width="40" height="40" alt="">
-                    <br>
-                    <div class="veges-rain">
-                        <img src="images/sweet-pepper-24.png" alt="">
-                        <img src="images/carrot-24.png" alt="">
-                        <img src="images/chili-pepper-29-24.png" alt="">
-                    </div>
-                    <br>
-                    <h1>Raining Vegetables</h1>
-                    <br>
-                    <p>First things first, yes, it's true I want your money.
-                        But I want to give you great food in return Shop with me so I can meet your
-                        food demands and you meet my money demands. Buy today!
-                    </p>
-                    <br>
-                    
-                    <br> <br>
-                    <div class="group-buttons">
-                        <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
-                        <a class="w3-btn w3-black card-button" href="#where-we-deliver">Delivery</a>
-                        <a class="w3-btn w3-black card-button" href="subscribe.php">Subscribe</a>
-
-                    </div>
-
-                </div>
-
-            </div>
+            
         </div>
 
 
