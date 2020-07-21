@@ -11,7 +11,7 @@ $result = $conn->query($sql);
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simply Organic</title>
 
@@ -89,7 +89,7 @@ $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
 
-                    echo "<div class='w3-row'";
+                    echo "<div class='w3-row'>";
                     
 
                     // output data of each row
@@ -102,7 +102,7 @@ $result = $conn->query($sql);
                         $price = $row["price"];
                         $food_id = $row["food_id"];
 
-                        echo "<div class='food-item'";
+                        echo "<div class='food-item'>";
 
                         
                         echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
@@ -117,8 +117,10 @@ $result = $conn->query($sql);
 
                         echo "</div>";
                         echo "</div>";
+                        
                         echo "</form>";
                         echo "</div>";
+                        
                         
                        
                     }
