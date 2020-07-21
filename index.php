@@ -31,15 +31,27 @@ $result = $conn->query($sql);
 
         <div class="w3-container">
             <div class="w3-display-container">
+                <div class="w3-display-left">
+                    <a class="how-link"  href="#how-it-works">How it works</a>
+                </div>
+                <div class="w3-display-bottomleft">
+                    <a class="deliver-link" href="#where-we-deliver"> Where we deliver</a>
+                </div>
+
+                <div class="w3-display-right"><a class="sub-link" href="subscribe.php">Subscribe</a></div>
+                <div class="w3-display-bottommiddle w3-hide-small">
+                    <div class="vl"></div>
+                </div>
+
+
                 <div class="w3-row index-header-content">
                     <h1 class="index-title w3-center">Raining Vegetables ! Sunny Fruits ...</h1>
                     <div class="w3-half w3-center">
 
+
+
                         <img src="images/index-image.png" alt="vegetables in basket">
                         <br>
-                        <a class="w3-button w3-light-green w3-block order-btn" href="#customer/customer-login.php">Order
-                            With Us
-                            Today</a>
 
                     </div>
                     <div class="w3-half">
@@ -64,9 +76,7 @@ $result = $conn->query($sql);
 
                             <br> <br>
                             <div class="group-buttons">
-                                <a class="w3-btn w3-black card-button" href="#how-it-works">How it works</a>
-                                <a class="w3-btn w3-black card-button" href="#where-we-deliver">Delivery</a>
-                                <a class="w3-btn w3-black card-button" href="subscribe.php">Subscribe</a>
+                                <a class="order-btn" href="#our-packages">.Order With Us.</a>
 
                             </div>
 
@@ -87,7 +97,7 @@ $result = $conn->query($sql);
                     <h1 class="w3-display-topmiddle w3-padding-48">Our Packages</h1>
 
                     <div class="display-message">
-                                <?php
+                        <?php
                     if (isset($_SESSION['message'])) {
                         echo $_SESSION['message'];
                         unset($_SESSION['message']);
@@ -297,7 +307,6 @@ $result = $conn->query($sql);
 
 
         </div>
-        <!-- end of contact us banner -->
 
     </div>
     <?php include 'footer.php';?>

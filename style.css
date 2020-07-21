@@ -34,22 +34,6 @@ body {
 }
 
 
-/* styling for the index page */
-
-.index-banner {
-    background-color: var(--siteorange);
-}
-
-.index-header-content {
-    height: 100vh;
-}
-
-.index-title {
-    font-family: 'Rock Salt', cursive;
-    font-size: 60px;
-}
-
-
 /* nav bar sytles for mobile and desktop */
 
 ul.topnav {
@@ -142,7 +126,20 @@ ul.topnav li.right {
 }
 
 
-/* index page styling for the top section styling */
+/* index page styling for the top section */
+
+.index-banner {
+    background-color: var(--siteorange);
+}
+
+.index-header-content {
+    height: 90vh;
+}
+
+.index-title {
+    font-family: 'Rock Salt', cursive;
+    font-size: 60px;
+}
 
 .welcomepage-card {
     width: 60%;
@@ -176,15 +173,45 @@ ul.topnav li.right {
     justify-content: space-between;
 }
 
-.banner {
-    font-family: "Enriqueta", serif;
+.order-btn {
+    font-weight: 400;
+    letter-spacing: -3px;
+    line-height: 90px;
+    color: var(--grape);
+    font-size: 44px;
+    text-decoration: underline;
+    text-decoration-color: orange;
 }
 
-.order-btn {
-    font-size: x-large;
-    width: 72%;
-    text-align: center;
-    display: inline-block;
+
+/* top section side links */
+
+.how-link,
+.deliver-link,
+.sub-link {
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    text-decoration: underline;
+}
+
+.how-link {
+    padding-left: 15px;
+    transform: rotate(90deg);
+}
+
+.deliver-link {
+    padding-bottom: 180px;
+    padding-left: 15px;
+}
+
+.sub-link {
+    transform: rotate(90deg);
+}
+
+.vl {
+    border-left: 2px solid black;
+    height: 200px;
 }
 
 
@@ -238,21 +265,6 @@ main.btn:visited {
 
 .display-items {
     background-color: var(--sitefontColor);
-}
-
-.banner-title h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 1.3;
-    letter-spacing: 3px;
-}
-
-.banner-title {
-    width: 50%;
-    display: inline-block;
-    text-align: left;
-    padding-left: 40px;
 }
 
 .package-container {
@@ -312,15 +324,6 @@ main.btn:visited {
 
 
 /* end of styling for the shopping cart page */
-
-
-/* styling for the farmer page */
-
-.prodcue-table {
-    /* border: 1px solid black; */
-    font-size: 16px;
-    width: 70%;
-}
 
 
 /* styling for the login pages */
