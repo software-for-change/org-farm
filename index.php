@@ -32,17 +32,14 @@ $result = $conn->query($sql);
         <div class="w3-container">
             <div class="w3-display-container">
                 <div class="w3-display-left how-link">
-                    <a  href="#how-it-works">How it works</a>
+                    <a href="#how-it-works">How it works</a>
                 </div>
                 <div class="w3-display-bottomleft deliver-link">
                     <a href="#where-we-deliver"> Where we deliver</a>
                 </div>
 
                 <div class="w3-display-right sub-link"><a href="subscribe.php">Subscribe</a></div>
-                <div class="w3-display-bottomright contact-link"><a href="#contact-us">contactus@gmail.com</a></div>
-                <div class="w3-display-bottommiddle w3-hide-small">
-                    <div class="vl"></div>
-                </div>
+                <div class="w3-display-bottomright contact-link"><a href="#contact-us">Contact</a></div>
 
 
                 <div class="w3-row index-header-content">
@@ -76,7 +73,7 @@ $result = $conn->query($sql);
                             <br>
 
                             <div class="group-buttons">
-                                <a class="order-btn" href="#our-packages">.Order With Us.</a>
+                                <a class="order-btn" href="#customer/customer-login.php">.Order With Us.</a>
 
                             </div>
 
@@ -155,157 +152,189 @@ $result = $conn->query($sql);
             </div>
         </div>
 
-        <div class="banner-how-it-works" id="how-it-works">
+        <div class="w3-container">
 
-            <div class="w3-row">
+            <div class="w3-display-container">
 
-                <div class="w3-half">
-                    <div class="content-how-it-works">
 
-                        <h1>How it works</h1>
-                        <br>
-                        <hr class="first-bar">
-                        <br>
-                        <p> Every beginning of the week, we send out an email to our registered users letting you know
-                            what
-                            we have harvested by
-                            our farmers for the current week’s Packages. Once an order has been made, you can not cancel
-                            it
-                            but can reschedule delivery.
-                            The cut off is Wednesday at 12PM EST to skip or cancel an order for the next week. Please be
-                            sure to
-                            recycle your boxes and packing material. Your mobile money is charged at the time of
-                            purchase.
-                        </p>
-                    </div>
 
-                </div>
-                <div class="w3-half">
-                    <div class="steps-how-it-works">
-                        <h1>Step By Step</h1>
-                        <br>
-                        <hr>
-                        <br>
-                        <ul>
-                            <img src="https://img.icons8.com/color/48/000000/beet.png" />
-                            <li>We get our fresh produce from our organic farms</li>
-                            <img src="https://img.icons8.com/color/48/000000/beet.png" />
-                            <li>You create an account and choose your delivery frequency</li>
-                            <img src="https://img.icons8.com/color/48/000000/beet.png" />
-                            <li>Select your box size</li>
-                            <img src="https://img.icons8.com/color/48/000000/beet.png" />
-                            <li>We then deliver our simpliy organic products to your door step </li>
-                        </ul>
+                <div class="banner-how-it-works" id="how-it-works">
 
+                    <div class="w3-row">
+
+                        <div class="w3-half">
+                            <div class="content-how-it-works">
+
+                                <h1>How it works</h1>
+                                
+                                <p> Every beginning of the week, we send out an email to our registered users letting
+                                    you know
+                                    what
+                                    we have harvested by
+                                    our farmers for the current week’s Packages. Once an order has been made, you can
+                                    not cancel
+                                    it
+                                    but can reschedule delivery.
+                                    The cut off is Wednesday at 12PM EST to skip or cancel an order for the next week.
+                                    Please be
+                                    sure to
+                                    recycle your boxes and packing material. Your mobile money is charged at the time of
+                                    purchase.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="w3-half">
+                            <div class="steps-how-it-works">
+                                <h1>Step By Step</h1>
+                                <br>
+                                <hr>
+                                <br>
+                                <ul>
+                                    <img src="https://img.icons8.com/color/48/000000/beet.png" />
+                                    <li>We get our fresh produce from our organic farms</li>
+                                    <img src="https://img.icons8.com/color/48/000000/beet.png" />
+                                    <li>You create an account and choose your delivery frequency</li>
+                                    <img src="https://img.icons8.com/color/48/000000/beet.png" />
+                                    <li>Select your box size</li>
+                                    <img src="https://img.icons8.com/color/48/000000/beet.png" />
+                                    <li>We then deliver our simpliy organic products to your door step </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
             </div>
-
         </div>
 
-        <div class="banner-delivery" id="where-we-deliver">
 
-            <div class="w3-row">
-                <div class="content-delivery">
+        <div class="w3-container">
 
-                    <h1>Where we deliver</h1>
-                    <hr>
+            <div class="w3-display-container w3-green" style="height:300px;">
 
-                    <p>residential areas and offices around kampala and Mbale</p>
 
-                    <p> We use our farm transportation services for delivery needs and provide all customers with
-                        tracking information.
 
-                        We deliver between 3pm - 6pm on Friday and Saturday. Please input area to find out your
-                        delivery
-                        day. Don’t worry, if you miss this week’s cut off, be sure to still create an
-                        account so you are on our email list for the following week's harvest!
+                <div class="banner-delivery" id="where-we-deliver">
 
-                        *Please note: Delivery delay can be at the hands of Mother Nature due to weather, or traffic
-                        delays, once the order leaves us it is in the hands of UPS. All damage reports must be made
-                        to
-                        hello@farmboxdirect.com within 24 hours of receiving your order and pictures may be
-                        requested*
-                    </p>
+                    <div class="w3-row">
+                        <div class="content-delivery">
+
+                            <h1>Where we deliver</h1>
+                            <hr>
+
+                            <p>residential areas and offices around kampala and Mbale</p>
+
+                            <p> We use our farm transportation services for delivery needs and provide all customers
+                                with
+                                tracking information.
+
+                                We deliver between 3pm - 6pm on Friday and Saturday. Please input area to find out your
+                                delivery
+                                day. Don’t worry, if you miss this week’s cut off, be sure to still create an
+                                account so you are on our email list for the following week's harvest!
+
+                                *Please note: Delivery delay can be at the hands of Mother Nature due to weather, or
+                                traffic
+                                delays, once the order leaves us it is in the hands of UPS. All damage reports must be
+                                made
+                                to
+                                hello@farmboxdirect.com within 24 hours of receiving your order and pictures may be
+                                requested*
+                            </p>
+
+
+                        </div>
+
+                        <div class="icon-delivery">
+                            <img src="images/delivery-man.svg" alt="triangle with all three sides equal" height="87"
+                                width="100" />
+                            <img src="images/delivery-truck.svg" alt="triangle with all three sides equal" height="87"
+                                width="100" />
+
+                        </div>
+
+
+                    </div>
 
 
                 </div>
-
-                <div class="icon-delivery">
-                    <img src="images/delivery-man.svg" alt="triangle with all three sides equal" height="87"
-                        width="100" />
-                    <img src="images/delivery-truck.svg" alt="triangle with all three sides equal" height="87"
-                        width="100" />
-
-                </div>
-
 
             </div>
-
-
         </div>
 
-        <div class="banner-contact-us" id="contact-us">
 
-            <div class="w3-row">
-                <div class="w3-half">
-                    <div class="form">
-                        <h1>Send us a message</h1>
-                        <br>
-                        <hr class="first-bar">
-                        <br><br>
+        <div class="w3-container">
 
-                        <form class="contact-input" action="">
-                            <p>
-                                <label for="">Your name</label>
-                                <input type="text">
-                            </p>
-                            <p>
-                                <label for="">Skype</label>
-                                <input type="text">
-                            </p>
-                            <p>
-                                <label for="">Email Address</label>
-                                <input type="text">
-                            </p>
-                            <p>
-                                <label for="">Topic</label>
-                                <input type="text">
-                            </p>
-                            <p>
-                                <label for="">Write your message</label>
-                                <textarea name="" id="" cols="30" rows="7"></textarea>
-                            </p>
-                            <p>
-                                <input type="submit" value="Send">
-                            </p>
-                        </form>
+            <div class="w3-display-container w3-green" style="height:300px;">
+
+
+
+                <div class="banner-contact-us" id="contact-us">
+
+                    <div class="w3-row">
+                        <div class="w3-half">
+                            <div class="form">
+                                <h1>Send us a message</h1>
+                                <br>
+                                <hr class="first-bar">
+                                <br><br>
+
+                                <form class="contact-input" action="">
+                                    <p>
+                                        <label for="">Your name</label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label for="">Skype</label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label for="">Email Address</label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label for="">Topic</label>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <label for="">Write your message</label>
+                                        <textarea name="" id="" cols="30" rows="7"></textarea>
+                                    </p>
+                                    <p>
+                                        <input type="submit" value="Send">
+                                    </p>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="w3-half">
+                            <div class="contact-info">
+
+                                <h2>Mbale Ecological Farm</h2>
+                                <p>123, Nabowa Road, Mbale, Uganda, Tell: +256 772 50601 </p>
+
+                                <br>
+
+                                <h2>Email Us</h2>
+                                <p>Reach our customer service: mbalefarm@gmail.com</p>
+
+                                <br>
+                                <h2>Social Meida</h2>
+                                <p>Follow us on social media coming soon</p>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
-                </div>
-                <div class="w3-half">
-                    <div class="contact-info">
-
-                        <h2>Mbale Ecological Farm</h2>
-                        <p>123, Nabowa Road, Mbale, Uganda, Tell: +256 772 50601 </p>
-
-                        <br>
-
-                        <h2>Email Us</h2>
-                        <p>Reach our customer service: mbalefarm@gmail.com</p>
-
-                        <br>
-                        <h2>Social Meida</h2>
-                        <p>Follow us on social media coming soon</p>
-
-                    </div>
 
                 </div>
 
             </div>
-
-
         </div>
 
     </div>

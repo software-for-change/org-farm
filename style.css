@@ -203,7 +203,7 @@ ul.topnav li.right {
 
 .deliver-link {
     padding-bottom: 50px;
-    padding-left: 15px;
+    padding-left: 50px;
 }
 
 .sub-link {
@@ -212,11 +212,7 @@ ul.topnav li.right {
 
 .contact-link {
     padding-bottom: 50px;
-}
-
-.vl {
-    border-left: 1px solid black;
-    height: 100px;
+    padding-right: 40px;
 }
 
 
@@ -395,56 +391,10 @@ main.btn:visited {
 }
 
 
-/* styling for the split page for login and sign up*/
-
-#content {
-    display: flex;
-    height: 100vh;
-}
-
-#left,
-#right {
-    flex-grow: 1;
-    color: #fff;
-}
-
-
-/* styling for the items before login */
-
-.before-login {
-    color: var(--sitefontColor);
-}
-
-.before-login-bkgd {
-    background-color: var(--sitepurple);
-    padding: 40px;
-    height: 100vh;
-}
-
-
 /* how it works banner styling */
 
-.banner-how-it-works {
-    background-color: var(--siteblue);
-}
 
-.banner-how-it-works #left {
-    width: 50%;
-    background-color: var(--matteblack);
-    text-align: center;
-    border-style: double;
-}
-
-.banner-how-it-works #right {
-    width: 50%;
-    text-align: center;
-}
-
-.banner-contact-us #right,
-.banner-contact-us #left {
-    width: 50%;
-    text-align: left;
-}
+/* contact us section */
 
 .banner-contact-us {
     background-color: var(--siteisabeline);
