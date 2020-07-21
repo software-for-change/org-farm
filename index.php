@@ -39,7 +39,7 @@ $result = $conn->query($sql);
                 </div>
 
                 <div class="w3-display-right sub-link"><a href="subscribe.php">Subscribe</a></div>
-                <div class="w3-display-bottomright cotnact-link"><a href="#contact-us">contactus@gmail.com</a></div>
+                <div class="w3-display-bottomright contact-link"><a href="#contact-us">contactus@gmail.com</a></div>
                 <div class="w3-display-bottommiddle w3-hide-small">
                     <div class="vl"></div>
                 </div>
@@ -75,7 +75,6 @@ $result = $conn->query($sql);
                             </p>
                             <br>
 
-                            <br> <br>
                             <div class="group-buttons">
                                 <a class="order-btn" href="#our-packages">.Order With Us.</a>
 
