@@ -34,10 +34,12 @@ $result = $conn->query($sql);
 
 
         <div class="w3-row index-header-content">
-            <div class="w3-half">
-                <h3>We Deliver Fresh, Natural and Organic Produce to your Door
+            <div class="w3-half w3-center">
+
+                <img src="images/index-image.png" alt="vegetables in basket">
+                <h3>At Simply organic, we deliver fresh, natural and organic produce to your door straight from our
+                    farms. We grow a range of fruits and vegetables suitable for a rich nuitrious diet.
                 </h3>
-                <img src="images/index-image.png" alt="">
                 <a class="w3-button w3-light-green" href="#customer/customer-login.php">Order With Us Today</a>
 
             </div>
@@ -71,11 +73,6 @@ $result = $conn->query($sql);
             </div>
 
         </div>
-
-
-
-
-        <!-- end of the top header content for the index page -->
 
         <div class="display-items before-login-bkgd" id="our-packages">
 
