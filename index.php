@@ -31,14 +31,14 @@ $result = $conn->query($sql);
 
         <div class="w3-container">
             <div class="w3-display-container">
-                <div class="w3-display-left">
-                    <a class="how-link"  href="#how-it-works">How it works</a>
+                <div class="w3-display-left how-link">
+                    <a  href="#how-it-works">How it works</a>
                 </div>
-                <div class="w3-display-bottomleft">
-                    <a class="deliver-link" href="#where-we-deliver"> Where we deliver</a>
+                <div class="w3-display-bottomleft deliver-link">
+                    <a href="#where-we-deliver"> Where we deliver</a>
                 </div>
 
-                <div class="w3-display-right"><a class="sub-link" href="subscribe.php">Subscribe</a></div>
+                <div class="w3-display-right sub-link"><a href="subscribe.php">Subscribe</a></div>
                 <div class="w3-display-bottommiddle w3-hide-small">
                     <div class="vl"></div>
                 </div>
