@@ -12,15 +12,15 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simply Organic</title>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <link rel="stylesheet" type="text/css" href="style.css" />
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-
-    <title>Customer</title>
 </head>
 
 <body class="index-banner">
@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 
 
         <div class="w3-row index-header-content">
-        <h1 class="index-title">Raining Vegetables ! Sunny Fruits ...</h1>
+            <h1 class="index-title w3-center">Raining Vegetables ! Sunny Fruits ...</h1>
             <div class="w3-half w3-center">
 
                 <img src="images/index-image.png" alt="vegetables in basket">
@@ -89,12 +89,12 @@ $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
 
-                    echo "<div class='thegrid'";
-                    echo "<table class='prodcue-table'>";
+                    echo "<div class='w3-row'";
+                    
 
                     // output data of each row
                     while ($row = mysqli_fetch_array($result)) {
-
+                        echo "<div class='w3-third'>";
                         echo "<form method='post' action='process-purchase-btn.php'>";
 
                         $food_name = $row["food_name"];
@@ -104,8 +104,7 @@ $result = $conn->query($sql);
 
                         echo "<div class='food-item'";
 
-                        echo "<tr>
-                                                <td>";
+                        
                         echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
                         echo "
                                                     <div class='food-post'>
@@ -115,16 +114,15 @@ $result = $conn->query($sql);
                         echo "<input type='submit' class='submit-button' value='Purchase Item'>";
 
                         echo "<br>";
-                        
-                        echo " </div>";
 
-                        echo "</td>";
-                        echo "</tr>";
+                        echo "</div>";
                         echo "</div>";
                         echo "</form>";
-
+                        echo "</div>";
+                        
+                       
                     }
-                    echo "</table>";
+                    
                     echo "</div>";
 
                 } else {
@@ -138,8 +136,9 @@ $result = $conn->query($sql);
 
         <div class="banner-how-it-works" id="how-it-works">
 
-            <div id="content">
-                <div id="left">
+            <div class="w3-row">
+
+                <div class="w3-half">
                     <div class="content-how-it-works">
 
                         <h1>How it works</h1>
@@ -160,8 +159,7 @@ $result = $conn->query($sql);
                     </div>
 
                 </div>
-
-                <div id="right">
+                <div class="w3-half">
                     <div class="steps-how-it-works">
                         <h1>Step By Step</h1>
                         <br>
@@ -183,103 +181,89 @@ $result = $conn->query($sql);
                 </div>
             </div>
 
-
-
         </div>
 
         <div class="banner-delivery" id="where-we-deliver">
 
-            <div id="content">
-                <div id="left">
-                    <div class="content-delivery">
+            <div class="w3-row">
+                <div class="content-delivery">
 
-                        <h1>Where we deliver</h1>
-                        <hr>
+                    <h1>Where we deliver</h1>
+                    <hr>
 
-                        <p>residential areas and offices around kampala and Mbale</p>
+                    <p>residential areas and offices around kampala and Mbale</p>
 
-                        <p> We use our farm transportation services for delivery needs and provide all customers with
-                            tracking information.
+                    <p> We use our farm transportation services for delivery needs and provide all customers with
+                        tracking information.
 
-                            We deliver between 3pm - 6pm on Friday and Saturday. Please input area to find out your
-                            delivery
-                            day. Don’t worry, if you miss this week’s cut off, be sure to still create an
-                            account so you are on our email list for the following week's harvest!
+                        We deliver between 3pm - 6pm on Friday and Saturday. Please input area to find out your
+                        delivery
+                        day. Don’t worry, if you miss this week’s cut off, be sure to still create an
+                        account so you are on our email list for the following week's harvest!
 
-                            *Please note: Delivery delay can be at the hands of Mother Nature due to weather, or traffic
-                            delays, once the order leaves us it is in the hands of UPS. All damage reports must be made
-                            to
-                            hello@farmboxdirect.com within 24 hours of receiving your order and pictures may be
-                            requested*
-                        </p>
+                        *Please note: Delivery delay can be at the hands of Mother Nature due to weather, or traffic
+                        delays, once the order leaves us it is in the hands of UPS. All damage reports must be made
+                        to
+                        hello@farmboxdirect.com within 24 hours of receiving your order and pictures may be
+                        requested*
+                    </p>
 
-
-                    </div>
-
-                    <div class="icon-delivery">
-                        <img src="images/delivery-man.svg" alt="triangle with all three sides equal" height="87"
-                            width="100" />
-                        <img src="images/delivery-truck.svg" alt="triangle with all three sides equal" height="87"
-                            width="100" />
-
-                    </div>
 
                 </div>
 
-            </div>
+                <div class="icon-delivery">
+                    <img src="images/delivery-man.svg" alt="triangle with all three sides equal" height="87"
+                        width="100" />
+                    <img src="images/delivery-truck.svg" alt="triangle with all three sides equal" height="87"
+                        width="100" />
 
+                </div>
+
+
+            </div>
 
 
         </div>
 
         <div class="banner-contact-us" id="contact-us">
 
-            <div id="content">
-                <div id="left">
-                    <div class="content-delivery">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="form">
+                        <h1>Send us a message</h1>
+                        <br>
+                        <hr class="first-bar">
+                        <br><br>
 
-                        <div class="contain">
-
-                            <div class="wrapper">
-                                <div class="form">
-                                    <h1>Send us a message</h1>
-                                    <br>
-                                    <hr class="first-bar">
-                                    <br><br>
-
-                                    <form class="contact-input" action="">
-                                        <p>
-                                            <label for="">Your name</label>
-                                            <input type="text">
-                                        </p>
-                                        <p>
-                                            <label for="">Skype</label>
-                                            <input type="text">
-                                        </p>
-                                        <p>
-                                            <label for="">Email Address</label>
-                                            <input type="text">
-                                        </p>
-                                        <p>
-                                            <label for="">Topic</label>
-                                            <input type="text">
-                                        </p>
-                                        <p>
-                                            <label for="">Write your message</label>
-                                            <textarea name="" id="" cols="30" rows="7"></textarea>
-                                        </p>
-                                        <p>
-                                            <input type="submit" value="Send">
-                                        </p>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                        <form class="contact-input" action="">
+                            <p>
+                                <label for="">Your name</label>
+                                <input type="text">
+                            </p>
+                            <p>
+                                <label for="">Skype</label>
+                                <input type="text">
+                            </p>
+                            <p>
+                                <label for="">Email Address</label>
+                                <input type="text">
+                            </p>
+                            <p>
+                                <label for="">Topic</label>
+                                <input type="text">
+                            </p>
+                            <p>
+                                <label for="">Write your message</label>
+                                <textarea name="" id="" cols="30" rows="7"></textarea>
+                            </p>
+                            <p>
+                                <input type="submit" value="Send">
+                            </p>
+                        </form>
                     </div>
 
                 </div>
-
-                <div id="right">
+                <div class="w3-half">
                     <div class="contact-info">
 
                         <h2>Mbale Ecological Farm</h2>
@@ -297,31 +281,16 @@ $result = $conn->query($sql);
                     </div>
 
                 </div>
+
             </div>
+
+
         </div>
         <!-- end of contact us banner -->
 
-        <?php include 'footer.php';?>
-
     </div>
+    <?php include 'footer.php';?>
     <!-- end of the page conent div  -->
-
-
-
-    <!-- <div class="footer">
-        <a href="contact.php">Need help?</a>
-        <a href="subscribe.php">subscribe</a>
-        <a href="about.php">About us</a>
-
-        <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
-        <a href="https://icons8.com/icon/13299/beet">Beet icon by Icons8</a>
-        <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> from <a
-            href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-        <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a>
-        from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-    </div> -->
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>

@@ -9,6 +9,9 @@
     --matteblack: #454547;
     --siteorange: #FC7753;
     --siteblue: #66D7D1;
+    --sitepurple: #403D58;
+    --sitestraw: #DBD56E;
+    --siteisabeline: #F2EFEA;
 }
 
 html * {
@@ -148,35 +151,41 @@ ul.topnav li.right {
     margin-left: 29%;
 }
 
-
-}
 .welcomepage-card h1 {
     font-size: small;
     font-weight: 700;
 }
+
 .veges-rain img {
     height: 10px;
     width: 10px;
 }
+
 .welcomepage-card p {
     font-size: 15px;
 }
+
 .card-button {
     border: 1px solid var(--inputcolor);
 }
+
 .group-buttons {
     display: flex;
     justify-content: space-between;
 }
+
 .banner {
     font-family: "Enriqueta", serif;
 }
 
+
 /*-------- display message styles  */
+
 .display-message {
     color: var(--displaymessagecolor);
     text-align: center;
 }
+
 .main-btn:link,
 main.btn:visited {
     background-color: #f44336;
@@ -187,43 +196,54 @@ main.btn:visited {
     display: inline-block;
     width: 200px;
 }
+
 .main-btn:hover,
 .main-btn:active {
     background-color: blue;
 }
 
+
 /* end of styling for the first section of the index/ landing page */
 
+
 /* styling for the grid for the package section */
+
 .thegrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 50px;
 }
+
 .food-item {
     text-align: center;
     padding: 40px;
     width: 100%;
     border-radius: 25px;
 }
+
 .food-item:hover {
     box-shadow: 10px 10px 10px 10px gray;
 }
+
 .food-item button {
     opacity: 0;
 }
+
 .food-item:hover button {
     opacity: 1;
 }
+
 .display-items {
     background-color: var(--sitefontColor);
 }
+
 .slogan {
     color: var(--sitebackgroundColor);
     text-align: center;
     margin-top: 250px;
     line-height: 50%;
 }
+
 .banner-title h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -231,6 +251,7 @@ main.btn:visited {
     line-height: 1.3;
     letter-spacing: 3px;
 }
+
 .banner-title {
     width: 50%;
     display: inline-block;
@@ -238,52 +259,67 @@ main.btn:visited {
     padding-left: 40px;
 }
 
+
 /* end of styling for the package section in index page */
 
+
 /* styling for the customer logged in page */
+
 .customer-loggedin #content {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 .customer-loggedin .slogan {
     margin-top: 10px;
     color: white;
 }
+
 .customer-loggedin .thegrid {
     margin-left: 150px;
 }
+
 .customer-loggedin .welcomepage-card {
     width: 100%;
     margin-top: 150px;
     background: none;
 }
+
 .loggedin-image img {
     margin-right: 20px;
 }
 
+
 /* end of styling for the customer logged in page */
 
+
 /* styling for the shopping cart page */
+
 .shopping-cart-pg .slogan {
     color: white;
     margin-top: 0px;
 }
 
+
 /* end of styling for the shopping cart page */
 
+
 /* styling for the farmer page */
+
 .prodcue-table {
     /* border: 1px solid black; */
-    
     font-size: 16px;
     width: 70%;
 }
 
+
 /* styling for the login pages */
+
 .access_page {
     background-repeat: no-repeat;
     background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url(images/gray-login-img.jpg);
     background-size: cover;
 }
+
 .sign_up_input,
 .login_input {
     background: transparent;
@@ -292,38 +328,43 @@ main.btn:visited {
     width: 50%;
     color: var(--inputcolor);
 }
+
 .page-title {
     font-family: "Tenali Ramakrishna", sans-serif;
     text-align: center;
     font-size: 60px;
     color: var(--inputcolor);
 }
+
 .page-sub-title {
     font-size: 45px;
     font-family: "Tenali Ramakrishna", sans-serif;
     color: var(--inputcolor);
 }
 
+
 /* change the color of the placeholder text */
+
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    
     color: var(--placeholdercolor);
     opacity: 1;
     /* Firefox */
 }
+
 :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    
-    color: var(--placeholdercolor);
-}
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    
     color: var(--placeholdercolor);
 }
 
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--placeholdercolor);
+}
+
+
 /* login button style */
+
 .submit-button {
     color: white;
     padding: 10px 50px;
@@ -334,51 +375,68 @@ main.btn:visited {
     font-size: 15px;
 }
 
+
 /* styling for the split page for login and sign up*/
+
 #content {
     display: flex;
     height: 100vh;
 }
+
 #left,
 #right {
     flex-grow: 1;
     color: #fff;
 }
 
+
 /* styling for the items before login */
+
 .before-login {
     color: var(--sitefontColor);
 }
+
 .before-login-bkgd {
-    background-color: var(--sitebackgroundColor);
+    background-color: var(--sitepurple);
     padding: 40px;
     height: 100vh;
 }
 
+
 /* how it works banner styling */
+
 .banner-how-it-works {
-    background-color: var(--sitefontColor);
+    background-color: var(--siteblue);
 }
+
 .banner-how-it-works #left {
     width: 50%;
     background-color: var(--matteblack);
     text-align: center;
     border-style: double;
 }
+
 .banner-how-it-works #right {
     width: 50%;
     text-align: center;
 }
+
 .banner-contact-us #right,
 .banner-contact-us #left {
     width: 50%;
     text-align: left;
 }
+
+.banner-contact-us {
+    background-color: var(--siteisabeline);
+}
+
 .content-how-it-works {
     color: var(--sitefontColor);
     display: inline-block;
     padding: 80px;
 }
+
 .content-how-it-works p,
 .content-delivery p {
     font-family: "Enriqueta", serif;
@@ -386,6 +444,7 @@ main.btn:visited {
     font-size: large;
     line-height: 2.8;
 }
+
 .steps-how-it-works {
     width: 100%;
     display: inline-block;
@@ -396,22 +455,28 @@ main.btn:visited {
     font-size: large;
 }
 
+
 /* delivery banner styling */
+
 .banner-delivery {
-    background-color: var(--sitefontColor);
+    background-color: var(--sitestraw);
 }
+
 .banner-delivery #left {
     width: 50%;
     background-color: var(--sitefontColor);
     color: var(--sitebackgroundColor);
 }
+
 .banner-delivery #right {
     width: 50%;
     background-color: var(--inputcolor);
 }
+
 .steps-how-it-works ul li {
     display: block;
 }
+
 .steps-how-it-works h1,
 .display-items h1,
 .content-how-it-works h1,
@@ -425,6 +490,7 @@ main.btn:visited {
     font-weight: 700;
     text-align: center;
 }
+
 .steps-how-it-works hr,
 .display-items hr,
 .content-how-it-works hr,
@@ -434,135 +500,166 @@ main.btn:visited {
     width: 10%;
     margin: auto;
 }
+
 .display-items .first-bar,
 .content-how-it-works .first-bar,
 .form hr {
     border-color: var(--sitefontColor);
 }
 
+
 /* styling for the contact section */
+
 .contact-info .h2 {
     font-size: medium;
 }
+
 .contact-info p {
     font-size: small;
     letter-spacing: 3px;
 }
+
 * {
     box-sizing: border-box;
 }
 
+
 /**************************************/
+
 @media (min-width: 700px) {
     .wrapper {
         overflow: hidden;
     }
-    
     .wrapper>* {
         float: left;
         padding: 2em 2em;
     }
 }
+
 @media (min-width: 700px) {
     .contacts {
         width: 30%;
         min-height: 620px;
     }
 }
+
 @media (min-width: 700px) {
     .form {
         width: 100%;
     }
 }
+
 .contact-input p {
     float: left;
     width: 49%;
 }
+
 .contact-input p:not(:nth-child(2n)) {
     margin-right: 2%;
 }
+
 .contact-input p:last-child {
     clear: both;
     width: 100%;
 }
+
 .contact-input p:nth-last-child(2) {
     clear: both;
     width: 100%;
 }
+
 .contact-info h2 {
     text-align: left;
     font-size: large;
 }
+
 .contact-info {
     padding: 80px;
     margin-top: 200px;
 }
 
+
 /**************************************/
+
 .wrapper>* {
     padding: 6em;
 }
+
 .contact-input label {
     display: block;
     font-size: small;
 }
+
 button,
 input,
 textarea {
     padding: 1em;
 }
+
 button {
     background: lightgrey;
     width: 100%;
     border: 0;
 }
+
 button:hover,
 button:focus {
     background: gold;
     outline: 0;
 }
+
 .contain {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
 }
+
 @media (min-width: 600px) {
     .contain {
         padding: 0;
     }
 }
+
 h3,
 ul {
     margin: 0;
 }
+
 h3 {
     margin-bottom: 1rem;
 }
+
 input:focus,
 textarea:focus {
     outline: 3px solid gold;
 }
+
 .form input,
 .form textarea {
     width: 100%;
     border: 0px solid;
     background-color: rgba(255, 255, 255, 0.2);
 }
+
 .contact-input input {
     color: var(--sitefontColor);
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+
 /* styling for the FOOTER PART */
 
+
 /* STYLES SPECIFIC TO FOOTER  */
+
 .footer {
     width: 100%;
     position: relative;
     height: auto;
     background-color: #070617;
 }
+
 .footer .col {
     width: 190px;
     height: auto;
@@ -572,6 +669,7 @@ textarea:focus {
     -moz-box-sizing: border-box;
     padding: 0px 20px 20px 20px;
 }
+
 .footer .col h1 {
     margin: 0;
     padding: 0;
@@ -584,11 +682,13 @@ textarea:focus {
     text-transform: uppercase;
     letter-spacing: 0.25em;
 }
+
 .footer .col ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 .footer .col ul li {
     color: #999999;
     font-size: 14px;
@@ -600,65 +700,69 @@ textarea:focus {
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
 }
+
 .social ul li {
     display: inline-block;
     padding-right: 5px !important;
 }
+
 .footer .col ul li:hover {
     color: #ffffff;
     transition: 0.1s;
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
 }
+
 .clearfix {
     clear: both;
 }
+
 @media only screen and (min-width: 1280px) {
     .contain {
         width: 1200px;
         margin: 0 auto;
     }
 }
+
 @media only screen and (max-width: 1139px) {
     .contain .social {
         width: 1000px;
         display: block;
     }
-    
     .social h1 {
         margin: 0px;
     }
 }
+
 @media only screen and (max-width: 950px) {
     .footer .col {
         width: 33%;
     }
-    
     .footer .col h1 {
         font-size: 14px;
     }
-    
     .footer .col ul li {
         font-size: 13px;
     }
 }
+
 @media only screen and (max-width: 500px) {
     .footer .col {
         width: 50%;
     }
-    
     .footer .col h1 {
         font-size: 14px;
     }
-    
     .footer .col ul li {
         font-size: 13px;
     }
 }
+
 @media only screen and (max-width: 340px) {
     .footer .col {
         width: 100%;
     }
 }
+
 
 /* end of styling for the footer */

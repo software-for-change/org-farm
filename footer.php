@@ -1,67 +1,35 @@
 <?php
 
-echo " <div class='footer'>
-        <div class='contain'>
-            <div class='col'>
-                <h1>Company</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Mission</li>
-                    <li>Services</li>
-                    <li>Social</li>
-                    <li>Get in touch</li>
-                </ul>
-            </div>
-            <div class='col'>
-                <h1>Products</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Mission</li>
-                    <li>Services</li>
-                    <li>Social</li>
-                    <li>Get in touch</li>
-                </ul>
-            </div>
-            <div class='col'>
-                <h1>Accounts</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Mission</li>
-                    <li>Services</li>
-                    <li>Social</li>
-                    <li>Get in touch</li>
-                </ul>
-            </div>
-            <div class='col'>
-                <h1>Resources</h1>
-                <ul>
-                    <li>Webmail</li>
-                    <li>Redeem code</li>
-                    <li>WHOIS lookup</li>
-                    <li>Site map</li>
-                    <li>Web templates</li>
-                    <li>Email templates</li>
-                </ul>
-            </div>
-            <div class='col'>
-                <h1>Support</h1>
-                <ul>
-                    <li>Contact us</li>
-                    <li>Web chat</li>
-                    <li>Open ticket</li>
-                </ul>
-            </div>
-            <div class='col social'>
-                <h1>Social</h1>
-                <ul>
-                    <li><img src='https://svgshare.com/i/5fq.svg' width='32' style='width: 32px;'></li>
-                    <li><img src='https://svgshare.com/i/5eA.svg' width='32' style='width: 32px;'></li>
-                    <li><img src='https://svgshare.com/i/5f_.svg' width='32' style='width: 32px;'></li>
-                </ul>
-            </div>
-            <div class='clearfix'> </div>
-        </div>
-    </div> ";
-
-    ?>
+echo "    <footer>
     
+    <div class='w3-row'>
+    <hr>
+    <div class='w3-third w3-center'>
+        <p>
+            Powered by <a href='https://www.w3schools.com/w3css/default.asp' target='_blank'>wandika</a>
+        </p>
+    </div>
+    <div class='w3-third w3-center'>
+        <p class='w3-center'> Copy right 2020</p>
+        <div class='sharethis-inline-follow-buttons follow-buttons'></div>
+    </div>
+    <div class='w3-third w3-center'>
+        <p>Contact Us</p>
+        <div class='w3-container'>
+        <button onclick=\"document.getElementById('id01').style.display='block'\" class='w3-button w3-orange'>Feedback</button>
+        <div id='id01' class='w3-modal'>
+        <div class='w3-modal-content'>
+          <div class='w3-container'>
+            <span onclick=\"document.getElementById('id01').style.display='none'\" class='w3-button w3-display-topright'>&times;</span>
+            <p>PLease let us know any feedback you have</p>
+            <form action='action_page.php'>
+            <textarea placeholder='Tell us what you think' name='feedback' rows='4' cols='50'>
+            </textarea>
+            <br><br>
+            <input type='submit' value='Submit'>
+            </form>
+          </div>
+        </div>
+</div>
+</footer> ";
+?>
