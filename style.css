@@ -217,12 +217,6 @@ main.btn:visited {
 
 /* styling for the grid for the package section */
 
-.thegrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 50px;
-}
-
 .food-item {
     text-align: center;
     padding: 40px;
@@ -246,13 +240,6 @@ main.btn:visited {
     background-color: var(--sitefontColor);
 }
 
-.slogan {
-    color: var(--sitebackgroundColor);
-    text-align: center;
-    margin-top: 250px;
-    line-height: 50%;
-}
-
 .banner-title h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -266,6 +253,21 @@ main.btn:visited {
     display: inline-block;
     text-align: left;
     padding-left: 40px;
+}
+
+.package-container {
+    padding: 0px !important;
+}
+
+.package-container h1 {
+    text-decoration: underline;
+    text-decoration-color: var(--siteorange);
+}
+
+.package-container a {
+    padding: 40px;
+    font-weight: 500;
+    color: var(--sitestraw);
 }
 
 

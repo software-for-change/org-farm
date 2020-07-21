@@ -77,16 +77,14 @@ $result = $conn->query($sql);
             </div>
         </div>
 
-        <div class="w3-container">
-            <h1>Using w3-display-container</h1>
-
+        <div class="w3-container package-container">
             <div class="w3-display-container">
 
 
                 <div class="display-items before-login-bkgd" id="our-packages">
 
-                    <a href="" class="w3-display-topright">Purchase In Bulk</a>
-                    <h1 class="w3-display-topmiddle">Our Packages</h1>
+                    <a href="" class="w3-display-topright w3-padding-48">Purchase produce in large bulk instead?</a>
+                    <h1 class="w3-display-topmiddle w3-padding-48">Our Packages</h1>
 
                     <div class="display-message">
                                 <?php
@@ -143,9 +141,6 @@ $result = $conn->query($sql);
                     echo "0 results";
                 }
                 ?>
-
-                    <p>add a section for purchase in bulk</p>
-
                 </div>
             </div>
         </div>
