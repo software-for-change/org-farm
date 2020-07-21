@@ -77,22 +77,27 @@ $result = $conn->query($sql);
             </div>
         </div>
 
+        <div class="w3-container">
+            <h1>Using w3-display-container</h1>
 
-        <div class="display-items before-login-bkgd" id="our-packages">
+            <div class="w3-display-container">
 
-            <a href="" class="w3-display-topright">Purchase In Bulk</a>
-            <h1 class="w3-display-topmiddle">Our Packages</h1>
 
-            <div class="display-message">
-                <?php
-            if (isset($_SESSION['message'])) {
-                echo $_SESSION['message'];
-                unset($_SESSION['message']);
-            }
-            ?>
+                <div class="display-items before-login-bkgd" id="our-packages">
 
-            </div>
-            <?php
+                    <a href="" class="w3-display-topright">Purchase In Bulk</a>
+                    <h1 class="w3-display-topmiddle">Our Packages</h1>
+
+                    <div class="display-message">
+                                <?php
+                    if (isset($_SESSION['message'])) {
+                        echo $_SESSION['message'];
+                        unset($_SESSION['message']);
+                    }
+                    ?>
+
+                    </div>
+                    <?php
 
                 if ($result->num_rows > 0) {
 
@@ -139,8 +144,10 @@ $result = $conn->query($sql);
                 }
                 ?>
 
-            <p>add a section for purchase in bulk</p>
+                    <p>add a section for purchase in bulk</p>
 
+                </div>
+            </div>
         </div>
 
         <div class="banner-how-it-works" id="how-it-works">
