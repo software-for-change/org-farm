@@ -94,7 +94,7 @@
 
                     <div class="shopping-message w3-center">
 
-                        <h2 class="w3-padding-64">ITEM YOU SELECTED FOR PURCHASE</h2>
+                        <h1 class="w3-padding-64">Item you Selected for Purchase</h1>
 
                         <p> You have can purchase this item once or start a weekly or bi-weekly delivery. If you choose
                             either weekly or bi-weekly, you will recieve a shipment of the item you selected at the
@@ -115,7 +115,7 @@
                                 <input class="w3-check" type="checkbox" name="bi-weekly">
                                 <label>Bi-Weekly</label></p>
                             <p>
-                                <input type="submit" class="submit-button" name="delivery" value="Purchase">
+                                <input type="submit" class="submit-button w3-center" name="delivery" value="Purchase">
                             </p>
                         </form>
 
