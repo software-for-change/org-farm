@@ -410,3 +410,13 @@ main.btn:visited {
 .signup-card {
     background-color: var(--sitepurple);
 }
+
+.submit-button {
+    color: white;
+    padding: 10px 50px;
+    background-color: transparent;
+    margin: 8px 0;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-size: 15px;
+}

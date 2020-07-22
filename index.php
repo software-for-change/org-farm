@@ -128,7 +128,7 @@ $result = $conn->query($sql);
                                                     <p> " . $food_name . " </p>
                                                     <p> $" . $price . " </p>";
                                                     echo "<input name='package_id'  type='hidden' value='$food_id' >";
-                        echo "<input type='submit' class='submit-button w3-btn w3-white w3-border' value='Purchase Item'>";
+                        echo "<input type='submit' class='submit-button' value='Purchase Item'>";
 
                         echo "<br>";
 
