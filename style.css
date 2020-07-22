@@ -387,6 +387,10 @@ main.btn:visited {
     background-color: var(--siteblue);
 }
 
-.acess-container {
+.access-container {
     height: 70vh;
+}
+
+.access-row {
+    grid-row-gap: 10px;
 }
