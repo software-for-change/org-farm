@@ -23,18 +23,27 @@ $result = $conn->query($sql);
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <title>Customer</title>
 </head>
 
-<body class="banner shopping-cart-pg">
+<body class="shopping-cart-pg">
 
-<?php include '../header.php';?>
+    <?php include '../header.php';?>
+
+
+    <div class="content">
+        <div class="w3-row">
+
+            <div class="w3-half">
+
+            </div>
+            <div class="w3-half">
+
+            </div>
+        </div>
+
+    </div>
     <h1>shopping cart</h1>
 
     <div class="page-content">
@@ -46,8 +55,7 @@ $result = $conn->query($sql);
 
                         if ($result->num_rows > 0) {
                             
-                            echo "<div class='thegrid'";
-                            echo "<table class='prodcue-table'>";
+                            echo "<div class='w3-row w3-padding-64'>";
 
                             // output data of each row
                             while ($row = mysqli_fetch_array($result)) {
@@ -60,6 +68,7 @@ $result = $conn->query($sql);
                                 
 
                                 while ($newrow = mysqli_fetch_array($newresult)) {
+                                    echo "<div class='w3-third'>";
                                     $food_name = $newrow["food_name"];
                                     
                                     $price = $newrow["price"];
@@ -78,11 +87,11 @@ $result = $conn->query($sql);
                                                                                         <p> $" . $price . " </p>";
 
                                     echo "<br>";
-                                    echo "<button >delete</button>";
+                                    echo "<button class='w3-btn w3-amber'>delete</button>";
                                     echo " </div>";
 
-                                    echo "</td>";
-                                    echo "</tr>";
+                                    
+                                    echo "</div>";
                                     echo "</div>";
 
                                 }
@@ -91,7 +100,7 @@ $result = $conn->query($sql);
                                 
                             }
 
-                            echo "</table>";
+                           
                             echo "</div>";
 
                         } else {
@@ -117,20 +126,20 @@ $result = $conn->query($sql);
                     <h1>Raining Vegetables</h1>
                     <br>
                     <p>
-                        
+
                         <?php
                             echo "<h1>TOTAL  : ".$sum. " </h1> ";
                             
                         ?>
-                    <br><br>
-                    <button>Continue shopping</button>
-                    <br><br>
-                    <button>Pay for Order</button>
+                        <br><br>
+                        <button>Continue shopping</button>
+                        <br><br>
+                        <button>Pay for Order</button>
 
                     </p>
                     <br>
 
-                    
+
                 </div>
 
             </div>
