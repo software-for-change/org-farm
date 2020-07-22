@@ -438,3 +438,10 @@ main.btn:visited {
     text-decoration: underline;
     text-decoration-color: var(--sitepurple);
 }
+
+
+/* styling for shopping cart collection pg */
+
+.shopping-cart-pg {
+    background-color: var(--sitestraw);
+}
