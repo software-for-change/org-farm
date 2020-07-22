@@ -38,108 +38,73 @@ if (isset($_SESSION['message'])) {
 
     </div>
 
-    <div id="content">
-        <div id="left">
-            <div id="object1">
+    <div class="content">
+        <div class="w3-container contact-container">
 
-                <div class="page-content">
-                    <br><br>
-                    <div class="modal">
-                        <h1 class="page-sub-title">Customer Log In</h1>
-                        <br><br>
+            <div class="w3-display-container">
+                <div class="w3-row access-container">
+                    <div class="w3-half">
+                        <div class="w3-card-4">
+                            <div class="w3-container w3-pink">
+                                <h2>Customer Login</h2>
+                            </div>
+                            <form method='POST' class="w3-container" action="customer-login-auth.php">
 
-                        <div id="frm">
-                            <form method='POST' action="customer-login-auth.php">
+                                <input id="email" name="email" class="w3-input w3-animate-input" name="first"
+                                    type="text" placeholder="Enter email">
 
-                                <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email"
-                                    autofocus>
-                                <br><br>
-                                <input type="text" class="login_input" id="paswd" name="paswd"
-                                    placeholder="Enter Password">
 
-                                <br><br>
-                                <div class="button">
-                                    <div class="button__text"><input class="submit-button" id="btn" type="submit"
-                                            value="Login" name="btn-login"></input></div>
+                                <input id="paswd" name="paswd" placeholder="Enter Password"
+                                    class="w3-input w3-animate-input" name="last" type="text">
 
-                                    <div class="button__wrapper">
-                                        <div class="button__arrow"></div>
-                                        <div class="button__border-circle"></div>
-                                        <div class="button__mask-circle">
-                                            <div class="button__small-circle"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <br>
-                                <br>
 
-                                <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
-                                <br>
-                                <br>
-
+                                <input class="w3-btn w3-pink" id="btn" type="submit" value="Login"
+                                    name="btn-login"></input>
                             </form>
+                            <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
                         </div>
                     </div>
-                </div>
+                    <div class="w3-half">
+                        <div class="w3-card-4">
+                            <div class="w3-container w3-green">
+                                <h2>Customer Sign-up</h2>
+                            </div>
+                            <form method='POST' class="w3-container" action="customer-signup-auth.php">
+
+                                <input class="w3-input w3-animate-input" type="text" id="email" size="30" name="email"
+                                    placeholder="Enter Email" required>
+
+                                <input class="w3-input w3-animate-input" type="password" minlength="8" id="paswd"
+                                    name="paswd"
+                                    placeholder="Enter Password. 1 uppercase, lowercase, special character & number"
+                                    required>
+
+                                <input class="w3-input w3-animate-input" minlength="8" type="password" id="paswd2"
+                                    name="paswd2" placeholder="Confirm password" required>
+
+                                <input class="w3-input w3-animate-input" type="number" id="phone" name="phone"
+                                    placeholder="Enter mobile money number" required>
+
+                                <input class="w3-btn w3-green" type="submit" value="Sign Up">
+                            </form>
 
 
-            </div>
+                        </div>
 
-        </div>
-
-        <hr>
-
-
-        <div id="right">
-            <div id="object3">
-
-
-                <div class="page-content">
-                    <br><br>
-                    <h2 class="page-sub-title">Customer Sign Up</h2>
-
-                    <form method="post" action="customer-signup-auth.php">
-
-                        <br>
-                        <input class="sign_up_input" type="text" id="email" size="30" name="email"
-                            placeholder="Enter Email" required>
-                        <br>
-                        <br>
-                        <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd"
-                            placeholder="Enter Password. 1 uppercase, lowercase, special character & number" required>
-                        <br>
-                        <br>
-
-                        <input class="sign_up_input" minlength="8" type="password" id="paswd2" name="paswd2"
-                            placeholder="Confirm password" required>
-                        <br>
-                        <br>
-                        <input class="sign_up_input" type="number" id="phone" name="phone"
-                            placeholder="Enter mobile money number" required>
-                        <br>
-                        <br>
-                        <br>
-                        <input class="submit-button" type="submit" value="Sign Up">
-                    </form>
+                    </div>
 
                 </div>
 
             </div>
-
         </div>
     </div>
+
 
     <?php include '../footer.php';?>
 
 
     <script src="../index.js">
-    $(document).ready(function() {
-        window.onscroll = function() {
-            scrollFunction()
-        };
 
-    });
     </script>
 
 </body>

@@ -381,12 +381,14 @@ main.btn:visited {
 }
 
 
-/* styling for the login pages */
+/* styling for the login and sign-up pages */
 
 .access_page {
-    background-repeat: no-repeat;
-    background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url(images/gray-login-img.jpg);
-    background-size: cover;
+    background-color: var(--siteblue);
+}
+
+.acess-container input {
+    width: 200px;
 }
 
 .sign_up_input,
