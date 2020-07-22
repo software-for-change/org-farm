@@ -21,7 +21,6 @@ $result = $conn->query($sql);
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 
@@ -273,9 +272,9 @@ $result = $conn->query($sql);
                     <div class="w3-row">
 
                     <h1 class="w3-center">Get in Touch With Us</h1>
-                        <div class="w3-half">
+                        <div class="w3-half w3-padding-32">
                             <form action="/action_page.php"
-                                class="w3-container w3-card-4 w3-light-grey w3-text-orange w3-margin">
+                                class="w3-container w3-card-4 w3-light-grey w3-text-deep-orange w3-margin">
                                 <h2 class="w3-center">Contact Us</h2>
 
                                 <div class="w3-row w3-section">
@@ -317,7 +316,7 @@ $result = $conn->query($sql);
                                     </div>
                                 </div>
 
-                                <button class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding">Send</button>
+                                <button class="w3-button w3-block w3-section w3-deep-orange w3-ripple w3-padding">Send</button>
 
                             </form>
 

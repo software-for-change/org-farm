@@ -1,6 +1,5 @@
 :root {
     --teal: #5cdb95;
-    --sitefontColor: white;
     --sitebackgroundColor: #303133;
     --displaymessagecolor: #ff726f;
     --boldpink: #e11584;
@@ -21,8 +20,7 @@ html * {
 
 body {
     background-color: var(--sitebackgroundColor);
-    color: var(--sitefontColor);
-    font-family: "Enriqueta", serif;
+    color: white;
 }
 
 .content {
@@ -371,11 +369,15 @@ main.btn:visited {
 
 .banner-contact-us h1 {
     text-decoration: underline;
-    text-decoration-color: var(--sitepurple);
+    text-decoration-color: var(--siteorange);
 }
 
 .contact-info {
     padding: 80px;
+}
+
+.contact-info h2 {
+    font-size: large;
 }
 
 
