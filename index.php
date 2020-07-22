@@ -271,6 +271,8 @@ $result = $conn->query($sql);
                 <div class="banner-contact-us w3-padding-64" id="contact-us">
 
                     <div class="w3-row">
+
+                    <h1 class="w3-center">Get in Touch With Us</h1>
                         <div class="w3-half">
                             <form action="/action_page.php"
                                 class="w3-container w3-card-4 w3-light-grey w3-text-orange w3-margin">
