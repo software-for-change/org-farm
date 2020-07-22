@@ -42,7 +42,7 @@ if (isset($_SESSION['message'])) {
         <div class="w3-container access-container">
 
 
-            <div class="w3-row acess-row">
+            <div class="w3-row access-row">
                 <div class="w3-half">
                     <div class="w3-card-4 login-card">
 
@@ -52,12 +52,12 @@ if (isset($_SESSION['message'])) {
 
                             <input id="email" name="email" class="w3-input w3-border" name="first" type="text"
                                 placeholder="Enter email">
+                            <br>
 
+                            <input id="paswd" name="paswd" placeholder="Enter Password" class="w3-input w3-border"
+                                name="last" type="text">
 
-                            <input id="paswd" name="paswd" placeholder="Enter Password"
-                                class="w3-input w3-border" name="last" type="text">
-
-
+                            <br>
                             <input class="w3-btn w3-pink" id="btn" type="submit" value="Login" name="btn-login"></input>
                         </form>
                         <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
@@ -72,18 +72,17 @@ if (isset($_SESSION['message'])) {
 
                             <input class="w3-input w3-border" type="text" id="email" size="30" name="email"
                                 placeholder="Enter Email" required>
-
-                            <input class="w3-input w3-border" type="password" minlength="8" id="paswd"
-                                name="paswd"
+                            <br>
+                            <input class="w3-input w3-border" type="password" minlength="8" id="paswd" name="paswd"
                                 placeholder="Enter Password. 1 uppercase, lowercase, special character & number"
                                 required>
-
-                            <input class="w3-input w3-border" minlength="8" type="password" id="paswd2"
-                                name="paswd2" placeholder="Confirm password" required>
-
+                            <br>
+                            <input class="w3-input w3-border" minlength="8" type="password" id="paswd2" name="paswd2"
+                                placeholder="Confirm password" required>
+                            <br>
                             <input class="w3-input w3-border" type="number" id="phone" name="phone"
                                 placeholder="Enter mobile money number" required>
-
+                            <br>
                             <input class="w3-btn w3-green" type="submit" value="Sign Up">
                         </form>
 
