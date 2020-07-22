@@ -39,15 +39,15 @@ if (isset($_SESSION['message'])) {
     </div>
 
     <div class="content">
-        <div class="w3-container">
+        <div class="w3-container access-container">
 
-            <div class="w3-display-container">
-                <div class="w3-row access-container">
+           
+                <div class="w3-row ">
                     <div class="w3-half">
-                        <div class="w3-card-4">
-                            <div class="w3-container w3-pink">
-                                <h2>Customer Login</h2>
-                            </div>
+                        <div class="w3-card-4 w3-pink login-card">
+                            
+                                <h2 class="w3-center">Customer Login</h2>
+                            
                             <form method='POST' class="w3-container" action="customer-login-auth.php">
 
                                 <input id="email" name="email" class="w3-input w3-animate-input" name="first"
@@ -65,10 +65,10 @@ if (isset($_SESSION['message'])) {
                         </div>
                     </div>
                     <div class="w3-half">
-                        <div class="w3-card-4">
-                            <div class="w3-container w3-green">
-                                <h2>Customer Sign-up</h2>
-                            </div>
+                        <div class="w3-card-4 w3-green signup-card">
+                           
+                                <h2 class="w3-center">Customer Sign-up</h2>
+                            
                             <form method='POST' class="w3-container" action="customer-signup-auth.php">
 
                                 <input class="w3-input w3-animate-input" type="text" id="email" size="30" name="email"
@@ -95,7 +95,7 @@ if (isset($_SESSION['message'])) {
 
                 </div>
 
-            </div>
+            
         </div>
     </div>
 
