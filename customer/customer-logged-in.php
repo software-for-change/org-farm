@@ -38,97 +38,96 @@
     <title>Customer</title>
 </head>
 
-<body class="banner customer-loggedin">
+<body class="customer-loggedin">
 
     <?php include '../header.php';?>
 
+    <div class="content">
+        <div class="purchase-container">
 
-    <div class="page-content">
-        <div id="content">
-            <div id="left">
-                <div class="slogan">
 
+            <div class="w3-row">
+                <div class="w3-half">
                     <?php
 
-                        if ($result->num_rows > 0) {
+                    if ($result->num_rows > 0) {
 
-                            echo "<div class='thegrid'";
-                            echo "<table class='prodcue-table'>";
+                        echo "<div class='thegrid'";
+                        echo "<table class='prodcue-table'>";
 
-                            // output data of each row
-                            while ($row = mysqli_fetch_array($result)) {
+                        // output data of each row
+                        while ($row = mysqli_fetch_array($result)) {
 
-                                $food_name = $row["food_name"];
-                                $food_image = $row["food_image"];
-                                $price = $row["price"];
+                            $food_name = $row["food_name"];
+                            $food_image = $row["food_image"];
+                            $price = $row["price"];
 
-                                echo "<div class='food-item'";
+                            echo "<div class='food-item'";
 
-                                echo "<tr>
-                                                        <td>";
-                                echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-                                echo "
-                                                            <div class='food-post'>
-                                                            <p> " . $food_name . " </p>
-                                                            <p> $" . $price . " </p>";
+                            echo "<tr>
+                                                    <td>";
+                            echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+                            echo "
+                                                        <div class='food-post'>
+                                                        <p> " . $food_name . " </p>
+                                                        <p> $" . $price . " </p>";
 
-                                echo "<br>";
-                                echo "<button id='minus'>−</button>
-                                            <input type='number' value='0' id='input' />
-                                            <button id='plus'>+</button>";
+                            echo "<br>";
+                            echo "<button id='minus'>−</button>
+                                        <input type='number' value='0' id='input' />
+                                        <button id='plus'>+</button>";
 
-                                echo " </div>";
+                            echo " </div>";
 
-                                echo "</td>";
-                                echo "</tr>";
-                                echo "</div>";
-
-                            }
-                            echo "</table>";
+                            echo "</td>";
+                            echo "</tr>";
                             echo "</div>";
 
-                        } else {
-                            echo "Sorry, you did not select any item to be added to the cart";
                         }
-                        ?>
+                        echo "</table>";
+                        echo "</div>";
+
+                    } else {
+                        echo "Sorry, you did not select any item to be added to the cart";
+                    }
+                    ?>
+
 
                 </div>
+                <div class="w3-half">
 
-            </div>
+                    <div class="shopping-message w3-center">
 
-            <div id="right">
-                <div class="welcomepage-card shopping-message">
-                    <img class="rain-img" src="rain-128.png" width="40" height="40" alt="">
-                    <br>
-                    <div class="veges-rain">
-                        <img src="../images/sweet-pepper-24.png" alt="">
-                        <img src="../images/carrot-24.png" alt="">
-                        <img src="../images/chili-pepper-29-24.png" alt="">
-                    </div>
-                    <br>
-                    <h1>PURCHASE ITEM</h1>
-                    <br>
-                    <p> Our packages have fresh produce from our farms specially picked and packaged
-                        to mee your nuitrition needs. We pride ourselves in producing strictly organic
-                        farming produce.
+                        <h2 class="w3-padding-64">ITEM YOU SELECTED FOR PURCHASE</h2>
+
+                        <p> You have can purchase this item once or start a weekly or bi-weekly delivery. If you choose
+                            either weekly or bi-weekly, you will recieve a shipment of the item you selected at the
+                            selcted frequency. Feel free to get in touch with us if you wish to cancel or pause the
+                            delivery frequency. </p>
 
                         <!-- have a form to submit this info -->
 
-                        <p>Choose your delivery frequency:</p>
-
-                        <form method="POST" action="">
-                            <input type="checkbox"  name="once" checked>
-                            <label for="once">Just Once</label>
-                            <input type="checkbox" name="weekly" >
-                            <label for="weekly">Weekly</label>
-                            <input type="checkbox" name="bi-weekly" >
-                            <label for="bi-week">Bi-Weekly</label>
-                            <br> <br><br>
-                            <input type="submit" class="submit-button" name="delivery" value="Purchase" >
+                        <form  method="POST" class="w3-container w3-card-4" action="">
+                            <h3>Choose your delivery frequency:</h3>
+                            <p>
+                                <input class="w3-check" type="checkbox" name="once" checked="checked">
+                                <label>Just Once</label></p>
+                            <p>
+                                <input class="w3-check" type="checkbox" name="weekly">
+                                <label> Weekly</label></p>
+                            <p>
+                                <input class="w3-check" type="checkbox" name="bi-weekly">
+                                <label>Bi-Weekly</label></p>
+                            <p>
+                                <input type="submit" class="submit-button" name="delivery" value="Purchase">
+                            </p>
                         </form>
 
-                       
-                    </p>
+
+
+
+                    </div>
+
 
                 </div>
 
@@ -136,7 +135,6 @@
         </div>
 
     </div>
-
 
     <?php include '../footer.php';?>
 

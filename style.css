@@ -343,7 +343,9 @@ main.btn:visited {
     padding: 8%;
 }
 
-.content-delivery h1 {
+.content-delivery h1,
+.shopping-message h2,
+.shopping-message h3 {
     font-family: 'Rock Salt', cursive;
 }
 
@@ -419,4 +421,15 @@ main.btn:visited {
     border: 1px solid gray;
     cursor: pointer;
     font-size: 15px;
+}
+
+
+/* styling for customer logged in page - page where they purches the item chosen */
+
+.customer-loggedin {
+    background-color: var(--siteorange);
+}
+
+.shopping-message form {
+    width: 500px;
 }
