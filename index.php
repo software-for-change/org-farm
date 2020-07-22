@@ -221,7 +221,7 @@ $result = $conn->query($sql);
                         <div class="content-delivery w3-center">
 
                             <h1>Where We Deliver</h1>
-                           
+
                             <p>We currently deliver to residential areas and offices around kampala and Mbale.</p>
 
                             <p> We use our farm transportation services for delivery needs and provide all customers
@@ -240,17 +240,17 @@ $result = $conn->query($sql);
                                 samplemail@gmail.com within 24 hours of receiving your order with pictures*
                             </p>
 
-                            <div class="icon-delivery w3-center">
-                            <img src="images/delivery-man.svg" alt="triangle with all three sides equal" height="87"
-                                width="100" />
-                            <img src="images/delivery-truck.svg" alt="triangle with all three sides equal" height="87"
-                                width="100" />
+                            <div class="icon-delivery w3-center w3-padding-64">
+                                <img src="images/delivery-man.svg" alt="triangle with all three sides equal" height="87"
+                                    width="100" />
+                                <img src="images/delivery-truck.svg" alt="triangle with all three sides equal"
+                                    height="87" width="100" />
+
+                            </div>
 
                         </div>
 
-                        </div>
 
-                       
 
                     </div>
 
@@ -261,48 +261,63 @@ $result = $conn->query($sql);
         </div>
 
 
-        <div class="w3-container">
+        <div class="w3-container contact-container">
 
-            <div class="w3-display-container w3-green" style="height:300px;">
+            <div class="w3-display-container">
 
 
 
-                <div class="banner-contact-us" id="contact-us">
+                <div class="banner-contact-us w3-padding-64" id="contact-us">
 
                     <div class="w3-row">
                         <div class="w3-half">
-                            <div class="form">
-                                <h1>Send us a message</h1>
-                                <br>
-                                <hr class="first-bar">
-                                <br><br>
+                            <form action="/action_page.php"
+                                class="w3-container w3-card-4 w3-light-grey w3-text-orange w3-margin">
+                                <h2 class="w3-center">Contact Us</h2>
 
-                                <form class="contact-input" action="">
-                                    <p>
-                                        <label for="">Your name</label>
-                                        <input type="text">
-                                    </p>
-                                    <p>
-                                        <label for="">Skype</label>
-                                        <input type="text">
-                                    </p>
-                                    <p>
-                                        <label for="">Email Address</label>
-                                        <input type="text">
-                                    </p>
-                                    <p>
-                                        <label for="">Topic</label>
-                                        <input type="text">
-                                    </p>
-                                    <p>
-                                        <label for="">Write your message</label>
-                                        <textarea name="" id="" cols="30" rows="7"></textarea>
-                                    </p>
-                                    <p>
-                                        <input type="submit" value="Send">
-                                    </p>
-                                </form>
-                            </div>
+                                <div class="w3-row w3-section">
+                                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                                    <div class="w3-rest">
+                                        <input class="w3-input w3-border" name="first" type="text"
+                                            placeholder="First Name">
+                                    </div>
+                                </div>
+
+                                <div class="w3-row w3-section">
+                                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                                    <div class="w3-rest">
+                                        <input class="w3-input w3-border" name="last" type="text"
+                                            placeholder="Last Name">
+                                    </div>
+                                </div>
+
+                                <div class="w3-row w3-section">
+                                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i>
+                                    </div>
+                                    <div class="w3-rest">
+                                        <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="w3-row w3-section">
+                                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+                                    <div class="w3-rest">
+                                        <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+                                    </div>
+                                </div>
+
+                                <div class="w3-row w3-section">
+                                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+                                    <div class="w3-rest">
+                                        <input class="w3-input w3-border" name="message" type="text"
+                                            placeholder="Message">
+                                    </div>
+                                </div>
+
+                                <button class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding">Send</button>
+
+                            </form>
+
 
                         </div>
                         <div class="w3-half">
