@@ -33,119 +33,108 @@ $result = $conn->query($sql);
 
 
     <div class="content">
-        <div class="w3-row">
 
-            <div class="w3-half">
+        <div class="cart-container">
 
-            </div>
-            <div class="w3-half">
+            <h1>shopping cart</h1>
+            <div class="w3-row">
 
-            </div>
-        </div>
-
-    </div>
-    <h1>shopping cart</h1>
-
-    <div class="page-content">
-        <div id="content">
-            <div id="left">
-                <div class="slogan">
-
+                <div class="w3-half">
                     <?php
 
-                        if ($result->num_rows > 0) {
+                    if ($result->num_rows > 0) {
+                        
+                        echo "<div class='w3-row w3-padding-64'>";
+
+                        // output data of each row
+                        while ($row = mysqli_fetch_array($result)) {
+
+                            $package = $row['package_id'];
+
+                            $query = "SELECT food_name, price, food_image FROM farm_food WHERE food_id='$package'";
+                            $newresult = $conn->query($query);
+
                             
-                            echo "<div class='w3-row w3-padding-64'>";
 
-                            // output data of each row
-                            while ($row = mysqli_fetch_array($result)) {
+                            while ($newrow = mysqli_fetch_array($newresult)) {
+                                echo "<div class='w3-third'>";
+                                $food_name = $newrow["food_name"];
+                                
+                                $price = $newrow["price"];
+                                $sum += $price;
 
-                                $package = $row['package_id'];
+                            
 
-                                $query = "SELECT food_name, price, food_image FROM farm_food WHERE food_id='$package'";
-                                $newresult = $conn->query($query);
+                                echo "<div class='food-item'";
+
+                                echo "<tr>
+                                                                                <td>";
+                                echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($newrow['food_image']) . '" />';
+                                echo "
+                                                                                    <div class='food-post'>
+                                                                                    <p> " . $food_name . " </p>
+                                                                                    <p> $" . $price . " </p>";
+
+                                echo "<br>";
+                                echo "<button class='w3-btn w3-amber'>delete</button>";
+                                echo " </div>";
 
                                 
+                                echo "</div>";
+                                echo "</div>";
 
-                                while ($newrow = mysqli_fetch_array($newresult)) {
-                                    echo "<div class='w3-third'>";
-                                    $food_name = $newrow["food_name"];
-                                    
-                                    $price = $newrow["price"];
-                                    $sum += $price;
-
-                                   
-
-                                    echo "<div class='food-item'";
-
-                                    echo "<tr>
-                                                                                    <td>";
-                                    echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($newrow['food_image']) . '" />';
-                                    echo "
-                                                                                        <div class='food-post'>
-                                                                                        <p> " . $food_name . " </p>
-                                                                                        <p> $" . $price . " </p>";
-
-                                    echo "<br>";
-                                    echo "<button class='w3-btn w3-amber'>delete</button>";
-                                    echo " </div>";
-
-                                    
-                                    echo "</div>";
-                                    echo "</div>";
-
-                                }
-
-                                
-                                
                             }
 
-                           
-                            echo "</div>";
-
-                        } else {
-                            echo "Sorry, you did not select any item to be added to the cart";
-
+                            
+                            
                         }
-                        ?>
+
+                    
+                        echo "</div>";
+
+                    } else {
+                        echo "Sorry, you did not select any item to be added to the cart";
+
+                    }
+                    ?>
 
                 </div>
+                <div class="w3-half">
 
-            </div>
+                    <div class="welcomepage-card shopping-message">
+                        <img class="rain-img" src="../images/rain-128.png" width="40" height="40" alt="">
+                        <br>
+                        <div class="veges-rain">
+                            <img src="../images/sweet-pepper-24.png" alt="">
+                            <img src="../images/carrot-24.png" alt="">
+                            <img src="../images/chili-pepper-29-24.png" alt="">
+                        </div>
+                        <br>
+                        <h1>Raining Vegetables</h1>
+                        <br>
+                        <p>
 
-            <div id="right">
-                <div class="welcomepage-card shopping-message">
-                    <img class="rain-img" src="../images/rain-128.png" width="40" height="40" alt="">
-                    <br>
-                    <div class="veges-rain">
-                        <img src="../images/sweet-pepper-24.png" alt="">
-                        <img src="../images/carrot-24.png" alt="">
-                        <img src="../images/chili-pepper-29-24.png" alt="">
-                    </div>
-                    <br>
-                    <h1>Raining Vegetables</h1>
-                    <br>
-                    <p>
-
-                        <?php
+                            <?php
                             echo "<h1>TOTAL  : ".$sum. " </h1> ";
                             
                         ?>
-                        <br><br>
-                        <button>Continue shopping</button>
-                        <br><br>
-                        <button>Pay for Order</button>
+                            <br><br>
+                            <button>Continue shopping</button>
+                            <br><br>
+                            <button>Pay for Order</button>
 
-                    </p>
-                    <br>
+                        </p>
+                        <br>
 
+
+                    </div>
 
                 </div>
-
             </div>
         </div>
 
     </div>
+
 
     <?php include '../footer.php';?>
 
