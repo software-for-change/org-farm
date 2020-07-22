@@ -154,7 +154,7 @@ $result = $conn->query($sql);
 
         <div class="w3-container how-it-works-container">
 
-            <div class="w3-display-container">
+            <div class="w3-display-container how-it-works-content">
                 <div class="w3-display-topleft"><img src="images/orange.png" alt="orange"></div>
                 <div class="w3-display-topright"><img src="images/pine-apple.png" alt="pineapple"></div>
                 <div class="w3-display-bottomright"><img src="images/mango.png" alt="pineapple"></div>
@@ -162,9 +162,9 @@ $result = $conn->query($sql);
 
 
 
-                <div class="banner-how-it-works" id="how-it-works">
+                <div id="how-it-works">
 
-                    <div class="w3-row">
+                    <div class="w3-row how-it-works-row">
 
                         <div class="w3-half">
                             <div class="content-how-it-works">
@@ -191,19 +191,13 @@ $result = $conn->query($sql);
                         <div class="w3-half">
                             <div class="steps-how-it-works">
                                 <h1>Step By Step</h1>
-                                <br>
-                                <hr>
-                                <br>
-                                <ul>
-                                    <img src="https://img.icons8.com/color/48/000000/beet.png" />
+                                <ol class="w3-center">
                                     <li>We get our fresh produce from our organic farms</li>
-                                    <img src="https://img.icons8.com/color/48/000000/beet.png" />
                                     <li>You create an account and choose your delivery frequency</li>
-                                    <img src="https://img.icons8.com/color/48/000000/beet.png" />
                                     <li>Select your box size</li>
-                                    <img src="https://img.icons8.com/color/48/000000/beet.png" />
+
                                     <li>We then deliver our simpliy organic products to your door step </li>
-                                </ul>
+                                </ol>
 
                             </div>
 
