@@ -395,12 +395,17 @@ main.btn:visited {
     padding-top: 5%;
 }
 
+.login-card,
+.signup-card {
+    height: 500px;
+    padding: 10%;
+    width: 70%;
+}
+
 .login-card {
-    padding: 15%;
     background-color: var(--siteorange);
 }
 
 .signup-card {
-    padding: 12%;
     background-color: var(--sitepurple);
 }

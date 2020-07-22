@@ -39,7 +39,7 @@ if (isset($_SESSION['message'])) {
     </div>
 
     <div class="content">
-        <div class="w3-container access-container">
+        <div class="w3-container w3-center access-container">
 
 
             <div class="w3-row access-row">
