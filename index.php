@@ -88,7 +88,7 @@ $result = $conn->query($sql);
             <div class="w3-display-container">
 
 
-                <div class="display-items w3-padding-64 before-login-bkgd" id="our-packages">
+                <div class="w3-padding-64 display-package" id="our-packages">
 
                     <a href="" class="w3-display-topright w3-padding-48">Purchase produce in large bulk instead?</a>
                     <h1 class="w3-display-topmiddle w3-padding-48">Our Packages</h1>
@@ -152,9 +152,13 @@ $result = $conn->query($sql);
             </div>
         </div>
 
-        <div class="w3-container">
+        <div class="w3-container how-it-works-container">
 
             <div class="w3-display-container">
+                <div class="w3-display-topleft"><img src="images/orange.png" alt="orange"></div>
+                <div class="w3-display-topright"><img src="images/pine-apple.png" alt="pineapple"></div>
+                <div class="w3-display-bottomright"><img src="images/mango.png" alt="pineapple"></div>
+                <div class="w3-display-bottomleft"><img src="images/banana.png" alt="pineapple"></div>
 
 
 
@@ -166,7 +170,7 @@ $result = $conn->query($sql);
                             <div class="content-how-it-works">
 
                                 <h1>How it works</h1>
-                                
+
                                 <p> Every beginning of the week, we send out an email to our registered users letting
                                     you know
                                     what

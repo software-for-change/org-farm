@@ -264,10 +264,6 @@ main.btn:visited {
     opacity: 1;
 }
 
-.display-items {
-    background-color: var(--sitefontColor);
-}
-
 .package-container {
     padding: 0px !important;
 }
@@ -283,8 +279,21 @@ main.btn:visited {
     color: var(--sitestraw);
 }
 
+.display-package {
+    padding: 20px;
+}
+
 
 /* end of styling for the package section in index page */
+
+
+/* styling for how it works continer  */
+
+.how-it-works-container {
+    padding: 0px !important;
+    background-color: var(--siteblue);
+    height: 90px;
+}
 
 
 /* styling for the customer logged in page */
