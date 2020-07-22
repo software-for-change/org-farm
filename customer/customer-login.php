@@ -44,18 +44,18 @@ if (isset($_SESSION['message'])) {
 
             <div class="w3-row acess-row">
                 <div class="w3-half">
-                    <div class="w3-card-4 w3-pink login-card">
+                    <div class="w3-card-4 login-card">
 
                         <h2 class="w3-center">Customer Login</h2>
 
                         <form method='POST' class="w3-container" action="customer-login-auth.php">
 
-                            <input id="email" name="email" class="w3-input w3-animate-input" name="first" type="text"
+                            <input id="email" name="email" class="w3-input w3-border" name="first" type="text"
                                 placeholder="Enter email">
 
 
                             <input id="paswd" name="paswd" placeholder="Enter Password"
-                                class="w3-input w3-animate-input" name="last" type="text">
+                                class="w3-input w3-border" name="last" type="text">
 
 
                             <input class="w3-btn w3-pink" id="btn" type="submit" value="Login" name="btn-login"></input>
@@ -64,24 +64,24 @@ if (isset($_SESSION['message'])) {
                     </div>
                 </div>
                 <div class="w3-half">
-                    <div class="w3-card-4 w3-green signup-card">
+                    <div class="w3-card-4 signup-card">
 
                         <h2 class="w3-center">Customer Sign-up</h2>
 
                         <form method='POST' class="w3-container" action="customer-signup-auth.php">
 
-                            <input class="w3-input w3-animate-input" type="text" id="email" size="30" name="email"
+                            <input class="w3-input w3-border" type="text" id="email" size="30" name="email"
                                 placeholder="Enter Email" required>
 
-                            <input class="w3-input w3-animate-input" type="password" minlength="8" id="paswd"
+                            <input class="w3-input w3-border" type="password" minlength="8" id="paswd"
                                 name="paswd"
                                 placeholder="Enter Password. 1 uppercase, lowercase, special character & number"
                                 required>
 
-                            <input class="w3-input w3-animate-input" minlength="8" type="password" id="paswd2"
+                            <input class="w3-input w3-border" minlength="8" type="password" id="paswd2"
                                 name="paswd2" placeholder="Confirm password" required>
 
-                            <input class="w3-input w3-animate-input" type="number" id="phone" name="phone"
+                            <input class="w3-input w3-border" type="number" id="phone" name="phone"
                                 placeholder="Enter mobile money number" required>
 
                             <input class="w3-btn w3-green" type="submit" value="Sign Up">

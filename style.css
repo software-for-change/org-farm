@@ -392,5 +392,15 @@ main.btn:visited {
 }
 
 .access-row {
-    grid-row-gap: 10px;
+    padding-top: 5%;
+}
+
+.login-card {
+    padding: 15%;
+    background-color: var(--siteorange);
+}
+
+.signup-card {
+    padding: 12%;
+    background-color: var(--sitepurple);
 }
