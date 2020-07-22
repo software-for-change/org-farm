@@ -209,9 +209,9 @@ $result = $conn->query($sql);
         </div>
 
 
-        <div class="w3-container">
+        <div class="w3-container delivery-container">
 
-            <div class="w3-display-container w3-green" style="height:300px;">
+            <div class="w3-display-container">
 
 
 
@@ -220,10 +220,9 @@ $result = $conn->query($sql);
                     <div class="w3-row">
                         <div class="content-delivery">
 
-                            <h1>Where we deliver</h1>
-                            <hr>
-
-                            <p>residential areas and offices around kampala and Mbale</p>
+                            <h1>Where We Deliver</h1>
+                           
+                            <p>We currently deliver to residential areas and offices around kampala and Mbale.</p>
 
                             <p> We use our farm transportation services for delivery needs and provide all customers
                                 with
@@ -234,19 +233,14 @@ $result = $conn->query($sql);
                                 day. Don’t worry, if you miss this week’s cut off, be sure to still create an
                                 account so you are on our email list for the following week's harvest!
 
-                                *Please note: Delivery delay can be at the hands of Mother Nature due to weather, or
+                                *Please note: Delivery delay can be due to Mother Nature depending on the weather, or
                                 traffic
-                                delays, once the order leaves us it is in the hands of UPS. All damage reports must be
-                                made
+                                delays, once the order leaves for delivery. Any damages should be reported
                                 to
-                                hello@farmboxdirect.com within 24 hours of receiving your order and pictures may be
-                                requested*
+                                samplemail@gmail.com within 24 hours of receiving your order with pictures*
                             </p>
 
-
-                        </div>
-
-                        <div class="icon-delivery">
+                            <div class="icon-delivery w3-center">
                             <img src="images/delivery-man.svg" alt="triangle with all three sides equal" height="87"
                                 width="100" />
                             <img src="images/delivery-truck.svg" alt="triangle with all three sides equal" height="87"
@@ -254,6 +248,9 @@ $result = $conn->query($sql);
 
                         </div>
 
+                        </div>
+
+                       
 
                     </div>
 
