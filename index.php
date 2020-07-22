@@ -218,7 +218,7 @@ $result = $conn->query($sql);
                 <div class="banner-delivery" id="where-we-deliver">
 
                     <div class="w3-row">
-                        <div class="content-delivery">
+                        <div class="content-delivery w3-center">
 
                             <h1>Where We Deliver</h1>
                            
