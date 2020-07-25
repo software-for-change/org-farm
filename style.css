@@ -50,8 +50,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:visited {
-    background-color: var(--grape);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 ul.topnav li a:hover {
