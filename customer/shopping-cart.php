@@ -36,7 +36,7 @@ $result = $conn->query($sql);
 
         <div class="cart-container">
 
-            <h1>shopping cart</h1>
+            <h1 class="w3-center">Shopping Cart</h1>
             <div class="w3-row">
 
                 <div class="w3-half">
@@ -138,8 +138,6 @@ $result = $conn->query($sql);
 
     <?php include '../footer.php';?>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>
     <script>
     $(document).ready(function() {
