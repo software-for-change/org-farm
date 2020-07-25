@@ -9,8 +9,8 @@ if (!isset($_SESSION['user_id'])) { //if login in session is not set
                
                 <li class='right'><a href='#contact-us'>Contact</a></li>
                 <li class='right'><a href='#where-we-deliver'>Delivery</a></li>
-                <li class='right'><a href='about.php'>About</a></li>
-                <li class='right'><a href='subscribe.php'>Subscribe</a></li>
+                // <li class='right'><a href='about.php'>About</a></li>
+                // <li class='right'><a href='subscribe.php'>Subscribe</a></li>
                 <li class='right'><a href='customer/customer-login.php'>Login</a></li>
                 
             </ul>
