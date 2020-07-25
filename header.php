@@ -41,7 +41,7 @@ if (!isset($_SESSION['user_id'])) { //if login in session is not set
                 <li class='right'><a href='#our-packages'>Packages</a></li>
                 <li class='right'><a href='#contact-us'>Contact</a></li>
                 <li class='right'><a href='#where-we-deliver'>Delivery</a></li> 
-                <li class='right'><a class='active' href='index.php'>Home</a></li>
+                <li class='right'><a class='active' href='../index.php'>Home</a></li>
             </ul>
             <!-- mobile navigation -->
             <div id='mySidepanel' class='sidepanel'>
