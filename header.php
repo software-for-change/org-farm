@@ -29,18 +29,19 @@ if (!isset($_SESSION['user_id'])) { //if login in session is not set
 ";
 } else {
 
+    // <li class='right'><a href='about.php'>About</a></li>
+    //             <li class='right'><a href='subscribe.php'>Subscribe</a></li>
+
     echo "
     <ul class='topnav'>
                 <li><a class='logo' href='index.php'>Raining Vegetables</a></li>
                
-                <li class='right'><a class='active' href='index.php'>Home</a></li>
+                <li class='right'><a href='logout.php'>logout</a></li>
                 <li class='right'><a href='shopping-cart'>shopping cart</a></li>
                 <li class='right'><a href='#our-packages'>Packages</a></li>
                 <li class='right'><a href='#contact-us'>Contact</a></li>
-                <li class='right'><a href='#where-we-deliver'>Delivery</a></li>
-                <li class='right'><a href='about.php'>About</a></li>
-                <li class='right'><a href='subscribe.php'>Subscribe</a></li>
-                <li class='right'><a href='logout.php'>logout</a></li>
+                <li class='right'><a href='#where-we-deliver'>Delivery</a></li> 
+                <li class='right'><a class='active' href='index.php'>Home</a></li>
             </ul>
             <!-- mobile navigation -->
             <div id='mySidepanel' class='sidepanel'>
