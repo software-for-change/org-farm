@@ -3,10 +3,9 @@
 echo "    <footer>
     
     <div class='w3-row'>
-    <hr>
     <div class='w3-third w3-center'>
         <p>
-            Designed by <a href='https://kesamercy.github.io/nekesa-mercy/' target='_blank'>NEKESA MERCY</a>
+            Designed by <a href='https://kesamercy.github.io/nekesa-mercy/' target='_blank'>Nekesa Mercy</a>
         </p>
     </div>
     <div class='w3-third w3-center'>
