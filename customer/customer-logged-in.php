@@ -1,13 +1,21 @@
 <?php
-session_start();
-include_once "../access-db.php";
+    session_start();
+    include_once "../access-db.php";
 
-if(!isset($_SESSION["user_id"])){ //if login in session is not set
-    header("location:customer-login.php");
-}
+    if(!isset($_SESSION["user_id"])){ //if login in session is not set
+        header("location:customer-login.php");
+    }
+    $package = $_SESSION['package_id'];
 
-$sql = "SELECT food_name, price, food_image FROM farm_food";
-$result = $conn->query($sql);
+    $sql = "SELECT food_name, price, food_image FROM farm_food WHERE food_id='$package'";
+    $result = $conn->query($sql);
+
+    if (count($_POST) > 0) {
+
+        //route to the shopping cart after update
+        header("location:shopping-cart.php");
+
+    }
 
 ?>
 <!DOCTYPE html>
@@ -20,106 +28,111 @@ $result = $conn->query($sql);
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Noto+Serif:wght@700&family=Roboto+Slab:wght@900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow&family=Fredericka+the+Great&family=Noto+Serif&family=Roboto&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Customer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    
 </head>
 
 <body class="customer-loggedin">
 
-    <div class="header">
-        <div class="menu_navbar">
-            <ul class="customer-loggedin-menu-links">
-                <li><a class="navlink" href="admin/admin-login.php">How it works</a> </li>
-                <li><a class="navlink" href="shopping-cart">shopping cart</a> </li>
-                <li><a class="navlink" href="admin/admin-login.php">contact support</a> </li>
-                <li><a class="navlink" href="../logout.php">logout</a> </li>
+    <?php include '../header.php';?>
 
-            </ul>
-        </div>
-
-        <div class="logo loggedin-logo">
-            <h2 class="logo"> <a href="customer-logged-in.php">Farm Organic</a> </h2>
-        </div>
-    </div>
-    <br> <br>
+    <div class="content">
+        <div class="purchase-container">
 
 
+            <div class="w3-row">
+                <div class="w3-half">
+                    <?php
 
-    <div id="content">
-        <div id="left">
-            <div class="slogan">
+                    if ($result->num_rows > 0) {
 
-                <div class="banner-title">
-                    <h3>We want to serve our customers with the highest quality products</h3>
+                        echo "<div class='thegrid'";
+                        echo "<table class='prodcue-table'>";
+
+                        // output data of each row
+                        while ($row = mysqli_fetch_array($result)) {
+
+                            $food_name = $row["food_name"];
+                            $food_image = $row["food_image"];
+                            $price = $row["price"];
+
+                            echo "<div class='food-item'";
+
+                            echo "<tr>
+                                                    <td>";
+                            echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+                            echo "
+                                                        <div class='food-post'>
+                                                        <p> " . $food_name . " </p>
+                                                        <p> $" . $price . " </p>";
+
+                            echo "<br>";
+                            echo "<button id='minus'>−</button>
+                                        <input type='number' value='0' id='input' />
+                                        <button id='plus'>+</button>";
+
+                            echo " </div>";
+
+                            echo "</td>";
+                            echo "</tr>";
+                            echo "</div>";
+
+                        }
+                        echo "</table>";
+                        echo "</div>";
+
+                    } else {
+                        echo "Sorry, you did not select any item to be added to the cart";
+                    }
+                    ?>
+
+
                 </div>
-                
+                <div class="w3-half">
+
+                    <div class="shopping-message w3-center">
+
+                        <h1 class="w3-padding-64">Item you Selected for Purchase</h1>
+
+                        <p> You have can purchase this item once or start a weekly or bi-weekly delivery. If you choose
+                            either weekly or bi-weekly, you will recieve a shipment of the item you selected at the
+                            selcted frequency. Feel free to get in touch with us if you wish to cancel or pause the
+                            delivery frequency. </p>
+
+                        <!-- have a form to submit this info -->
+
+                        <form method="POST" class="w3-container w3-card-4" action="">
+                            <h3>Choose your delivery frequency:</h3>
+                            <p>
+                                <input class="w3-check" type="checkbox" name="once" checked="checked">
+                                <label>Just Once</label></p>
+                            <p>
+                                <input class="w3-check" type="checkbox" name="weekly">
+                                <label> Weekly</label></p>
+                            <p>
+                                <input class="w3-check" type="checkbox" name="bi-weekly">
+                                <label>Bi-Weekly</label></p>
+                            <p>
+                                <input type="submit" class="submit-button w3-center" name="delivery" value="Purchase">
+                            </p>
+                        </form>
+
+
+
+
+                    </div>
+
+
+                </div>
 
             </div>
-
         </div>
 
-        <div id="right">
-            <div class="loggedin-image">
-                <img src="../pngfuel.com-other.png" alt="">
-            </div>
-
-        </div>
     </div>
-    <br><br><br><br><br>
-    <div class="display-items">
-    <br><br><br><br><br><br>
-    
-<p>Our prices: Nsaze ko nawe!</p>
-    <?php
 
-if ($result->num_rows > 0) {
-
-    echo "<div class='thegrid'";
-    echo "<table class='prodcue-table'>";
-
-    // output data of each row
-    while ($row = mysqli_fetch_array($result)) {
-
-        $food_name = $row["food_name"];
-        $food_image = $row["food_image"];
-        $price = $row["price"];
-
-        echo "<div class='food-item'";
-
-        echo "<tr>
-                                <td>";
-        echo '<img height="200" width="200" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-        echo "
-                                    <div class='food-post'>
-                                    <p> " . $food_name . " </p>
-                                    <p> $" . $price . " </p>";
-
-        echo "<br>";
-        echo "<button id='minus'>−</button>
-                    <input type='number' value='0' id='input' />
-                    <button id='plus'>+</button>";
-
-        echo " </div>";
-
-        echo "</td>";
-        echo "</tr>";
-        echo "</div>";
-
-    }
-    echo "</table>";
-    echo "</div>";
-
-} else {
-    echo "0 results";
-}
-?>
-</div>
+    <?php include '../footer.php';?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../index.js"></script>
