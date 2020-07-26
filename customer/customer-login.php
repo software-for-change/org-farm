@@ -23,135 +23,90 @@ session_start();
 
     <title>Simply Organic </title>
 </head>
+
 <body class="access_page">
 
-    <div class="header">
-        <div class="menu_navbar">
-            <ul>
+    <?php include '../header.php';?>
 
-                <li><a class="navlink" href="../admin/admin-login.php">admin login</a> </li>
-                <!-- <li><a class="navlink" href="../farmer/farmer-login.php">farmer login</a> </li> -->
-                <li><a class="navlink" href="../customer/customer-login.php">customer login </a> </li>
-
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="../index.php">Farm Organic</a> </h2>
-        </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div class="display-message">
         <?php
-            if (isset($_SESSION['message'])) {
-                echo $_SESSION['message'];
-                unset($_SESSION['message']);
-            }
-            ?>
+if (isset($_SESSION['message'])) {
+    echo $_SESSION['message'];
+    unset($_SESSION['message']);
+}
+?>
 
     </div>
 
-    <div id="content">
-        <div id="left">
-            <div id="object1">
+    <div class="content">
+        <div class="w3-container w3-center access-container">
 
-                <div class="page-content">
-                    <br><br>
-                    <div class="modal">
-                        <h1 class="page-sub-title">Customer Log In</h1>
-                        <br><br>
 
-                        <div id="frm">
-                            <form method='POST' action="customer-login-auth.php">
+            <div class="w3-row access-row">
+                <div class="w3-half">
+                    <div class="w3-card-4 login-card">
 
-                                <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email"
-                                    autofocus>
-                                <br><br>
-                                <input type="text" class="login_input" id="paswd" name="paswd"
-                                    placeholder="Enter Password">
+                        <h2 class="w3-center">Customer Login</h2>
 
-                                <br><br>
-                                <div class="button">
-                                    <div class="button__text"><input class="submit-button" id="btn" type="submit"
-                                            value="Login" name="btn-login"></input></div>
+                        <form method='POST' class="w3-container" action="customer-login-auth.php">
 
-                                    <div class="button__wrapper">
-                                        <div class="button__arrow"></div>
-                                        <div class="button__border-circle"></div>
-                                        <div class="button__mask-circle">
-                                            <div class="button__small-circle"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <br>
-                                <br>
+                            <input id="email" name="email" class="w3-input w3-border" name="first" type="text"
+                                placeholder="Enter email">
+                            <br>
 
-                                <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
-                                <br>
-                                <br>
+                            <input id="paswd" name="paswd" placeholder="Enter Password" class="w3-input w3-border"
+                                name="last" type="text">
 
-                            </form>
-                        </div>
+                            <br>
+                            <input class="w3-btn w3-pink" id="btn" type="submit" value="Login" name="btn-login"></input>
+                        </form>
+                        <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
                     </div>
                 </div>
+                <div class="w3-half">
+                    <div class="w3-card-4 signup-card">
+
+                        <h2 class="w3-center">Customer Sign-up</h2>
+
+                        <form method='POST' class="w3-container" action="customer-signup-auth.php">
+
+                            <input class="w3-input w3-border" type="text" id="email" size="30" name="email"
+                                placeholder="Enter Email" required>
+                            <br>
+                            <input class="w3-input w3-border" type="password" minlength="8" id="paswd" name="paswd"
+                                placeholder="Enter Password. 1 uppercase, lowercase, special character & number"
+                                required>
+                            <br>
+                            <input class="w3-input w3-border" minlength="8" type="password" id="paswd2" name="paswd2"
+                                placeholder="Confirm password" required>
+                            <br>
+                            <input class="w3-input w3-border" type="number" id="phone" name="phone"
+                                placeholder="Enter mobile money number" required>
+                            <br>
+                            <input class="w3-btn w3-green" type="submit" value="Sign Up">
+                        </form>
 
 
-            </div>
-
-        </div>
-
-        <hr>
-
-
-        <div id="right">
-            <div id="object3">
-
-
-                <div class="page-content">
-                    <br><br>
-                    <h2 class="page-sub-title">Customer Sign Up</h2>
-
-                    <form method="post" action="customer-signup-auth.php">
-
-                        <br>
-                        <input class="sign_up_input" type="text" id="email" size="30" name="email"
-                            placeholder="Enter Email" required>
-                        <br>
-                        <br>
-                        <input class="sign_up_input" type="password" minlength="8" id="paswd" name="paswd"
-                            placeholder="Enter Password. 1 uppercase, lowercase, special character & number" required>
-                        <br>
-                        <br>
-
-                        <input class="sign_up_input" minlength="8" type="password" id="paswd2" name="paswd2"
-                            placeholder="Confirm password" required>
-                        <br>
-                        <br>
-                        <input class="sign_up_input" type="number" id="phone" name="phone"
-                            placeholder="Enter mobile money number" required>
-                        <br>
-                        <br>
-                        <br>
-                        <input class="submit-button" type="submit" value="Sign Up">
-                    </form>
+                    </div>
 
                 </div>
 
             </div>
 
+
         </div>
     </div>
 
-    <br><br>
-    <script src="../index.js"></script>
+
+    <?php include '../footer.php';?>
+
+
+    <script src="../index.js">
+
+    </script>
 
 </body>
+
+
 
 </html>
