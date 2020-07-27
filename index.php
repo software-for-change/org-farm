@@ -45,12 +45,18 @@ $result = $conn->query($sql);
                 <div class="w3-row index-header-content">
                     <h1 class="index-title w3-center">Raining Vegetables ! Sunny Fruits ...</h1>
                     <div class="w3-half w3-center">
-
-
-
                         <img src="images/index-image.png" alt="vegetables in basket">
                         <br>
+                        <div id="overlay" onclick="off()">
+                            this is the shit you be spweing
+                        </div>
 
+                        <div style="padding:20px">
+                            <h2>Overlay</h2>
+                            <p>Add an overlay effect to the page content (100% width and height with a black background
+                                color with 50% opacity).</p>
+                            <button onclick="on()">Turn on overlay effect</button>
+                        </div>
                     </div>
                     <div class="w3-half">
                         <div class="welcomepage-card">
@@ -95,59 +101,55 @@ $result = $conn->query($sql);
 
                     <div class="display-message">
                         <?php
-                    if (isset($_SESSION['message'])) {
-                        echo $_SESSION['message'];
-                        unset($_SESSION['message']);
-                    }
-                    ?>
+if (isset($_SESSION['message'])) {
+    echo $_SESSION['message'];
+    unset($_SESSION['message']);
+}
+?>
 
                     </div>
                     <?php
 
-                if ($result->num_rows > 0) {
+if ($result->num_rows > 0) {
 
-                    echo "<div class='w3-row w3-padding-64'>";
-                    
+    echo "<div class='w3-row w3-padding-64'>";
 
-                    // output data of each row
-                    while ($row = mysqli_fetch_array($result)) {
-                        echo "<div class='w3-third'>";
-                        echo "<form method='post' action='process-purchase-btn.php'>";
+    // output data of each row
+    while ($row = mysqli_fetch_array($result)) {
+        echo "<div class='w3-third'>";
+        echo "<form method='post' action='process-purchase-btn.php'>";
 
-                        $food_name = $row["food_name"];
-                        $food_image = $row["food_image"];
-                        $price = $row["price"];
-                        $food_id = $row["food_id"];
+        $food_name = $row["food_name"];
+        $food_image = $row["food_image"];
+        $price = $row["price"];
+        $food_id = $row["food_id"];
 
-                        echo "<div class='food-item'>";
+        echo "<div class='food-item'>";
 
-                        
-                        echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-                        echo "
+        echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+        echo "
                                                     <div class='food-post'>
                                                     <p> " . $food_name . " </p>
                                                     <p> $" . $price . " </p>";
-                                                    echo "<input name='package_id'  type='hidden' value='$food_id' >";
-                        echo "<input type='submit' class='submit-button' value='Purchase Item'>";
+        echo "<input name='package_id'  type='hidden' value='$food_id' >";
+        echo "<input type='submit' class='submit-button' value='Purchase Item'>";
 
-                        echo "<br>";
+        echo "<br>";
 
-                        echo "</div>";
-                        echo "</div>";
-                        
-                        echo "</form>";
-                        echo "</div>";
-                        
-                        
-                       
-                    }
-                    
-                    echo "</div>";
+        echo "</div>";
+        echo "</div>";
 
-                } else {
-                    echo "0 results";
-                }
-                ?>
+        echo "</form>";
+        echo "</div>";
+
+    }
+
+    echo "</div>";
+
+} else {
+    echo "0 results";
+}
+?>
                 </div>
             </div>
         </div>
@@ -271,7 +273,7 @@ $result = $conn->query($sql);
 
                     <div class="w3-row">
 
-                    <h1 class="w3-center">Get in Touch With Us</h1>
+                        <h1 class="w3-center">Get in Touch With Us</h1>
                         <div class="w3-half w3-padding-32">
                             <form action="/action_page.php"
                                 class="w3-container w3-card-4 w3-light-grey w3-text-deep-orange w3-margin">
@@ -316,7 +318,8 @@ $result = $conn->query($sql);
                                     </div>
                                 </div>
 
-                                <button class="w3-button w3-block w3-section w3-deep-orange w3-ripple w3-padding">Send</button>
+                                <button
+                                    class="w3-button w3-block w3-section w3-deep-orange w3-ripple w3-padding">Send</button>
 
                             </form>
 
