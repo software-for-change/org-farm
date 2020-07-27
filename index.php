@@ -5,6 +5,13 @@ session_start();
 $sql = "SELECT food_name, food_id, price, food_image FROM farm_food";
 $result = $conn->query($sql);
 
+if(!isset($_SESSION["user_id"])){ //if login in session is not set
+    echo "<body onload='on()'>";
+}
+else {
+    echo "<body onload='off()'>";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
