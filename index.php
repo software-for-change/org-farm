@@ -30,7 +30,7 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 
-<body onload="setTimeout(on, 10000)" class="index-banner">
+<body onload="setTimeout(on, 5000)" class="index-banner">
     <div class="content">
         <?php include 'header.php';?>
 
@@ -41,8 +41,8 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
                 <!-- the overlay for the email list form -->
                 <div id="overlay">
 
-                    <div class="w3-display-topright">
-                        <a onclick="off()" >Close</a>
+                    <div class="close-btn" class="w3-display-topright">
+                        <a  onclick="off()"><i class="fa fa-close" style="font-size:36px;color:red"></i></a>
                     </div>
                     <div class="display-message">
                         <?php
@@ -56,7 +56,7 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
                     
                         <h1>COMING SOON!!!!!</h1>
 
-                        <p>Before you check out the goodies we have coming for you, here give us your info so you are
+                        <p>Before you check out the goodies we have coming for you, here... give us your info so you are
                             the
                             first one to know when orders open</p>
 
