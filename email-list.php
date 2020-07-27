@@ -7,7 +7,7 @@ if (count($_POST) > 0) {
     $names = $_POST['names'];
     $phone = $_POST['phone'];
 
-    $result = mysqli_query($conn, "SELECT * FROM farm_emailList WHERE email='" . $_POST["email"] . "'");
+    $result = mysqli_query($conn, "SELECT email FROM farm_emailList WHERE email='" . $_POST['email'] . "'");
     $count = mysqli_num_rows($result);
 
     if ($count > 0) {
