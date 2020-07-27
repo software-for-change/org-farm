@@ -468,3 +468,13 @@ main.btn:visited {
 .email-list {
     margin-top: 10%;
 }
+
+.email-list h1 {
+    font-size: 100px;
+}
+
+.email-list input {
+    background: transparent;
+    width: 60%;
+    margin-left: 18%;
+}

@@ -44,7 +44,7 @@ else {
                     <p>Before you check out the goodies we have coming for you, here give us your info so you are the
                         first one to know when orders open</p>
 
-                    <h3>Shop for your loved one in Uganda food from ANYWHERE in the world!</h3>
+                    <h3>Buy fresh vegetables and fruits and we will deliver them to your door step anywhere around kampala</h3>
 
                     <form class="w3-container">
                         <p>
@@ -57,8 +57,8 @@ else {
                             <label>Phone Number</label>
                             <input class="w3-input" type="text"> </p>
 
-                        <p> <input class="w3-button w3-padding-32 w3-orange" type="submit"
-                                value="I want to be notified">
+                        <p> <input class="w3-button w3-orange" type="submit"
+                                value="NOTIFY ME">
                         </p>
                     </form>
                 </div>
@@ -82,9 +82,7 @@ else {
                         <br>
 
 
-                        <div style="padding:20px">
-
-
+                        <div>
                             <button class="w3-btn w3-black" onclick="on()">Get Notified when we start taking
                                 orders</button>
                         </div>
