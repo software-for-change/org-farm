@@ -24,7 +24,7 @@ $result = $conn->query($sql);
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 
-<body class="index-banner">
+<body onload="on()" class="index-banner">
     <div class="content">
         <?php include 'header.php';?>
 
@@ -53,8 +53,7 @@ $result = $conn->query($sql);
 
                         <div style="padding:20px">
                             <h2>Overlay</h2>
-                            <p>Add an overlay effect to the page content (100% width and height with a black background
-                                color with 50% opacity).</p>
+        
                             <button onclick="on()">Turn on overlay effect</button>
                         </div>
                     </div>
