@@ -37,6 +37,31 @@ else {
 
 
         <div class="w3-container">
+            <div id="overlay" onclick="off()">
+                <div>
+                    <h1>COMING SOON!!!!!</h1>
+
+                    <p>Before you check out the goodies we have coming for you, here give us your info so you are the
+                        first one to know when orders open</p>
+
+                    <h3>Shop for your loved one in Uganda food from ANYWHERE in the world!</h3>
+
+                    <form class="w3-container">
+
+                        <label>First & Last Name</label>
+                        <input class="w3-input" type="text">
+
+                        <label>Email</label>
+                        <input class="w3-input" type="text">
+
+                        <label>Phone Number</label>
+                        <input class="w3-input" type="text">
+
+                        <input type="submit" value="I want to be notified">
+
+                    </form>
+                </div>
+            </div>
             <div class="w3-display-container">
                 <div class="w3-display-left how-link">
                     <a href="#how-it-works">How it works</a>
@@ -54,26 +79,7 @@ else {
                     <div class="w3-half w3-center">
                         <img src="images/index-image.png" alt="vegetables in basket">
                         <br>
-                        <div id="overlay" onclick="off()">
-                            <div>
-                                <h1>COMING SOON!!!!!</h1>
 
-                                <h3>Shop for your loved one in Uganda foood from ANYWHERE in the world!</h3>
-
-                                <form class="w3-container">
-
-                                    <label>First & Last Name</label>
-                                    <input class="w3-input" type="text">
-
-                                    <label>Email</label>
-                                    <input class="w3-input" type="text">
-
-                                    <label>Phone Number</label>
-                                    <input class="w3-input" type="text">
-
-                                </form>
-                            </div>
-                        </div>
 
                         <div style="padding:20px">
                             <h2>Overlay</h2>
