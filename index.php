@@ -38,7 +38,7 @@ else {
 
         <div class="w3-container">
             <div id="overlay" onclick="off()">
-                <div>
+                <div class="email-list">
                     <h1>COMING SOON!!!!!</h1>
 
                     <p>Before you check out the goodies we have coming for you, here give us your info so you are the
@@ -57,7 +57,7 @@ else {
                         <label>Phone Number</label>
                         <input class="w3-input" type="text">
 
-                        <input type="submit" value="I want to be notified">
+                        <input class="w3-button w3-orange" type="submit" value="I want to be notified">
 
                     </form>
                 </div>
