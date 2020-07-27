@@ -55,18 +55,18 @@ else {
                         <h3>Buy fresh vegetables and fruits and we will deliver them to your door step anywhere around
                             kampala</h3>
 
-                        <form class="w3-container">
+                        <form class="w3-container" method="POST" action="email-list.php">
                             <p>
                                 <label>First & Last Name</label>
-                                <input class="w3-input" type="text"> </p>
+                                <input class="w3-input" name="names" type="text" required> </p>
                             <p>
                                 <label>Email</label>
-                                <input class="w3-input" type="text"> </p>
+                                <input class="w3-input" name="email" type="text" required> </p>
                             <p>
                                 <label>Phone Number</label>
-                                <input class="w3-input" type="text"> </p>
+                                <input class="w3-input" name="phone" type="number" required> </p>
 
-                            <p> <input class="w3-button w3-orange email-btn" type="submit" value="NOTIFY ME">
+                            <p> <input class="w3-button w3-orange" type="submit" value="Add me to the List">
                             </p>
                         </form>
                     </div>
