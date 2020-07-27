@@ -405,9 +405,9 @@ if ($result->num_rows > 0) {
     <script src="index.js"></script>
     <script>
     $(document).ready(function() {
-        window.onscroll = function() {
-            scrollFunction()
-        };
+        // window.onscroll = function() {
+        //     scrollFunction()
+        // };
 
     });
     </script>
