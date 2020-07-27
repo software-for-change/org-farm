@@ -47,18 +47,19 @@ else {
                     <h3>Shop for your loved one in Uganda food from ANYWHERE in the world!</h3>
 
                     <form class="w3-container">
+                        <p>
+                            <label>First & Last Name</label>
+                            <input class="w3-input" type="text"> </p>
+                        <p>
+                            <label>Email</label>
+                            <input class="w3-input" type="text"> </p>
+                        <p>
+                            <label>Phone Number</label>
+                            <input class="w3-input" type="text"> </p>
 
-                        <label>First & Last Name</label>
-                        <input class="w3-input" type="text">
-
-                        <label>Email</label>
-                        <input class="w3-input" type="text">
-
-                        <label>Phone Number</label>
-                        <input class="w3-input" type="text">
-
-                        <input class="w3-button w3-orange" type="submit" value="I want to be notified">
-
+                        <p> <input class="w3-button w3-padding-32 w3-orange" type="submit"
+                                value="I want to be notified">
+                        </p>
                     </form>
                 </div>
             </div>
@@ -82,9 +83,10 @@ else {
 
 
                         <div style="padding:20px">
-                            <h2>Overlay</h2>
 
-                            <button onclick="on()">Turn on overlay effect</button>
+
+                            <button class="w3-btn w3-black" onclick="on()">Get Notified when we start taking
+                                orders</button>
                         </div>
                     </div>
                     <div class="w3-half">
