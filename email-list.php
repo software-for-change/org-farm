@@ -17,7 +17,7 @@ if (count($_POST) > 0) {
         $_SESSION['message'] = "Please input a 10 digit phone number.";
         header("Location:index.php?");
     } else {
-        if (mysqli_query($conn, "INSERT INTO farm_emailList (names, email, phone) VALUES ('$email', '$names', '$phone')")) {
+        if (mysqli_query($conn, "INSERT INTO farm_emailList (names, email, phone) VALUES ('$names', '$email', '$phone')")) {
             $_SESSION['message'] = "Thank you for signing up. We will keep you notified when we open for business.";
             header("location:index.php?");
             echo "<body onload='off()'>";
