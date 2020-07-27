@@ -465,10 +465,6 @@ main.btn:visited {
     text-align: center;
 }
 
-.email-list {
-    margin-top: 10%;
-}
-
 .email-list h1 {
     font-size: 100px;
 }
@@ -486,8 +482,8 @@ main.btn:visited {
 }
 
 .close-btn {
-    margin-right: 10%;
-    margin-top: 10%;
+    margin-left: 75%;
+    padding-top: 8%;
 }
 
 
