@@ -72,7 +72,7 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
                                 <input class="w3-input" name="email" size="32" minlength="3" maxlength="64" type="email" required> </p>
                             <p>
                                 <label>Phone Number</label>
-                                <input class="w3-input" name="phone" type="tel" size="10" required> </p>
+                                <input class="w3-input" name="phone" type="tel" minlength="10" maxlength="10" required> </p>
 
                             <p> <input class="w3-button w3-orange" type="submit" value="Add me to the List">
                             </p>

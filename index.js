@@ -10,6 +10,7 @@ function scrollFunction() {
 }
 
 function on() {
+    await sleep(2000);
     document.getElementById("overlay").style.display = "block";
 }
 
