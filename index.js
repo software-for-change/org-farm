@@ -1,13 +1,13 @@
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+// var header = document.getElementById("myHeader");
+// var sticky = header.offsetTop;
 
-function scrollFunction() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
-}
+// function scrollFunction() {
+//     if (window.pageYOffset > sticky) {
+//         header.classList.add("sticky");
+//     } else {
+//         header.classList.remove("sticky");
+//     }
+// }
 
 function on() {
     document.getElementById("overlay").style.display = "block";
