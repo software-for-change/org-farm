@@ -7,7 +7,7 @@ if (count($_POST) > 0) {
     $names = $_POST['names'];
     $phone = $_POST['phone'];
 
-    $result = mysqli_query($conn, "SELECT * FROM farm_clients WHERE admin_email='" . $_POST["email"] . "'");
+    $result = mysqli_query($conn, "SELECT * FROM farm_emailList WHERE email='" . $_POST["email"] . "'");
     $count = mysqli_num_rows($result);
 
     if ($count > 0) {
@@ -24,7 +24,7 @@ if (count($_POST) > 0) {
         } else {
             $_SESSION['message'] = 'Sorry we were not able to add your name to the email list. Please try again';
             header("location:index.php?");
-            echo "<body onload='on()'>";
+            
         }
     }
 }

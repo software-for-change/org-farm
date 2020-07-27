@@ -5,10 +5,9 @@ session_start();
 $sql = "SELECT food_name, food_id, price, food_image FROM farm_food";
 $result = $conn->query($sql);
 
-if(!isset($_SESSION["user_id"])){ //if login in session is not set then show the sign up form for notifications
+if (!isset($_SESSION["user_id"])) { //if login in session is not set then show the sign up form for notifications
     echo "<body onload='on()'>";
-}
-else {
+} else {
     echo "<body onload='off()'>";
 }
 
@@ -45,7 +44,16 @@ else {
                     <div class="w3-display-topright">
                         <a onclick="off()" >Close</a>
                     </div>
+                    <div class="display-message">
+                        <?php
+                            if (isset($_SESSION['message'])) {
+                                echo $_SESSION['message'];
+                                unset($_SESSION['message']);
+                            }
+                            ?>
+                    </div>
                     <div class="email-list">
+                    
                         <h1>COMING SOON!!!!!</h1>
 
                         <p>Before you check out the goodies we have coming for you, here give us your info so you are
