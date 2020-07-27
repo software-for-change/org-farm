@@ -37,33 +37,41 @@ else {
 
 
         <div class="w3-container">
-            <div id="overlay" onclick="off()">
-                <div class="email-list">
-                    <h1>COMING SOON!!!!!</h1>
 
-                    <p>Before you check out the goodies we have coming for you, here give us your info so you are the
-                        first one to know when orders open</p>
-
-                    <h3>Buy fresh vegetables and fruits and we will deliver them to your door step anywhere around kampala</h3>
-
-                    <form class="w3-container">
-                        <p>
-                            <label>First & Last Name</label>
-                            <input class="w3-input" type="text"> </p>
-                        <p>
-                            <label>Email</label>
-                            <input class="w3-input" type="text"> </p>
-                        <p>
-                            <label>Phone Number</label>
-                            <input class="w3-input" type="text"> </p>
-
-                        <p> <input class="w3-button w3-orange" type="submit"
-                                value="NOTIFY ME">
-                        </p>
-                    </form>
-                </div>
-            </div>
             <div class="w3-display-container">
+                <!-- the overlay for the email list form -->
+                <div id="overlay">
+
+                    <div class="w3-display-topleft">
+                        <a onclick="off()" >Close</a>
+                    </div>
+                    <div class="email-list">
+                        <h1>COMING SOON!!!!!</h1>
+
+                        <p>Before you check out the goodies we have coming for you, here give us your info so you are
+                            the
+                            first one to know when orders open</p>
+
+                        <h3>Buy fresh vegetables and fruits and we will deliver them to your door step anywhere around
+                            kampala</h3>
+
+                        <form class="w3-container">
+                            <p>
+                                <label>First & Last Name</label>
+                                <input class="w3-input" type="text"> </p>
+                            <p>
+                                <label>Email</label>
+                                <input class="w3-input" type="text"> </p>
+                            <p>
+                                <label>Phone Number</label>
+                                <input class="w3-input" type="text"> </p>
+
+                            <p> <input class="w3-button w3-orange email-btn" type="submit" value="NOTIFY ME">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
                 <div class="w3-display-left how-link">
                     <a href="#how-it-works">How it works</a>
                 </div>

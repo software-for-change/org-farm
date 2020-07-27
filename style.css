@@ -478,3 +478,8 @@ main.btn:visited {
     width: 60%;
     margin-left: 18%;
 }
+
+.email-btn {
+    width: 10%;
+    margin-left: 0;
+}
