@@ -5,7 +5,7 @@ session_start();
 $sql = "SELECT food_name, food_id, price, food_image FROM farm_food";
 $result = $conn->query($sql);
 
-if(!isset($_SESSION["user_id"])){ //if login in session is not set
+if(!isset($_SESSION["user_id"])){ //if login in session is not set then show the sign up form for notifications
     echo "<body onload='on()'>";
 }
 else {
@@ -55,12 +55,29 @@ else {
                         <img src="images/index-image.png" alt="vegetables in basket">
                         <br>
                         <div id="overlay" onclick="off()">
-                            this is the shit you be spweing
+                            <div>
+                                <h1>COMING SOON!!!!!</h1>
+
+                                <h3>Shop for your loved one in Uganda foood from ANYWHERE in the world!</h3>
+
+                                <form class="w3-container">
+
+                                    <label>First & Last Name</label>
+                                    <input class="w3-input" type="text">
+
+                                    <label>Email</label>
+                                    <input class="w3-input" type="text">
+
+                                    <label>Phone Number</label>
+                                    <input class="w3-input" type="text">
+
+                                </form>
+                            </div>
                         </div>
 
                         <div style="padding:20px">
                             <h2>Overlay</h2>
-        
+
                             <button onclick="on()">Turn on overlay effect</button>
                         </div>
                     </div>
