@@ -30,7 +30,7 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 
-<body onload="on()" class="index-banner">
+<body onload="setTimeout(on(), 3000)" class="index-banner">
     <div class="content">
         <?php include 'header.php';?>
 
