@@ -477,9 +477,10 @@ main.btn:visited {
     background: transparent;
     width: 60%;
     margin-left: 18%;
+    color: var(--siteblue);
 }
 
-.email-btn {
+.email-list input[type=submit] {
     width: 10%;
     margin-left: 0;
 }

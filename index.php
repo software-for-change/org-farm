@@ -42,7 +42,7 @@ else {
                 <!-- the overlay for the email list form -->
                 <div id="overlay">
 
-                    <div class="w3-display-topleft">
+                    <div class="w3-display-topright">
                         <a onclick="off()" >Close</a>
                     </div>
                     <div class="email-list">
