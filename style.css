@@ -487,4 +487,22 @@ main.btn:visited {
 }
 
 
+/* media queries */
+
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    welcome-icon img {
+        height: 300px;
+    }
+    .food-item img {
+        height: 300px;
+        width: 300px;
+    }
+    .index-title {
+        font-size: 28px;
+    }
 }

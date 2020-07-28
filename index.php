@@ -80,20 +80,20 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
                     </div>
                 </div>
 
-                <div class="w3-display-left how-link">
+                <div class="w3-hide-small w3-display-left how-link">
                     <a href="#how-it-works">How it works</a>
                 </div>
-                <div class="w3-display-bottomleft deliver-link">
+                <div class="w3-hide-small w3-display-bottomleft deliver-link">
                     <a href="#where-we-deliver"> Where we deliver</a>
                 </div>
 
-                <div class="w3-display-right sub-link"><a href="subscribe.php">Subscribe</a></div>
-                <div class="w3-display-bottomright contact-link"><a href="#contact-us">Contact</a></div>
+                <div class="w3-hide-small w3-display-right sub-link"><a href="subscribe.php">Subscribe</a></div>
+                <div class="w3-hide-small w3-display-bottomright contact-link"><a href="#contact-us">Contact</a></div>
 
 
                 <div class="w3-row index-header-content">
                     <h1 class="index-title w3-center">Raining Vegetables ! Sunny Fruits ...</h1>
-                    <div class="w3-half w3-center">
+                    <div class="w3-half w3-center welcome-icon">
                         <img src="images/index-image.png" alt="vegetables in basket">
                         <br>
 

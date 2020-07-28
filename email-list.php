@@ -12,13 +12,13 @@ if (count($_POST) > 0) {
 
     if ($count > 0) {
         header("Location:index.php?");
-        $_SESSION['message'] = "No worries, we already added you to the list";
+        $_SESSION['message'] = "No worries, we already added you to the list, use the x to exit.";
     } else if (strlen($phone) != 10) {
         $_SESSION['message'] = "Please input a 10 digit phone number.";
         header("Location:index.php?");
     } else {
         if (mysqli_query($conn, "INSERT INTO farm_emailList (names, email, phone) VALUES ('$names', '$email', '$phone')")) {
-            $_SESSION['message'] = "Thank you for signing up. We will keep you notified when we open for business.";
+            $_SESSION['message'] = "Thank you for signing up. We will keep you notified when we open for business. Use the x to exit";
             header("location:index.php?");
             echo "<body onload='off()'>";
         } else {
