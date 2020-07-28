@@ -466,7 +466,7 @@ main.btn:visited {
 }
 
 .email-list h1 {
-    font-size: 20px;
+    font-size: 50px;
 }
 
 .email-list input {
@@ -483,7 +483,7 @@ main.btn:visited {
 
 .google-form {
     height: 700px;
-    width: 300px;
+    width: 640px;
 }
 
 
@@ -588,7 +588,7 @@ main.btn:visited {
         height: 150vh;
     }
     .email-list h1 {
-        font-size: 50px;
+        font-size: 20px;
     }
     .email-list input[type=submit] {
         width: 65%;

@@ -62,8 +62,7 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
 
                         <iframe
                             src="https://docs.google.com/forms/d/e/1FAIpQLSdfL8l9CnZ8KhUaPikZ31aqnAspPhKmSFf95gBsUynfCtQKYA/viewform?embedded=true"
-                           class="google-form" width="640" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
+                            class="google-form" width="640" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                         <!-- <form class="w3-container" method="POST" action="email-list.php">
                             <p>
                                 <label>First & Last Name</label>
