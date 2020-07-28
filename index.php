@@ -56,10 +56,6 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
 
                         <h1>COMING SOON!!!!!</h1>
 
-                        <p>Before you check out the goodies we have coming for you, here... give us your info so you are
-                            the
-                            first one to know when orders open</p>
-
                         <iframe
                             src="https://docs.google.com/forms/d/e/1FAIpQLSdfL8l9CnZ8KhUaPikZ31aqnAspPhKmSFf95gBsUynfCtQKYA/viewform?embedded=true"
                             class="google-form" width="640" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
