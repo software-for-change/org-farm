@@ -21,6 +21,7 @@ function off() {
 // the first 2 functions control the open and close for the overlay for the nav for the mobile naviagtion
 // remebere to use display none for the topnav and block for mobile nav in css in order for it to show.
 function openNav() {
+    debugger
     document.getElementById("mySidepanel").style.width = "300px";
 }
 
