@@ -141,16 +141,16 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
 
                 <div class="w3-padding-64 display-package" id="our-packages">
 
-                    <a href="" class="w3-display-topright w3-padding-48">Purchase produce in large bulk instead?</a>
+                    <a href="" class="w3-hide-small w3-display-topright w3-padding-48">Purchase produce in large bulk instead?</a>
                     <h1 class="w3-display-topmiddle w3-padding-48">Our Packages</h1>
 
                     <div class="display-message">
                         <?php
-if (isset($_SESSION['message'])) {
-    echo $_SESSION['message'];
-    unset($_SESSION['message']);
-}
-?>
+                            if (isset($_SESSION['message'])) {
+                                echo $_SESSION['message'];
+                                unset($_SESSION['message']);
+                            }
+                            ?>
 
                     </div>
                     <?php

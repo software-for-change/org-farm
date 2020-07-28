@@ -495,7 +495,15 @@ main.btn:visited {
 ##Screen = B/w 320px to 479px */
 
 @media (min-width: 320px) and (max-width: 480px) {
-    welcome-icon img {
+    /* nav bar */
+    .topnav {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    /* styling for the home page */
+    .welcome-icon img {
         height: 300px;
     }
     .food-item img {
@@ -504,5 +512,27 @@ main.btn:visited {
     }
     .index-title {
         font-size: 28px;
+    }
+    .welcomepage-card {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 35px;
+        margin-bottom: 20px;
+    }
+    .order-btn {
+        font-size: 36px;
+    }
+    .package-container h1 {
+        font-size: 30px;
+    }
+    .food-item {
+        padding: 20px;
+    }
+    .content-how-it-works p,
+    .content-delivery p,
+    .steps-how-it-works ol {
+        font-size: small;
+    }
+    .how-it-works-content img {
+        height: 100px;
     }
 }
