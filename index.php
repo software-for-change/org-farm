@@ -60,13 +60,9 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
                             the
                             first one to know when orders open</p>
 
-                        <h3 class="w3-hide-small">Buy fresh vegetables and fruits and we will deliver them to your door
-                            step anywhere around
-                            kampala</h3>
-
                         <iframe
                             src="https://docs.google.com/forms/d/e/1FAIpQLSdfL8l9CnZ8KhUaPikZ31aqnAspPhKmSFf95gBsUynfCtQKYA/viewform?embedded=true"
-                            width="640" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                           class="google-form" width="640" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
                         <!-- <form class="w3-container" method="POST" action="email-list.php">
                             <p>

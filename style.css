@@ -481,9 +481,47 @@ main.btn:visited {
     margin-left: 0;
 }
 
+
+/* promo page close button */
+
 .close-btn {
     margin-left: 75%;
-    padding-top: 8%;
+}
+
+
+/* scroll bar */
+
+
+/* modfiying the scrollbar - note: it doesn't work in firefox, Edge and IE */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--siteorange);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
 }
 
 
@@ -549,5 +587,9 @@ main.btn:visited {
     }
     .email-list input[type=submit] {
         width: 65%;
+    }
+    .google-form {
+        height: 500px;
+        width: 300px;
     }
 }
