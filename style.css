@@ -544,4 +544,10 @@ main.btn:visited {
     .banner-delivery {
         height: 150vh;
     }
+    .email-list h1 {
+        font-size: 50px;
+    }
+    .email-list input[type=submit] {
+        width: 65%;
+    }
 }

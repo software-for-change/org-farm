@@ -42,7 +42,7 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
                 <div id="overlay">
 
                     <div class="close-btn" class="w3-display-topright">
-                        <a  onclick="off()"><i class="fa fa-close" style="font-size:36px;color:red"></i></a>
+                        <a onclick="off()"><i class="fa fa-close" style="font-size:36px;color:red"></i></a>
                     </div>
                     <div class="display-message">
                         <?php
@@ -53,17 +53,22 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
                             ?>
                     </div>
                     <div class="email-list">
-                    
+
                         <h1>COMING SOON!!!!!</h1>
 
                         <p>Before you check out the goodies we have coming for you, here... give us your info so you are
                             the
                             first one to know when orders open</p>
 
-                        <h3>Buy fresh vegetables and fruits and we will deliver them to your door step anywhere around
+                        <h3 class="w3-hide-small">Buy fresh vegetables and fruits and we will deliver them to your door
+                            step anywhere around
                             kampala</h3>
 
-                        <form class="w3-container" method="POST" action="email-list.php">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdfL8l9CnZ8KhUaPikZ31aqnAspPhKmSFf95gBsUynfCtQKYA/viewform?embedded=true"
+                            width="640" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+                        <!-- <form class="w3-container" method="POST" action="email-list.php">
                             <p>
                                 <label>First & Last Name</label>
                                 <input class="w3-input" name="names" type="text" required> </p>
@@ -76,7 +81,7 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
 
                             <p> <input class="w3-button w3-orange" type="submit" value="Add me to the List">
                             </p>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
 
@@ -141,7 +146,8 @@ if (!isset($_SESSION["user_id"])) { //if login in session is not set then show t
 
                 <div class="w3-padding-64 display-package" id="our-packages">
 
-                    <a href="" class="w3-hide-small w3-display-topright w3-padding-48">Purchase produce in large bulk instead?</a>
+                    <a href="" class="w3-hide-small w3-display-topright w3-padding-48">Purchase produce in large bulk
+                        instead?</a>
                     <h1 class="w3-display-topmiddle w3-padding-48">Our Packages</h1>
 
                     <div class="display-message">
