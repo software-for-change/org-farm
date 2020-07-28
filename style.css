@@ -517,6 +517,8 @@ main.btn:visited {
         background-color: rgba(0, 0, 0, 0.4);
         padding: 35px;
         margin-bottom: 20px;
+        width: 100%;
+        margin-top: 35px;
     }
     .order-btn {
         font-size: 36px;
@@ -534,5 +536,11 @@ main.btn:visited {
     }
     .how-it-works-content img {
         height: 100px;
+    }
+    ol {
+        text-align: left;
+    }
+    .banner-delivery {
+        height: 150vh;
     }
 }
