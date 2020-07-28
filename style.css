@@ -538,13 +538,14 @@ main.btn:visited {
 ##Screen = B/w 320px to 479px */
 
 @media (min-width: 320px) and (max-width: 480px) {
+    /* temporarily commented out the nav bar for mobile verion */
     /* nav bar */
-    .topnav {
+    /* .topnav {
         display: none;
     }
     .mobile-nav {
         display: block;
-    }
+    } */
     /* styling for the home page */
     .welcome-icon img {
         height: 300px;
