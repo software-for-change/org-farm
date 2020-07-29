@@ -653,3 +653,22 @@ ol {
         height: 80vh;
     }
 }
+
+
+/* styling for the glaxy fold */
+
+@media (width: 375px) and (min-height: 812px) {
+    .notify-btn {
+        font-size: small;
+    }
+    .welcome-icon img {
+        height: 250px;
+    }
+    .food-item img {
+        height: 250px;
+        width: 233px;
+    }
+    .order-btn {
+        font-size: 30px;
+    }
+}
