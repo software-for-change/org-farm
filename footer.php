@@ -5,7 +5,7 @@ echo "    <footer>
     <div class='w3-row'>
     <div class='w3-third w3-center'>
         <p>
-            Designed by <a href='https://kesamercy.github.io/nekesa-mercy/' target='_blank'>Nekesa Mercy</a>
+            Designed & Developed by <a href='https://kesamercy.github.io/nekesa-mercy/' target='_blank'>Nekesa Mercy</a>
         </p>
     </div>
     <div class='w3-third w3-center'>
