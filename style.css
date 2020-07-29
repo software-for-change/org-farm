@@ -546,7 +546,7 @@ ol {
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 480px) {
     /* temporarily commented out the nav bar for mobile verion */
     /* nav bar */
     .topnav {
@@ -622,7 +622,7 @@ ol {
         font-size: 25px;
     }
     .how-it-works-content {
-        height: 100vh;
+        height: 107vh;
     }
     .content-delivery p,
     .steps-how-it-works ol {
