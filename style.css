@@ -676,10 +676,61 @@ ol {
 
 /* large tablets pros with high resolution */
 
-@media only screen and (min-width: 768px) and (max-width: 1366px) {
+@media only screen and (min-width:769px) and (max-width: 1024px) {
     body {
         font-size: x-large;
     }
+    .food-item img {
+        height: 300px;
+        width: 300px;
+    }
+    .welcomepage-card {
+        width: 100%;
+        margin-top: 15px;
+        padding: 54px;
+        margin-bottom: 10%;
+        margin-left: 0;
+    }
+    .welcome-icon img {
+        height: 500px;
+    }
+    .notify-btn {
+        font-size: x-large;
+    }
+    .how-it-works-row {
+        padding-top: 10%;
+    }
+    .banner-delivery {
+        height: 65vh;
+    }
+    content-how-it-works p,
+    .content-delivery p,
+    .steps-how-it-works ol {
+        font-size: 21px;
+    }
+    .index-header-content {
+        height: 60vh;
+    }
+    .welcomepage-card p {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .deliver-link {
+        padding-bottom: 0px;
+        padding-left: 25px;
+        font-size: 22px;
+    }
+    .how-link {
+        padding-left: 0;
+        transform: rotate(0deg);
+        font-size: 18px;
+    }
+}
+
+
+/* low resolution tabs */
+
+@media only screen and (min-width:481px) and (max-width: 768px) {
     .food-item img {
         height: 300px;
         width: 300px;
