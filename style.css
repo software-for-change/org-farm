@@ -511,7 +511,7 @@ ol {
 
 /* width */
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 5px;
 }
 
@@ -546,15 +546,15 @@ ol {
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 480px) {
     /* temporarily commented out the nav bar for mobile verion */
     /* nav bar */
-    /* .topnav {
+    .topnav {
         display: none;
     }
     .mobile-nav {
         display: block;
-    } */
+    }
     /* styling for the home page */
     .welcome-icon img {
         height: 300px;
@@ -586,16 +586,17 @@ ol {
     .content-how-it-works p,
     .content-delivery p,
     .steps-how-it-works ol {
-        font-size: small;
+        font-size: 12px;
     }
     .how-it-works-content img {
         height: 100px;
     }
     ol {
         text-align: left;
+        list-style: circle;
     }
     .banner-delivery {
-        height: 150vh;
+        height: 110vh;
     }
     .email-list h1 {
         font-size: 40px;
@@ -606,5 +607,176 @@ ol {
     .google-form {
         height: 500px;
         width: 300px;
+    }
+}
+
+
+/* styling the iphone 5 screen for the index page */
+
+@media only screen and (max-width: 320px) {
+    .food-item img {
+        height: 250px;
+        width: 250px;
+    }
+    .package-container h1 {
+        font-size: 25px;
+    }
+    .how-it-works-content {
+        height: 107vh;
+    }
+    .content-delivery p,
+    .steps-how-it-works ol {
+        font-size: 11px;
+    }
+}
+
+
+/* styling the pixel 2 screen for the index page */
+
+@media (min-width: 410px) and (max-width: 411px) {
+    .how-it-works-content {
+        height: 70vh;
+    }
+    .banner-delivery {
+        height: 80vh;
+    }
+}
+
+
+/* styling the iphone x long height screen for the index page */
+
+@media (width: 375px) and (min-height: 812px) {
+    .how-it-works-content {
+        height: 70vh;
+    }
+    .banner-delivery {
+        height: 80vh;
+    }
+}
+
+
+/* styling for the glaxy fold */
+
+@media (width: 280px) and (min-height: 653px) {
+    .notify-btn {
+        font-size: small;
+    }
+    .welcome-icon img {
+        height: 250px;
+    }
+    .food-item img {
+        height: 250px;
+        width: 233px;
+    }
+    .order-btn {
+        font-size: 30px;
+    }
+}
+
+
+/* large tablets pros with high resolution */
+
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+    body {
+        font-size: x-large;
+    }
+    .food-item img {
+        height: 300px;
+        width: 300px;
+    }
+    .welcomepage-card {
+        width: 100%;
+        margin-top: 15px;
+        padding: 54px;
+        margin-bottom: 10%;
+        margin-left: 0;
+    }
+    .welcome-icon img {
+        height: 500px;
+    }
+    .notify-btn {
+        font-size: x-large;
+    }
+    .how-it-works-row {
+        padding-top: 10%;
+    }
+    .banner-delivery {
+        height: 65vh;
+    }
+    .content-how-it-works p,
+    .content-delivery p,
+    .steps-how-it-works ol {
+        font-size: 21px;
+    }
+    .index-header-content {
+        height: 60vh;
+    }
+    .welcomepage-card p {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .deliver-link {
+        padding-bottom: 0px;
+        padding-left: 25px;
+        font-size: 22px;
+    }
+    .how-link {
+        padding-left: 0;
+        transform: rotate(0deg);
+        font-size: 18px;
+    }
+}
+
+
+/* low resolution tabs */
+
+@media only screen and (min-width:481px) and (max-width: 768px) {
+    .food-item img {
+        height: 200px;
+        width: 200px;
+    }
+    .welcomepage-card {
+        width: 100%;
+        margin-top: 15px;
+        padding: 54px;
+        margin-bottom: 10%;
+        margin-left: 0;
+    }
+    .welcome-icon img {
+        height: 370px;
+    }
+    .notify-btn {
+        font-size: medium;
+    }
+    .how-it-works-row {
+        padding-top: 16%;
+    }
+    .banner-delivery {
+        height: 65vh;
+    }
+    .content-how-it-works p,
+    .content-delivery p,
+    .steps-how-it-works ol {
+        font-size: 16px;
+    }
+    .index-header-content {
+        height: 60vh;
+    }
+    .welcomepage-card p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .deliver-link {
+        padding-bottom: 0px;
+        padding-left: 25px;
+        font-size: 22px;
+    }
+    .how-link {
+        padding-left: 0;
+        transform: rotate(0deg);
+        font-size: 18px;
+    }
+    .how-it-works-content {
+        height: 96vh;
     }
 }
