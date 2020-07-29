@@ -657,7 +657,7 @@ ol {
 
 /* styling for the glaxy fold */
 
-@media (width: 375px) and (min-height: 812px) {
+@media (width: 280px) and (min-height: 653px) {
     .notify-btn {
         font-size: small;
     }
