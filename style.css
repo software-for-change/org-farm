@@ -629,3 +629,15 @@ ol {
         font-size: 11px;
     }
 }
+
+
+/* styling the pixel 2 screen for the index page */
+
+@media only screen and (max-width: 4110px) {
+    .how-it-works-content {
+        height: 70vh;
+    }
+    .banner-delivery {
+        height: 80vh;
+    }
+}
