@@ -672,3 +672,40 @@ ol {
         font-size: 30px;
     }
 }
+
+
+/* large tablets pros with high resolution */
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    body {
+        font-size: x-large;
+    }
+    .food-item img {
+        height: 300px;
+        width: 300px;
+    }
+    .welcomepage-card {
+        width: 100%;
+        margin-top: 15px;
+        padding: 54px;
+        margin-bottom: 10%;
+        margin-left: 0;
+    }
+    .welcome-icon img {
+        height: 500px;
+    }
+    .notify-btn {
+        font-size: x-large;
+    }
+    .how-it-works-row {
+        padding-top: 10%;
+    }
+    .banner-delivery {
+        height: 65vh;
+    }
+    content-how-it-works p,
+    .content-delivery p,
+    .steps-how-it-works ol {
+        font-size: 22px;
+    }
+}
