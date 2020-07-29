@@ -301,7 +301,7 @@ ol {
 }
 
 .how-it-works-content {
-    height: 90vh;
+    height: 100%;
 }
 
 .how-it-works-row {
@@ -345,7 +345,7 @@ ol {
 }
 
 .banner-delivery {
-    height: 80vh;
+    height: 100%;
 }
 
 .content-delivery {
@@ -596,7 +596,7 @@ ol {
         list-style: circle;
     }
     .banner-delivery {
-        height: 110vh;
+        height: 100%;
     }
     .email-list h1 {
         font-size: 40px;
@@ -622,7 +622,7 @@ ol {
         font-size: 25px;
     }
     .how-it-works-content {
-        height: 107vh;
+        height: 100%;
     }
     .content-delivery p,
     .steps-how-it-works ol {
@@ -635,10 +635,10 @@ ol {
 
 @media (min-width: 410px) and (max-width: 411px) {
     .how-it-works-content {
-        height: 70vh;
+        height: 100%;
     }
     .banner-delivery {
-        height: 80vh;
+        height: 100%;
     }
 }
 
@@ -647,10 +647,10 @@ ol {
 
 @media (width: 375px) and (min-height: 812px) {
     .how-it-works-content {
-        height: 70vh;
+        height: 100%;
     }
     .banner-delivery {
-        height: 80vh;
+        height: 100%;
     }
 }
 
@@ -701,7 +701,7 @@ ol {
         padding-top: 10%;
     }
     .banner-delivery {
-        height: 65vh;
+        height: 100%;
     }
     .content-how-it-works p,
     .content-delivery p,
@@ -709,7 +709,7 @@ ol {
         font-size: 21px;
     }
     .index-header-content {
-        height: 60vh;
+        height: 100%;
     }
     .welcomepage-card p {
         font-size: 25px;
@@ -752,7 +752,7 @@ ol {
         padding-top: 16%;
     }
     .banner-delivery {
-        height: 65vh;
+        height: 100%;
     }
     .content-how-it-works p,
     .content-delivery p,
@@ -760,7 +760,7 @@ ol {
         font-size: 16px;
     }
     .index-header-content {
-        height: 60vh;
+        height: 100%;
     }
     .welcomepage-card p {
         font-size: 15px;
@@ -777,6 +777,6 @@ ol {
         font-size: 18px;
     }
     .how-it-works-content {
-        height: 96vh;
+        height: 100%;
     }
 }
