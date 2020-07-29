@@ -703,7 +703,7 @@ ol {
     .banner-delivery {
         height: 65vh;
     }
-    content-how-it-works p,
+    .content-how-it-works p,
     .content-delivery p,
     .steps-how-it-works ol {
         font-size: 21px;
