@@ -715,4 +715,14 @@ ol {
         font-size: 25px;
         font-weight: 400;
     }
+    .deliver-link {
+        padding-bottom: 0px;
+        padding-left: 25px;
+        font-size: 22px;
+    }
+    .how-link {
+        padding-left: 0;
+        transform: rotate(0deg);
+        font-size: 18px;
+    }
 }
