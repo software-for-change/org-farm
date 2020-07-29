@@ -676,7 +676,7 @@ ol {
 
 /* large tablets pros with high resolution */
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
     body {
         font-size: x-large;
     }
@@ -706,7 +706,7 @@ ol {
     content-how-it-works p,
     .content-delivery p,
     .steps-how-it-works ol {
-        font-size: x-large;
+        font-size: 21px;
     }
     .index-header-content {
         height: 60vh;
