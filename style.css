@@ -645,7 +645,7 @@ ol {
 
 /* styling the iphone x long height screen for the index page */
 
-@media (width: 375px) and (max-height: 812px) {
+@media (width: 375px) and (min-height: 812px) {
     .how-it-works-content {
         height: 70vh;
     }
