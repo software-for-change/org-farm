@@ -10,10 +10,9 @@ if (!isset($_SESSION['user_id'])) { //if login in session is not set
     <ul class='topnav'>
                 <li><a class='logo' href='index.php'>Raining Vegetables</a></li>
                
-                
-                <li class='right'><a href='#contact-us'>Contact</a></li>
-                <li class='right'><a href='#how-it-works'>How it works</a></li>
-                
+               
+                <li class='right'><a href='#our-packages'>Our Packages</a></li>
+                <li class='right'><a href='#how-it-works'>Steps for Ordering</a></li>
                 
                
                 

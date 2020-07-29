@@ -121,6 +121,10 @@ ul.topnav li.right {
     background-color: #444;
 }
 
+a {
+    cursor: pointer;
+}
+
 
 /* index page styling for the top section */
 
@@ -285,6 +289,11 @@ main.btn:visited {
 
 
 /* styling for how it works section  */
+
+ol {
+    text-align: center;
+    list-style-type: none;
+}
 
 .how-it-works-container {
     padding: 0px !important;
