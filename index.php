@@ -5,6 +5,12 @@ session_start();
 $sql = "SELECT food_name, food_id, price, food_image FROM farm_food";
 $result = $conn->query($sql);
 
+if (!isset($_SESSION["user_id"])) { //if login in session is not set then show the sign up form for notifications
+    echo "<body onload='setTimeout(on, 5000)'>";
+} else {
+    echo "<body onload='off()'>";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,33 +30,60 @@ $result = $conn->query($sql);
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 
-<body class="index-banner">
+<body onload="setTimeout(on, 5000)" class="index-banner">
     <div class="content">
         <?php include 'header.php';?>
 
 
         <div class="w3-container">
+
             <div class="w3-display-container">
-                <div class="w3-display-left how-link">
+                <!-- the overlay for the email list form -->
+                <div id="overlay">
+
+                    <div class="close-btn" class="w3-display-topright">
+                        <a onclick="off()"><i class="fa fa-close" style="font-size:36px;color:red"></i></a>
+                    </div>
+                    <div class="display-message">
+                        <?php
+                            if (isset($_SESSION['message'])) {
+                                echo $_SESSION['message'];
+                                unset($_SESSION['message']);
+                            }
+                            ?>
+                    </div>
+                    <div class="email-list">
+
+                        <h1>COMING SOON!!!!!</h1>
+
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdfL8l9CnZ8KhUaPikZ31aqnAspPhKmSFf95gBsUynfCtQKYA/viewform?embedded=true"
+                            class="google-form" width="640" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                </div>
+
+                <div class="w3-hide-small w3-display-left how-link">
                     <a href="#how-it-works">How it works</a>
                 </div>
-                <div class="w3-display-bottomleft deliver-link">
+                <div class="w3-hide-small w3-display-bottomleft deliver-link">
                     <a href="#where-we-deliver"> Where we deliver</a>
                 </div>
 
-                <div class="w3-display-right sub-link"><a href="subscribe.php">Subscribe</a></div>
-                <div class="w3-display-bottomright contact-link"><a href="#contact-us">Contact</a></div>
+                <div class="w3-hide-small w3-display-right sub-link"><a href="subscribe.php">Subscribe</a></div>
+                <div class="w3-hide-small w3-display-bottomright contact-link"><a href="#contact-us">Contact</a></div>
 
 
                 <div class="w3-row index-header-content">
                     <h1 class="index-title w3-center">Raining Vegetables ! Sunny Fruits ...</h1>
-                    <div class="w3-half w3-center">
-
-
-
+                    <div class="w3-half w3-center welcome-icon">
                         <img src="images/index-image.png" alt="vegetables in basket">
                         <br>
 
+
+                        <div>
+                            <button class="w3-btn w3-black" onclick="on()">Get Notified when we start taking
+                                orders</button>
+                        </div>
                     </div>
                     <div class="w3-half">
                         <div class="welcomepage-card">
@@ -90,64 +123,61 @@ $result = $conn->query($sql);
 
                 <div class="w3-padding-64 display-package" id="our-packages">
 
-                    <a href="" class="w3-display-topright w3-padding-48">Purchase produce in large bulk instead?</a>
+                    <a href="" class="w3-hide-small w3-display-topright w3-padding-48">Purchase produce in large bulk
+                        instead?</a>
                     <h1 class="w3-display-topmiddle w3-padding-48">Our Packages</h1>
 
                     <div class="display-message">
                         <?php
-                    if (isset($_SESSION['message'])) {
-                        echo $_SESSION['message'];
-                        unset($_SESSION['message']);
-                    }
-                    ?>
+                            if (isset($_SESSION['message'])) {
+                                echo $_SESSION['message'];
+                                unset($_SESSION['message']);
+                            }
+                            ?>
 
                     </div>
                     <?php
 
-                if ($result->num_rows > 0) {
+if ($result->num_rows > 0) {
 
-                    echo "<div class='w3-row w3-padding-64'>";
-                    
+    echo "<div class='w3-row w3-padding-64'>";
 
-                    // output data of each row
-                    while ($row = mysqli_fetch_array($result)) {
-                        echo "<div class='w3-third'>";
-                        echo "<form method='post' action='process-purchase-btn.php'>";
+    // output data of each row
+    while ($row = mysqli_fetch_array($result)) {
+        echo "<div class='w3-third'>";
+        echo "<form method='post' action='process-purchase-btn.php'>";
 
-                        $food_name = $row["food_name"];
-                        $food_image = $row["food_image"];
-                        $price = $row["price"];
-                        $food_id = $row["food_id"];
+        $food_name = $row["food_name"];
+        $food_image = $row["food_image"];
+        $price = $row["price"];
+        $food_id = $row["food_id"];
 
-                        echo "<div class='food-item'>";
+        echo "<div class='food-item'>";
 
-                        
-                        echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
-                        echo "
+        echo '<img height="400" width="400" src="data:image/jpg;base64,' . base64_encode($row['food_image']) . '" />';
+        echo "
                                                     <div class='food-post'>
                                                     <p> " . $food_name . " </p>
                                                     <p> $" . $price . " </p>";
-                                                    echo "<input name='package_id'  type='hidden' value='$food_id' >";
-                        echo "<input type='submit' class='submit-button' value='Purchase Item'>";
+        echo "<input name='package_id'  type='hidden' value='$food_id' >";
+        echo "<input type='submit' class='submit-button' value='Purchase Item'>";
 
-                        echo "<br>";
+        echo "<br>";
 
-                        echo "</div>";
-                        echo "</div>";
-                        
-                        echo "</form>";
-                        echo "</div>";
-                        
-                        
-                       
-                    }
-                    
-                    echo "</div>";
+        echo "</div>";
+        echo "</div>";
 
-                } else {
-                    echo "0 results";
-                }
-                ?>
+        echo "</form>";
+        echo "</div>";
+
+    }
+
+    echo "</div>";
+
+} else {
+    echo "0 results";
+}
+?>
                 </div>
             </div>
         </div>
@@ -271,7 +301,7 @@ $result = $conn->query($sql);
 
                     <div class="w3-row">
 
-                    <h1 class="w3-center">Get in Touch With Us</h1>
+                        <h1 class="w3-center">Get in Touch With Us</h1>
                         <div class="w3-half w3-padding-32">
                             <form action="/action_page.php"
                                 class="w3-container w3-card-4 w3-light-grey w3-text-deep-orange w3-margin">
@@ -316,7 +346,8 @@ $result = $conn->query($sql);
                                     </div>
                                 </div>
 
-                                <button class="w3-button w3-block w3-section w3-deep-orange w3-ripple w3-padding">Send</button>
+                                <button
+                                    class="w3-button w3-block w3-section w3-deep-orange w3-ripple w3-padding">Send</button>
 
                             </form>
 
@@ -357,9 +388,9 @@ $result = $conn->query($sql);
     <script src="index.js"></script>
     <script>
     $(document).ready(function() {
-        window.onscroll = function() {
-            scrollFunction()
-        };
+        // window.onscroll = function() {
+        //     scrollFunction()
+        // };
 
     });
     </script>
