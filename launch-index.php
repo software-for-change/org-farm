@@ -201,19 +201,9 @@ if ($result->num_rows > 0) {
 
                                 <h1>How it works</h1>
 
-                                <p> Every beginning of the week, we send out an email to our registered users letting
-                                    you know
-                                    what
-                                    we have harvested by
-                                    our farmers for the current week’s Packages. Once an order has been made, you can
-                                    not cancel
-                                    it
-                                    but can reschedule delivery.
-                                    The cut off is Wednesday at 12PM EST to skip or cancel an order for the next week.
-                                    Please be
-                                    sure to
-                                    recycle your boxes and packing material. Your mobile money is charged at the time of
-                                    purchase.
+                                 <p> Every Sunday, we publish the list of fruits and vegetables to be included in your package that week. You can order anytime between Sunday and Wednesday to recieve that week's produce. Delivery of the packages is done over
+                                    the weekend and you will be notified on Thursday if your package will be delivered on Saturday or Sunday. The day before your scheduled delivery, you will be given a time frame (e.g 3:00pm - 5:00pm) that you should
+                                    expect your package at your door step.
                                 </p>
                             </div>
 
@@ -268,6 +258,8 @@ if ($result->num_rows > 0) {
                                 delays, once the order leaves for delivery. Any damages should be reported
                                 to
                                 samplemail@gmail.com within 24 hours of receiving your order with pictures*
+                                <p> In case you miss ordering by Wednesday, don’t worry, you can still create an account so you are on our email list for the next week's harvest! We will be sure to deliver to you next. </p>
+
                             </p>
 
                             <div class="icon-delivery w3-center w3-padding-64">
