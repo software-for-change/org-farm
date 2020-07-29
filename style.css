@@ -708,4 +708,11 @@ ol {
     .steps-how-it-works ol {
         font-size: x-large;
     }
+    .index-header-content {
+        height: 60vh;
+    }
+    .welcomepage-card p {
+        font-size: 25px;
+        font-weight: 400;
+    }
 }
