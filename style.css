@@ -144,9 +144,9 @@ a {
 .welcomepage-card {
     width: 60%;
     background-color: rgba(0, 0, 0, 0.4);
-    margin-top: 100px;
     padding: 60px;
     margin-left: 29%;
+    margin-top: 100px;
 }
 
 .welcomepage-card h1 {
