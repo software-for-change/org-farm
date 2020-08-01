@@ -472,6 +472,7 @@ ol {
     z-index: 2;
     cursor: pointer;
     text-align: center;
+    overflow-y: scroll;
 }
 
 .email-list h1 {
