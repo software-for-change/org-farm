@@ -19,46 +19,18 @@
     <script async src="//static.getclicky.com/js"></script>
 
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f21dfa9fe2c4a00129ba4bf&product=sop' async='async'></script>
-    <!-- Start of Async Drift Code -->
-    <!-- <script>
-        "use strict";
 
-        ! function() {
-            var t = window.driftt = window.drift = window.driftt || [];
-            if (!t.init) {
-                if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
-                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
-                    t.factory = function(e) {
-                        return function() {
-                            var n = Array.prototype.slice.call(arguments);
-                            return n.unshift(e), t.push(n), t;
-                        };
-                    }, t.methods.forEach(function(e) {
-                        t[e] = t.factory(e);
-                    }), t.load = function(t) {
-                        var e = 3e5,
-                            n = Math.ceil(new Date() / e) * e,
-                            o = document.createElement("script");
-                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-                        var i = document.getElementsByTagName("script")[0];
-                        i.parentNode.insertBefore(o, i);
-                    };
-            }
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('xb86va65t5uf');
-    </script> -->
-    <!-- End of Async Drift Code -->
 </head>
 
-<body onload="setTimeout(on, 5000)" class="index-banner">
+<body class="index-banner">
     <div class="content">
         <ul class='topnav'>
-            <li><a class='logo'>Raining Vegetables</a></li>
+            <li>
+                <a href="index.html" class='logo'> <img src="images/new-logo.png" alt=""></a>
+            </li>
 
 
             <li class='right'><a href='#our-packages'>Our Packages</a></li>
-            <li class='right'><a href='#how-it-works'>Steps for Ordering</a></li>
 
 
 
@@ -118,9 +90,9 @@
                             <br>
                             <h1>Raining Vegetables</h1>
                             <br>
-                            <p>Raining vegetables will start delivering packages of assorted fresh fruits and vegetables to your door step anywhere around Kampala. When we start taking orders, check this section to see the fruits and vegetables to be included
-                                in our packages for the week. Yes, you read that right, we will have different fruits and vegetables EACH WEEK! We are excited about the possibility of serving you. Be sure to sign up today to be notified when we start
-                                taking orders. <strong> <a onclick="on()">Sign Up Here!</a> </strong>
+                            <p>Raining vegetables will start delivering packages of assorted fresh fruits and vegetables to your door step anywhere around Kampala. We are selling our produce at<b> WHOLE SALE PRICES </b> through the basket model which is
+                                more cost effective. This is how we are able to provide affordable prices for our customers. Our produce, from small scale farmers, is hand inspected before we package and deliver it to maintain high quality supply for
+                                our clients. <strong> <a class="w3-btn w3-black" onclick="on()">SIGN UP NOW!</a> </strong>
                             </p>
                             <br>
 
@@ -147,29 +119,7 @@
 
                     <div class='w3-row w3-padding-64'>
 
-
-                        <div class='w3-third'>
-                            <form method='post' action='process-purchase-btn.php'>
-
-
-                                <div class='food-item'>
-
-                                    <img height="400" width="400" src="images/small-pack.jpg" />
-
-                                    <div class='food-post'>
-                                        <p> Small Package </p>
-                                        <p> UGSHS </p>
-                                        <input name='package_id' type='hidden' value='$food_id'>
-                                        <input type='submit' class='submit-button' value='Coming Soon' disabled>
-
-                                        <br>
-
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
-                        <div class='w3-third'>
+                        <div class='w3-half'>
                             <form method='post' action=''>
 
 
@@ -178,8 +128,8 @@
                                     <img height="400" width="400" src="images/medium-pack.jpg" />
 
                                     <div class='food-post'>
-                                        <p> Medium Package </p>
-                                        <p> UGSHS </p>
+                                        <p> REGULAR PACKAGE </p>
+
                                         <input name='package_id' type='hidden' value='$food_id'>
                                         <input type='submit' class='submit-button' value='Coming Soon' disabled>
 
@@ -190,7 +140,7 @@
 
                             </form>
                         </div>
-                        <div class='w3-third'>
+                        <div class='w3-half'>
                             <form method='post' action='process-purchase-btn.php'>
 
 
@@ -199,8 +149,8 @@
                                     <img height="400" width="400" src="images/large-pack.jpg" />
 
                                     <div class='food-post'>
-                                        <p> Large Package </p>
-                                        <p> UGSHS </p>
+                                        <p> FAMILY PACKAGE </p>
+
                                         <input name='package_id' type='hidden' value='$food_id'>
                                         <input type='submit' class='submit-button' value='Coming Soon' disabled>
 
@@ -239,8 +189,9 @@
 
                                 <h1>How It Works</h1>
 
-                                <p>
-                                    The good news is you will have fruits and vegetables being delivered to your door step whenever you order with us! Register and we will give you all the details of how this works when we open for business. Stay tuned, comming soon!
+                                <p> Every Sunday, we publish the list of fruits and vegetables to be included in your package that week. You can order anytime between Sunday and Wednesday to recieve that week's produce. Delivery of the packages is done over
+                                    the weekend and you will be notified on Thursday if your package will be delivered on Saturday or Sunday. The day before your scheduled delivery, you will be given a time frame (e.g 3:00pm - 5:00pm) that you should
+                                    expect your package at your door step.
                                 </p>
                             </div>
 
