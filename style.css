@@ -68,6 +68,10 @@ ul.topnav li.right {
     font-weight: bold;
 }
 
+.logo img {
+    height: 75px;
+}
+
 
 /* mobile navigation styling */
 
@@ -146,7 +150,7 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 60px;
     margin-left: 29%;
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 .welcomepage-card h1 {
@@ -161,7 +165,7 @@ a {
 
 .welcomepage-card p {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .card-button {
@@ -216,6 +220,50 @@ a {
 }
 
 
+/* about page styling  */
+
+.about-page {
+    background-color: var(--siteisabeline);
+}
+
+.about-content {
+    max-width: 1500px;
+    margin: auto;
+    padding-top: 30px;
+    color: black;
+}
+
+.story-col {
+    padding: 0 100px 80px;
+}
+
+.about-rows h1 {
+    color: lightgray;
+}
+
+.about-rows h2 {
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.about-rows p {
+    font-weight: 300;
+}
+
+.about-title {
+    padding-left: 100px;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+.my-img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+l
 /*-------- display message styles  */
 
 .display-message {
@@ -551,7 +599,7 @@ ol {
     /* temporarily commented out the nav bar for mobile verion */
     /* nav bar */
     .topnav {
-        display: none;
+        /* display: none; */
     }
     .mobile-nav {
         display: block;
