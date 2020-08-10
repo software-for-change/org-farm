@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Raining Vegetables</title>
+    <title>Helping small scale farmers</title>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,29 +38,31 @@
         <!-- our story content -->
         <div class="w3-row about-rows">
             <div class="about-title">
-                <h2>LEARN OUR STROY</h2>
-                <p>There's more to this beyond selling furits and vegetables</p>
-
+                <h2>HOW IT ALL STARTED</h2>
+                <p>The birth of raining vegetables...</p>
             </div>
 
 
             <div class="w3-third story-col">
                 <h1>01</h1>
-                <h2>Creativity</h2>
-                <p>our dad is a farmer and he had failed to sell his produce. at least, to what we would consider high potential
+                <h2>The Begining</h2>
+                <p> My parents are farmers who have had success growing food but never made alot of profit selling it. My dad, like many farmers, planted his crops based on the speculation that there was an anxious market awaiting his produce. He would say
+                    to me, "Mercy, just wait and see, the market is hot. I'm going to sell everything". He didn't. When it came to harvesting and selling, either he would have no market at all or they would only offer to buy it for peanuts to the shilling.
+                    What happened to the inital promise of an anxious market?
                 </p>
 
             </div>
             <div class="w3-third story-col">
                 <h1>02</h1>
-                <h2>Communication</h2>
-                <p>we explored this problem to see if it existed else where. well, we had opened a can of worms. many people suffered becasue of lack of market. So we thought, if we jump in and attempt to solve this problem, how far along can we reach? We
-                    are trying to find out now</p>
+                <h2>Discovery</h2>
+                <p> Was my father the only farmer who had failed to sell his produce? After some research, I discovered he was not. Despite the fact that over 90% of Ugandans are farmers, only 20% are able to find market for their produce. Of the 20%, those
+                    who supply to main markets reap the highest benefits due to the high buying prices in these markets. This is the anxious market many small scale farmers hope they can sell to. Unfortunately, small scale farmers who don't make it to
+                    the 20% lose their food to spoilage. Worse still, the customer still bears the burden of buying overpriced food in main markets. Why are Ugandans buying overpriced food yet small scale farmers have quality produce going to waste?</p>
 
             </div>
             <div class="w3-third story-col">
                 <h1>03</h1>
-                <h2>Honesty</h2>
+                <h2>Birth of a Cause</h2>
                 <p>we also found more problems, price gauging. if we were selling designer fits, we were willing to contend with exuberent prices for items. Food on the other hand, a necssity, it just seemed aboherent that people were paying such prices.
                     We knew they didn't have to. So we sought to provide a solution.</p>
 
