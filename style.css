@@ -131,6 +131,13 @@ a {
 }
 
 
+/* footer styling */
+
+.cream-page-footer {
+    background-color: var(--siteorange);
+}
+
+
 /* index page styling for the top section */
 
 .index-banner {
