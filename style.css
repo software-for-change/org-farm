@@ -131,6 +131,13 @@ a {
 }
 
 
+/* footer styling */
+
+.cream-page-footer {
+    background-color: var(--siteorange);
+}
+
+
 /* index page styling for the top section */
 
 .index-banner {
@@ -235,27 +242,34 @@ a {
 }
 
 .story-col {
-    padding: 0 100px 80px;
+    padding: 0 20px 80px;
 }
 
 .about-rows h1 {
     color: lightgray;
 }
 
-.about-rows h2 {
+.about-rows h2,
+header h1 {
     text-transform: uppercase;
-    font-size: 26px;
-    letter-spacing: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
     font-weight: 400;
+}
+
+header h1 {
+    font-size: 35px;
 }
 
 .about-rows p {
     font-weight: 300;
+    font-size: 17px;
+    line-height: 35px;
 }
 
 .about-title {
-    padding-left: 100px;
-    padding-bottom: 10%;
+    padding-left: 20px;
+    padding-bottom: 5%;
     padding-top: 5%;
 }
 
