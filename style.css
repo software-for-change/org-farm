@@ -8,6 +8,7 @@
     --sitepurple: #403D58;
     --sitestraw: #DBD56E;
     --siteisabeline: #F2EFEA;
+    --siteyellow: #f8d33c;
 }
 
 html * {
@@ -228,6 +229,58 @@ a {
 }
 
 
+/* consult page styling */
+
+.consult-page {
+    background-color: #f8d33c;
+}
+
+.consult-header {
+    padding: 20px;
+}
+
+.consult-header h1 {
+    font-size: 40px;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+.consult-header p {
+    font-size: 17px;
+    line-height: 35px;
+}
+
+.consult-rows {
+    background-color: white;
+    color: black;
+}
+
+.consult-defn {
+    max-width: 1500px;
+}
+
+#more {
+    display: none;
+}
+
+.consult-description {
+    background-color: #e9ab01;
+    color: black;
+}
+
+.consult-details {
+    margin: auto;
+}
+
+.consult-area {
+    max-width: 1500px;
+}
+
+.consult-header-icon {
+    height: 250px;
+}
+
+
 /* about page styling  */
 
 .about-page {
@@ -235,7 +288,7 @@ a {
 }
 
 .about-content {
-    max-width: 1500px;
+    max-width: 1400px;
     margin: auto;
     padding-top: 30px;
     color: black;
@@ -844,5 +897,44 @@ ol {
     }
     .how-it-works-content {
         height: 100%;
+    }
+}
+
+
+/* desktop version for the consult page */
+
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media only screen and (min-width: 1025px) {
+    .consult-header-icon {
+        height: 600px;
+    }
+    .consult-header p {
+        font-size: 21px;
+        line-height: 40px;
+        width: 75%;
+        text-align: left;
+    }
+    .consult-header h1 {
+        font-size: 45px;
+        margin-top: 15%;
+        text-align: left;
+    }
+    .organic-title {
+        text-align: center;
+    }
+    .organic-title p {
+        width: 75%;
+        margin: 0;
+        display: inline-block;
+        font-size: 20px;
+        line-height: 75px;
+    }
+    .organic-title h3 {
+        font-size: 40px;
     }
 }
